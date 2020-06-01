@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水資源物聯網入口網</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="minibar">
+        <div class="container">
+            <a href="#U" id="AU" title="右上方功能區塊" accesskey="U" tabindex="2">:::</a>
+            <a href=""><img src="img/line.png" alt="line"></a>
+            <a href=""><img src="img/webmap.png" alt="webmap"></a>
+            <div class="btn">
+                <ul>
+                    <li class=login><a href="">登入</a></li>
+                    <li>|</li>
+                    <li><a href="">註冊</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar">
+        <div class="pc">
+            <div class="navbar-L">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="navbar-R">
+                <a href="information-display.html">
+                    <h4>資料展示</h4>
+                </a>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>開發指引</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="theme.html">
+                            <h4>資料主題</h4>
+                        </a><br>
+                        <a href="api-explain.html">
+                            <h4>線上API說明</h4>
+                        </a><br>
+                        <a href="example-code.html">
+                            <h4>範例程式碼</h4>
+                        </a><br>
+                        <a href="data-explain.html">
+                            <h4>資料使用說明</h4>
+                        </a><br>
+                        <a href="data-statistics.html">
+                            <h4>資料使用統計</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>示範應用</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="example-all.html">
+                            <h4>所有類型</h4>
+                        </a><br>
+                        <a href="example-web.html">
+                            <h4>網站</h4>
+                        </a><br>
+                        <a href="example-app.html">
+                            <h4>APP</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>作業規範</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="rules.html">
+                            <h4>水資源物聯網作業規範</h4>
+                        </a><br>
+                        <a href="rules-example.html">
+                            <h4>參考典範指引</h4>
+                        </a><br>
+                        <a href="rules-data.html">
+                            <h4>資料交換標準</h4>
+                        </a><br>
+                        <a href="rules-domain.html">
+                            <h4>領域資料標準</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>支援服務</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="opinion.html">
+                            <h4>意見反映</h4>
+                        </a><br>
+                        <a href="operation.html">
+                            <h4>操作導覽</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4 style="margin-right: 0px;">會員專區</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="member-data.html">
+                            <h4>會員資料修改</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="menu">
+                <div class="fas fa-bars">
+                    <ul>
+                        <li><a href="#">資料展示</a></li>
+                        <li><a href="#">開發指引</a>
+                            <div class="mobile-list">
+                                <a href="theme.html">
+                                    <h4>資料主題</h4>
+                                </a>
+                                <a href="api-explain.html">
+                                    <h4>線上API說明</h4>
+                                </a>
+                                <a href="example-code.html">
+                                    <h4>範例程式碼</h4>
+                                </a>
+                                <a href="data-explain.html">
+                                    <h4>資料使用說明</h4>
+                                </a>
+                                <a href="data-statistics.html">
+                                    <h4>資料使用統計</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">示範應用</a>
+                            <div class="mobile-list">
+                                <a href="example-all.html">
+                                    <h4>所有類型</h4>
+                                </a>
+                                <a href="example-web.html">
+                                    <h4>網站</h4>
+                                </a>
+                                <a href="example-app.html">
+                                    <h4>APP</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">作業規範</a>
+                            <div class="mobile-list">
+                                <a href="rules.html">
+                                    <h4>水資源物聯網作業規範</h4>
+                                </a>
+                                <a href="rules-example.html">
+                                    <h4>參考典範指引</h4>
+                                </a>
+                                <a href="rules-data.html">
+                                    <h4>資料交換標準</h4>
+                                </a>
+                                <a href="rules-domain.html">
+                                    <h4>領域資料標準</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">支援服務</a>
+                            <div class="mobile-list">
+                                <a href="opinion.html">
+                                    <h4>意見反映</h4>
+                                </a>
+                                <a href="operation.html">
+                                    <h4>操作導覽</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">會員專區</a>
+                            <div class="mobile-list">
+                                <a href="member-data.html">
+                                    <h4>會員資料修改</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="line.html">交談機器人</a></li>
+                        <!-- <li><a href="webmap.html">網站導覽</a></li> -->
+                        <li><a href="#">登入</a></li>
+                        <li><a href="#">註冊</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div class="content-banner">
+
+    </div>
+
+
+    <!-- footer -->
+    <!-- <footer class="footer">
+        <div class="ft-top">
+            <div class="text-gp">
+                <div class="text-box">
+                    <h4>台中</h4>
+                    <p>+886 4 2376 8258 <br>
+                        403台中市忠明南路270號8F-3</p>
+                </div>
+                <div class="text-box">
+                    <h4>台北</h4>
+                    <p>+886 2 2702 7207 <br>
+                        106 台北市大安路二段118號5F</p>
+                </div>
+                <div class="text-box" style="margin-bottom: 0;">
+                    <p>FAX | +886 4 2376 8386 <br>
+                        www.leeten.com <br>
+                        service@leeten.com.tw</p>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bot">
+            <div class="copyright">
+                <p>Copyright © 2020 LEETEN All rights reserved</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <a href="#top">
+        <div class="back-top">▲</div>
+    </a>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

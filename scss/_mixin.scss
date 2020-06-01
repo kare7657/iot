@@ -1,0 +1,426 @@
+// RWD
+@mixin web-S {
+    @media (max-width: $web-S) {
+        @content;
+    }
+}
+@mixin pad {
+    @media (max-width: $pad) {
+        @content;
+    }
+}
+@mixin mobile-L {
+    @media (max-width: $mobile-L) {
+        @content;
+    }
+}
+@mixin mobile-XS {
+    @media (max-width: $mobile-XS) {
+        @content;
+    }
+}
+// 通用
+@mixin all() {
+    font-family: "微軟正黑體";
+    box-sizing: border-box !important;
+    .container {
+        width: 1140px;
+        margin: auto;
+        padding: $padding-L 0;
+        @include pad() {
+            width: 80%;
+            padding: $padding-M 0;
+        }
+        @include mobile-L() {
+            padding: $padding-S 0;
+        }
+        @include mobile-XS() {
+            padding: $padding-XS 0;
+            // width: 85%;
+        }
+    }
+    h2 {
+        font-size: $size-h2;
+        color: $title-D;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-bottom: $margin-XS;
+        line-height: $size-h2 * 2;
+    }
+    h3 {
+        font-size: $size-h3;
+        color: $title-D;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-bottom: $margin-S;
+        line-height: $size-h3 * 2;
+    }
+    h4 {
+        font-size: $size-h4;
+        color: $title-D;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-top: $margin-XS;
+        margin-bottom: $margin-XS;
+    }
+
+    p {
+        font-size: $size-p;
+        color: $text;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: $size-p * 2;
+        font-weight: 500;
+    }
+    a {
+        text-decoration: none !important;
+        list-style: none !important;
+        &:hover {
+            color: $blue !important;
+        }
+    }
+    .clearfix {
+        clear: both;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+@mixin btn() {
+    padding: 0 $padding-XS;
+    background-color: $dark-blue;
+    border-radius: 10px;
+    border: none;
+    h4 {
+        font-size: $size-h4;
+        color: $title-W;
+        font-family: "微軟正黑體";
+        font-weight: bold;
+    }
+    &:hover {
+        background-color: $hover;
+        transition-duration: 0.5s;
+    }
+}
+
+@mixin minibar() {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    position: fixed;
+    z-index: 1000;
+    @include mobile-L() {
+        display: none;
+    }
+    .container {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        #AU {
+            font-size: $size-h3;
+            color: $light-sky;
+            line-height: 40px;
+            margin-right: 20px;
+        }
+        img {
+            margin-right: 20px;
+            padding: 5px 0;
+        }
+        .btn {
+            margin: 0;
+            background-color: $dark-blue;
+            border-radius: 0 0 8px 8px;
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li,
+            a {
+                padding: 0 8px;
+                margin: 0;
+                display: inline;
+                color: $title-W;
+            }
+        }
+    }
+}
+@mixin navbar() {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    @include pad() {
+        display: unset;
+        justify-content: unset;
+    }
+    @include mobile-L() {
+        margin-top: 0;
+    }
+    .pc {
+        width: 1140px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        @include pad() {
+            display: none;
+        }
+        .navbar-L {
+            width: 25%;
+            height: 100%;
+            img {
+                width: 300px;
+            }
+            h4 {
+                font-size: $size-h4;
+                color: $title-W;
+                margin: 0;
+                padding: 0;
+                line-height: 80px;
+            }
+        }
+        .navbar-R {
+            width: 75%;
+            height: 100%;
+            color: $title-W;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            h4 {
+                font-size: $size-h4;
+                color: $title-D;
+                margin: 0;
+                padding: 0;
+                margin-right: 20px;
+                line-height: 80px;
+                display: inline;
+            }
+            .nav-function {
+                position: relative;
+                &:hover {
+                    .nav-list {
+                        display: block;
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+            .nav-list {
+                display: none;
+                text-align: center;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                transform: translateX(-25%);
+                width: 160px;
+                border-radius: 0 0 8px 8px;
+                padding: 0 20px 10px 20px;
+                background-color: rgba(255, 255, 255, 1);
+                h4 {
+                    margin: 0;
+                    padding: 0;
+                    line-height: $size-h4 * 2.5;
+                }
+            }
+        }
+    }
+    .mobile {
+        display: none;
+        height: 60px;
+        @include pad() {
+            display: block;
+            position: relative;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            display: flex;
+            .fas.fa-bars {
+                font-size: 30px;
+                line-height: 60px;
+                padding: 0 30px;
+                color: $dark-blue;
+            }
+            ul {
+                display: block;
+                width: 100vw;
+                // height: 100vh;
+                background-color: rgba(0, 0, 0, 0.9);
+                font-size: $size-h4;
+                line-height: 60px;
+                position: absolute;
+                top: 60px;
+                left: -100vw;
+                margin: 0;
+                padding: 40px 0;
+                text-align: center;
+            }
+            h4 {
+                color: $light-sky;
+            }
+            a {
+                color: $title-W;
+            }
+            &:hover {
+                ul {
+                    display: inline-block;
+                    color: $blue;
+                    transition-duration: 0.7s;
+                    top: 60px;
+                    left: 0;
+                }
+                li {
+                    &:hover {
+                        color: $blue;
+                    }
+                    .mobile-list{
+                        h4 {
+                            margin: 0;
+                            padding-bottom: $padding-XXS;
+                            line-height: $size-h4 * 1.5;
+                        }
+                    }
+                }
+            }
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            h4 {
+                font-size: $size-h4;
+                color: $title-W;
+                line-height: 60px;
+                margin: 0;
+            }
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 50px;
+            }
+        }
+    }
+}
+
+@mixin footer() {
+    h4,
+    p {
+        color: $title-W;
+    }
+    .ft-top {
+        width: 100%;
+        background-color: $dark-blue;
+        display: flex;
+        justify-content: center;
+        padding: $padding-S 40px;
+        .text-gp {
+            width: 100%;
+            max-width: 1140px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            @include mobile-L() {
+                flex-direction: column;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 100%;
+                margin-bottom: $margin-S;
+            }
+
+            .text-box {
+                display: inline-block;
+                margin: 0 $margin-XS;
+                @include pad() {
+                    margin: 0;
+                    margin-bottom: $margin-XS;
+                }
+                h4 {
+                    text-align: left;
+                    @include mobile-L() {
+                        text-align: center;
+                    }
+                }
+                p {
+                    text-align: left;
+                    @include mobile-L() {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .ft-bot {
+        background-color: $light-sky;
+        display: flex;
+        justify-content: center;
+        padding: $padding-XXS 0;
+        .copyright {
+            width: 100%;
+            max-width: 1140px;
+            p {
+                color: $dark-blue;
+                font-weight: bold;
+                @include mobile-L() {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@mixin back-top() {
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-size: $size-h4;
+    color: $text;
+    line-height: 55px;
+    text-align: center;
+    @include web-S() {
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+@mixin top-BN() {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    .BN-text-gp {
+        width: 80%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        h2,
+        h4 {
+            color: $title-W;
+            margin-bottom: $margin-XS;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "./guideline";
+@import "./mixin";
+// 通用
+* {
+    @include all();
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    // 導覽列
+    .minibar {
+        @include minibar();
+    }
+    .navbar {
+        @include navbar();
+    }
+    // Banner
+    .content-banner{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 120px;
+        background-position: center 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/index-BN.jpg);
+        @include mobile-L(){
+            top: 60px;
+        }
+    }
+
+
+
+
+    // 頁尾
+    footer {
+        @include footer();
+    }
+    .back-top {
+        @include back-top();
+    }
+
+}
