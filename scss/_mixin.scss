@@ -261,6 +261,8 @@
             ul {
                 display: block;
                 width: 100vw;
+                height: 200vh;
+                overflow-y: scroll;
                 background-color: rgba(0, 0, 0, 0.9);
                 font-size: $size-h4;
                 line-height: 60px;
@@ -290,6 +292,7 @@
                         color: $blue;
                     }
                     .mobile-list{
+                        height: 100%;
                         h4 {
                             margin: 0;
                             padding-bottom: $padding-XXS;
