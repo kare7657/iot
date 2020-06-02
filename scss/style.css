@@ -363,6 +363,34 @@ body .navbar .mobile .menu ul {
   text-align: center;
 }
 
+html .navbar .mobile .menu ul .nav-item,
+html .navbar .mobile .menu ul .dropdown,
+body .navbar .mobile .menu ul .nav-item,
+body .navbar .mobile .menu ul .dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+html .navbar .mobile .menu ul .nav-item .dropdown-menu,
+html .navbar .mobile .menu ul .dropdown .dropdown-menu,
+body .navbar .mobile .menu ul .nav-item .dropdown-menu,
+body .navbar .mobile .menu ul .dropdown .dropdown-menu {
+  background-color: unset;
+  -webkit-transform: translate(0%, -10%);
+          transform: translate(0%, -10%);
+  margin: auto;
+  text-align: center;
+}
+
+html .navbar .mobile .menu ul .nav-item .dropdown-menu .dropdown-item,
+html .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item,
+body .navbar .mobile .menu ul .nav-item .dropdown-menu .dropdown-item,
+body .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item {
+  padding: 0;
+  padding-top: 4px;
+  margin: 0;
+}
+
 html .navbar .mobile .menu h4,
 body .navbar .mobile .menu h4 {
   color: #A7E5FF;
@@ -386,23 +414,7 @@ body .navbar .mobile .menu:hover ul {
 html .navbar .mobile .menu:hover li:hover,
 body .navbar .mobile .menu:hover li:hover {
   color: #2FAAE5;
-}
-
-html .navbar .mobile .menu:hover li .mobile-list,
-body .navbar .mobile .menu:hover li .mobile-list {
-  display: none;
-}
-
-html .navbar .mobile .menu:hover li .mobile-list:hover,
-body .navbar .mobile .menu:hover li .mobile-list:hover {
-  display: block;
-}
-
-html .navbar .mobile .menu:hover li .mobile-list h4,
-body .navbar .mobile .menu:hover li .mobile-list h4 {
-  margin: 0;
-  padding-bottom: 10px;
-  line-height: 1.6875rem;
+  padding: 0;
 }
 
 html .navbar .mobile .title,

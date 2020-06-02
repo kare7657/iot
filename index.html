@@ -127,7 +127,121 @@
         <div class="mobile">
             <div class="menu">
                 <div class="fas fa-bars">
-                    <ul>
+                    <ul class="nav navbar-nav">
+                        <!-- <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    開發指引
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <a href="#">
+                                        <h4>資料主題</h4>
+                                    </a>
+                                    <a href="#">
+                                        <h4>線上API說明</h4>
+                                    </a>
+                                    <a href="#">
+                                        <h4>範例程式碼</h4>
+                                    </a>
+                                    <a href="#">
+                                        <h4>資料使用說明</h4>
+                                    </a>
+                                    <a href="#">
+                                        <h4>資料使用統計</h4>
+                                    </a>
+                                </div>
+                            </div> -->
+                        <li><a href="#">資料展示</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                開發指引
+                            </a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="#">
+                                    <h4>資料主題</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>線上API說明</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>範例程式碼</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>資料使用說明</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>資料使用統計</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                示範應用
+                            </a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="#">
+                                    <h4>所有類型</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>網站</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>APP</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                作業規範
+                            </a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="#">
+                                    <h4>水資源物聯網作業規範</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>參考典範指引</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>資料交換標準</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>領域資料標準</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                支援服務
+                            </a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="#">
+                                    <h4>意見反映</h4>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <h4>操作導覽</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                會員專區
+                            </a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="#">
+                                    <h4>會員資料修改</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="line.html">交談機器人</a></li>
+                        <li><a href="#">登入</a></li>
+                        <li><a href="#">註冊</a></li>
+
+
+                    </ul>
+
+                    <!-- <ul>
                         <li><a href="#">資料展示</a></li>
                         <li><a href="#">開發指引</a>
                             <div class="mobile-list">
@@ -195,10 +309,10 @@
                             </div>
                         </li>
                         <li><a href="line.html">交談機器人</a></li>
-                        <!-- <li><a href="webmap.html">網站導覽</a></li> -->
+                        <li><a href="webmap.html">網站導覽</a></li>
                         <li><a href="#">登入</a></li>
                         <li><a href="#">註冊</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <div class="logo">
@@ -333,6 +447,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- collapse -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
 
 
 </body>
