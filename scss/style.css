@@ -363,34 +363,21 @@ body .navbar .mobile .menu ul {
   text-align: center;
 }
 
-html .navbar .mobile .menu ul .nav-item,
-html .navbar .mobile .menu ul .dropdown,
-body .navbar .mobile .menu ul .nav-item,
-body .navbar .mobile .menu ul .dropdown {
-  padding: 0;
-  margin: 0;
-}
-
-html .navbar .mobile .menu ul .nav-item .dropdown-menu,
-html .navbar .mobile .menu ul .dropdown .dropdown-menu,
-body .navbar .mobile .menu ul .nav-item .dropdown-menu,
-body .navbar .mobile .menu ul .dropdown .dropdown-menu {
+html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu,
+body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu {
   background-color: #0D73AD;
   color: white;
-  -webkit-transform: translate(0%, -10%);
-          transform: translate(0%, -10%);
-  margin: auto;
   text-align: center;
-  padding-bottom: 10px;
 }
 
-html .navbar .mobile .menu ul .nav-item .dropdown-menu .dropdown-item,
-html .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item,
-body .navbar .mobile .menu ul .nav-item .dropdown-menu .dropdown-item,
-body .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item {
-  padding: 0;
-  padding-top: 15px;
-  margin: 0;
+html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item,
+body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item {
+  padding: 15px 0;
+}
+
+html .navbar .mobile .menu ul .nav-item.dropdown .nav-link.dropdown-toggle,
+body .navbar .mobile .menu ul .nav-item.dropdown .nav-link.dropdown-toggle {
+  padding: 5px 0;
 }
 
 html .navbar .mobile .menu h4,

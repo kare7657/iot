@@ -281,22 +281,17 @@
                 margin: 0;
                 padding: 40px 0 0 0;
                 text-align: center;
-                .nav-item,
-                .dropdown {
-                    padding: 0;
-                    margin: 0;
+                .nav-item.dropdown {
                     .dropdown-menu {
                         background-color: $dark-blue;
                         color: $title-W;
-                        transform: translate(0%, -10%);
-                        margin: auto;
                         text-align: center;
-                        padding-bottom: 10px;
                         .dropdown-item {
-                            padding: 0;
-                            padding-top: 15px;
-                            margin: 0;
+                            padding: 15px 0;
                         }
+                    }
+                    .nav-link.dropdown-toggle {
+                        padding: 5px 0;
                     }
                 }
             }
