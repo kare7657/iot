@@ -45,7 +45,7 @@ body {
             }
             .about {
                 width: 60%;
-                margin-right: $margin-S;
+                margin-right: $margin-M;
                 @include mobile-L() {
                     width: 100%;
                     margin-right: unset;
@@ -98,7 +98,7 @@ body {
             }
             .new {
                 width: 60%;
-                margin-right: $margin-S;
+                margin-right: $margin-M;
                 @include mobile-L() {
                     width: 100%;
                     margin-right: unset;

@@ -304,7 +304,7 @@ body .navbar .pc .navbar-R .nav-list {
   width: 160px;
   border-radius: 0 0 8px 8px;
   padding: 0 20px 10px 20px;
-  background-color: white;
+  background-color: rgba(13, 115, 173, 0.9);
 }
 
 html .navbar .pc .navbar-R .nav-list h4,
@@ -312,6 +312,7 @@ body .navbar .pc .navbar-R .nav-list h4 {
   margin: 0;
   padding: 0;
   line-height: 2.8125rem;
+  color: white;
 }
 
 html .navbar .mobile,
@@ -477,7 +478,7 @@ body .content-about .container {
 html .content-about .container .about,
 body .content-about .container .about {
   width: 60%;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 @media (max-width: 568px) {
@@ -578,7 +579,7 @@ body .content-preview .container {
 html .content-preview .container .new,
 body .content-preview .container .new {
   width: 60%;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 @media (max-width: 568px) {

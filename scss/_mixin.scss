@@ -107,22 +107,22 @@
     }
 }
 
-@mixin btn() {
-    padding: 0 $padding-XS;
-    background-color: $dark-blue;
-    border-radius: 10px;
-    border: none;
-    h4 {
-        font-size: $size-h4;
-        color: $title-W;
-        font-family: "微軟正黑體";
-        font-weight: bold;
-    }
-    &:hover {
-        background-color: $hover;
-        transition-duration: 0.5s;
-    }
-}
+// @mixin btn() {
+//     padding: 0 $padding-XS;
+//     background-color: $dark-blue;
+//     border-radius: 10px;
+//     border: none;
+//     h4 {
+//         font-size: $size-h4;
+//         color: $title-W;
+//         font-family: "微軟正黑體";
+//         font-weight: bold;
+//     }
+//     &:hover {
+//         background-color: $hover;
+//         transition-duration: 0.5s;
+//     }
+// }
 
 @mixin minibar() {
     display: block;
@@ -240,11 +240,12 @@
                 width: 160px;
                 border-radius: 0 0 8px 8px;
                 padding: 0 20px 10px 20px;
-                background-color: rgba(255, 255, 255, 1);
+                background-color: rgba(13, 115, 173, 0.9);
                 h4 {
                     margin: 0;
                     padding: 0;
                     line-height: $size-h4 * 2.5;
+                    color: $title-W;
                 }
             }
         }
