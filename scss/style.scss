@@ -74,6 +74,7 @@ body {
                         color: $title-BK;
                     }
                     img {
+                        width: 100%;
                         @include mobile-L() {
                             width: 60%;
                         }

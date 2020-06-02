@@ -536,6 +536,11 @@ body .content-about .container .fast-link .icon-gp h2 {
   color: black;
 }
 
+html .content-about .container .fast-link .icon-gp img,
+body .content-about .container .fast-link .icon-gp img {
+  width: 100%;
+}
+
 @media (max-width: 568px) {
   html .content-about .container .fast-link .icon-gp img,
   body .content-about .container .fast-link .icon-gp img {
