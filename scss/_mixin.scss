@@ -281,20 +281,6 @@
                 margin: 0;
                 padding: 40px 0 0 0;
                 text-align: center;
-                // .collapse {
-                //     background-color: unset;
-                //     position: absolute;
-                //     top: 50px;
-                //     left: 0;
-                //     transform: translateX(60%);
-                //     margin: auto;
-                //     text-align: center;
-                //     .card .card-body {
-                //         padding: 0;
-                //         padding-top: 2px;
-                //         margin: 0;
-                //     }
-                // }
                 .nav-item,
                 .dropdown {
                     padding: 0;
@@ -305,9 +291,10 @@
                         transform: translate(0%, -10%);
                         margin: auto;
                         text-align: center;
+                        padding-bottom: 10px;
                         .dropdown-item {
                             padding: 0;
-                            padding-top: 5px;
+                            padding-top: 15px;
                             margin: 0;
                         }
                     }
@@ -331,17 +318,6 @@
                     &:hover {
                         color: $blue;
                     }
-                    // .mobile-list {
-                    //     display: none;
-                    //     &:hover {
-                    //         display: block;
-                    //     }
-                    //     h4 {
-                    //         margin: 0;
-                    //         padding-bottom: $padding-XXS;
-                    //         line-height: $size-h4 * 1.5;
-                    //     }
-                    // }
                 }
             }
         }
