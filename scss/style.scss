@@ -13,7 +13,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     // overflow-x: hidden;
-    @include mobile-XS(){
+    @include mobile-XS() {
         font-size: 14px;
     }
     // 導覽列
@@ -64,6 +64,7 @@ body {
                     margin-top: $margin-M;
                 }
                 .icon-gp {
+                    width: 100%;
                     margin: 0 $margin-XS;
                     @include mobile-L() {
                         margin: 0;
@@ -73,9 +74,8 @@ body {
                         color: $title-BK;
                     }
                     img {
-                        width: 100%;
                         @include mobile-L() {
-                            width: unset;
+                            width: 60%;
                         }
                     }
                 }

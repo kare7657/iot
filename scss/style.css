@@ -519,6 +519,7 @@ body .content-about .container .fast-link {
 
 html .content-about .container .fast-link .icon-gp,
 body .content-about .container .fast-link .icon-gp {
+  width: 100%;
   margin: 0 10px;
 }
 
@@ -535,15 +536,10 @@ body .content-about .container .fast-link .icon-gp h2 {
   color: black;
 }
 
-html .content-about .container .fast-link .icon-gp img,
-body .content-about .container .fast-link .icon-gp img {
-  width: 100%;
-}
-
 @media (max-width: 568px) {
   html .content-about .container .fast-link .icon-gp img,
   body .content-about .container .fast-link .icon-gp img {
-    width: unset;
+    width: 60%;
   }
 }
 
@@ -710,15 +706,6 @@ html footer .container .contact p,
 body footer .container .contact h4,
 body footer .container .contact p {
   color: white;
-}
-
-@media (max-width: 568px) {
-  html footer .container .contact h4,
-  html footer .container .contact p,
-  body footer .container .contact h4,
-  body footer .container .contact p {
-    text-align: unset;
-  }
 }
 
 html footer .container .contact h4,

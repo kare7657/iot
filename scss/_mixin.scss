@@ -367,9 +367,9 @@
             h4,
             p {
                 color: $title-W;
-                @include mobile-L() {
-                    text-align: unset;
-                }
+                // @include mobile-L() {
+                //     text-align: unset;
+                // }
             }
             h4 {
                 margin: $margin-XS 0 0 0;
@@ -379,13 +379,12 @@
         .notice {
             display: flex;
             justify-content: space-between;
-            @include pad(){
+            @include pad() {
                 flex-wrap: wrap;
             }
             h4,
             p {
                 color: $title-W;
-
             }
         }
     }
