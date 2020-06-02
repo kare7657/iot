@@ -338,6 +338,27 @@
     }
 }
 
+@mixin breadcrumb() {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    .container {
+        padding: 0;
+        display: flex;
+        // span{
+        //     color: $text;
+        //     font-size: $size-p;
+        // }
+        a:hover {
+            color: $blue;
+        }
+    }
+}
+
 @mixin footer() {
     background-color: $dark-blue;
     .container {
@@ -409,5 +430,16 @@
     @include web-S() {
         right: 25px;
         bottom: 25px;
+    }
+}
+
+@mixin papers() {
+    h1 {
+        margin-bottom: $margin-S;
+        text-align: center;
+    }
+    h3 {
+        margin-top: $margin-S;
+        margin-bottom: $margin-XS;
     }
 }

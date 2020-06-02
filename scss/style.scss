@@ -142,6 +142,16 @@ body {
             }
         }
     }
+    //breadcrumb
+    .breadcrumb {
+        @include breadcrumb();
+    }
+
+    //政府網站資料開放宣告
+    .content-information {
+        padding-top: 120px;
+        @include papers();
+    }
     // 頁尾
     footer {
         @include footer();
