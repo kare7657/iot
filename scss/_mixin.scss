@@ -26,25 +26,30 @@
     .container {
         width: 1140px;
         margin: auto;
-        padding: $padding-L 0;
+        padding: $padding-S 0;
         @include pad() {
             width: 80%;
-            padding: $padding-M 0;
-        }
-        @include mobile-L() {
             padding: $padding-S 0;
         }
-        @include mobile-XS() {
+        @include mobile-L() {
             padding: $padding-XS 0;
-            // width: 85%;
         }
+        @include mobile-XS() {
+            // padding: $padding-XS 0;
+        }
+    }
+    h1 {
+        font-size: $size-h1;
+        color: $title-D;
+        padding: 0;
+        margin: 0;
+        margin-bottom: $margin-XS;
     }
     h2 {
         font-size: $size-h2;
         color: $title-D;
         padding: 0;
         margin: 0;
-        text-align: center;
         margin-bottom: $margin-XS;
         line-height: $size-h2 * 2;
     }
@@ -53,7 +58,6 @@
         color: $title-D;
         padding: 0;
         margin: 0;
-        text-align: center;
         margin-bottom: $margin-S;
         line-height: $size-h3 * 2;
     }
@@ -62,7 +66,6 @@
         color: $title-D;
         padding: 0;
         margin: 0;
-        text-align: center;
         margin-top: $margin-XS;
         margin-bottom: $margin-XS;
     }
@@ -72,9 +75,9 @@
         color: $text;
         padding: 0;
         margin: 0;
-        text-align: center;
         line-height: $size-p * 2;
         font-weight: 500;
+        text-align: justify;
     }
     a {
         text-decoration: none !important;
@@ -96,6 +99,11 @@
     }
     section {
         width: 100%;
+    }
+    hr {
+        border-top: 1px solid $light-sky;
+        margin: 0;
+        margin: auto;
     }
 }
 
@@ -262,6 +270,7 @@
             ul {
                 display: block;
                 width: 100vw;
+                height: 100vh;
                 background-color: rgba(0, 0, 0, 0.9);
                 font-size: $size-h4;
                 line-height: 60px;
@@ -292,7 +301,7 @@
                     }
                     .mobile-list {
                         display: none;
-                        &:hover{
+                        &:hover {
                             display: block;
                         }
                         h4 {
@@ -327,66 +336,56 @@
 }
 
 @mixin footer() {
-    h4,
-    p {
-        color: $title-W;
-    }
-    .ft-top {
-        width: 100%;
-        background-color: $dark-blue;
-        display: flex;
-        justify-content: center;
-        padding: $padding-S 40px;
+    background-color: $dark-blue;
+    .container {
         .text-gp {
-            width: 100%;
-            max-width: 1140px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
             @include mobile-L() {
-                flex-direction: column;
                 flex-wrap: wrap;
-                text-align: center;
-                width: 100%;
-                margin-bottom: $margin-S;
-            }
-
-            .text-box {
-                display: inline-block;
-                margin: 0 $margin-XS;
-                @include pad() {
-                    margin: 0;
-                    margin-bottom: $margin-XS;
-                }
                 h4 {
-                    text-align: left;
-                    @include mobile-L() {
-                        text-align: center;
-                    }
+                    line-height: $size-h4 * 1.5;
                 }
-                p {
-                    text-align: left;
-                    @include mobile-L() {
-                        text-align: center;
-                    }
+            }
+            span {
+                font-size: $size-p;
+                color: $light-sky;
+                line-height: $size-p;
+                margin: 0;
+                padding: 0 $padding-XXS;
+                @include mobile-L() {
+                    line-height: $size-h4 * 1.5;
                 }
+            }
+            h4,
+            p {
+                color: $light-sky;
+                margin: 0;
             }
         }
-    }
-    .ft-bot {
-        background-color: $light-sky;
-        display: flex;
-        justify-content: center;
-        padding: $padding-XXS 0;
-        .copyright {
-            width: 100%;
-            max-width: 1140px;
+        .contact {
+            margin: $margin-S 0;
+            h4,
             p {
-                color: $dark-blue;
-                font-weight: bold;
+                color: $title-W;
                 @include mobile-L() {
-                    font-size: 14px;
+                    text-align: unset;
                 }
+            }
+            h4 {
+                margin: $margin-XS 0 0 0;
+                color: $light-sky;
+            }
+        }
+        .notice {
+            display: flex;
+            justify-content: space-between;
+            @include pad(){
+                flex-wrap: wrap;
+            }
+            h4,
+            p {
+                color: $title-W;
+
             }
         }
     }
@@ -399,32 +398,14 @@
     position: fixed;
     right: 40px;
     bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $light-sky;
     border-radius: 50%;
     font-size: $size-h4;
-    color: $text;
+    color: $dark-blue;
     line-height: 55px;
     text-align: center;
     @include web-S() {
         right: 25px;
         bottom: 25px;
-    }
-}
-
-@mixin top-BN() {
-    position: relative;
-    object-fit: cover;
-    object-position: center;
-    .BN-text-gp {
-        width: 80%;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translateX(-50%);
-        h2,
-        h4 {
-            color: $title-W;
-            margin-bottom: $margin-XS;
-        }
     }
 }
