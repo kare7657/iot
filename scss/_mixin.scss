@@ -279,7 +279,7 @@
                 top: 60px;
                 left: -100vw;
                 margin: 0;
-                padding: 40px 0;
+                padding: 40px 0 0 0;
                 text-align: center;
                 // .collapse {
                 //     background-color: unset;
@@ -300,13 +300,14 @@
                     padding: 0;
                     margin: 0;
                     .dropdown-menu {
-                        background-color: unset;
+                        background-color: $dark-blue;
+                        color: $title-W;
                         transform: translate(0%, -10%);
                         margin: auto;
                         text-align: center;
                         .dropdown-item {
                             padding: 0;
-                            padding-top: 4px;
+                            padding-top: 5px;
                             margin: 0;
                         }
                     }
@@ -329,7 +330,6 @@
                 li {
                     &:hover {
                         color: $blue;
-                        padding: 0;
                     }
                     // .mobile-list {
                     //     display: none;

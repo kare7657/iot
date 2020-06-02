@@ -359,7 +359,7 @@ body .navbar .mobile .menu ul {
   top: 60px;
   left: -100vw;
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   text-align: center;
 }
 
@@ -375,7 +375,8 @@ html .navbar .mobile .menu ul .nav-item .dropdown-menu,
 html .navbar .mobile .menu ul .dropdown .dropdown-menu,
 body .navbar .mobile .menu ul .nav-item .dropdown-menu,
 body .navbar .mobile .menu ul .dropdown .dropdown-menu {
-  background-color: unset;
+  background-color: #0D73AD;
+  color: white;
   -webkit-transform: translate(0%, -10%);
           transform: translate(0%, -10%);
   margin: auto;
@@ -387,7 +388,7 @@ html .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item,
 body .navbar .mobile .menu ul .nav-item .dropdown-menu .dropdown-item,
 body .navbar .mobile .menu ul .dropdown .dropdown-menu .dropdown-item {
   padding: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   margin: 0;
 }
 
@@ -414,7 +415,6 @@ body .navbar .mobile .menu:hover ul {
 html .navbar .mobile .menu:hover li:hover,
 body .navbar .mobile .menu:hover li:hover {
   color: #2FAAE5;
-  padding: 0;
 }
 
 html .navbar .mobile .title,
