@@ -26,7 +26,7 @@
 
 * h1 {
   font-size: 1.625rem;
-  color: #0D73AD;
+  color: black;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -315,6 +315,11 @@ body .navbar .pc .navbar-R .nav-list h4 {
   color: white;
 }
 
+html .navbar .pc .navbar-R .nav-list h4:hover,
+body .navbar .pc .navbar-R .nav-list h4:hover {
+  color: #A7E5FF;
+}
+
 html .navbar .mobile,
 body .navbar .mobile {
   display: none;
@@ -487,6 +492,11 @@ body .content-about .container .about {
     width: 100%;
     margin-right: unset;
   }
+}
+
+html .content-about .container .about h1,
+body .content-about .container .about h1 {
+  color: #0D73AD;
 }
 
 html .content-about .container .fast-link,
@@ -665,6 +675,15 @@ body .breadcrumb {
   top: 150px;
 }
 
+@media (max-width: 568px) {
+  html .breadcrumb,
+  body .breadcrumb {
+    top: 80px;
+    background-color: #E5F1F9;
+    height: 40px;
+  }
+}
+
 html .breadcrumb .container,
 body .breadcrumb .container {
   padding: 0;
@@ -673,9 +692,23 @@ body .breadcrumb .container {
   display: flex;
 }
 
-html .breadcrumb .container a:hover,
-body .breadcrumb .container a:hover {
+html .breadcrumb .container a:hover .fas,
+html .breadcrumb .container a:hover p,
+body .breadcrumb .container a:hover .fas,
+body .breadcrumb .container a:hover p {
   color: #2FAAE5;
+}
+
+html .breadcrumb .container p,
+body .breadcrumb .container p {
+  color: black;
+}
+
+html .breadcrumb .container .fas,
+body .breadcrumb .container .fas {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #808080;
 }
 
 html .content-information,
@@ -683,10 +716,25 @@ body .content-information {
   padding-top: 120px;
 }
 
+@media (max-width: 568px) {
+  html .content-information,
+  body .content-information {
+    padding-top: 100px;
+  }
+}
+
 html .content-information h1,
 body .content-information h1 {
-  margin-bottom: 25px;
+  margin: 30px 0;
   text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-information h1,
+  body .content-information h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
 }
 
 html .content-information h3,
@@ -741,6 +789,11 @@ body footer .container .text-gp h4,
 body footer .container .text-gp p {
   color: #A7E5FF;
   margin: 0;
+}
+
+html footer .container .text-gp a:hover h4,
+body footer .container .text-gp a:hover h4 {
+  color: white;
 }
 
 html footer .container .contact,

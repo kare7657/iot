@@ -50,6 +50,9 @@ body {
                     width: 100%;
                     margin-right: unset;
                 }
+                h1{
+                    color: $title-D;
+                }
             }
             .fast-link {
                 width: 40%;
@@ -149,7 +152,6 @@ body {
 
     //政府網站資料開放宣告
     .content-information {
-        padding-top: 120px;
         @include papers();
     }
     // 頁尾

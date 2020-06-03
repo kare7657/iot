@@ -40,7 +40,7 @@
     }
     h1 {
         font-size: $size-h1;
-        color: $title-D;
+        color: $title-BK;
         padding: 0;
         margin: 0;
         margin-bottom: $margin-XS;
@@ -246,6 +246,9 @@
                     padding: 0;
                     line-height: $size-h4 * 2.5;
                     color: $title-W;
+                    &:hover {
+                        color: $light-sky;
+                    }
                 }
             }
         }
@@ -346,15 +349,27 @@
     margin: 0;
     position: absolute;
     top: 150px;
+    @include mobile-L() {
+        top: 80px;
+        background-color: $table-blue;
+        height: 40px;
+    }
     .container {
         padding: 0;
         display: flex;
-        // span{
-        //     color: $text;
-        //     font-size: $size-p;
-        // }
-        a:hover {
-            color: $blue;
+        a {
+            &:hover .fas,
+            &:hover p {
+                color: $blue;
+            }
+        }
+        p {
+            color: $title-BK;
+        }
+        .fas {
+            font-size: $size-p;
+            line-height: $size-p * 2;
+            color: $text;
         }
     }
 }
@@ -385,15 +400,15 @@
                 color: $light-sky;
                 margin: 0;
             }
+            a:hover h4{
+                color: $title-W;
+            }
         }
         .contact {
             margin: $margin-S 0;
             h4,
             p {
                 color: $title-W;
-                // @include mobile-L() {
-                //     text-align: unset;
-                // }
             }
             h4 {
                 margin: $margin-XS 0 0 0;
@@ -434,9 +449,17 @@
 }
 
 @mixin papers() {
+    padding-top: 120px;
+    @include mobile-L() {
+        padding-top: 100px;
+    }
     h1 {
-        margin-bottom: $margin-S;
+        margin: 30px 0;
         text-align: center;
+        @include mobile-L() {
+            margin: $margin-S 0;
+            text-align: left;
+        }
     }
     h3 {
         margin-top: $margin-S;
