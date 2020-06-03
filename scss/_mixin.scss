@@ -351,10 +351,13 @@
     margin: 0;
     position: absolute;
     top: 150px;
-    @include mobile-L() {
+    @include pad() {
         top: 80px;
         background-color: $table-blue;
         height: 40px;
+    }
+    @include mobile-L() {
+        top: 60px;
     }
     .container {
         padding: 0;
@@ -452,8 +455,8 @@
 
 @mixin papers() {
     padding-top: 120px;
-    @include mobile-L() {
-        padding-top: 100px;
+    @include pad() {
+        padding-top: 80px;
     }
     h1 {
         margin: 30px 0;
@@ -466,5 +469,11 @@
     h3 {
         margin-top: $margin-S;
         margin-bottom: $margin-XS;
+    }
+}
+@mixin text-important() {
+    span {
+        color: $dark-blue;
+        font-weight: bold;
     }
 }

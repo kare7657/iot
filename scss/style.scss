@@ -175,6 +175,7 @@ body {
     //政府網站資料開放宣告
     .content-information {
         @include papers();
+        @include text-important();
     }
     // 頁尾
     footer {
@@ -231,6 +232,7 @@ body {
             }
         }
     }
+    //使用步驟
     .content-line-explain {
         text-align: center;
         .screenshot-gp {
@@ -253,6 +255,48 @@ body {
                 img {
                     width: 100%;
                     margin-bottom: $margin-XS;
+                }
+                @include text-important();
+            }
+        }
+    }
+    //導覽清單
+    .content-webmap {
+        .container {
+            padding-top: unset;
+            .list-gp {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .text-gp {
+                    width: 23%;
+                    @include pad() {
+                        width: 48%;
+                    }
+                    @include mobile-L() {
+                        width: 100%;
+                    }
+                    h3 {
+                        background-color: $table-blue;
+                        padding: 0 $padding-XS;
+                        margin: 0;
+                    }
+                    ul {
+                        padding: $padding-XS;
+                        padding-top: $padding-XXS;
+                        list-style: none;
+                        font-size: $size-p;
+                        line-height: $size-p * 2;
+                        margin: 0;
+                        margin-bottom: $margin-S;
+                        @include mobile-L() {
+                            margin-bottom: $margin-XS;
+                            line-height: $size-p * 2.5;
+                        }
+                        a {
+                            color: $dark-blue;
+                        }
+                    }
                 }
             }
         }
