@@ -473,6 +473,20 @@ body .content-banner img {
      object-position: center 0%;
 }
 
+@media (max-width: 768px) {
+  html .content-banner img,
+  body .content-banner img {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-banner img,
+  body .content-banner img {
+    height: 20vh;
+  }
+}
+
 html .content-about .container,
 body .content-about .container {
   display: -webkit-box;
