@@ -25,32 +25,33 @@ body {
     }
     // Banner
     .content-banner {
-        width: 100%;
-        height: 500px;
         padding-top: 120px;
-        background-position: center 0%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../img/index-BN.jpg);
-        @include mobile-L() {
-            top: 60px;
+        @include pad() {
+            padding-top: 60px;
+        }
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center 0%;
         }
     }
     //關於平台
     .content-about {
         .container {
             display: flex;
-            @include mobile-L() {
+            @include pad() {
                 flex-wrap: wrap;
+                padding-bottom: unset;
             }
             .about {
                 width: 60%;
                 margin-right: $margin-M;
-                @include mobile-L() {
+                @include pad() {
                     width: 100%;
                     margin-right: unset;
                 }
-                h1{
+                h1 {
                     color: $title-D;
                 }
             }
@@ -59,25 +60,34 @@ body {
                 text-align: center;
                 display: flex;
                 justify-content: space-between;
-                @include mobile-L() {
+                @include pad() {
                     width: 100%;
+                    margin-top: $margin-M;
+                }
+                @include mobile-L() {
                     flex-wrap: wrap;
                     justify-content: center;
                     flex-direction: column;
-                    margin-top: $margin-M;
                 }
                 .icon-gp {
                     width: 100%;
                     margin: 0 $margin-XS;
-                    @include mobile-L() {
+                    @include pad() {
+                        width: 33.3%;
                         margin: 0;
                         margin-bottom: $margin-S;
+                    }
+                    @include mobile-L() {
+                        width: 100%;
                     }
                     h2 {
                         color: $title-BK;
                     }
                     img {
                         width: 100%;
+                        @include pad() {
+                            width: 80%;
+                        }
                         @include mobile-L() {
                             width: 60%;
                         }
@@ -87,7 +97,7 @@ body {
         }
         hr {
             width: 60%;
-            @include mobile-L() {
+            @include pad() {
                 display: none;
             }
         }
@@ -96,13 +106,13 @@ body {
     .content-preview {
         .container {
             display: flex;
-            @include mobile-L() {
+            @include pad() {
                 flex-wrap: wrap;
             }
             .new {
                 width: 60%;
                 margin-right: $margin-M;
-                @include mobile-L() {
+                @include pad() {
                     width: 100%;
                     margin-right: unset;
                     margin-bottom: $margin-S;
@@ -135,7 +145,7 @@ body {
             }
             .data-statistics {
                 width: 40%;
-                @include mobile-L() {
+                @include pad() {
                     width: 100%;
                     margin-bottom: $margin-S;
                 }
@@ -160,5 +170,79 @@ body {
     }
     .back-top {
         @include back-top();
+    }
+    //QR code
+    .content-QRcode {
+        text-align: center;
+        .container {
+            @include pad() {
+                padding-bottom: 0;
+            }
+            .QRcode-gp {
+                width: 400px;
+                margin: auto;
+                display: flex;
+                border: solid 6px $light-sky;
+                border-radius: 20px;
+                padding: $padding-XS;
+                margin-top: 100px;
+                position: relative;
+                @include mobile-L() {
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+                .robot {
+                    z-index: -5;
+                    position: absolute;
+                    top: -82px;
+                    left: calc(50% - 53px);
+                }
+                .QR {
+                    width: 50%;
+                    height: 50%;
+                    @include mobile-L() {
+                        width: 100%;
+                    }
+                }
+                h3 {
+                    width: 50%;
+                    padding: $padding-XXS 0;
+                    padding-left: $padding-XS;
+                    margin: 0;
+                    text-align: left;
+                    @include mobile-L() {
+                        width: 100%;
+                        text-align: center;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .content-line-explain {
+        text-align: center;
+        .screenshot-gp {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: $margin-M;
+            @include mobile-L() {
+                margin-top: $margin-S;
+            }
+            .text-gp {
+                width: 300px;
+                margin-bottom: $margin-M;
+                @include pad() {
+                    width: 45%;
+                }
+                @include mobile-L() {
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    margin-bottom: $margin-XS;
+                }
+            }
+        }
     }
 }

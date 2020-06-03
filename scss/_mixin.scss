@@ -132,7 +132,7 @@
     position: fixed;
     z-index: 1000;
     background-color: #fff;
-    @include mobile-L() {
+    @include pad() {
         display: none;
     }
     .container {
@@ -180,7 +180,7 @@
         display: unset;
         justify-content: unset;
     }
-    @include mobile-L() {
+    @include pad() {
         margin-top: 0;
     }
     .pc {
@@ -333,9 +333,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
             img {
                 height: 50px;
+                @include mobile-XS() {
+                    padding: 5px 0;
+                }
             }
         }
     }
@@ -400,7 +402,7 @@
                 color: $light-sky;
                 margin: 0;
             }
-            a:hover h4{
+            a:hover h4 {
                 color: $title-W;
             }
         }
