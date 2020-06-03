@@ -476,15 +476,27 @@ body .content-banner img {
 @media (max-width: 768px) {
   html .content-banner img,
   body .content-banner img {
-    height: 25vh;
+    height: 40vh;
   }
 }
 
 @media (max-width: 568px) {
   html .content-banner img,
   body .content-banner img {
-    height: 20vh;
+    height: 30vh;
   }
+}
+
+html .content-banner .BN-left,
+body .content-banner .BN-left {
+  -o-object-position: 10%;
+     object-position: 10%;
+}
+
+html .content-banner .BN-right,
+body .content-banner .BN-right {
+  -o-object-position: 70%;
+     object-position: 70%;
 }
 
 html .content-about .container,

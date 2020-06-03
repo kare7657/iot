@@ -34,12 +34,18 @@ body {
             height: 500px;
             object-fit: cover;
             object-position: center 0%;
-            @include pad(){
-                height: 25vh;
+            @include pad() {
+                height: 40vh;
             }
-            @include mobile-L(){
-                height: 20vh;
+            @include mobile-L() {
+                height: 30vh;
             }
+        }
+        .BN-left {
+            object-position: 10%;
+        }
+        .BN-right {
+            object-position: 70%;
         }
     }
     //關於平台
