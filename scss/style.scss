@@ -201,7 +201,7 @@ body {
             }
         }
     }
-    //使用步驟
+    //交談機器人-使用步驟
     .content-line-explain {
         text-align: center;
         .screenshot-gp {
@@ -271,7 +271,8 @@ body {
         }
     }
     //最新消息清單
-    .content-information {
+    .content-news {
+        @include papers();
         .container {
             .searchbar {
                 @include searchbar();
@@ -279,8 +280,43 @@ body {
             .list-gp {
                 @include news-list(100%, 15%);
             }
-            .pagination{
+            .pagination {
                 @include pagination();
+            }
+        }
+    }
+    //最新消息子頁
+    .content-news-info {
+        @include papers();
+        .container {
+            .info-top {
+                margin-top: $margin-S;
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    font-size: $size-p;
+                    color: $dark-blue;
+                    li {
+                        display: inline;
+                        margin-right: $margin-S;
+                    }
+                    .far {
+                        color: $dark-blue;
+                        font-size: $size-p;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .info-body {
+                img {
+                    width: 100%;
+                    object-position: center;
+                    margin-top: $margin-S;
+                }
+                p {
+                    margin: $margin-S 0;
+                }
             }
         }
     }

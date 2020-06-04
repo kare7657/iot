@@ -411,25 +411,59 @@
                 margin: 0;
             }
             a:hover h4 {
-                color: $title-W;
+                color: $blue;
             }
         }
         .contact {
             margin: $margin-S 0;
-            h4,
+
             p {
                 color: $title-W;
             }
             h4 {
-                margin: $margin-XS 0 0 0;
+                margin: 15px 0 0 0;
                 color: $light-sky;
+            }
+            .fas {
+                color: $light-sky;
+                margin-right: 5px;
+            }
+            a:hover {
+                h4 {
+                    color: $blue;
+                }
+                .fas {
+                    color: $blue;
+                }
             }
         }
         .notice {
             display: flex;
             justify-content: space-between;
-            @include pad() {
+            align-items: flex-end;
+            @include pad(){
+                justify-content: unset;
                 flex-wrap: wrap;
+            }
+            .text-gp {
+                width: 70%;
+                flex-wrap: wrap;
+                @include pad(){
+                    width: 100%;
+                }
+            }
+            .time {
+                width: 30%;
+                @include pad(){
+                    width: 100%;
+                    margin-top: $margin-S;
+                }
+                p{
+                    text-align: right;
+                    @include mobile-L(){
+                        text-align: left;
+                    }
+                }
             }
             h4,
             p {
