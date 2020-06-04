@@ -122,38 +122,7 @@ body {
                 flex-wrap: wrap;
             }
             .new {
-                width: 60%;
-                margin-right: $margin-M;
-                @include pad() {
-                    width: 100%;
-                    margin-right: unset;
-                    margin-bottom: $margin-S;
-                }
-                .list {
-                    display: flex;
-                    padding: $padding-XXS 0;
-                    @include mobile-L() {
-                        flex-wrap: wrap;
-                        flex-direction: column;
-                        padding: $padding-XXS $padding-XXS * 2;
-                    }
-                    span {
-                        width: 25%;
-                        text-align: center;
-                        color: $dark-blue;
-                        font-size: $size-p;
-                        line-height: $size-p * 2;
-                    }
-                }
-                .blue {
-                    background-color: $table-blue;
-                }
-                .white {
-                    background-color: $title-W;
-                }
-                h4 {
-                    text-align: right;
-                }
+                @include news-list(60%, 25%);
             }
             .data-statistics {
                 width: 40%;
@@ -298,6 +267,20 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+    //最新消息清單
+    .content-information {
+        .container {
+            .searchbar {
+                @include searchbar();
+            }
+            .list-gp {
+                @include news-list(100%, 15%);
+            }
+            .pagination{
+                @include pagination();
             }
         }
     }

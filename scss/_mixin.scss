@@ -14,6 +14,11 @@
         @content;
     }
 }
+@mixin mobile-S {
+    @media (max-width: $mobile-S) {
+        @content;
+    }
+}
 @mixin mobile-XS {
     @media (max-width: $mobile-XS) {
         @content;
@@ -453,6 +458,41 @@
     }
 }
 
+@mixin news-list($list-width, $span-width) {
+    width: $list-width;
+    margin-right: $margin-M;
+    @include pad() {
+        width: 100%;
+        margin-right: unset;
+        margin-bottom: $margin-S;
+    }
+    .list {
+        display: flex;
+        padding: $padding-XXS 0;
+        @include mobile-L() {
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: $padding-XXS $padding-XXS * 2;
+        }
+        span {
+            width: $span-width;
+            text-align: center;
+            color: $dark-blue;
+            font-size: $size-p;
+            line-height: $size-p * 2;
+        }
+    }
+    .blue {
+        background-color: $table-blue;
+    }
+    .white {
+        background-color: $title-W;
+    }
+    h4 {
+        text-align: right;
+    }
+}
+
 @mixin papers() {
     padding-top: 120px;
     @include pad() {
@@ -475,5 +515,82 @@
     span {
         color: $dark-blue;
         font-weight: bold;
+    }
+}
+
+@mixin searchbar() {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: $margin-S;
+    @include mobile-L() {
+        justify-content: flex-start;
+    }
+    input[type="search"] {
+        width: 150px;
+        padding: 2px 8px;
+        border-radius: 5px;
+        border: solid 1px $blue;
+        background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
+        @include mobile-L() {
+            width: 90%;
+            padding: 5px 8px;
+        }
+        &:focus {
+            width: 180px;
+            transition: 0.5s;
+            outline: none;
+            box-shadow: $table-blue 0 0 0 5px;
+            @include mobile-L() {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@mixin pagination() {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $margin-S;
+    @include mobile-L() {
+        justify-content: center;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+            text-decoration: none;
+            padding: 0;
+            a {
+                display: inline;
+                padding: 5px 12px;
+                border: solid 1px $light-sky;
+                margin: -2px;
+                font-size: $size-p;
+                line-height: $size-p * 3;
+                color: $dark-blue;
+                @include mobile-S() {
+                    width: 100%;
+                    padding: 5px 24px;
+                }
+                @include mobile-XS() {
+                    width: 100%;
+                    padding: 5px 15px;
+                }
+                &:hover {
+                    background-color: $table-blue;
+                    border: solid 1px $light-sky;
+                }
+            }
+            .active {
+                background-color: $dark-blue;
+                color: $title-W;
+                border: solid 1px $dark-blue;
+            }
+            .fas {
+                font-size: $size-p;
+                color: $blue;
+            }
+        }
     }
 }

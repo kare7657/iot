@@ -1129,4 +1129,197 @@ html .content-webmap .container .list-gp .text-gp ul a,
 body .content-webmap .container .list-gp .text-gp ul a {
   color: #0d73ad;
 }
+
+html .content-information .container .searchbar,
+body .content-information .container .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .searchbar,
+  body .content-information .container .searchbar {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+html .content-information .container .searchbar input[type="search"],
+body .content-information .container .searchbar input[type="search"] {
+  width: 150px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: solid 1px #2faae5;
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .searchbar input[type="search"],
+  body .content-information .container .searchbar input[type="search"] {
+    width: 90%;
+    padding: 5px 8px;
+  }
+}
+
+html .content-information .container .searchbar input[type="search"]:focus,
+body .content-information .container .searchbar input[type="search"]:focus {
+  width: 180px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  -webkit-box-shadow: #e5f1f9 0 0 0 5px;
+          box-shadow: #e5f1f9 0 0 0 5px;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .searchbar input[type="search"]:focus,
+  body .content-information .container .searchbar input[type="search"]:focus {
+    width: 100%;
+  }
+}
+
+html .content-information .container .list-gp,
+body .content-information .container .list-gp {
+  width: 100%;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  html .content-information .container .list-gp,
+  body .content-information .container .list-gp {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-information .container .list-gp .list,
+body .content-information .container .list-gp .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .list-gp .list,
+  body .content-information .container .list-gp .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 20px;
+  }
+}
+
+html .content-information .container .list-gp .list span,
+body .content-information .container .list-gp .list span {
+  width: 15%;
+  text-align: center;
+  color: #0d73ad;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+html .content-information .container .list-gp .blue,
+body .content-information .container .list-gp .blue {
+  background-color: #e5f1f9;
+}
+
+html .content-information .container .list-gp .white,
+body .content-information .container .list-gp .white {
+  background-color: white;
+}
+
+html .content-information .container .list-gp h4,
+body .content-information .container .list-gp h4 {
+  text-align: right;
+}
+
+html .content-information .container .pagination,
+body .content-information .container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 25px;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .pagination,
+  body .content-information .container .pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+html .content-information .container .pagination ul,
+body .content-information .container .pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+html .content-information .container .pagination ul li,
+body .content-information .container .pagination ul li {
+  display: inline;
+  text-decoration: none;
+  padding: 0;
+}
+
+html .content-information .container .pagination ul li a,
+body .content-information .container .pagination ul li a {
+  display: inline;
+  padding: 5px 12px;
+  border: solid 1px #a7e5ff;
+  margin: -2px;
+  font-size: 1rem;
+  line-height: 3rem;
+  color: #0d73ad;
+}
+
+@media (max-width: 375px) {
+  html .content-information .container .pagination ul li a,
+  body .content-information .container .pagination ul li a {
+    width: 100%;
+    padding: 5px 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .content-information .container .pagination ul li a,
+  body .content-information .container .pagination ul li a {
+    width: 100%;
+    padding: 5px 15px;
+  }
+}
+
+html .content-information .container .pagination ul li a:hover,
+body .content-information .container .pagination ul li a:hover {
+  background-color: #e5f1f9;
+  border: solid 1px #a7e5ff;
+}
+
+html .content-information .container .pagination ul li .active,
+body .content-information .container .pagination ul li .active {
+  background-color: #0d73ad;
+  color: white;
+  border: solid 1px #0d73ad;
+}
+
+html .content-information .container .pagination ul li .fas,
+body .content-information .container .pagination ul li .fas {
+  font-size: 1rem;
+  color: #2faae5;
+}
 /*# sourceMappingURL=style.css.map */
