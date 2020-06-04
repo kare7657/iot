@@ -1292,7 +1292,7 @@ body .content-information .container .pagination ul li a {
   html .content-information .container .pagination ul li a,
   body .content-information .container .pagination ul li a {
     width: 100%;
-    padding: 5px 24px;
+    padding: 5px 15px;
   }
 }
 
