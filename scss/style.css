@@ -78,6 +78,10 @@
   color: #2faae5 !important;
 }
 
+* :focus {
+  outline: yellowgreen dotted 3px !important;
+}
+
 * .clearfix {
   clear: both;
 }
@@ -1015,12 +1019,27 @@ body footer .container .contact {
 html footer .container .contact p,
 body footer .container .contact p {
   color: white;
+  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
-html footer .container .contact h4,
-body footer .container .contact h4 {
-  margin: 20px 0 5px 0;
+@media (max-width: 568px) {
+  html footer .container .contact p,
+  body footer .container .contact p {
+    margin-bottom: 20px;
+  }
+}
+
+html footer .container .contact a,
+body footer .container .contact a {
   color: #a7e5ff;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+html footer .container .contact a:hover .fas,
+body footer .container .contact a:hover .fas {
+  color: #2faae5;
 }
 
 html footer .container .contact .fas,
@@ -1028,16 +1047,6 @@ body footer .container .contact .fas {
   color: #a7e5ff;
   width: 10px;
   margin-right: 12px;
-}
-
-html footer .container .contact a:hover h4,
-body footer .container .contact a:hover h4 {
-  color: #2faae5;
-}
-
-html footer .container .contact a:hover .fas,
-body footer .container .contact a:hover .fas {
-  color: #2faae5;
 }
 
 html footer .container .notice,

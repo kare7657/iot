@@ -90,6 +90,10 @@
             color: $blue !important;
         }
     }
+    //無障礙框線
+    :focus {
+        outline: yellowgreen dotted 3px !important;
+    }
     .clearfix {
         clear: both;
     }
@@ -496,26 +500,28 @@
         }
         .contact {
             margin: $margin-S 0;
-
             p {
                 color: $title-W;
+                margin-top: 3px;
+                margin-bottom: 10px;
+                @include mobile-L(){
+                    margin-bottom: 20px;
+                }
             }
-            h4 {
-                margin: 20px 0 5px 0;
+            a {
                 color: $light-sky;
+                font-size: $size-h4;
+                font-weight: bold;
+                &:hover {
+                    .fas {
+                        color: $blue;
+                    }
+                }
             }
             .fas {
                 color: $light-sky;
                 width: 10px;
                 margin-right: 12px;
-            }
-            a:hover {
-                h4 {
-                    color: $blue;
-                }
-                .fas {
-                    color: $blue;
-                }
             }
         }
         .notice {
