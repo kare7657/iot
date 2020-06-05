@@ -501,7 +501,7 @@
                 color: $title-W;
             }
             h4 {
-                margin: 15px 0 0 0;
+                margin: 20px 0 5px 0;
                 color: $light-sky;
             }
             .fas {
@@ -515,12 +515,6 @@
                 }
                 .fas {
                     color: $blue;
-                }
-            }
-            br{
-                display: none;
-                @include mobile-L(){
-                    display: block;
                 }
             }
         }
@@ -548,7 +542,7 @@
                     margin-top: $margin-S;
                     justify-content: flex-start;
                 }
-                img{
+                img {
                     height: 40px;
                 }
             }

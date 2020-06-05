@@ -1019,7 +1019,7 @@ body footer .container .contact p {
 
 html footer .container .contact h4,
 body footer .container .contact h4 {
-  margin: 15px 0 0 0;
+  margin: 20px 0 5px 0;
   color: #a7e5ff;
 }
 
@@ -1038,18 +1038,6 @@ body footer .container .contact a:hover h4 {
 html footer .container .contact a:hover .fas,
 body footer .container .contact a:hover .fas {
   color: #2faae5;
-}
-
-html footer .container .contact br,
-body footer .container .contact br {
-  display: none;
-}
-
-@media (max-width: 568px) {
-  html footer .container .contact br,
-  body footer .container .contact br {
-    display: block;
-  }
 }
 
 html footer .container .notice,
