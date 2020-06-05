@@ -109,6 +109,7 @@
         margin: 0;
         margin: auto;
     }
+    //清除預設樣式
     input {
         -webkit-appearance: none; /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
         -moz-appearance: none; /* FireFox */
@@ -454,12 +455,20 @@
     background-color: $dark-blue;
     .container {
         .text-gp {
-            display: flex;
-            @include mobile-L() {
-                flex-wrap: wrap;
-                h4 {
-                    line-height: $size-h4 * 1.5;
+            margin: 0;
+            padding: 0;
+            ul,
+            li {
+                display: inline;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                @include mobile-L() {
+                    display: block;
                 }
+            }
+            li {
+                margin-right: $margin-S;
             }
             span {
                 font-size: $size-p;
@@ -471,13 +480,18 @@
                     line-height: $size-h4 * 1.5;
                 }
             }
-            h4,
-            p {
+            a {
+                font-size: $size-h4;
                 color: $light-sky;
-                margin: 0;
+                font-weight: bold;
+                line-height: $size-h4 * 2;
+                &:hover {
+                    color: $blue;
+                }
             }
-            a:hover h4 {
-                color: $blue;
+            .fas {
+                width: 10px;
+                margin-right: 12px;
             }
         }
         .contact {
@@ -492,7 +506,8 @@
             }
             .fas {
                 color: $light-sky;
-                margin-right: 5px;
+                width: 10px;
+                margin-right: 12px;
             }
             a:hover {
                 h4 {
@@ -518,17 +533,16 @@
                     width: 100%;
                 }
             }
-            .time {
+            .pic {
+                display: flex;
+                justify-content: flex-end;
                 width: 30%;
                 @include pad() {
                     width: 100%;
                     margin-top: $margin-S;
                 }
-                p {
-                    text-align: right;
-                    @include mobile-L() {
-                        text-align: left;
-                    }
+                img{
+                    height: 40px;
                 }
             }
             h4,
