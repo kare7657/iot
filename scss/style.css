@@ -852,9 +852,9 @@ body .breadcrumb .container {
 
 html .breadcrumb .container ul,
 body .breadcrumb .container ul {
-  width: 100%;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 html .breadcrumb .container ul a,
@@ -873,7 +873,6 @@ html .breadcrumb .container ul li,
 body .breadcrumb .container ul li {
   color: #595757;
   line-height: 1.5rem;
-  list-style: none;
   display: inline;
   margin-right: 2px;
 }
