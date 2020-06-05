@@ -280,9 +280,6 @@ body {
             .list-gp {
                 @include news-list(100%, 15%);
             }
-            .pagination {
-                @include pagination();
-            }
         }
     }
     //最新消息子頁
@@ -300,11 +297,15 @@ body {
                     li {
                         display: inline;
                         margin-right: $margin-S;
+                        @include mobile-L() {
+                            display: block;
+                        }
                     }
                     .far {
+                        width: 13px;
                         color: $dark-blue;
                         font-size: $size-p;
-                        margin-right: 8px;
+                        margin-right: 10px;
                     }
                 }
             }
@@ -316,6 +317,14 @@ body {
                 }
                 p {
                     margin: $margin-S 0;
+                }
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                margin-bottom: $margin-M;
+                @include web-S() {
+                    margin-bottom: $margin-S;
                 }
             }
         }

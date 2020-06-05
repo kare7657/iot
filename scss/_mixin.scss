@@ -74,7 +74,6 @@
         margin-top: $margin-XS;
         margin-bottom: $margin-XS;
     }
-
     p {
         font-size: $size-p;
         color: $text;
@@ -110,24 +109,70 @@
         margin: 0;
         margin: auto;
     }
+    //按鈕
+    button {
+        padding: 5px $padding-XS;
+        background-color: $dark-blue;
+        border-radius: 8px;
+        border: none;
+        font-size: $size-h4;
+        color: $title-W;
+        font-family: "微軟正黑體";
+        font-weight: bold;
+        &:hover {
+            background-color: $blue;
+            transition-duration: 0.5s;
+        }
+    }
+    //頁碼
+    .pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: $margin-S;
+        @include mobile-L() {
+            justify-content: center;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
+                text-decoration: none;
+                padding: 0;
+                a {
+                    display: inline;
+                    padding: 5px 12px;
+                    border: solid 1px $light-sky;
+                    margin: -2px;
+                    font-size: $size-p;
+                    line-height: $size-p * 3;
+                    color: $dark-blue;
+                    @include mobile-S() {
+                        width: 100%;
+                        padding: 5px 15px;
+                    }
+                    @include mobile-XS() {
+                        width: 100%;
+                        padding: 5px 15px;
+                    }
+                    &:hover {
+                        background-color: $table-blue;
+                        border: solid 1px $light-sky;
+                    }
+                }
+                .active {
+                    background-color: $dark-blue;
+                    color: $title-W;
+                    border: solid 1px $dark-blue;
+                }
+                .fas {
+                    font-size: $size-p;
+                    color: $blue;
+                }
+            }
+        }
+    }
 }
-
-// @mixin btn() {
-//     padding: 0 $padding-XS;
-//     background-color: $dark-blue;
-//     border-radius: 10px;
-//     border: none;
-//     h4 {
-//         font-size: $size-h4;
-//         color: $title-W;
-//         font-family: "微軟正黑體";
-//         font-weight: bold;
-//     }
-//     &:hover {
-//         background-color: $hover;
-//         transition-duration: 0.5s;
-//     }
-// }
 
 @mixin minibar() {
     display: block;
@@ -350,36 +395,51 @@
 
 @mixin breadcrumb() {
     width: 100%;
-    height: 30px;
     background-color: #fff;
-    padding: 0;
+    padding: 8px 0;
     margin: 0;
     position: absolute;
     top: 150px;
     @include pad() {
         top: 80px;
         background-color: $table-blue;
-        height: 40px;
     }
     @include mobile-L() {
         top: 60px;
     }
     .container {
         padding: 0;
-        display: flex;
-        a {
-            &:hover .fas,
-            &:hover p {
-                color: $blue;
+        @include mobile-L() {
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+        }
+        ul {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            a {
+                color: $text;
+                &:hover .fas,
+                &:hover p {
+                    color: $blue;
+                }
             }
-        }
-        p {
-            color: $title-BK;
-        }
-        .fas {
-            font-size: $size-p;
-            line-height: $size-p * 2;
-            color: $text;
+            li {
+                color: $text;
+                line-height: $size-p * 1.5;
+                list-style: none;
+                display: inline;
+                margin-right: 2px;
+            }
+            .fas {
+                font-size: $size-p;
+                line-height: $size-p * 1.5;
+                color: $text;
+            }
+            span {
+                color: $title-BK;
+            }
         }
     }
 }
@@ -441,26 +501,26 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            @include pad(){
+            @include pad() {
                 justify-content: unset;
                 flex-wrap: wrap;
             }
             .text-gp {
                 width: 70%;
                 flex-wrap: wrap;
-                @include pad(){
+                @include pad() {
                     width: 100%;
                 }
             }
             .time {
                 width: 30%;
-                @include pad(){
+                @include pad() {
                     width: 100%;
                     margin-top: $margin-S;
                 }
-                p{
+                p {
                     text-align: right;
-                    @include mobile-L(){
+                    @include mobile-L() {
                         text-align: left;
                     }
                 }
@@ -514,6 +574,9 @@
             color: $dark-blue;
             font-size: $size-p;
             line-height: $size-p * 2;
+        }
+        a:hover p {
+            color: $blue;
         }
     }
     .blue {
@@ -576,54 +639,6 @@
             box-shadow: $table-blue 0 0 0 5px;
             @include mobile-L() {
                 width: 100%;
-            }
-        }
-    }
-}
-
-@mixin pagination() {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: $margin-S;
-    @include mobile-L() {
-        justify-content: center;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            display: inline;
-            text-decoration: none;
-            padding: 0;
-            a {
-                display: inline;
-                padding: 5px 12px;
-                border: solid 1px $light-sky;
-                margin: -2px;
-                font-size: $size-p;
-                line-height: $size-p * 3;
-                color: $dark-blue;
-                @include mobile-S() {
-                    width: 100%;
-                    padding: 5px 15px;
-                }
-                @include mobile-XS() {
-                    width: 100%;
-                    padding: 5px 15px;
-                }
-                &:hover {
-                    background-color: $table-blue;
-                    border: solid 1px $light-sky;
-                }
-            }
-            .active {
-                background-color: $dark-blue;
-                color: $title-W;
-                border: solid 1px $dark-blue;
-            }
-            .fas {
-                font-size: $size-p;
-                color: $blue;
             }
         }
     }
