@@ -1040,6 +1040,18 @@ body footer .container .contact a:hover .fas {
   color: #2faae5;
 }
 
+html footer .container .contact br,
+body footer .container .contact br {
+  display: none;
+}
+
+@media (max-width: 568px) {
+  html footer .container .contact br,
+  body footer .container .contact br {
+    display: block;
+  }
+}
+
 html footer .container .notice,
 body footer .container .notice {
   display: -webkit-box;
@@ -1094,6 +1106,9 @@ body footer .container .notice .pic {
   body footer .container .notice .pic {
     width: 100%;
     margin-top: 25px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 

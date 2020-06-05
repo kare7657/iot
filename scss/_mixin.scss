@@ -517,6 +517,12 @@
                     color: $blue;
                 }
             }
+            br{
+                display: none;
+                @include mobile-L(){
+                    display: block;
+                }
+            }
         }
         .notice {
             display: flex;
@@ -540,6 +546,7 @@
                 @include pad() {
                     width: 100%;
                     margin-top: $margin-S;
+                    justify-content: flex-start;
                 }
                 img{
                     height: 40px;
