@@ -101,6 +101,14 @@
   margin: auto;
 }
 
+* input {
+  -webkit-appearance: none;
+  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+  -moz-appearance: none;
+  /* FireFox */
+  appearance: none;
+}
+
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;
@@ -854,6 +862,7 @@ html .breadcrumb .container ul,
 body .breadcrumb .container ul {
   padding: 0;
   margin: 0;
+  display: inline;
   list-style: none;
 }
 
@@ -874,6 +883,7 @@ body .breadcrumb .container ul li {
   color: #595757;
   line-height: 1.5rem;
   display: inline;
+  list-style: none;
   margin-right: 2px;
 }
 
