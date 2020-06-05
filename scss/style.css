@@ -79,7 +79,7 @@
 }
 
 * :focus {
-  outline: yellowgreen dotted 3px !important;
+  outline: #2faae5 dotted 3px !important;
 }
 
 * .clearfix {

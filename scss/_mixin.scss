@@ -92,7 +92,7 @@
     }
     //無障礙框線
     :focus {
-        outline: yellowgreen dotted 3px !important;
+        outline: $blue dotted 3px !important;
     }
     .clearfix {
         clear: both;
@@ -504,7 +504,7 @@
                 color: $title-W;
                 margin-top: 3px;
                 margin-bottom: 10px;
-                @include mobile-L(){
+                @include mobile-L() {
                     margin-bottom: 20px;
                 }
             }
