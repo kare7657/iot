@@ -671,7 +671,7 @@
     }
 }
 
-@mixin theme-list($width, $span-width, $main-color) {
+@mixin theme-list($width, $main-color) {
     width: $width;
     @include pad() {
         width: 100%;
@@ -688,7 +688,6 @@
             padding: $padding-XXS $padding-XXS * 2;
         }
         span {
-            width: $span-width;
             text-align: center;
             color: $title-W;
             font-size: $size-p;
@@ -726,7 +725,6 @@
         @include mobile-L() {
             width: 40%;
             display: block;
-            text-align: right;
         }
         ul,
         li {

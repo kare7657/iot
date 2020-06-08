@@ -371,9 +371,9 @@ body {
             }
             .right {
                 text-align: center;
-                @include theme-list(70%, 100%, $green);
+                @include theme-list(70%, $green);
                 @include mobile-L() {
-                    @include theme-list(100%, 100%, $green);
+                    @include theme-list(100%, $green);
                 }
             }
             .pagination {
