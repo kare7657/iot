@@ -248,7 +248,7 @@
                     </a>
                 </div>
                 <div class="text-gp">
-                    <a href="">
+                    <a href="#flood">
                         <img src="img/icon-flood.svg" alt="">
                         <h3>淹水</h3>
                     </a>
@@ -303,7 +303,7 @@
             <!-- 浮動視窗-河川 -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2 class="modal-title" id="exampleModalLabel">河川</h2>
@@ -375,6 +375,129 @@
         </div>
     </section>
 
+    <!-- 資料主題-淹水 -->
+    <section class="content-flood">
+        <div class="container">
+            <div class="right" id="flood">
+                <h1>淹水</h1>
+                <div class="list title">
+                    <div class="left-gp">
+                        <span>資料名稱</span>
+                    </div>
+                    <div class="right-gp">
+                        <span>資料格式</span>
+                    </div>
+                </div>
+                <div class="list white">
+                    <a href="" class="left-gp" data-toggle="modal" data-target="#exampleModal2">
+                        <p>行政區</p>
+                    </a>
+                    <div class="right-gp">
+                        <ul>
+                            <li>JSON</li>
+                            <li>XML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list main">
+                    <a href="" class="left-gp">
+                        <p>都市淹水感知器</p>
+                    </a>
+                    <div class="right-gp">
+                        <ul>
+                            <li>JSON</li>
+                            <li>XML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href=""><i class="fas fa-angle-double-left"></i></a></li>
+                        <li><a href=""><i class="fas fa-angle-left"></i></a></li>
+                        <li><a href="" class="active">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i></a></li>
+                        <li><a href=""><i class="fas fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 浮動視窗-淹水 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModal2Label">淹水</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>檔案下載</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <a href="">
+                                        <i class="fas fa-user"></i>
+                                        登入會員
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>資料描述</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <p>讀取河川水位資訊</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>提供機關</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <p>經濟部水利署</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>更新頻率</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <p>不定期</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>授權方式</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <p>政府資料開放授權條款-第1版</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>授權網址</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <a href="">
+                                        https://iapi.wra.gov.tw/v3/api/swagger/ui/index
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p><i class="far fa-eye"></i>瀏覽次數：630</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="footer">
         <div class="container">
@@ -438,6 +561,7 @@
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
+
     </script>
 
 </body>

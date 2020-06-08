@@ -756,8 +756,7 @@
 @mixin modal($width, $main-color) {
     .modal-dialog {
         max-width: 650px;
-        top: 20%;
-        left: 0px;
+        transition: unset;
         .modal-content {
             border-radius: 15px;
             .modal-header {

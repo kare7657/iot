@@ -380,8 +380,62 @@ body {
                 margin-top: $margin-M;
             }
             #exampleModal {
-                padding: 0 !important;
                 @include modal(80%, $green);
+            }
+        }
+    }
+    //資料主題-淹水
+    .content-flood {
+        .container {
+            padding-top: 220px;
+            display: flex;
+            justify-content: space-between;
+            @include mobile-L() {
+                flex-wrap: wrap;
+                padding-top: 130px;
+            }
+            .left {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                @include pad() {
+                    img {
+                        width: 70%;
+                    }
+                }
+                @include mobile-L() {
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    img {
+                        width: 60%;
+                    }
+                }
+                .text-gp {
+                    @include mobile-L() {
+                        width: 45%;
+                        margin: unset;
+                    }
+                    h3 {
+                        color: $title-BK;
+                    }
+                }
+            }
+            .right {
+                text-align: center;
+                @include theme-list(70%, $blue);
+                @include mobile-L() {
+                    @include theme-list(100%, $blue);
+                }
+            }
+            .pagination {
+                margin-top: $margin-M;
+            }
+            #exampleModa2 {
+                @include modal(80%, $blue);
             }
         }
     }

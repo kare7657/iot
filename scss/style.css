@@ -1957,16 +1957,11 @@ body .content-theme .container .pagination {
   margin-top: 50px;
 }
 
-html .content-theme .container #exampleModal,
-body .content-theme .container #exampleModal {
-  padding: 0 !important;
-}
-
 html .content-theme .container #exampleModal .modal-dialog,
 body .content-theme .container #exampleModal .modal-dialog {
   max-width: 650px;
-  top: 20%;
-  left: 0px;
+  -webkit-transition: unset;
+  transition: unset;
 }
 
 html .content-theme .container #exampleModal .modal-dialog .modal-content,
@@ -2087,6 +2082,499 @@ body .content-theme .container #exampleModal .modal-dialog .modal-content .modal
 
 html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p i,
 body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p i {
+  margin-right: 5px;
+}
+
+html .content-flood .container,
+body .content-flood .container {
+  padding-top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container,
+  body .content-flood .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 130px;
+  }
+}
+
+html .content-flood .container .left,
+body .content-flood .container .left {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  html .content-flood .container .left img,
+  body .content-flood .container .left img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .left,
+  body .content-flood .container .left {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  html .content-flood .container .left img,
+  body .content-flood .container .left img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .left .text-gp,
+  body .content-flood .container .left .text-gp {
+    width: 45%;
+    margin: unset;
+  }
+}
+
+html .content-flood .container .left .text-gp h3,
+body .content-flood .container .left .text-gp h3 {
+  color: black;
+}
+
+html .content-flood .container .right,
+body .content-flood .container .right {
+  text-align: center;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  html .content-flood .container .right,
+  body .content-flood .container .right {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-flood .container .right .list,
+body .content-flood .container .right .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .list,
+  body .content-flood .container .right .list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 20px;
+  }
+}
+
+html .content-flood .container .right .list span,
+body .content-flood .container .right .list span {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: center;
+}
+
+html .content-flood .container .right .list a:hover p,
+body .content-flood .container .right .list a:hover p {
+  color: #2faae5;
+}
+
+html .content-flood .container .right .title,
+body .content-flood .container .right .title {
+  background-color: #2faae5;
+  margin-top: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+html .content-flood .container .right .main,
+body .content-flood .container .right .main {
+  background-color: rgba(47, 170, 229, 0.1);
+}
+
+html .content-flood .container .right .white,
+body .content-flood .container .right .white {
+  background-color: white;
+}
+
+html .content-flood .container .right h4,
+body .content-flood .container .right h4 {
+  text-align: right;
+}
+
+html .content-flood .container .right .left-gp,
+body .content-flood .container .right .left-gp {
+  width: 80%;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .left-gp,
+  body .content-flood .container .right .left-gp {
+    width: 50%;
+  }
+}
+
+html .content-flood .container .right .right-gp,
+body .content-flood .container .right .right-gp {
+  width: 20%;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .right-gp,
+  body .content-flood .container .right .right-gp {
+    width: 40%;
+    display: block;
+  }
+}
+
+html .content-flood .container .right .right-gp ul,
+html .content-flood .container .right .right-gp li,
+body .content-flood .container .right .right-gp ul,
+body .content-flood .container .right .right-gp li {
+  display: inline;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .right-gp ul,
+  html .content-flood .container .right .right-gp li,
+  body .content-flood .container .right .right-gp ul,
+  body .content-flood .container .right .right-gp li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+html .content-flood .container .right .right-gp li,
+body .content-flood .container .right .right-gp li {
+  background-color: #2faae5;
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right,
+  body .content-flood .container .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) and (max-width: 768px) {
+  html .content-flood .container .right,
+  body .content-flood .container .right {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .list,
+  body .content-flood .container .right .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 568px) and (max-width: 568px) {
+  html .content-flood .container .right .list,
+  body .content-flood .container .right .list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .list span,
+  body .content-flood .container .right .list span {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+  }
+  html .content-flood .container .right .list a:hover p,
+  body .content-flood .container .right .list a:hover p {
+    color: #2faae5;
+  }
+  html .content-flood .container .right .title,
+  body .content-flood .container .right .title {
+    background-color: #2faae5;
+    margin-top: 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  html .content-flood .container .right .main,
+  body .content-flood .container .right .main {
+    background-color: rgba(47, 170, 229, 0.1);
+  }
+  html .content-flood .container .right .white,
+  body .content-flood .container .right .white {
+    background-color: white;
+  }
+  html .content-flood .container .right h4,
+  body .content-flood .container .right h4 {
+    text-align: right;
+  }
+  html .content-flood .container .right .left-gp,
+  body .content-flood .container .right .left-gp {
+    width: 80%;
+  }
+}
+
+@media (max-width: 568px) and (max-width: 568px) {
+  html .content-flood .container .right .left-gp,
+  body .content-flood .container .right .left-gp {
+    width: 50%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .right-gp,
+  body .content-flood .container .right .right-gp {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 568px) and (max-width: 568px) {
+  html .content-flood .container .right .right-gp,
+  body .content-flood .container .right .right-gp {
+    width: 40%;
+    display: block;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .right-gp ul,
+  html .content-flood .container .right .right-gp li,
+  body .content-flood .container .right .right-gp ul,
+  body .content-flood .container .right .right-gp li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 568px) and (max-width: 568px) {
+  html .content-flood .container .right .right-gp ul,
+  html .content-flood .container .right .right-gp li,
+  body .content-flood .container .right .right-gp ul,
+  body .content-flood .container .right .right-gp li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container .right .right-gp li,
+  body .content-flood .container .right .right-gp li {
+    background-color: #2faae5;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+  }
+}
+
+html .content-flood .container .pagination,
+body .content-flood .container .pagination {
+  margin-top: 50px;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog,
+body .content-flood .container #exampleModa2 .modal-dialog {
+  max-width: 650px;
+  -webkit-transition: unset;
+  transition: unset;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content {
+  border-radius: 15px;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header {
+  width: 100%;
+  border-bottom: unset;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header .modal-title,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header .close,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  right: 2.5%;
+  margin: -1rem -1rem -1rem 0;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body,
+  body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body {
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .left-gp,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .left-gp {
+  width: 25%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .left-gp span,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .left-gp span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp {
+  width: 70%;
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+@media (max-width: 568px) {
+  html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp,
+  body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp {
+    display: block;
+  }
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp a,
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp p,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp a,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .right-gp p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .title,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .title {
+  background-color: #2faae5;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .main,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .main {
+  background-color: rgba(47, 170, 229, 0.1);
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .white,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-body .row .white {
+  background-color: white;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer {
+  border-top: unset;
+  padding-right: 20px;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer p,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer p {
+  text-align: right;
+  color: #0d73ad;
+}
+
+html .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer p i,
+body .content-flood .container #exampleModa2 .modal-dialog .modal-content .modal-footer p i {
   margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
