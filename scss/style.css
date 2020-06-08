@@ -1956,4 +1956,137 @@ html .content-theme .container .pagination,
 body .content-theme .container .pagination {
   margin-top: 50px;
 }
+
+html .content-theme .container #exampleModal,
+body .content-theme .container #exampleModal {
+  padding: 0 !important;
+}
+
+html .content-theme .container #exampleModal .modal-dialog,
+body .content-theme .container #exampleModal .modal-dialog {
+  max-width: 650px;
+  top: 20%;
+  left: 0px;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content,
+body .content-theme .container #exampleModal .modal-dialog .modal-content {
+  border-radius: 15px;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header {
+  width: 100%;
+  border-bottom: unset;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header .modal-title,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header .close,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  right: 2.5%;
+  margin: -1rem -1rem -1rem 0;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body,
+  body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body {
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .left-gp,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .left-gp {
+  width: 25%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .left-gp span,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .left-gp span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp {
+  width: 70%;
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+@media (max-width: 568px) {
+  html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp,
+  body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp {
+    display: block;
+  }
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp a,
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp p,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp a,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .right-gp p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .title,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .title {
+  background-color: #22b573;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .main,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .main {
+  background-color: rgba(34, 181, 115, 0.1);
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .white,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-body .row .white {
+  background-color: white;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer {
+  border-top: unset;
+  padding-right: 20px;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p {
+  text-align: right;
+  color: #0d73ad;
+}
+
+html .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p i,
+body .content-theme .container #exampleModal .modal-dialog .modal-content .modal-footer p i {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=style.css.map */

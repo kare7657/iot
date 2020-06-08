@@ -379,6 +379,10 @@ body {
             .pagination {
                 margin-top: $margin-M;
             }
+            #exampleModal {
+                padding: 0 !important;
+                @include modal(80%, $green);
+            }
         }
     }
 }

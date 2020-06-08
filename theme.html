@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>一圖看懂 民生公共物聯網</title>
+    <title>資料主題</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
@@ -242,7 +242,7 @@
         <div class="container">
             <div class="left">
                 <div class="text-gp">
-                    <a href="">
+                    <a href="#theme">
                         <img src="img/icon-river.svg" alt="">
                         <h3>河川</h3>
                     </a>
@@ -254,7 +254,7 @@
                     </a>
                 </div>
             </div>
-            <div class="right">
+            <div class="right" id="theme">
                 <h1>河川</h1>
                 <div class="list title">
                     <div class="left-gp">
@@ -265,7 +265,7 @@
                     </div>
                 </div>
                 <div class="list white">
-                    <a href="" class="left-gp">
+                    <a href="" class="left-gp" data-toggle="modal" data-target="#exampleModal">
                         <p>河川</p>
                     </a>
                     <div class="right-gp">
@@ -298,6 +298,78 @@
                         <li><a href=""><i class="fas fa-angle-right"></i></a></li>
                         <li><a href=""><i class="fas fa-angle-double-right"></i></a></li>
                     </ul>
+                </div>
+            </div>
+            <!-- 浮動視窗-河川 -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel">河川</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>檔案下載</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <a href="">
+                                        <i class="fas fa-user"></i>
+                                        登入會員
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>資料描述</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <p>讀取河川水位資訊</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>提供機關</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <p>經濟部水利署</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>更新頻率</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <p>不定期</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>授權方式</span>
+                                </div>
+                                <div class="right-gp main">
+                                    <p>政府資料開放授權條款-第1版</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="left-gp title">
+                                    <span>授權網址</span>
+                                </div>
+                                <div class="right-gp white">
+                                    <a href="">
+                                        https://iapi.wra.gov.tw/v3/api/swagger/ui/index
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p><i class="far fa-eye"></i>瀏覽次數：630</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,6 +433,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- model -->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
 
 </body>
 
