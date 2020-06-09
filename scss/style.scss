@@ -4,7 +4,10 @@
 * {
     @include all();
 }
-
+body.modal-open {
+    padding-right: 0px !important;
+    overflow-y: auto;
+}
 html,
 body {
     font-size: 16px;
@@ -12,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    padding-right: 0 !important;
     // overflow-x: hidden;
     @include mobile-XS() {
         font-size: 14px;
@@ -329,7 +333,7 @@ body {
             }
         }
     }
-    //資料主題-河川
+    //資料主題
     .content-theme {
         .container {
             padding-top: 220px;
@@ -339,6 +343,7 @@ body {
                 flex-wrap: wrap;
                 padding-top: 130px;
             }
+            // 左欄按鈕
             .left {
                 width: 30%;
                 display: flex;
@@ -348,7 +353,7 @@ body {
                 flex-direction: column;
                 @include pad() {
                     img {
-                        width: 70%;
+                        width: 60%;
                     }
                 }
                 @include mobile-L() {
@@ -359,84 +364,59 @@ body {
                         width: 60%;
                     }
                 }
-                .text-gp {
+                .theme-btn {
+                    margin-bottom: $margin-M;
                     @include mobile-L() {
                         width: 45%;
-                        margin: unset;
+                        margin-bottom: $margin-S;
                     }
                     h3 {
                         color: $title-BK;
+                        margin: unset;
                     }
                 }
             }
+            // 右欄
             .right {
-                text-align: center;
-                @include theme-list(70%, $green);
+                width: 70%;
                 @include mobile-L() {
+                    width: 100%;
+                }
+                .theme-content {
+                    display: none;
+                }
+                .theme-content.show {
+                    display: block;
+                }
+                // 右欄內容-河川
+                .river {
+                    text-align: center;
                     @include theme-list(100%, $green);
+                    @include mobile-L() {
+                        @include theme-list(100%, $green);
+                    }
+                }
+                //右欄內容-淹水
+                .flood {
+                    text-align: center;
+                    @include theme-list(100%, $blue);
+                    @include mobile-L() {
+                        @include theme-list(100%, $blue);
+                    }
                 }
             }
             .pagination {
                 margin-top: $margin-M;
-            }
-            #exampleModal {
-                @include modal(80%, $green);
             }
         }
     }
-    //資料主題-淹水
-    .content-flood {
-        .container {
-            padding-top: 220px;
-            display: flex;
-            justify-content: space-between;
-            @include mobile-L() {
-                flex-wrap: wrap;
-                padding-top: 130px;
-            }
-            .left {
-                width: 30%;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-wrap: wrap;
-                flex-direction: column;
-                @include pad() {
-                    img {
-                        width: 70%;
-                    }
-                }
-                @include mobile-L() {
-                    width: 100%;
-                    flex-wrap: nowrap;
-                    flex-direction: row;
-                    img {
-                        width: 60%;
-                    }
-                }
-                .text-gp {
-                    @include mobile-L() {
-                        width: 45%;
-                        margin: unset;
-                    }
-                    h3 {
-                        color: $title-BK;
-                    }
-                }
-            }
-            .right {
-                text-align: center;
-                @include theme-list(70%, $blue);
-                @include mobile-L() {
-                    @include theme-list(100%, $blue);
-                }
-            }
-            .pagination {
-                margin-top: $margin-M;
-            }
-            #exampleModa2 {
-                @include modal(80%, $blue);
-            }
+    // 資料主題-浮動視窗
+    .theme-modal {
+        .river {
+            @include modal(80%, $green);
+        }
+        .flood {
+            @include modal(80%, $blue);
         }
     }
 }

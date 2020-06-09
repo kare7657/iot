@@ -141,6 +141,7 @@
         margin-top: $margin-S;
         @include mobile-L() {
             justify-content: center;
+            text-align: left;
         }
         ul {
             margin: 0;
@@ -182,9 +183,6 @@
             }
         }
     }
-    // .modal-open .modal{
-    //     overflow-x:auto;
-    // }
 }
 
 @mixin minibar() {
@@ -673,7 +671,7 @@
         }
     }
 }
-
+// 資料主題清單
 @mixin theme-list($width, $main-color) {
     width: $width;
     @include pad() {
@@ -752,7 +750,7 @@
     }
 }
 
-//浮動視窗
+//資料主題-浮動視窗
 @mixin modal($width, $main-color) {
     .modal-dialog {
         max-width: 650px;
@@ -766,6 +764,9 @@
                     width: 100%;
                     text-align: center;
                     padding-top: $padding-XS;
+                    @include mobile-L() {
+                        padding-top: $padding-XXS;
+                    }
                 }
                 .close {
                     position: absolute;
@@ -777,10 +778,12 @@
                 width: $width;
                 margin: auto;
                 margin-bottom: $margin-XS;
+                padding: 0;
                 @include pad() {
-                    // width: 100%;
-                    margin-right: unset;
                     margin-bottom: $margin-S;
+                }
+                @include mobile-L() {
+                    margin-bottom: unset;
                 }
                 .row {
                     display: flex;
@@ -790,9 +793,6 @@
                         width: 25%;
                         text-align: center;
                         padding: $padding-XXS 0;
-                        @include mobile-L() {
-                            // width: 50%;
-                        }
                         span {
                             color: $title-W;
                             font-size: $size-p;
@@ -805,7 +805,6 @@
                         text-align: justify;
                         padding: $padding-XXS 20px;
                         @include mobile-L() {
-                            // width: 40%;
                             display: block;
                         }
                         a,
