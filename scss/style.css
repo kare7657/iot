@@ -107,7 +107,7 @@
 
 * input {
   -webkit-appearance: none;
-  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+  /* Safari & Chrome */
   -moz-appearance: none;
   /* FireFox */
   appearance: none;
@@ -126,6 +126,25 @@
 
 * button:hover {
   background-color: #2faae5;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+* .button-outline {
+  padding: 5px 30px;
+  background-color: white;
+  -webkit-box-shadow: #0d73ad 0 0 0 1px;
+          box-shadow: #0d73ad 0 0 0 1px;
+  border: none;
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+}
+
+* .button-outline:hover {
+  background-color: #2faae5;
+  color: white;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -2559,5 +2578,133 @@ body .theme-modal .flood .modal-dialog .modal-content .modal-footer p {
 html .theme-modal .flood .modal-dialog .modal-content .modal-footer p i,
 body .theme-modal .flood .modal-dialog .modal-content .modal-footer p i {
   margin-right: 5px;
+}
+
+html .content-data,
+body .content-data {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-data,
+  body .content-data {
+    padding-top: 80px;
+  }
+}
+
+html .content-data h1,
+body .content-data h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-data h1,
+  body .content-data h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-data h3,
+body .content-data h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-data h3,
+body .content-data h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+html .content-example,
+body .content-example {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-example,
+  body .content-example {
+    padding-top: 80px;
+  }
+}
+
+html .content-example h1,
+body .content-example h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-example h1,
+  body .content-example h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-example h3,
+body .content-example h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-example .container .example-head,
+body .content-example .container .example-head {
+  margin-bottom: 50px;
+}
+
+html .content-example .container .example-head .btn,
+body .content-example .container .example-head .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .content-example .container .example-head .btn button,
+body .content-example .container .example-head .btn button {
+  margin: 0 10px;
+}
+
+html .content-example .container .example-body,
+body .content-example .container .example-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .content-example .container .example-body h4,
+body .content-example .container .example-body h4 {
+  margin-bottom: 0;
+}
+
+html .content-example .container .example-body h2,
+body .content-example .container .example-body h2 {
+  margin-bottom: 10px;
+}
+
+html .content-example .container .example-body img,
+body .content-example .container .example-body img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+html .content-example .container .example-body .example-gp,
+body .content-example .container .example-body .example-gp {
+  width: 48%;
+  padding: 60px;
+  background-color: #e5f1f9;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

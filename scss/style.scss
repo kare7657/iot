@@ -16,7 +16,6 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     padding-right: 0 !important;
-    // overflow-x: hidden;
     @include mobile-XS() {
         font-size: 14px;
     }
@@ -417,6 +416,33 @@ body {
         }
         .flood {
             @include modal(80%, $blue);
+        }
+    }
+    //資料使用統計
+    .content-data {
+        @include papers();
+        h3{
+            text-align: center;
+            margin-top: $margin-XS;
+        }
+    }
+    //示範應用
+    .content-example{
+        @include papers();
+        .container{
+            .example-head{
+                margin-bottom: $margin-M;
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        margin:0 $margin-XS ;
+                    }
+                }
+            }
+            .example-body{
+                @include example();
+            }
         }
     }
 }
