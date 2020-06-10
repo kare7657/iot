@@ -2753,10 +2753,101 @@ body .content-example .container .example-body .example-gp {
   }
 }
 
+html .content-example .container .example-body img,
+body .content-example .container .example-body img {
+  border-radius: 10px;
+}
+
 @media (max-width: 568px) {
   html .content-example .container .pagination,
   body .content-example .container .pagination {
     margin: 0;
   }
+}
+
+html .content-example .container .example-body-app,
+body .content-example .container .example-body-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .content-example .container .example-body-app h4,
+body .content-example .container .example-body-app h4 {
+  margin-bottom: 0;
+}
+
+html .content-example .container .example-body-app h2,
+body .content-example .container .example-body-app h2 {
+  margin-bottom: 10px;
+}
+
+html .content-example .container .example-body-app img,
+body .content-example .container .example-body-app img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+html .content-example .container .example-body-app .example-gp,
+body .content-example .container .example-body-app .example-gp {
+  width: 48%;
+  padding: 60px;
+  background-color: #e5f1f9;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  html .content-example .container .example-body-app .example-gp,
+  body .content-example .container .example-body-app .example-gp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example .container .example-body-app .example-gp,
+  body .content-example .container .example-body-app .example-gp {
+    padding: 30px;
+  }
+}
+
+html .content-example .container .example-body-app img,
+body .content-example .container .example-body-app img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+@media (max-width: 568px) {
+  html .content-example .container .example-body-app img,
+  body .content-example .container .example-body-app img {
+    width: 70%;
+  }
+}
+
+html .content-example .container .example-body-app .app-icon,
+body .content-example .container .example-body-app .app-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .content-example .container .example-body-app .app-icon img,
+body .content-example .container .example-body-app .app-icon img {
+  width: 35px;
+  margin: 15px;
+}
+
+html .content-example .container .example-body-app .app-icon a:hover,
+body .content-example .container .example-body-app .app-icon a:hover {
+  color: #2faae5;
 }
 /*# sourceMappingURL=style.css.map */
