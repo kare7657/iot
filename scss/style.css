@@ -2655,6 +2655,13 @@ body .content-example .container .example-head {
   margin-bottom: 50px;
 }
 
+@media (max-width: 568px) {
+  html .content-example .container .example-head,
+  body .content-example .container .example-head {
+    margin-bottom: 25px;
+  }
+}
+
 html .content-example .container .example-head .btn,
 body .content-example .container .example-head .btn {
   display: -webkit-box;
@@ -2665,9 +2672,33 @@ body .content-example .container .example-head .btn {
           justify-content: center;
 }
 
+@media (max-width: 568px) {
+  html .content-example .container .example-head .btn,
+  body .content-example .container .example-head .btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 html .content-example .container .example-head .btn button,
 body .content-example .container .example-head .btn button {
   margin: 0 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-example .container .example-head .btn button,
+  body .content-example .container .example-head .btn button {
+    margin-bottom: 10px;
+  }
+}
+
+html .content-example .container .example-head h1,
+body .content-example .container .example-head h1 {
+  text-align: center;
 }
 
 html .content-example .container .example-body,
@@ -2706,5 +2737,26 @@ body .content-example .container .example-body .example-gp {
   border-radius: 20px;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  html .content-example .container .example-body .example-gp,
+  body .content-example .container .example-body .example-gp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example .container .example-body .example-gp,
+  body .content-example .container .example-body .example-gp {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example .container .pagination,
+  body .content-example .container .pagination {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

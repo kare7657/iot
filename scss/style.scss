@@ -421,27 +421,45 @@ body {
     //資料使用統計
     .content-data {
         @include papers();
-        h3{
+        h3 {
             text-align: center;
             margin-top: $margin-XS;
         }
     }
     //示範應用
-    .content-example{
+    .content-example {
         @include papers();
-        .container{
-            .example-head{
+        .container {
+            .example-head {
                 margin-bottom: $margin-M;
-                .btn{
+                @include mobile-L() {
+                    margin-bottom: $margin-S;
+                }
+                .btn {
                     display: flex;
                     justify-content: center;
-                    button{
-                        margin:0 $margin-XS ;
+                    @include mobile-L() {
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                    }
+                    button {
+                        margin: 0 $margin-XS;
+                        @include mobile-L() {
+                            margin-bottom: $margin-XS;
+                        }
                     }
                 }
+                h1 {
+                    text-align: center;
+                }
             }
-            .example-body{
+            .example-body {
                 @include example();
+            }
+            .pagination {
+                @include mobile-L() {
+                    margin: 0;
+                }
             }
         }
     }

@@ -876,5 +876,11 @@
         border-radius: 20px;
         text-align: center;
         margin-bottom: $margin-M;
+        @include pad() {
+            width: 100%;
+        }
+        @include mobile-L() {
+            padding: $padding-XS;
+        }
     }
 }
