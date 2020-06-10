@@ -863,11 +863,17 @@
         margin-bottom: 0;
     }
     h2 {
-        margin-bottom: $margin-XS;
+        margin-bottom: 0;
     }
     img {
         width: 100%;
-        margin-bottom: $margin-S;
+        height: 250px;
+        margin: $margin-S 0;
+        border-radius: 10px;
+        @include mobile-L() {
+            height: 150px;
+            margin: $margin-XS 0;
+        }
     }
     .example-gp {
         width: 48%;
@@ -881,6 +887,38 @@
         }
         @include mobile-L() {
             padding: $padding-XS;
+        }
+    }
+    .app {
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            @include mobile-L() {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .app-icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: $padding-XS;
+            @include pad() {
+                padding-top: $padding-XXS;
+            }
+            img {
+                width: 35px;
+                height: 35px;
+                margin: 0 $margin-XS;
+                @include pad() {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            a:hover {
+                color: $blue;
+            }
         }
     }
 }

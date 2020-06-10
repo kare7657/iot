@@ -455,34 +455,10 @@ body {
             }
             .example-body {
                 @include example();
-                img {
-                    border-radius: 10px;
-                }
             }
             .pagination {
                 @include mobile-L() {
                     margin: 0;
-                }
-            }
-            .example-body-app {
-                @include example();
-                img {
-                    width: 200px;
-                    border-radius: 50%;
-                    @include mobile-L() {
-                        width: 70%;
-                    }
-                }
-                .app-icon {
-                    display: flex;
-                    justify-content: center;
-                    img {
-                        width: 35px;
-                        margin: $margin-XS * 1.5;
-                    }
-                    a:hover {
-                        color: $blue;
-                    }
                 }
             }
         }
