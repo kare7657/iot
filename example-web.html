@@ -364,28 +364,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- model -->
-    <script>
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
-    </script>
-    <script>
-        var btn_river = document.querySelector(".btn-river")
-        var btn_flood = document.querySelector(".btn-flood")
-        var river_content = document.querySelector(".river")
-        var flood_content = document.querySelector(".flood")
-
-        btn_flood.onclick = function () {
-            river_content.classList.remove("show")
-            flood_content.classList.add("show")
-        }
-        btn_river.onclick = function () {
-            flood_content.classList.remove("show")
-            river_content.classList.add("show")
-        }
-    </script>
-
 </body>
 
 </html>
