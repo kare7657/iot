@@ -480,13 +480,12 @@ body {
                 margin: auto;
                 width: 50%;
                 padding: $padding-S;
-                background-color: $table-blue;
-                border-radius: 20px;
                 @include web-S(){
                     width: 60%;
                 }
                 @include pad(){
                     width: 80%;
+                    padding: $padding-S 0;
                 }
                 @include mobile-L(){
                     width: 100%;

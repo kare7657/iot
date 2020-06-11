@@ -2886,21 +2886,10 @@ body .content-login h3 {
 html .content-login .container .form,
 body .content-login .container .form {
   background-color: #e5f1f9;
-  padding: 100px 0;
-  margin-top: 50px;
   border-radius: 20px;
   margin: auto;
   width: 50%;
   padding: 60px;
-  background-color: #e5f1f9;
-  border-radius: 20px;
-}
-
-@media (max-width: 768px) {
-  html .content-login .container .form,
-  body .content-login .container .form {
-    padding: 60px 0;
-  }
 }
 
 @media (max-width: 568px) {
@@ -2988,7 +2977,7 @@ body .content-login .container .form form .form-gp select[type="reset"] {
   font-weight: bold;
   line-height: 40px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 0;
   text-decoration: none;
   margin-top: 10px;
@@ -3012,7 +3001,7 @@ body .content-login .container .form form .form-gp select[type="button"] {
   height: 40px;
   background-color: unset;
   border: solid 1px #0d73ad;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -3042,17 +3031,6 @@ body .content-login .container .form form .form-gp textarea {
   line-height: 1.125rem;
 }
 
-html .content-login .container .form form .form-gp input:focus,
-html .content-login .container .form form .form-gp select:focus,
-html .content-login .container .form form .form-gp option:focus,
-html .content-login .container .form form .form-gp textarea:focus,
-body .content-login .container .form form .form-gp input:focus,
-body .content-login .container .form form .form-gp select:focus,
-body .content-login .container .form form .form-gp option:focus,
-body .content-login .container .form form .form-gp textarea:focus {
-  outline: 1px solid #0d73ad;
-}
-
 html .content-login .container .form form .form-gp a,
 body .content-login .container .form form .form-gp a {
   font-size: 1.125rem;
@@ -3074,6 +3052,7 @@ body .content-login .container .form form .form-gp a {
   html .content-login .container .form,
   body .content-login .container .form {
     width: 80%;
+    padding: 60px 0;
   }
 }
 
