@@ -270,6 +270,9 @@
         .navbar-L {
             width: 25%;
             height: 100%;
+            @include web-S() {
+                margin-left: $margin-S;
+            }
             img {
                 width: 300px;
             }
@@ -288,6 +291,9 @@
             display: flex;
             justify-content: flex-end;
             position: relative;
+            @include web-S() {
+                margin-right: $margin-S;
+            }
             h4 {
                 font-size: $size-h4;
                 color: $title-D;
@@ -918,6 +924,118 @@
             }
             a:hover {
                 color: $blue;
+            }
+        }
+    }
+}
+
+@mixin form() {
+    background-color: $table-blue;
+    padding: $padding-M 0;
+    margin-top: $margin-M;
+    border-radius: 20px;
+    @include pad() {
+        padding: $padding-S 0;
+    }
+    @include mobile-L() {
+        border-radius: unset;
+    }
+    form {
+        .form-gp {
+            padding: 0 $padding-S;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: $margin-S;
+            @include pad() {
+                padding: 0 $padding-S * 1.5;
+                flex-direction: column;
+            }
+            @include mobile-L() {
+                padding: 0 $padding-XS * 1.5;
+            }
+            label {
+                width: 100%;
+                padding: 0;
+                margin-right: $margin-M;
+                color: $dark-blue;
+                font-size: $size-h4;
+                font-weight: bold;
+            }
+            input,
+            select {
+                background-color: #fff;
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid $light-sky;
+                padding: 0 $padding-XXS;
+                color: $text;
+                font-size: $size-h4;
+                line-height: $size-h4;
+                &[type="submit"],
+                &[type="reset"] {
+                    width: 100%;
+                    height: 40px;
+                    background-color: $dark-blue;
+                    color: $title-W;
+                    font-size: $size-h4;
+                    font-weight: bold;
+                    line-height: 40px;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 0;
+                    text-decoration: none;
+                    margin-top: $margin-XS;
+                    &:hover {
+                        background-color: $blue;
+                    }
+                }
+                &[type="button"] {
+                    width: 100%;
+                    height: 40px;
+                    background-color: unset;
+                    border: solid 1px $dark-blue;
+                    border-radius: 10px;
+                    color: $dark-blue;
+                    font-size: $size-h4;
+                    font-weight: bold;
+                    line-height: 40px;
+                    padding: 0;
+                    text-decoration: none;
+                    margin-top: $margin-XS * 2;
+                    &:hover {
+                        background-color: $blue;
+                        color: $title-W;
+                        border: solid 1px $blue;
+                    }
+                }
+            }
+            textarea {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid $light-sky;
+                padding: 0 $padding-XXS;
+                color: $text;
+                font-size: $size-h4;
+                line-height: $size-h4;
+            }
+            input:focus,
+            select:focus,
+            option:focus,
+            textarea:focus {
+                outline: 1px solid $dark-blue;
+            }
+            a {
+                font-size: $size-h4;
+                line-height: $size-h4;
+                margin-top: $margin-XS * 2;
+                color: $dark-blue;
+                font-weight: bold;
+                text-align: center;
             }
         }
     }

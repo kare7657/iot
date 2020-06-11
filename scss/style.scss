@@ -463,4 +463,35 @@ body {
             }
         }
     }
+    //登入
+    .content-login {
+        @include papers();
+        .container {
+            @include mobile-L(){
+                width: 100%;
+                margin: 0;
+                padding-bottom: 0;
+                h1{
+                    text-align: center;
+                }
+            }
+            .form {
+                @include form();
+                margin: auto;
+                width: 50%;
+                padding: $padding-S;
+                background-color: $table-blue;
+                border-radius: 20px;
+                @include web-S(){
+                    width: 60%;
+                }
+                @include pad(){
+                    width: 80%;
+                }
+                @include mobile-L(){
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

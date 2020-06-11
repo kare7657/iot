@@ -365,6 +365,13 @@ body .navbar .pc .navbar-L {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  html .navbar .pc .navbar-L,
+  body .navbar .pc .navbar-L {
+    margin-left: 25px;
+  }
+}
+
 html .navbar .pc .navbar-L img,
 body .navbar .pc .navbar-L img {
   width: 300px;
@@ -391,6 +398,13 @@ body .navbar .pc .navbar-R {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  html .navbar .pc .navbar-R,
+  body .navbar .pc .navbar-R {
+    margin-right: 25px;
+  }
 }
 
 html .navbar .pc .navbar-R h4,
@@ -2821,6 +2835,252 @@ body .content-example .container .example-body .app .app-icon a:hover {
   html .content-example .container .pagination,
   body .content-example .container .pagination {
     margin: 0;
+  }
+}
+
+html .content-login,
+body .content-login {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-login,
+  body .content-login {
+    padding-top: 80px;
+  }
+}
+
+html .content-login h1,
+body .content-login h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-login h1,
+  body .content-login h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-login h3,
+body .content-login h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-login .container,
+  body .content-login .container {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  html .content-login .container h1,
+  body .content-login .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-login .container .form,
+body .content-login .container .form {
+  background-color: #e5f1f9;
+  padding: 100px 0;
+  margin-top: 50px;
+  border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  padding: 60px;
+  background-color: #e5f1f9;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  html .content-login .container .form,
+  body .content-login .container .form {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-login .container .form,
+  body .content-login .container .form {
+    border-radius: unset;
+  }
+}
+
+html .content-login .container .form form .form-gp,
+body .content-login .container .form form .form-gp {
+  padding: 0 60px;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  html .content-login .container .form form .form-gp,
+  body .content-login .container .form form .form-gp {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-login .container .form form .form-gp,
+  body .content-login .container .form form .form-gp {
+    padding: 0 45px;
+  }
+}
+
+html .content-login .container .form form .form-gp label,
+body .content-login .container .form form .form-gp label {
+  width: 100%;
+  padding: 0;
+  margin-right: 50px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+html .content-login .container .form form .form-gp input,
+html .content-login .container .form form .form-gp select,
+body .content-login .container .form form .form-gp input,
+body .content-login .container .form form .form-gp select {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-login .container .form form .form-gp input[type="submit"], html .content-login .container .form form .form-gp input[type="reset"],
+html .content-login .container .form form .form-gp select[type="submit"],
+html .content-login .container .form form .form-gp select[type="reset"],
+body .content-login .container .form form .form-gp input[type="submit"],
+body .content-login .container .form form .form-gp input[type="reset"],
+body .content-login .container .form form .form-gp select[type="submit"],
+body .content-login .container .form form .form-gp select[type="reset"] {
+  width: 100%;
+  height: 40px;
+  background-color: #0d73ad;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+html .content-login .container .form form .form-gp input[type="submit"]:hover, html .content-login .container .form form .form-gp input[type="reset"]:hover,
+html .content-login .container .form form .form-gp select[type="submit"]:hover,
+html .content-login .container .form form .form-gp select[type="reset"]:hover,
+body .content-login .container .form form .form-gp input[type="submit"]:hover,
+body .content-login .container .form form .form-gp input[type="reset"]:hover,
+body .content-login .container .form form .form-gp select[type="submit"]:hover,
+body .content-login .container .form form .form-gp select[type="reset"]:hover {
+  background-color: #2faae5;
+}
+
+html .content-login .container .form form .form-gp input[type="button"],
+html .content-login .container .form form .form-gp select[type="button"],
+body .content-login .container .form form .form-gp input[type="button"],
+body .content-login .container .form form .form-gp select[type="button"] {
+  width: 100%;
+  height: 40px;
+  background-color: unset;
+  border: solid 1px #0d73ad;
+  border-radius: 10px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+html .content-login .container .form form .form-gp input[type="button"]:hover,
+html .content-login .container .form form .form-gp select[type="button"]:hover,
+body .content-login .container .form form .form-gp input[type="button"]:hover,
+body .content-login .container .form form .form-gp select[type="button"]:hover {
+  background-color: #2faae5;
+  color: white;
+  border: solid 1px #2faae5;
+}
+
+html .content-login .container .form form .form-gp textarea,
+body .content-login .container .form form .form-gp textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-login .container .form form .form-gp input:focus,
+html .content-login .container .form form .form-gp select:focus,
+html .content-login .container .form form .form-gp option:focus,
+html .content-login .container .form form .form-gp textarea:focus,
+body .content-login .container .form form .form-gp input:focus,
+body .content-login .container .form form .form-gp select:focus,
+body .content-login .container .form form .form-gp option:focus,
+body .content-login .container .form form .form-gp textarea:focus {
+  outline: 1px solid #0d73ad;
+}
+
+html .content-login .container .form form .form-gp a,
+body .content-login .container .form form .form-gp a {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin-top: 20px;
+  color: #0d73ad;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  html .content-login .container .form,
+  body .content-login .container .form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-login .container .form,
+  body .content-login .container .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-login .container .form,
+  body .content-login .container .form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
