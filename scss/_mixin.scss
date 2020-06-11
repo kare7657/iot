@@ -354,7 +354,6 @@
                 color: $dark-blue;
             }
             ul {
-                display: block;
                 width: 100vw;
                 height: 100vh;
                 background-color: rgba(0, 0, 0, 0.9);
@@ -366,6 +365,7 @@
                 margin: 0;
                 padding: 40px 0 0 0;
                 text-align: center;
+                transition-duration: 0.7s;
                 .nav-item.dropdown {
                     .dropdown-menu {
                         background-color: $dark-blue;
@@ -386,21 +386,19 @@
             a {
                 color: $title-W;
             }
-            &:hover {
-                ul {
-                    display: inline-block;
-                    color: $blue;
-                    transition-duration: 0.7s;
-                    top: 60px;
-                    left: 0;
-                }
+            .show {
+                display: inline-block;
+                color: $blue;
+                transition-duration: 0.7s;
+                top: 60px;
+                left: 0;
+
                 li {
-                    &:hover {
-                        color: $blue;
-                    }
+                    color: $blue;
                 }
             }
         }
+
         .title {
             display: flex;
             justify-content: center;

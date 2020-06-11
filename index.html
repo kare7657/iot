@@ -366,7 +366,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+        var menu = document.querySelector(".menu")
+        var navbar_nav = document.querySelector(".nav.navbar-nav")
 
+        menu.onclick = function () {
+            if (navbar_nav.classList.contains("show")) {
+                navbar_nav.classList.remove("show")
+            } else {
+                navbar_nav.classList.add("show")
+            }
+        }
+    </script>
 </body>
 
 </html>

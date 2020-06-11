@@ -492,7 +492,6 @@ body .navbar .mobile .menu .fas.fa-bars {
 
 html .navbar .mobile .menu ul,
 body .navbar .mobile .menu ul {
-  display: block;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
@@ -504,6 +503,8 @@ body .navbar .mobile .menu ul {
   margin: 0;
   padding: 40px 0 0 0;
   text-align: center;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu,
@@ -533,8 +534,8 @@ body .navbar .mobile .menu a {
   color: white;
 }
 
-html .navbar .mobile .menu:hover ul,
-body .navbar .mobile .menu:hover ul {
+html .navbar .mobile .menu .show,
+body .navbar .mobile .menu .show {
   display: inline-block;
   color: #2faae5;
   -webkit-transition-duration: 0.7s;
@@ -543,8 +544,8 @@ body .navbar .mobile .menu:hover ul {
   left: 0;
 }
 
-html .navbar .mobile .menu:hover li:hover,
-body .navbar .mobile .menu:hover li:hover {
+html .navbar .mobile .menu .show li,
+body .navbar .mobile .menu .show li {
   color: #2faae5;
 }
 
