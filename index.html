@@ -127,7 +127,7 @@
         <div class="mobile">
             <div class="menu">
                 <div class="fas fa-bars">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" id="navbar-nav">
                         <li><a href="information-display.html">資料展示</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -214,7 +214,6 @@
                         <li><a href="login.html">登入</a></li>
                         <li><a href="sign-up.html">註冊</a></li>
                     </ul>
-
                 </div>
             </div>
             <div class="logo">
@@ -226,13 +225,24 @@
     </nav>
     <!-- Banner -->
     <div class="content-banner">
-        <img src="img/BN-index.jpg" alt="Banner-index" class="BN-right">
+        <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/BN-index.jpg" alt="Banner-index" class="BN-right">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
     <!-- 關於平台 -->
     <section class="content-about">
         <div class="container">
-            <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
             <div class="about">
                 <h1>歡迎使用水資源物聯網資料服務！</h1>
                 <p>水利署積極發展「水資源物聯網感測基礎雲端作業服務平臺」(Internet of Water，IoW)， 與各水資源相關機關協作建立標準化、高效能、跨載具之水資源物聯網開放資料服務，以Web
@@ -366,17 +376,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- mobile-menu -->
     <script>
         var menu = document.querySelector(".menu")
         var navbar_nav = document.querySelector(".nav.navbar-nav")
 
         menu.onclick = function () {
-            if (navbar_nav.classList.contains("show")) {
-                navbar_nav.classList.remove("show")
+            if (navbar_nav.classList.contains("active-ul")) {
+                navbar_nav.classList.remove("active-ul")
             } else {
-                navbar_nav.classList.add("show")
+                navbar_nav.classList.add("active-ul")
             }
         }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="../package/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            // loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+        });
     </script>
 </body>
 
