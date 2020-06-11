@@ -516,6 +516,7 @@ body .navbar .mobile .menu .fas.fa-bars {
 
 html .navbar .mobile .menu ul,
 body .navbar .mobile .menu ul {
+  display: inline-block;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
@@ -560,7 +561,7 @@ body .navbar .mobile .menu a {
 
 html .navbar .mobile .menu .active-ul,
 body .navbar .mobile .menu .active-ul {
-  display: block;
+  display: inline-block;
   color: #2faae5;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;

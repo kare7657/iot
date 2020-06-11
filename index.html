@@ -127,7 +127,7 @@
         <div class="mobile">
             <div class="menu">
                 <div class="fas fa-bars">
-                    <ul class="nav navbar-nav" id="navbar-nav">
+                    <ul class="nav navbar-nav">
                         <li><a href="information-display.html">資料展示</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -381,12 +381,25 @@
     <script>
         var menu = document.querySelector(".menu")
         var navbar_nav = document.querySelector(".nav.navbar-nav")
+        var nav_item = document.querySelector(".nav-item.dropdown")
 
         menu.onclick = function () {
             if (navbar_nav.classList.contains("active-ul")) {
                 navbar_nav.classList.remove("active-ul")
             } else {
                 navbar_nav.classList.add("active-ul")
+            }
+        }
+        nav_item.onclick = function () {
+            if (nav_item.classList.contains("show")) {
+                nav_item.classList.remove("show")
+            } else {
+                nav_item.classList.add("show")
+                if (navbar_nav.classList.contains("active-ul")) {
+                    navbar_nav.classList.add("active-ul")
+                } else {
+                    navbar_nav.classList.add("active-ul")
+                }
             }
         }
     </script>

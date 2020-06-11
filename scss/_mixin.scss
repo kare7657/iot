@@ -383,6 +383,7 @@
                 color: $dark-blue;
             }
             ul {
+                display: inline-block;
                 width: 100vw;
                 height: 100vh;
                 background-color: rgba(0, 0, 0, 0.9);
@@ -416,7 +417,7 @@
                 color: $title-W;
             }
             .active-ul {
-                display: block;
+                display: inline-block;
                 color: $blue;
                 transition-duration: 0.7s;
                 top: 60px;
