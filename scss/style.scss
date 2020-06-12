@@ -579,6 +579,17 @@ body {
                     a {
                         margin-left: 3px;
                     }
+                    input[type="checkbox"] {
+                        width: 20px;
+                        height: 20px;
+                        line-height: $size-h4 * 2;
+                        margin-top: 8px;
+                        border: 1px solid $light-sky;
+                    }
+                    .form-check-label {
+                        line-height: $size-h4 * 2;
+                        margin-left: $margin-XS;
+                    }
                 }
             }
             .notice {

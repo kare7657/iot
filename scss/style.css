@@ -113,16 +113,6 @@
   appearance: none;
 }
 
-@media (max-width: 768px) {
-  * input[type="checkbox"] {
-    -webkit-appearance: none;
-    /* Safari & Chrome */
-    -moz-appearance: none;
-    /* FireFox */
-    appearance: none;
-  }
-}
-
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;
@@ -3146,6 +3136,17 @@ body .content-login .container .form form .form-check select {
   line-height: 1.125rem;
 }
 
+html .content-login .container .form form .form-check input[type="checkbox"],
+html .content-login .container .form form .form-check select[type="checkbox"],
+body .content-login .container .form form .form-check input[type="checkbox"],
+body .content-login .container .form form .form-check select[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
 html .content-login .container .form form .form-check select,
 body .content-login .container .form form .form-check select {
   width: 100%;
@@ -3160,10 +3161,15 @@ body .content-login .container .form form .form-check label {
   font-size: 1rem;
 }
 
+html .content-login .container .form form .form-check .form-check-label,
+body .content-login .container .form form .form-check .form-check-label {
+  line-height: 2.25rem;
+  margin: 0 20px 0 25px;
+}
+
 html .content-login .container .form form .form-check .form-check-input,
 body .content-login .container .form form .form-check .form-check-input {
   margin-left: unset;
-  line-height: 3.375rem;
 }
 
 html .content-login .container .form form .form-check .check-input,
@@ -3487,6 +3493,17 @@ body .content-signup .container .form form .form-check select {
   line-height: 1.125rem;
 }
 
+html .content-signup .container .form form .form-check input[type="checkbox"],
+html .content-signup .container .form form .form-check select[type="checkbox"],
+body .content-signup .container .form form .form-check input[type="checkbox"],
+body .content-signup .container .form form .form-check select[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
 html .content-signup .container .form form .form-check select,
 body .content-signup .container .form form .form-check select {
   width: 100%;
@@ -3501,10 +3518,15 @@ body .content-signup .container .form form .form-check label {
   font-size: 1rem;
 }
 
+html .content-signup .container .form form .form-check .form-check-label,
+body .content-signup .container .form form .form-check .form-check-label {
+  line-height: 2.25rem;
+  margin: 0 20px 0 25px;
+}
+
 html .content-signup .container .form form .form-check .form-check-input,
 body .content-signup .container .form form .form-check .form-check-input {
   margin-left: unset;
-  line-height: 3.375rem;
 }
 
 html .content-signup .container .form form .form-check .check-input,
@@ -3647,6 +3669,21 @@ body .content-signup .container .form .form-submit .form-gp {
 html .content-signup .container .form .form-submit a,
 body .content-signup .container .form .form-submit a {
   margin-left: 3px;
+}
+
+html .content-signup .container .form .form-submit input[type="checkbox"],
+body .content-signup .container .form .form-submit input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-signup .container .form .form-submit .form-check-label,
+body .content-signup .container .form .form-submit .form-check-label {
+  line-height: 2.25rem;
+  margin-left: 10px;
 }
 
 html .content-signup .container .notice h3,

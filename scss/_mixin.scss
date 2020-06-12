@@ -119,13 +119,6 @@
         -moz-appearance: none; /* FireFox */
         appearance: none;
     }
-    input[type="checkbox"] {
-        @include pad() {
-            -webkit-appearance: none; /* Safari & Chrome */
-            -moz-appearance: none; /* FireFox */
-            appearance: none;
-        }
-    }
     //按鈕
     button {
         padding: 5px $padding-XS;
@@ -1090,9 +1083,13 @@
                 color: $text;
                 font-size: $size-h4;
                 line-height: $size-h4;
-                // &[type="checkbox"] {
-                //     height: 30px;
-                // }
+                &[type="checkbox"] {
+                    width: 20px;
+                    height: 20px;
+                    line-height: $size-h4 * 2;
+                    margin-top: 8px;
+                    border: 1px solid $light-sky;
+                }
             }
             select {
                 width: 100%;
@@ -1104,9 +1101,12 @@
                 color: $text;
                 font-size: $size-p;
             }
+            .form-check-label {
+                line-height: $size-h4 * 2;
+                margin: 0 $margin-XS * 2 0 $margin-S;
+            }
             .form-check-input {
                 margin-left: unset;
-                line-height: $size-h4 * 3;
             }
             .check-input {
                 background-color: #fff;
