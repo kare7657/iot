@@ -428,9 +428,18 @@ body {
     //資料使用統計
     .content-data {
         @include papers();
+        h1{
+            @include mobile-L() {
+                margin: $margin-S 0;
+                text-align: center;
+            }
+        }
         h3 {
             text-align: center;
             margin-top: $margin-XS;
+        }
+        img {
+            width: 100%;
         }
     }
     //示範應用
