@@ -1766,16 +1766,6 @@ body .content-theme .container .right {
   }
 }
 
-html .content-theme .container .right .theme-content,
-body .content-theme .container .right .theme-content {
-  display: none;
-}
-
-html .content-theme .container .right .theme-content.show,
-body .content-theme .container .right .theme-content.show {
-  display: block;
-}
-
 html .content-theme .container .right .river,
 body .content-theme .container .right .river {
   text-align: center;
@@ -3724,5 +3714,75 @@ body .content-signup .container .notice ul li {
     padding: 0 45px;
     margin-bottom: 50px;
   }
+}
+
+html .content-signup,
+body .content-signup {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-signup,
+  body .content-signup {
+    padding-top: 80px;
+  }
+}
+
+html .content-signup h1,
+body .content-signup h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-signup h1,
+  body .content-signup h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-signup h3,
+body .content-signup h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-signup span,
+body .content-signup span {
+  color: #0d73ad;
+  font-weight: bold;
+}
+
+html .content-signup .container .account-list-gp,
+body .content-signup .container .account-list-gp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+html .content-signup .container .account-list-gp .account-list,
+body .content-signup .container .account-list-gp .account-list {
+  width: 30%;
+  border-radius: 10px;
+}
+
+html .content-signup .container .account-list-gp .account-list .top,
+body .content-signup .container .account-list-gp .account-list .top {
+  width: 100%;
+  background-color: #0d73ad;
+  padding: 60px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+html .content-signup .container .account-list-gp .account-list .top h3,
+body .content-signup .container .account-list-gp .account-list .top h3 {
+  margin: 0;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

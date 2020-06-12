@@ -388,12 +388,12 @@ body {
                 @include mobile-L() {
                     width: 100%;
                 }
-                .theme-content {
-                    display: none;
-                }
-                .theme-content.show {
-                    display: block;
-                }
+                // .theme-content {
+                //     display: none;
+                // }
+                // .theme-content.show {
+                //     display: block;
+                // }
                 // 右欄內容-河川
                 .river {
                     text-align: center;
@@ -619,6 +619,22 @@ body {
                         margin-bottom: $margin-M;
                     }
                 }
+            }
+        }
+    }
+    //註冊-後台
+    .content-signup{
+        @include papers();
+        @include text-important();
+        .container{
+            .account-list-gp{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .account-list{
+                    @include account-list();
+                }
+
             }
         }
     }
