@@ -318,10 +318,10 @@ body {
                     max-height: 600px;
                     object-position: center;
                     margin-top: $margin-S;
-                    @include pad(){
+                    @include pad() {
                         max-height: 400px;
                     }
-                    @include mobile-L(){
+                    @include mobile-L() {
                         max-height: 300px;
                     }
                 }
@@ -474,11 +474,11 @@ body {
     .content-login {
         @include papers();
         .container {
-            @include mobile-L(){
+            @include mobile-L() {
                 width: 100%;
                 margin: 0;
                 padding-bottom: 0;
-                h1{
+                h1 {
                     text-align: center;
                 }
             }
@@ -487,15 +487,117 @@ body {
                 margin: auto;
                 width: 50%;
                 padding: $padding-S;
-                @include web-S(){
+                @include web-S() {
                     width: 60%;
                 }
-                @include pad(){
+                @include pad() {
                     width: 80%;
                     padding: $padding-S 0;
                 }
-                @include mobile-L(){
+                @include mobile-L() {
                     width: 100%;
+                }
+            }
+        }
+    }
+    //註冊
+    .content-signup {
+        @include papers();
+        @include text-important();
+        .container {
+            @include mobile-L() {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 0;
+                h1 {
+                    text-align: center;
+                }
+            }
+            .form {
+                @include form();
+                display: flex;
+                justify-content: center;
+                background-color: unset;
+                flex-wrap: wrap;
+                form {
+                    width: 50%;
+                    padding: $padding-S;
+                    background-color: $table-blue;
+                    border-right: solid 5px $title-W;
+                    @include pad {
+                        width: 100%;
+                    }
+                    .icon-gp {
+                        text-align: center;
+                        img {
+                            width: 20%;
+                            @include pad {
+                                width: 15%;
+                            }
+                            @include mobile-L() {
+                                width: 20%;
+                            }
+                        }
+                        h3 {
+                            margin: 0;
+                            margin-bottom: $margin-S;
+                        }
+                    }
+                }
+                .form-left {
+                    border-radius: 20px 0 0 20px;
+                    @include pad {
+                        border-radius: 20px 20px 0 0;
+                    }
+                }
+                .form-right {
+                    border-radius: 0 20px 20px 0;
+                    @include pad {
+                        border-radius: 0 0 20px 20px;
+                        border-top: solid 5px $title-W;
+                    }
+                }
+                .form-left,
+                .form-right {
+                    @include pad {
+                        padding: $padding-S $padding-XS;
+                    }
+                    @include mobile-L() {
+                        border-radius: unset;
+                        padding: $padding-S 0;
+                    }
+                }
+                .form-submit {
+                    background-color: unset;
+                    text-align: center;
+                    @include mobile-L() {
+                        padding: $padding-XS;
+                    }
+                    .form-gp {
+                        margin-top: $margin-XS;
+                    }
+                    a {
+                        margin-left: 3px;
+                    }
+                }
+            }
+            .notice {
+                h3 {
+                    text-align: center;
+                }
+                ul {
+                    color: $text;
+                    font-size: $size-p;
+                    line-height: $size-p * 2;
+                    text-align: justify;
+                    margin-bottom: $margin-S;
+                    li {
+                        margin-bottom: $margin-XS;
+                    }
+                    @include mobile-L() {
+                        padding: 0 $padding-XS * 1.5;
+                        margin-bottom: $margin-M;
+                    }
                 }
             }
         }
