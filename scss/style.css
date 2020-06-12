@@ -113,6 +113,16 @@
   appearance: none;
 }
 
+@media (max-width: 768px) {
+  * input[type="checkbox"] {
+    -webkit-appearance: none;
+    /* Safari & Chrome */
+    -moz-appearance: none;
+    /* FireFox */
+    appearance: none;
+  }
+}
+
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;

@@ -119,6 +119,13 @@
         -moz-appearance: none; /* FireFox */
         appearance: none;
     }
+    input[type="checkbox"] {
+        @include pad() {
+            -webkit-appearance: none; /* Safari & Chrome */
+            -moz-appearance: none; /* FireFox */
+            appearance: none;
+        }
+    }
     //按鈕
     button {
         padding: 5px $padding-XS;
