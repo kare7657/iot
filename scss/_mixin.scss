@@ -119,6 +119,26 @@
         -moz-appearance: none; /* FireFox */
         appearance: none;
     }
+    input {
+        &[type="submit"],
+        &[type="reset"] {
+            width: 100%;
+            height: 40px;
+            background-color: $dark-blue;
+            color: $title-W;
+            font-size: $size-h4;
+            font-weight: bold;
+            line-height: 40px;
+            border: none;
+            border-radius: 8px;
+            padding: 0;
+            text-decoration: none;
+            margin-top: $margin-XS;
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
     //按鈕
     button {
         padding: 5px $padding-XS;
@@ -983,6 +1003,9 @@
             @include mobile-L() {
                 padding: 0 $padding-XS * 1.5;
             }
+            .form-control {
+                background-color: rgba($color: $dark-blue, $alpha: 0.2);
+            }
             label {
                 width: 100%;
                 padding: 0;
@@ -1141,7 +1164,7 @@
     border-radius: 15px;
     border: solid 1px $main-color;
     margin-bottom: $margin-M;
-    &:hover{
+    &:hover {
         transform: translateY(-1%);
         transition: 0.5s;
     }
@@ -1154,7 +1177,7 @@
     .top {
         width: 100%;
         background-color: $main-color;
-        padding: $padding-XS*1.5 0;
+        padding: $padding-XS * 1.5 0;
         text-align: center;
         border-radius: 10px 10px 0 0;
         @include mobile-L() {
@@ -1175,7 +1198,7 @@
         padding: $padding-XS;
         text-align: center;
         height: 41%;
-        @include web-S(){
+        @include web-S() {
             height: unset;
         }
         h4 {
@@ -1208,7 +1231,7 @@
         .social {
             margin-bottom: $margin-XS;
             text-align: center;
-            p{
+            p {
                 text-align: center;
             }
             img {

@@ -113,6 +113,25 @@
   appearance: none;
 }
 
+* input[type="submit"], * input[type="reset"] {
+  width: 100%;
+  height: 40px;
+  background-color: #0d73ad;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+* input[type="submit"]:hover, * input[type="reset"]:hover {
+  background-color: #2faae5;
+}
+
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;
@@ -2988,6 +3007,11 @@ body .content-login .container .form form .form-gp {
   }
 }
 
+html .content-login .container .form form .form-gp .form-control,
+body .content-login .container .form form .form-gp .form-control {
+  background-color: rgba(13, 115, 173, 0.2);
+}
+
 html .content-login .container .form form .form-gp label,
 body .content-login .container .form form .form-gp label {
   width: 100%;
@@ -3343,6 +3367,11 @@ body .content-signup .container .form form .form-gp {
   body .content-signup .container .form form .form-gp {
     padding: 0 45px;
   }
+}
+
+html .content-signup .container .form form .form-gp .form-control,
+body .content-signup .container .form form .form-gp .form-control {
+  background-color: rgba(13, 115, 173, 0.2);
 }
 
 html .content-signup .container .form form .form-gp label,
@@ -4176,5 +4205,425 @@ body .content-signup .container .account-list-gp #wrisp .bot .social p {
 html .content-signup .container .account-list-gp #wrisp .bot .social img,
 body .content-signup .container .account-list-gp #wrisp .bot .social img {
   margin: 10px;
+}
+
+html .content-member-data,
+body .content-member-data {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-member-data,
+  body .content-member-data {
+    padding-top: 80px;
+  }
+}
+
+html .content-member-data h1,
+body .content-member-data h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-member-data h1,
+  body .content-member-data h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-member-data h3,
+body .content-member-data h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container,
+  body .content-member-data .container {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  html .content-member-data .container h1,
+  body .content-member-data .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-member-data .container .member-data,
+body .content-member-data .container .member-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .content-member-data .container .member-data .head-gp,
+body .content-member-data .container .member-data .head-gp {
+  width: 30%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html .content-member-data .container .member-data .head-gp,
+  body .content-member-data .container .member-data .head-gp {
+    width: 100%;
+  }
+}
+
+html .content-member-data .container .member-data .head-gp img,
+body .content-member-data .container .member-data .head-gp img {
+  margin-bottom: 10px;
+}
+
+html .content-member-data .container .member-data .head-gp p,
+body .content-member-data .container .member-data .head-gp p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  html .content-member-data .container .member-data .head-gp p,
+  body .content-member-data .container .member-data .head-gp p {
+    margin-bottom: 37.5px;
+  }
+}
+
+html .content-member-data .container .member-data .form,
+body .content-member-data .container .member-data .form {
+  background-color: #e5f1f9;
+  border-radius: 20px;
+  width: 60%;
+  padding: 60px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form,
+  body .content-member-data .container .member-data .form {
+    border-radius: unset;
+  }
+}
+
+html .content-member-data .container .member-data .form form .form-gp,
+body .content-member-data .container .member-data .form form .form-gp {
+  padding: 0 60px;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  html .content-member-data .container .member-data .form form .form-gp,
+  body .content-member-data .container .member-data .form form .form-gp {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-member-data .container .member-data .form form .form-gp,
+  body .content-member-data .container .member-data .form form .form-gp {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form form .form-gp,
+  body .content-member-data .container .member-data .form form .form-gp {
+    padding: 0 45px;
+  }
+}
+
+html .content-member-data .container .member-data .form form .form-gp .form-control,
+body .content-member-data .container .member-data .form form .form-gp .form-control {
+  background-color: rgba(13, 115, 173, 0.2);
+}
+
+html .content-member-data .container .member-data .form form .form-gp label,
+body .content-member-data .container .member-data .form form .form-gp label {
+  width: 100%;
+  padding: 0;
+  margin-right: 50px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input,
+html .content-member-data .container .member-data .form form .form-gp select,
+body .content-member-data .container .member-data .form form .form-gp input,
+body .content-member-data .container .member-data .form form .form-gp select {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[type="submit"], html .content-member-data .container .member-data .form form .form-gp input[type="reset"],
+html .content-member-data .container .member-data .form form .form-gp select[type="submit"],
+html .content-member-data .container .member-data .form form .form-gp select[type="reset"],
+body .content-member-data .container .member-data .form form .form-gp input[type="submit"],
+body .content-member-data .container .member-data .form form .form-gp input[type="reset"],
+body .content-member-data .container .member-data .form form .form-gp select[type="submit"],
+body .content-member-data .container .member-data .form form .form-gp select[type="reset"] {
+  width: 100%;
+  height: 40px;
+  background-color: #0d73ad;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[type="submit"]:hover, html .content-member-data .container .member-data .form form .form-gp input[type="reset"]:hover,
+html .content-member-data .container .member-data .form form .form-gp select[type="submit"]:hover,
+html .content-member-data .container .member-data .form form .form-gp select[type="reset"]:hover,
+body .content-member-data .container .member-data .form form .form-gp input[type="submit"]:hover,
+body .content-member-data .container .member-data .form form .form-gp input[type="reset"]:hover,
+body .content-member-data .container .member-data .form form .form-gp select[type="submit"]:hover,
+body .content-member-data .container .member-data .form form .form-gp select[type="reset"]:hover {
+  background-color: #2faae5;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[type="button"],
+html .content-member-data .container .member-data .form form .form-gp select[type="button"],
+body .content-member-data .container .member-data .form form .form-gp input[type="button"],
+body .content-member-data .container .member-data .form form .form-gp select[type="button"] {
+  width: 100%;
+  height: 40px;
+  background-color: unset;
+  border: solid 1px #0d73ad;
+  border-radius: 8px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[type="button"]:hover,
+html .content-member-data .container .member-data .form form .form-gp select[type="button"]:hover,
+body .content-member-data .container .member-data .form form .form-gp input[type="button"]:hover,
+body .content-member-data .container .member-data .form form .form-gp select[type="button"]:hover {
+  background-color: #2faae5;
+  color: white;
+  border: solid 1px #2faae5;
+}
+
+html .content-member-data .container .member-data .form form .form-gp textarea,
+body .content-member-data .container .member-data .form form .form-gp textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-member-data .container .member-data .form form .form-gp a,
+body .content-member-data .container .member-data .form form .form-gp a {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin-top: 20px;
+  color: #0d73ad;
+  font-weight: bold;
+  text-align: center;
+}
+
+html .content-member-data .container .member-data .form form .form-check,
+body .content-member-data .container .member-data .form form .form-check {
+  width: 100%;
+  padding: 0 60px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  html .content-member-data .container .member-data .form form .form-check,
+  body .content-member-data .container .member-data .form form .form-check {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-member-data .container .member-data .form form .form-check,
+  body .content-member-data .container .member-data .form form .form-check {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form form .form-check,
+  body .content-member-data .container .member-data .form form .form-check {
+    padding: 0 45px;
+  }
+}
+
+html .content-member-data .container .member-data .form form .form-check input,
+html .content-member-data .container .member-data .form form .form-check select,
+body .content-member-data .container .member-data .form form .form-check input,
+body .content-member-data .container .member-data .form form .form-check select {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-member-data .container .member-data .form form .form-check input[type="checkbox"],
+html .content-member-data .container .member-data .form form .form-check select[type="checkbox"],
+body .content-member-data .container .member-data .form form .form-check input[type="checkbox"],
+body .content-member-data .container .member-data .form form .form-check select[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-member-data .container .member-data .form form .form-check select,
+body .content-member-data .container .member-data .form form .form-check select {
+  width: 100%;
+  height: 40px;
+}
+
+html .content-member-data .container .member-data .form form .form-check label,
+body .content-member-data .container .member-data .form form .form-check label {
+  padding: 0;
+  margin: 0 25px;
+  color: #595757;
+  font-size: 1rem;
+}
+
+html .content-member-data .container .member-data .form form .form-check .form-check-label,
+body .content-member-data .container .member-data .form form .form-check .form-check-label {
+  line-height: 2.25rem;
+  margin: 0 20px 0 25px;
+}
+
+html .content-member-data .container .member-data .form form .form-check .form-check-input,
+body .content-member-data .container .member-data .form form .form-check .form-check-input {
+  margin-left: unset;
+}
+
+html .content-member-data .container .member-data .form form .form-check .check-input,
+body .content-member-data .container .member-data .form form .form-check .check-input {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin: 10px 0;
+}
+
+html .content-member-data .container .member-data .form form .form-check .h4,
+body .content-member-data .container .member-data .form form .form-check .h4 {
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+html .content-member-data .container .member-data .form form span,
+body .content-member-data .container .member-data .form form span {
+  color: #E8291C;
+  margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+  html .content-member-data .container .member-data .form,
+  body .content-member-data .container .member-data .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form,
+  body .content-member-data .container .member-data .form {
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+}
+
+html .content-member-data .container .member-data .form .form-right .form-gp,
+body .content-member-data .container .member-data .form .form-right .form-gp {
+  padding: 0 60px;
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form .form-right .form-gp,
+  body .content-member-data .container .member-data .form .form-right .form-gp {
+    padding: 0 45px;
+  }
+}
+
+html .content-member-data .container .member-data .form .btn,
+body .content-member-data .container .member-data .form .btn {
+  width: 100%;
+  padding: 0 60px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+html .content-member-data .container .member-data .form .btn input,
+body .content-member-data .container .member-data .form .btn input {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-member-data .container .member-data .form .btn,
+  body .content-member-data .container .member-data .form .btn {
+    padding: 0 45px;
+    margin-top: 25px;
+    margin-bottom: 37.5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -631,7 +631,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                @include pad(){
+                @include pad() {
                     flex-wrap: wrap;
                 }
                 #team {
@@ -642,6 +642,77 @@ body {
                 }
                 #wrisp {
                     @include account-list($blue);
+                }
+            }
+        }
+    }
+    //會員資料修改
+    .content-member-data {
+        @include papers();
+        .container {
+            @include mobile-L() {
+                width: 100%;
+                h1 {
+                    text-align: center;
+                }
+                padding-bottom: 0;
+            }
+            .member-data {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .head-gp {
+                    width: 30%;
+                    text-align: center;
+                    @include pad() {
+                        width: 100%;
+                    }
+                    img {
+                        margin-bottom: $margin-XS;
+                    }
+                    p {
+                        text-align: center;
+                        margin-bottom: $margin-S;
+                        @include pad() {
+                            margin-bottom: $margin-S * 1.5;
+                        }
+                    }
+                }
+                .form {
+                    @include form();
+                    width: 60%;
+                    padding: $padding-S;
+                    margin-bottom: $margin-M;
+                    @include pad {
+                        width: 100%;
+                    }
+                    @include mobile-L() {
+                        padding: $padding-XS 0;
+                        margin-bottom: 0;
+                    }
+                    .form-right {
+                        .form-gp {
+                            padding: 0 $padding-S;
+                            @include mobile-L() {
+                                padding: 0 $padding-XS * 1.5;
+                            }
+                        }
+                    }
+                    .btn {
+                        width: 100%;
+                        padding: 0 $padding-S;
+                        margin-top: $margin-XS;
+                        text-align: center;
+                        input {
+                            margin: 0;
+                            text-align: center;
+                        }
+                        @include mobile-L() {
+                            padding: 0 $padding-XS * 1.5;
+                            margin-top: $margin-S;
+                            margin-bottom: $margin-S * 1.5;
+                        }
+                    }
                 }
             }
         }
