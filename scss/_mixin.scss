@@ -1136,18 +1136,72 @@
         }
     }
 }
-@mixin account-list() {
+@mixin account-list($main-color) {
     width: 30%;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: solid 1px $main-color;
+    margin-bottom: $margin-M;
+    @include pad(){
+        width: 100%;
+    }
+    @include mobile-L(){
+        border-radius: unset;
+    }
     .top {
         width: 100%;
-        background-color: $dark-blue;
-        padding: $padding-S;
+        background-color: $main-color;
+        padding: $padding-S 0;
         text-align: center;
         border-radius: 10px 10px 0 0;
+        @include mobile-L(){
+            border-radius: unset;
+            padding: $padding-XS 0;
+        }
         h3 {
             margin: 0;
             color: $title-W;
+        }
+        img{
+            @include mobile-L(){
+                width: 25%;
+            }
+        }
+    }
+    .body {
+        padding: $padding-XS;
+        text-align: center;
+        h4{
+            color: $main-color;
+            text-align: left;
+        }
+        .btn{
+            padding: 5px 0;
+            width: 100%;
+            margin: $margin-S 0;
+            margin-top: $margin-S*2;
+            button {
+                background-color: $main-color;
+                width: 90%;
+                @include pad(){
+                    padding: 10px 0;
+                }
+                @include mobile-L(){
+                    width: 100%;
+                    padding: 8px 0;
+                }
+                &:hover {
+                    background-color:rgba($color: $dark-blue, $alpha: 0.8);
+                }
+            }
+        }
+        .social{
+            margin-bottom: $margin-XS;
+            p{
+                text-align: center;
+            }
+            img{
+                margin: $margin-XS;
+            }
         }
     }
 }

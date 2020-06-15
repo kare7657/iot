@@ -428,7 +428,7 @@ body {
     //資料使用統計
     .content-data {
         @include papers();
-        h1{
+        h1 {
             @include mobile-L() {
                 margin: $margin-S 0;
                 text-align: center;
@@ -623,18 +623,26 @@ body {
         }
     }
     //註冊-後台
-    .content-signup{
+    .content-signup {
         @include papers();
         @include text-important();
-        .container{
-            .account-list-gp{
+        .container {
+            .account-list-gp {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                .account-list{
-                    @include account-list();
+                @include pad(){
+                    flex-wrap: wrap;
                 }
-
+                #team {
+                    @include account-list($dark-blue);
+                }
+                #egov {
+                    @include account-list($green);
+                }
+                #wrisp {
+                    @include account-list($blue);
+                }
             }
         }
     }
