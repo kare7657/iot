@@ -644,6 +644,13 @@ body {
                     @include account-list($blue);
                 }
             }
+            .notice {
+                @include mobile-L() {
+                    h3{
+                        margin-top: unset;
+                    }
+                }
+            }
         }
     }
     //會員資料修改
@@ -702,7 +709,7 @@ body {
                     .btn {
                         width: 100%;
                         padding: 0 $padding-S;
-                        margin-top: $margin-XS*2;
+                        margin-top: $margin-XS * 2;
                         text-align: center;
                         @include mobile-L() {
                             padding: 0px $padding-XS * 1.5;

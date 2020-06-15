@@ -3829,6 +3829,8 @@ body .content-signup .container .account-list-gp #team:hover {
   html .content-signup .container .account-list-gp #team,
   body .content-signup .container .account-list-gp #team {
     border-radius: unset;
+    border: unset;
+    margin-bottom: unset;
   }
 }
 
@@ -3964,6 +3966,8 @@ body .content-signup .container .account-list-gp #egov:hover {
   html .content-signup .container .account-list-gp #egov,
   body .content-signup .container .account-list-gp #egov {
     border-radius: unset;
+    border: unset;
+    margin-bottom: unset;
   }
 }
 
@@ -4099,6 +4103,8 @@ body .content-signup .container .account-list-gp #wrisp:hover {
   html .content-signup .container .account-list-gp #wrisp,
   body .content-signup .container .account-list-gp #wrisp {
     border-radius: unset;
+    border: unset;
+    margin-bottom: unset;
   }
 }
 
@@ -4205,6 +4211,13 @@ body .content-signup .container .account-list-gp #wrisp .bot .social p {
 html .content-signup .container .account-list-gp #wrisp .bot .social img,
 body .content-signup .container .account-list-gp #wrisp .bot .social img {
   margin: 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .notice h3,
+  body .content-signup .container .notice h3 {
+    margin-top: unset;
+  }
 }
 
 html .content-member-data,

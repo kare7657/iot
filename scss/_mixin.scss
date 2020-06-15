@@ -1173,6 +1173,8 @@
     }
     @include mobile-L() {
         border-radius: unset;
+        border: unset;
+        margin-bottom: unset;
     }
     .top {
         width: 100%;
@@ -1209,6 +1211,9 @@
     .bot {
         padding: $padding-XS;
         padding-top: 0;
+        // @include mobile-L() {
+        //     padding-bottom: 0;
+        // }
         .btn {
             padding: 5px 0;
             width: 100%;
@@ -1222,6 +1227,7 @@
                 @include mobile-L() {
                     width: 100%;
                     padding: 8px 0;
+                    // margin-bottom: unset;
                 }
                 &:hover {
                     background-color: rgba($color: $blue, $alpha: 0.7);
