@@ -3682,25 +3682,85 @@ body .content-signup .container .form .form-right {
 
 html .content-signup .container .form .form-submit,
 body .content-signup .container .form .form-submit {
+  width: 60%;
   background-color: unset;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .form .form-submit,
+  body .content-signup .container .form .form-submit {
+    width: 100%;
+  }
 }
 
 @media (max-width: 568px) {
   html .content-signup .container .form .form-submit,
   body .content-signup .container .form .form-submit {
-    padding: 30px;
+    padding: 30px 0;
   }
 }
 
 html .content-signup .container .form .form-submit .form-gp,
 body .content-signup .container .form .form-submit .form-gp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 10px;
 }
 
-html .content-signup .container .form .form-submit a,
-body .content-signup .container .form .form-submit a {
-  margin-left: 3px;
+html .content-signup .container .form .form-submit .form-gp label,
+body .content-signup .container .form .form-submit .form-gp label {
+  width: 20%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .form .form-submit .form-gp label,
+  body .content-signup .container .form .form-submit .form-gp label {
+    width: 50%;
+  }
+}
+
+html .content-signup .container .form .form-submit .form-gp input,
+body .content-signup .container .form .form-submit .form-gp input {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .form .form-submit .form-gp input,
+  body .content-signup .container .form .form-submit .form-gp input {
+    width: 90%;
+  }
+}
+
+html .content-signup .container .form .form-submit .form-gp input[type="checkbox"],
+body .content-signup .container .form .form-submit .form-gp input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-signup .container .form .form-submit .form-gp img,
+body .content-signup .container .form .form-submit .form-gp img {
+  width: 65px;
+  height: 22px;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 25px;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 html .content-signup .container .form .form-submit input[type="checkbox"],
@@ -3710,6 +3770,24 @@ body .content-signup .container .form .form-submit input[type="checkbox"] {
   line-height: 2.25rem;
   margin-top: 8px;
   border: 1px solid #a7e5ff;
+}
+
+html .content-signup .container .form .form-submit .btn,
+body .content-signup .container .form .form-submit .btn {
+  width: 100%;
+  padding: 0 100px;
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .form .form-submit .btn,
+  body .content-signup .container .form .form-submit .btn {
+    padding: 0 30px;
+  }
+}
+
+html .content-signup .container .form .form-submit a,
+body .content-signup .container .form .form-submit a {
+  margin-left: 3px;
 }
 
 html .content-signup .container .form .form-submit .form-check-label,
@@ -4640,5 +4718,102 @@ body .content-member-data .container .member-data .form .btn input[type="submit"
   margin: 0;
   text-align: center;
   height: 44px;
+}
+
+html .content-opinion,
+body .content-opinion {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion,
+  body .content-opinion {
+    padding-top: 80px;
+  }
+}
+
+html .content-opinion h1,
+body .content-opinion h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion h1,
+  body .content-opinion h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-opinion h3,
+body .content-opinion h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-opinion .container .list-gp,
+body .content-opinion .container .list-gp {
+  width: 100%;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion .container .list-gp,
+  body .content-opinion .container .list-gp {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-opinion .container .list-gp .list,
+body .content-opinion .container .list-gp .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .list-gp .list,
+  body .content-opinion .container .list-gp .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 20px;
+  }
+}
+
+html .content-opinion .container .list-gp .list span,
+body .content-opinion .container .list-gp .list span {
+  width: 15%;
+  text-align: center;
+  color: #0d73ad;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+html .content-opinion .container .list-gp .list a:hover p,
+body .content-opinion .container .list-gp .list a:hover p {
+  color: #2faae5;
+}
+
+html .content-opinion .container .list-gp .blue,
+body .content-opinion .container .list-gp .blue {
+  background-color: #e5f1f9;
+}
+
+html .content-opinion .container .list-gp .white,
+body .content-opinion .container .list-gp .white {
+  background-color: white;
+}
+
+html .content-opinion .container .list-gp h4,
+body .content-opinion .container .list-gp h4 {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

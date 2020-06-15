@@ -577,24 +577,69 @@ body {
                     }
                 }
                 .form-submit {
+                    width: 60%;
                     background-color: unset;
                     text-align: center;
+                    @include pad() {
+                        width: 100%;
+                    }
                     @include mobile-L() {
-                        padding: $padding-XS;
+                        padding: $padding-XS 0;
                     }
                     .form-gp {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        flex-direction: row;
                         margin-top: $margin-XS;
+                        label {
+                            width: 20%;
+                            margin: $margin-XS;
+                            @include pad() {
+                                width: 50%;
+                            }
+                        }
+                        input {
+                            width: 30%;
+                            @include pad() {
+                                width: 90%;
+                            }
+                            &[type="checkbox"] {
+                                width: 20px;
+                                height: 20px;
+                                line-height: $size-h4 * 2;
+                                margin-top: 8px;
+                                border: 1px solid $light-sky;
+                            }
+                        }
+                        img {
+                            width: 65px;
+                            height: 22px;
+                            object-position: center;
+                            margin-right: $margin-S;
+                            transform: translateY(30%);
+                        }
+                    }
+                    input {
+                        &[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            line-height: $size-h4 * 2;
+                            margin-top: 8px;
+                            border: 1px solid $light-sky;
+                        }
+                    }
+                    .btn {
+                        width: 100%;
+                        padding: 0 $padding-M;
+                        @include mobile-L() {
+                            padding: 0 $padding-XS;
+                        }
                     }
                     a {
                         margin-left: 3px;
                     }
-                    input[type="checkbox"] {
-                        width: 20px;
-                        height: 20px;
-                        line-height: $size-h4 * 2;
-                        margin-top: 8px;
-                        border: 1px solid $light-sky;
-                    }
+
                     .form-check-label {
                         line-height: $size-h4 * 2;
                         margin-left: $margin-XS;
@@ -646,7 +691,7 @@ body {
             }
             .notice {
                 @include mobile-L() {
-                    h3{
+                    h3 {
                         margin-top: unset;
                     }
                 }
@@ -723,6 +768,17 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+    //意見反映
+    .content-opinion {
+        @include papers();
+        .container {
+            .notice {
+            }
+            .list-gp {
+                @include news-list(100%, 15%);
             }
         }
     }
