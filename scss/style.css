@@ -4609,22 +4609,23 @@ html .content-member-data .container .member-data .form .btn,
 body .content-member-data .container .member-data .form .btn {
   width: 100%;
   padding: 0 60px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-html .content-member-data .container .member-data .form .btn input,
-body .content-member-data .container .member-data .form .btn input {
-  margin: 0;
+  margin-top: 20px;
   text-align: center;
 }
 
 @media (max-width: 568px) {
   html .content-member-data .container .member-data .form .btn,
   body .content-member-data .container .member-data .form .btn {
-    padding: 0 45px;
+    padding: 0px 45px;
     margin-top: 25px;
     margin-bottom: 37.5px;
   }
+}
+
+html .content-member-data .container .member-data .form .btn input[type="submit"],
+body .content-member-data .container .member-data .form .btn input[type="submit"] {
+  margin: 0;
+  text-align: center;
+  height: 44px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -702,16 +702,17 @@ body {
                     .btn {
                         width: 100%;
                         padding: 0 $padding-S;
-                        margin-top: $margin-XS;
+                        margin-top: $margin-XS*2;
                         text-align: center;
-                        input {
-                            margin: 0;
-                            text-align: center;
-                        }
                         @include mobile-L() {
-                            padding: 0 $padding-XS * 1.5;
+                            padding: 0px $padding-XS * 1.5;
                             margin-top: $margin-S;
                             margin-bottom: $margin-S * 1.5;
+                        }
+                        input[type="submit"] {
+                            margin: 0;
+                            text-align: center;
+                            height: 44px;
                         }
                     }
                 }
