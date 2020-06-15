@@ -4281,16 +4281,17 @@ body .content-member-data .container .member-data .head-gp img {
   margin-bottom: 10px;
 }
 
-html .content-member-data .container .member-data .head-gp p,
-body .content-member-data .container .member-data .head-gp p {
+html .content-member-data .container .member-data .head-gp h4,
+body .content-member-data .container .member-data .head-gp h4 {
+  color: #595757;
   text-align: center;
   margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-  html .content-member-data .container .member-data .head-gp p,
-  body .content-member-data .container .member-data .head-gp p {
-    margin-bottom: 37.5px;
+  html .content-member-data .container .member-data .head-gp h4,
+  body .content-member-data .container .member-data .head-gp h4 {
+    margin-bottom: 50px;
   }
 }
 
