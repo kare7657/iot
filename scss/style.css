@@ -3829,6 +3829,14 @@ html .content-signup .container .account-list-gp #team .body,
 body .content-signup .container .account-list-gp #team .body {
   padding: 30px;
   text-align: center;
+  height: 40%;
+}
+
+@media (max-width: 1024px) {
+  html .content-signup .container .account-list-gp #team .body,
+  body .content-signup .container .account-list-gp #team .body {
+    height: unset;
+  }
 }
 
 html .content-signup .container .account-list-gp #team .body h4,
@@ -3837,52 +3845,58 @@ body .content-signup .container .account-list-gp #team .body h4 {
   text-align: left;
 }
 
-html .content-signup .container .account-list-gp #team .body .btn,
-body .content-signup .container .account-list-gp #team .body .btn {
-  padding: 5px 0;
-  width: 100%;
-  margin: 25px 0;
-  margin-top: 50px;
+html .content-signup .container .account-list-gp #team .bot,
+body .content-signup .container .account-list-gp #team .bot {
+  padding: 30px;
+  padding-top: 0;
 }
 
-html .content-signup .container .account-list-gp #team .body .btn button,
-body .content-signup .container .account-list-gp #team .body .btn button {
+html .content-signup .container .account-list-gp #team .bot .btn,
+body .content-signup .container .account-list-gp #team .bot .btn {
+  padding: 5px 0;
+  width: 100%;
+}
+
+html .content-signup .container .account-list-gp #team .bot .btn button,
+body .content-signup .container .account-list-gp #team .bot .btn button {
   background-color: #0d73ad;
   width: 90%;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .account-list-gp #team .body .btn button,
-  body .content-signup .container .account-list-gp #team .body .btn button {
+  html .content-signup .container .account-list-gp #team .bot .btn button,
+  body .content-signup .container .account-list-gp #team .bot .btn button {
     padding: 10px 0;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .account-list-gp #team .body .btn button,
-  body .content-signup .container .account-list-gp #team .body .btn button {
+  html .content-signup .container .account-list-gp #team .bot .btn button,
+  body .content-signup .container .account-list-gp #team .bot .btn button {
     width: 100%;
     padding: 8px 0;
   }
 }
 
-html .content-signup .container .account-list-gp #team .body .btn button:hover,
-body .content-signup .container .account-list-gp #team .body .btn button:hover {
+html .content-signup .container .account-list-gp #team .bot .btn button:hover,
+body .content-signup .container .account-list-gp #team .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
 }
 
-html .content-signup .container .account-list-gp #team .body .social,
-body .content-signup .container .account-list-gp #team .body .social {
+html .content-signup .container .account-list-gp #team .bot .social,
+body .content-signup .container .account-list-gp #team .bot .social {
   margin-bottom: 10px;
-}
-
-html .content-signup .container .account-list-gp #team .body .social p,
-body .content-signup .container .account-list-gp #team .body .social p {
   text-align: center;
 }
 
-html .content-signup .container .account-list-gp #team .body .social img,
-body .content-signup .container .account-list-gp #team .body .social img {
+html .content-signup .container .account-list-gp #team .bot .social p,
+body .content-signup .container .account-list-gp #team .bot .social p {
+  text-align: center;
+}
+
+html .content-signup .container .account-list-gp #team .bot .social img,
+body .content-signup .container .account-list-gp #team .bot .social img {
   margin: 10px;
 }
 
@@ -3942,6 +3956,14 @@ html .content-signup .container .account-list-gp #egov .body,
 body .content-signup .container .account-list-gp #egov .body {
   padding: 30px;
   text-align: center;
+  height: 40%;
+}
+
+@media (max-width: 1024px) {
+  html .content-signup .container .account-list-gp #egov .body,
+  body .content-signup .container .account-list-gp #egov .body {
+    height: unset;
+  }
 }
 
 html .content-signup .container .account-list-gp #egov .body h4,
@@ -3950,52 +3972,58 @@ body .content-signup .container .account-list-gp #egov .body h4 {
   text-align: left;
 }
 
-html .content-signup .container .account-list-gp #egov .body .btn,
-body .content-signup .container .account-list-gp #egov .body .btn {
-  padding: 5px 0;
-  width: 100%;
-  margin: 25px 0;
-  margin-top: 50px;
+html .content-signup .container .account-list-gp #egov .bot,
+body .content-signup .container .account-list-gp #egov .bot {
+  padding: 30px;
+  padding-top: 0;
 }
 
-html .content-signup .container .account-list-gp #egov .body .btn button,
-body .content-signup .container .account-list-gp #egov .body .btn button {
+html .content-signup .container .account-list-gp #egov .bot .btn,
+body .content-signup .container .account-list-gp #egov .bot .btn {
+  padding: 5px 0;
+  width: 100%;
+}
+
+html .content-signup .container .account-list-gp #egov .bot .btn button,
+body .content-signup .container .account-list-gp #egov .bot .btn button {
   background-color: #22b573;
   width: 90%;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .account-list-gp #egov .body .btn button,
-  body .content-signup .container .account-list-gp #egov .body .btn button {
+  html .content-signup .container .account-list-gp #egov .bot .btn button,
+  body .content-signup .container .account-list-gp #egov .bot .btn button {
     padding: 10px 0;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .account-list-gp #egov .body .btn button,
-  body .content-signup .container .account-list-gp #egov .body .btn button {
+  html .content-signup .container .account-list-gp #egov .bot .btn button,
+  body .content-signup .container .account-list-gp #egov .bot .btn button {
     width: 100%;
     padding: 8px 0;
   }
 }
 
-html .content-signup .container .account-list-gp #egov .body .btn button:hover,
-body .content-signup .container .account-list-gp #egov .body .btn button:hover {
+html .content-signup .container .account-list-gp #egov .bot .btn button:hover,
+body .content-signup .container .account-list-gp #egov .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
 }
 
-html .content-signup .container .account-list-gp #egov .body .social,
-body .content-signup .container .account-list-gp #egov .body .social {
+html .content-signup .container .account-list-gp #egov .bot .social,
+body .content-signup .container .account-list-gp #egov .bot .social {
   margin-bottom: 10px;
-}
-
-html .content-signup .container .account-list-gp #egov .body .social p,
-body .content-signup .container .account-list-gp #egov .body .social p {
   text-align: center;
 }
 
-html .content-signup .container .account-list-gp #egov .body .social img,
-body .content-signup .container .account-list-gp #egov .body .social img {
+html .content-signup .container .account-list-gp #egov .bot .social p,
+body .content-signup .container .account-list-gp #egov .bot .social p {
+  text-align: center;
+}
+
+html .content-signup .container .account-list-gp #egov .bot .social img,
+body .content-signup .container .account-list-gp #egov .bot .social img {
   margin: 10px;
 }
 
@@ -4055,6 +4083,14 @@ html .content-signup .container .account-list-gp #wrisp .body,
 body .content-signup .container .account-list-gp #wrisp .body {
   padding: 30px;
   text-align: center;
+  height: 40%;
+}
+
+@media (max-width: 1024px) {
+  html .content-signup .container .account-list-gp #wrisp .body,
+  body .content-signup .container .account-list-gp #wrisp .body {
+    height: unset;
+  }
 }
 
 html .content-signup .container .account-list-gp #wrisp .body h4,
@@ -4063,52 +4099,58 @@ body .content-signup .container .account-list-gp #wrisp .body h4 {
   text-align: left;
 }
 
-html .content-signup .container .account-list-gp #wrisp .body .btn,
-body .content-signup .container .account-list-gp #wrisp .body .btn {
-  padding: 5px 0;
-  width: 100%;
-  margin: 25px 0;
-  margin-top: 50px;
+html .content-signup .container .account-list-gp #wrisp .bot,
+body .content-signup .container .account-list-gp #wrisp .bot {
+  padding: 30px;
+  padding-top: 0;
 }
 
-html .content-signup .container .account-list-gp #wrisp .body .btn button,
-body .content-signup .container .account-list-gp #wrisp .body .btn button {
+html .content-signup .container .account-list-gp #wrisp .bot .btn,
+body .content-signup .container .account-list-gp #wrisp .bot .btn {
+  padding: 5px 0;
+  width: 100%;
+}
+
+html .content-signup .container .account-list-gp #wrisp .bot .btn button,
+body .content-signup .container .account-list-gp #wrisp .bot .btn button {
   background-color: #2faae5;
   width: 90%;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .account-list-gp #wrisp .body .btn button,
-  body .content-signup .container .account-list-gp #wrisp .body .btn button {
+  html .content-signup .container .account-list-gp #wrisp .bot .btn button,
+  body .content-signup .container .account-list-gp #wrisp .bot .btn button {
     padding: 10px 0;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .account-list-gp #wrisp .body .btn button,
-  body .content-signup .container .account-list-gp #wrisp .body .btn button {
+  html .content-signup .container .account-list-gp #wrisp .bot .btn button,
+  body .content-signup .container .account-list-gp #wrisp .bot .btn button {
     width: 100%;
     padding: 8px 0;
   }
 }
 
-html .content-signup .container .account-list-gp #wrisp .body .btn button:hover,
-body .content-signup .container .account-list-gp #wrisp .body .btn button:hover {
+html .content-signup .container .account-list-gp #wrisp .bot .btn button:hover,
+body .content-signup .container .account-list-gp #wrisp .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
 }
 
-html .content-signup .container .account-list-gp #wrisp .body .social,
-body .content-signup .container .account-list-gp #wrisp .body .social {
+html .content-signup .container .account-list-gp #wrisp .bot .social,
+body .content-signup .container .account-list-gp #wrisp .bot .social {
   margin-bottom: 10px;
-}
-
-html .content-signup .container .account-list-gp #wrisp .body .social p,
-body .content-signup .container .account-list-gp #wrisp .body .social p {
   text-align: center;
 }
 
-html .content-signup .container .account-list-gp #wrisp .body .social img,
-body .content-signup .container .account-list-gp #wrisp .body .social img {
+html .content-signup .container .account-list-gp #wrisp .bot .social p,
+body .content-signup .container .account-list-gp #wrisp .bot .social p {
+  text-align: center;
+}
+
+html .content-signup .container .account-list-gp #wrisp .bot .social img,
+body .content-signup .container .account-list-gp #wrisp .bot .social img {
   margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

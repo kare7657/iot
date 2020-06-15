@@ -1141,10 +1141,10 @@
     border-radius: 15px;
     border: solid 1px $main-color;
     margin-bottom: $margin-M;
-    @include pad(){
+    @include pad() {
         width: 100%;
     }
-    @include mobile-L(){
+    @include mobile-L() {
         border-radius: unset;
     }
     .top {
@@ -1153,7 +1153,7 @@
         padding: $padding-S 0;
         text-align: center;
         border-radius: 10px 10px 0 0;
-        @include mobile-L(){
+        @include mobile-L() {
             border-radius: unset;
             padding: $padding-XS 0;
         }
@@ -1161,8 +1161,8 @@
             margin: 0;
             color: $title-W;
         }
-        img{
-            @include mobile-L(){
+        img {
+            @include mobile-L() {
                 width: 25%;
             }
         }
@@ -1170,38 +1170,47 @@
     .body {
         padding: $padding-XS;
         text-align: center;
-        h4{
+        height: 40%;
+        @include web-S(){
+            height: unset;
+        }
+        h4 {
             color: $main-color;
             text-align: left;
         }
-        .btn{
+    }
+    .bot {
+        padding: $padding-XS;
+        padding-top: 0;
+        .btn {
             padding: 5px 0;
             width: 100%;
-            margin: $margin-S 0;
-            margin-top: $margin-S*2;
             button {
                 background-color: $main-color;
                 width: 90%;
-                @include pad(){
+                margin-bottom: $margin-S;
+                @include pad() {
                     padding: 10px 0;
                 }
-                @include mobile-L(){
+                @include mobile-L() {
                     width: 100%;
                     padding: 8px 0;
                 }
                 &:hover {
-                    background-color:rgba($color: $blue, $alpha: 0.7);
+                    background-color: rgba($color: $blue, $alpha: 0.7);
                 }
             }
         }
-        .social{
+        .social {
             margin-bottom: $margin-XS;
+            text-align: center;
             p{
                 text-align: center;
             }
-            img{
+            img {
                 margin: $margin-XS;
             }
         }
+
     }
 }
