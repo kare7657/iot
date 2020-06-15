@@ -3781,6 +3781,14 @@ body .content-signup .container .account-list-gp #team {
   margin-bottom: 50px;
 }
 
+html .content-signup .container .account-list-gp #team:hover,
+body .content-signup .container .account-list-gp #team:hover {
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 768px) {
   html .content-signup .container .account-list-gp #team,
   body .content-signup .container .account-list-gp #team {
@@ -3908,6 +3916,14 @@ body .content-signup .container .account-list-gp #egov {
   margin-bottom: 50px;
 }
 
+html .content-signup .container .account-list-gp #egov:hover,
+body .content-signup .container .account-list-gp #egov:hover {
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 768px) {
   html .content-signup .container .account-list-gp #egov,
   body .content-signup .container .account-list-gp #egov {
@@ -4033,6 +4049,14 @@ body .content-signup .container .account-list-gp #wrisp {
   border-radius: 15px;
   border: solid 1px #2faae5;
   margin-bottom: 50px;
+}
+
+html .content-signup .container .account-list-gp #wrisp:hover,
+body .content-signup .container .account-list-gp #wrisp:hover {
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 768px) {

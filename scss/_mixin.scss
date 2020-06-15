@@ -1141,6 +1141,10 @@
     border-radius: 15px;
     border: solid 1px $main-color;
     margin-bottom: $margin-M;
+    &:hover{
+        transform: translateY(-1%);
+        transition: 0.5s;
+    }
     @include pad() {
         width: 100%;
     }
@@ -1211,6 +1215,5 @@
                 margin: $margin-XS;
             }
         }
-
     }
 }
