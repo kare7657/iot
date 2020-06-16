@@ -1127,7 +1127,7 @@
             }
             .form-check-label {
                 line-height: $size-h4 * 2;
-                margin: 0 $margin-XS * 2 0 $margin-S;
+                margin: 0 $margin-XS * 2 $margin-XS $margin-S;
             }
             .form-check-input {
                 margin-left: unset;
@@ -1240,5 +1240,49 @@
                 margin: $margin-XS;
             }
         }
+    }
+}
+@mixin opinion-list() {
+    margin-bottom: $margin-S * 1.5;
+    .list {
+        display: flex;
+        padding: $padding-XXS $padding-XS;
+        padding-left: $padding-S;
+        @include mobile-L() {
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: $padding-XXS $padding-XXS * 2;
+        }
+        a {
+            color: $text;
+            font-size: $size-p;
+            line-height: $size-p * 2;
+        }
+    }
+    .head {
+        background-color: $dark-blue;
+        border-radius: 20px 20px 0 0;
+        p {
+            color: $title-W;
+            font-weight: bold;
+        }
+    }
+    .c1 {
+        width: 60%;
+    }
+    .c2 {
+        width: 30%;
+    }
+    .c3 {
+        width: 10%;
+    }
+    .blue {
+        background-color: $table-blue;
+    }
+    .white {
+        background-color: $title-W;
+    }
+    h4 {
+        text-align: right;
     }
 }

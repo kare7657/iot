@@ -813,11 +813,40 @@ body {
     //意見反映
     .content-opinion {
         @include papers();
+        @include text-important();
         .container {
             .notice {
+                border: solid 3px $light-sky;
+                border-radius: 20px;
+                padding: $padding-XS * 1.5 $padding-S;
+                margin-bottom: $margin-M;
+                .top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .left {
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .right {
+                        width: 80%;
+                    }
+                }
+                .bot {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: $margin-S;
+                    .btn {
+                        width: 100%;
+                        button {
+                            width: 20%;
+                        }
+                    }
+                }
             }
-            .list-gp {
-                @include news-list(100%, 15%);
+            .opinion-list {
+                @include opinion-list();
             }
         }
     }
