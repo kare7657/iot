@@ -3302,30 +3302,22 @@ body .content-signup span {
   }
 }
 
-html .content-signup .container .form,
-body .content-signup .container .form {
+html .content-signup .container .form-gp,
+body .content-signup .container .form-gp {
   background-color: #e5f1f9;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: unset;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form,
-  body .content-signup .container .form {
+  html .content-signup .container .form-gp,
+  body .content-signup .container .form-gp {
     border-radius: unset;
   }
 }
 
-html .content-signup .container .form form .form-gp,
-body .content-signup .container .form form .form-gp {
+html .content-signup .container .form-gp form .form-gp,
+body .content-signup .container .form-gp form .form-gp {
   padding: 0 60px;
   margin: 0;
   width: 100%;
@@ -3345,15 +3337,15 @@ body .content-signup .container .form form .form-gp {
 }
 
 @media (max-width: 1024px) {
-  html .content-signup .container .form form .form-gp,
-  body .content-signup .container .form form .form-gp {
+  html .content-signup .container .form-gp form .form-gp,
+  body .content-signup .container .form-gp form .form-gp {
     padding: 0;
   }
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form form .form-gp,
-  body .content-signup .container .form form .form-gp {
+  html .content-signup .container .form-gp form .form-gp,
+  body .content-signup .container .form-gp form .form-gp {
     padding: 0 90px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3363,19 +3355,19 @@ body .content-signup .container .form form .form-gp {
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form form .form-gp,
-  body .content-signup .container .form form .form-gp {
+  html .content-signup .container .form-gp form .form-gp,
+  body .content-signup .container .form-gp form .form-gp {
     padding: 0 45px;
   }
 }
 
-html .content-signup .container .form form .form-gp .form-control,
-body .content-signup .container .form form .form-gp .form-control {
+html .content-signup .container .form-gp form .form-gp .form-control,
+body .content-signup .container .form-gp form .form-gp .form-control {
   background-color: rgba(13, 115, 173, 0.2);
 }
 
-html .content-signup .container .form form .form-gp label,
-body .content-signup .container .form form .form-gp label {
+html .content-signup .container .form-gp form .form-gp label,
+body .content-signup .container .form-gp form .form-gp label {
   width: 100%;
   padding: 0;
   margin-right: 50px;
@@ -3384,10 +3376,10 @@ body .content-signup .container .form form .form-gp label {
   font-weight: bold;
 }
 
-html .content-signup .container .form form .form-gp input,
-html .content-signup .container .form form .form-gp select,
-body .content-signup .container .form form .form-gp input,
-body .content-signup .container .form form .form-gp select {
+html .content-signup .container .form-gp form .form-gp input,
+html .content-signup .container .form-gp form .form-gp select,
+body .content-signup .container .form-gp form .form-gp input,
+body .content-signup .container .form-gp form .form-gp select {
   background-color: #fff;
   width: 100%;
   height: 40px;
@@ -3399,13 +3391,13 @@ body .content-signup .container .form form .form-gp select {
   line-height: 1.125rem;
 }
 
-html .content-signup .container .form form .form-gp input[type="submit"], html .content-signup .container .form form .form-gp input[type="reset"],
-html .content-signup .container .form form .form-gp select[type="submit"],
-html .content-signup .container .form form .form-gp select[type="reset"],
-body .content-signup .container .form form .form-gp input[type="submit"],
-body .content-signup .container .form form .form-gp input[type="reset"],
-body .content-signup .container .form form .form-gp select[type="submit"],
-body .content-signup .container .form form .form-gp select[type="reset"] {
+html .content-signup .container .form-gp form .form-gp input[type="submit"], html .content-signup .container .form-gp form .form-gp input[type="reset"],
+html .content-signup .container .form-gp form .form-gp select[type="submit"],
+html .content-signup .container .form-gp form .form-gp select[type="reset"],
+body .content-signup .container .form-gp form .form-gp input[type="submit"],
+body .content-signup .container .form-gp form .form-gp input[type="reset"],
+body .content-signup .container .form-gp form .form-gp select[type="submit"],
+body .content-signup .container .form-gp form .form-gp select[type="reset"] {
   width: 100%;
   height: 40px;
   background-color: #0d73ad;
@@ -3420,20 +3412,20 @@ body .content-signup .container .form form .form-gp select[type="reset"] {
   margin-top: 10px;
 }
 
-html .content-signup .container .form form .form-gp input[type="submit"]:hover, html .content-signup .container .form form .form-gp input[type="reset"]:hover,
-html .content-signup .container .form form .form-gp select[type="submit"]:hover,
-html .content-signup .container .form form .form-gp select[type="reset"]:hover,
-body .content-signup .container .form form .form-gp input[type="submit"]:hover,
-body .content-signup .container .form form .form-gp input[type="reset"]:hover,
-body .content-signup .container .form form .form-gp select[type="submit"]:hover,
-body .content-signup .container .form form .form-gp select[type="reset"]:hover {
+html .content-signup .container .form-gp form .form-gp input[type="submit"]:hover, html .content-signup .container .form-gp form .form-gp input[type="reset"]:hover,
+html .content-signup .container .form-gp form .form-gp select[type="submit"]:hover,
+html .content-signup .container .form-gp form .form-gp select[type="reset"]:hover,
+body .content-signup .container .form-gp form .form-gp input[type="submit"]:hover,
+body .content-signup .container .form-gp form .form-gp input[type="reset"]:hover,
+body .content-signup .container .form-gp form .form-gp select[type="submit"]:hover,
+body .content-signup .container .form-gp form .form-gp select[type="reset"]:hover {
   background-color: #2faae5;
 }
 
-html .content-signup .container .form form .form-gp input[type="button"],
-html .content-signup .container .form form .form-gp select[type="button"],
-body .content-signup .container .form form .form-gp input[type="button"],
-body .content-signup .container .form form .form-gp select[type="button"] {
+html .content-signup .container .form-gp form .form-gp input[type="button"],
+html .content-signup .container .form-gp form .form-gp select[type="button"],
+body .content-signup .container .form-gp form .form-gp input[type="button"],
+body .content-signup .container .form-gp form .form-gp select[type="button"] {
   width: 100%;
   height: 40px;
   background-color: unset;
@@ -3448,17 +3440,17 @@ body .content-signup .container .form form .form-gp select[type="button"] {
   margin-top: 20px;
 }
 
-html .content-signup .container .form form .form-gp input[type="button"]:hover,
-html .content-signup .container .form form .form-gp select[type="button"]:hover,
-body .content-signup .container .form form .form-gp input[type="button"]:hover,
-body .content-signup .container .form form .form-gp select[type="button"]:hover {
+html .content-signup .container .form-gp form .form-gp input[type="button"]:hover,
+html .content-signup .container .form-gp form .form-gp select[type="button"]:hover,
+body .content-signup .container .form-gp form .form-gp input[type="button"]:hover,
+body .content-signup .container .form-gp form .form-gp select[type="button"]:hover {
   background-color: #2faae5;
   color: white;
   border: solid 1px #2faae5;
 }
 
-html .content-signup .container .form form .form-gp textarea,
-body .content-signup .container .form form .form-gp textarea {
+html .content-signup .container .form-gp form .form-gp textarea,
+body .content-signup .container .form-gp form .form-gp textarea {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #a7e5ff;
@@ -3468,8 +3460,8 @@ body .content-signup .container .form form .form-gp textarea {
   line-height: 1.125rem;
 }
 
-html .content-signup .container .form form .form-gp a,
-body .content-signup .container .form form .form-gp a {
+html .content-signup .container .form-gp form .form-gp a,
+body .content-signup .container .form-gp form .form-gp a {
   font-size: 1.125rem;
   line-height: 1.125rem;
   margin-top: 20px;
@@ -3478,8 +3470,8 @@ body .content-signup .container .form form .form-gp a {
   text-align: center;
 }
 
-html .content-signup .container .form form .form-check,
-body .content-signup .container .form form .form-check {
+html .content-signup .container .form-gp form .form-check,
+body .content-signup .container .form-gp form .form-check {
   width: 100%;
   padding: 0 60px;
   margin: 0;
@@ -3487,15 +3479,15 @@ body .content-signup .container .form form .form-check {
 }
 
 @media (max-width: 1024px) {
-  html .content-signup .container .form form .form-check,
-  body .content-signup .container .form form .form-check {
+  html .content-signup .container .form-gp form .form-check,
+  body .content-signup .container .form-gp form .form-check {
     padding: 0;
   }
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form form .form-check,
-  body .content-signup .container .form form .form-check {
+  html .content-signup .container .form-gp form .form-check,
+  body .content-signup .container .form-gp form .form-check {
     padding: 0 90px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3505,16 +3497,16 @@ body .content-signup .container .form form .form-check {
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form form .form-check,
-  body .content-signup .container .form form .form-check {
+  html .content-signup .container .form-gp form .form-check,
+  body .content-signup .container .form-gp form .form-check {
     padding: 0 45px;
   }
 }
 
-html .content-signup .container .form form .form-check input,
-html .content-signup .container .form form .form-check select,
-body .content-signup .container .form form .form-check input,
-body .content-signup .container .form form .form-check select {
+html .content-signup .container .form-gp form .form-check input,
+html .content-signup .container .form-gp form .form-check select,
+body .content-signup .container .form-gp form .form-check input,
+body .content-signup .container .form-gp form .form-check select {
   background-color: #fff;
   border-radius: 5px;
   text-align: left;
@@ -3525,10 +3517,10 @@ body .content-signup .container .form form .form-check select {
   line-height: 1.125rem;
 }
 
-html .content-signup .container .form form .form-check input[type="checkbox"],
-html .content-signup .container .form form .form-check select[type="checkbox"],
-body .content-signup .container .form form .form-check input[type="checkbox"],
-body .content-signup .container .form form .form-check select[type="checkbox"] {
+html .content-signup .container .form-gp form .form-check input[type="checkbox"],
+html .content-signup .container .form-gp form .form-check select[type="checkbox"],
+body .content-signup .container .form-gp form .form-check input[type="checkbox"],
+body .content-signup .container .form-gp form .form-check select[type="checkbox"] {
   width: 20px;
   height: 20px;
   line-height: 2.25rem;
@@ -3536,33 +3528,33 @@ body .content-signup .container .form form .form-check select[type="checkbox"] {
   border: 1px solid #a7e5ff;
 }
 
-html .content-signup .container .form form .form-check select,
-body .content-signup .container .form form .form-check select {
+html .content-signup .container .form-gp form .form-check select,
+body .content-signup .container .form-gp form .form-check select {
   width: 100%;
   height: 40px;
 }
 
-html .content-signup .container .form form .form-check label,
-body .content-signup .container .form form .form-check label {
+html .content-signup .container .form-gp form .form-check label,
+body .content-signup .container .form-gp form .form-check label {
   padding: 0;
   margin: 0 25px;
   color: #595757;
   font-size: 1rem;
 }
 
-html .content-signup .container .form form .form-check .form-check-label,
-body .content-signup .container .form form .form-check .form-check-label {
+html .content-signup .container .form-gp form .form-check .form-check-label,
+body .content-signup .container .form-gp form .form-check .form-check-label {
   line-height: 2.25rem;
   margin: 0 20px 0 25px;
 }
 
-html .content-signup .container .form form .form-check .form-check-input,
-body .content-signup .container .form form .form-check .form-check-input {
+html .content-signup .container .form-gp form .form-check .form-check-input,
+body .content-signup .container .form-gp form .form-check .form-check-input {
   margin-left: unset;
 }
 
-html .content-signup .container .form form .form-check .check-input,
-body .content-signup .container .form form .form-check .check-input {
+html .content-signup .container .form-gp form .form-check .check-input,
+body .content-signup .container .form-gp form .form-check .check-input {
   background-color: #fff;
   width: 100%;
   height: 40px;
@@ -3575,8 +3567,8 @@ body .content-signup .container .form form .form-check .check-input {
   margin: 10px 0;
 }
 
-html .content-signup .container .form form .form-check .h4,
-body .content-signup .container .form form .form-check .h4 {
+html .content-signup .container .form-gp form .form-check .h4,
+body .content-signup .container .form-gp form .form-check .h4 {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -3585,124 +3577,157 @@ body .content-signup .container .form form .form-check .h4 {
   margin-bottom: 10px;
 }
 
-html .content-signup .container .form form span,
-body .content-signup .container .form form span {
+html .content-signup .container .form-gp form span,
+body .content-signup .container .form-gp form span {
   color: #E8291C;
   margin-left: 3px;
 }
 
-html .content-signup .container .form form,
-body .content-signup .container .form form {
-  width: 50%;
+html .content-signup .container .form-gp form,
+body .content-signup .container .form-gp form {
+  width: 100%;
   padding: 60px;
-  background-color: #e5f1f9;
-  border-right: solid 5px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form form,
-  body .content-signup .container .form form {
-    width: 100%;
+  html .content-signup .container .form-gp form,
+  body .content-signup .container .form-gp form {
+    padding: 0;
   }
 }
 
-html .content-signup .container .form form .icon-gp,
-body .content-signup .container .form form .icon-gp {
+html .content-signup .container .form-gp form .icon-gp,
+body .content-signup .container .form-gp form .icon-gp {
   text-align: center;
 }
 
-html .content-signup .container .form form .icon-gp img,
-body .content-signup .container .form form .icon-gp img {
+html .content-signup .container .form-gp form .icon-gp img,
+body .content-signup .container .form-gp form .icon-gp img {
   width: 20%;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form form .icon-gp img,
-  body .content-signup .container .form form .icon-gp img {
+  html .content-signup .container .form-gp form .icon-gp img,
+  body .content-signup .container .form-gp form .icon-gp img {
     width: 15%;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form form .icon-gp img,
-  body .content-signup .container .form form .icon-gp img {
+  html .content-signup .container .form-gp form .icon-gp img,
+  body .content-signup .container .form-gp form .icon-gp img {
     width: 20%;
   }
 }
 
-html .content-signup .container .form form .icon-gp h3,
-body .content-signup .container .form form .icon-gp h3 {
+html .content-signup .container .form-gp form .icon-gp h3,
+body .content-signup .container .form-gp form .icon-gp h3 {
   margin: 0;
   margin-bottom: 25px;
 }
 
-html .content-signup .container .form .form-left,
-body .content-signup .container .form .form-left {
+html .content-signup .container .form-gp form .form-left,
+body .content-signup .container .form-gp form .form-left {
+  width: 50%;
   border-radius: 20px 0 0 20px;
+  background-color: #e5f1f9;
+  border-right: solid 5px white;
+  padding: 60px 0;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form .form-left,
-  body .content-signup .container .form .form-left {
+  html .content-signup .container .form-gp form .form-left,
+  body .content-signup .container .form-gp form .form-left {
     border-radius: 20px 20px 0 0;
+    border-right: unset;
   }
 }
 
-html .content-signup .container .form .form-right,
-body .content-signup .container .form .form-right {
+html .content-signup .container .form-gp form .form-right,
+body .content-signup .container .form-gp form .form-right {
+  width: 50%;
   border-radius: 0 20px 20px 0;
+  background-color: #e5f1f9;
+  padding: 60px 0;
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form .form-right,
-  body .content-signup .container .form .form-right {
+  html .content-signup .container .form-gp form .form-right,
+  body .content-signup .container .form-gp form .form-right {
     border-radius: 0 0 20px 20px;
     border-top: solid 5px white;
   }
 }
 
+@media (max-width: 1024px) {
+  html .content-signup .container .form-gp form .form-left,
+  html .content-signup .container .form-gp form .form-right,
+  body .content-signup .container .form-gp form .form-left,
+  body .content-signup .container .form-gp form .form-right {
+    padding: 60px;
+  }
+}
+
 @media (max-width: 768px) {
-  html .content-signup .container .form .form-left,
-  html .content-signup .container .form .form-right,
-  body .content-signup .container .form .form-left,
-  body .content-signup .container .form .form-right {
-    padding: 60px 30px;
+  html .content-signup .container .form-gp form .form-left,
+  html .content-signup .container .form-gp form .form-right,
+  body .content-signup .container .form-gp form .form-left,
+  body .content-signup .container .form-gp form .form-right {
+    width: 100%;
+    padding: 60px 0;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form .form-left,
-  html .content-signup .container .form .form-right,
-  body .content-signup .container .form .form-left,
-  body .content-signup .container .form .form-right {
+  html .content-signup .container .form-gp form .form-left,
+  html .content-signup .container .form-gp form .form-right,
+  body .content-signup .container .form-gp form .form-left,
+  body .content-signup .container .form-gp form .form-right {
     border-radius: unset;
     padding: 60px 0;
   }
 }
 
-html .content-signup .container .form .form-submit,
-body .content-signup .container .form .form-submit {
+html .content-signup .container .form-gp form .form-submit,
+body .content-signup .container .form-gp form .form-submit {
   width: 60%;
   background-color: unset;
   text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 1024px) {
+  html .content-signup .container .form-gp form .form-submit,
+  body .content-signup .container .form-gp form .form-submit {
+    margin: 25px 0;
+  }
 }
 
 @media (max-width: 768px) {
-  html .content-signup .container .form .form-submit,
-  body .content-signup .container .form .form-submit {
-    width: 100%;
+  html .content-signup .container .form-gp form .form-submit,
+  body .content-signup .container .form-gp form .form-submit {
+    width: 80%;
   }
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form .form-submit,
-  body .content-signup .container .form .form-submit {
-    padding: 30px 0;
+  html .content-signup .container .form-gp form .form-submit,
+  body .content-signup .container .form-gp form .form-submit {
+    width: 100%;
+    margin-bottom: 75px;
   }
 }
 
-html .content-signup .container .form .form-submit .form-gp,
-body .content-signup .container .form .form-submit .form-gp {
+html .content-signup .container .form-gp form .form-submit .form-gp,
+body .content-signup .container .form-gp form .form-submit .form-gp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3715,83 +3740,94 @@ body .content-signup .container .form .form-submit .form-gp {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 10px;
-}
-
-html .content-signup .container .form .form-submit .form-gp label,
-body .content-signup .container .form .form-submit .form-gp label {
-  width: 20%;
-  margin: 10px;
-}
-
-@media (max-width: 768px) {
-  html .content-signup .container .form .form-submit .form-gp label,
-  body .content-signup .container .form .form-submit .form-gp label {
-    width: 50%;
-  }
-}
-
-html .content-signup .container .form .form-submit .form-gp input,
-body .content-signup .container .form .form-submit .form-gp input {
-  width: 30%;
-}
-
-@media (max-width: 768px) {
-  html .content-signup .container .form .form-submit .form-gp input,
-  body .content-signup .container .form .form-submit .form-gp input {
-    width: 90%;
-  }
-}
-
-html .content-signup .container .form .form-submit .form-gp input[type="checkbox"],
-body .content-signup .container .form .form-submit .form-gp input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  line-height: 2.25rem;
-  margin-top: 8px;
-  border: 1px solid #a7e5ff;
-}
-
-html .content-signup .container .form .form-submit .form-gp img,
-body .content-signup .container .form .form-submit .form-gp img {
-  width: 65px;
-  height: 22px;
-  -o-object-position: center;
-     object-position: center;
-  margin-right: 25px;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
-}
-
-html .content-signup .container .form .form-submit input[type="checkbox"],
-body .content-signup .container .form .form-submit input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  line-height: 2.25rem;
-  margin-top: 8px;
-  border: 1px solid #a7e5ff;
-}
-
-html .content-signup .container .form .form-submit .btn,
-body .content-signup .container .form .form-submit .btn {
-  width: 100%;
+  margin: 10px 0;
   padding: 0 100px;
 }
 
 @media (max-width: 568px) {
-  html .content-signup .container .form .form-submit .btn,
-  body .content-signup .container .form .form-submit .btn {
-    padding: 0 30px;
+  html .content-signup .container .form-gp form .form-submit .form-gp,
+  body .content-signup .container .form-gp form .form-submit .form-gp {
+    padding: 0 45px;
+    margin: 25px 0;
   }
 }
 
-html .content-signup .container .form .form-submit a,
-body .content-signup .container .form .form-submit a {
+html .content-signup .container .form-gp form .form-submit .form-gp label,
+body .content-signup .container .form-gp form .form-submit .form-gp label {
+  width: 30%;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .form-gp form .form-submit .form-gp label,
+  body .content-signup .container .form-gp form .form-submit .form-gp label {
+    width: 100%;
+  }
+}
+
+html .content-signup .container .form-gp form .form-submit .form-gp input,
+body .content-signup .container .form-gp form .form-submit .form-gp input {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .form-gp form .form-submit .form-gp input,
+  body .content-signup .container .form-gp form .form-submit .form-gp input {
+    width: 50%;
+  }
+}
+
+html .content-signup .container .form-gp form .form-submit .form-gp input[type="checkbox"],
+body .content-signup .container .form-gp form .form-submit .form-gp input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-signup .container .form-gp form .form-submit .form-gp .code,
+html .content-signup .container .form-gp form .form-submit .form-gp img,
+body .content-signup .container .form-gp form .form-submit .form-gp .code,
+body .content-signup .container .form-gp form .form-submit .form-gp img {
+  width: 65px;
+  height: 22px;
+  -o-object-position: center;
+     object-position: center;
+  margin: 10px 0;
+  margin-right: 25px;
+}
+
+html .content-signup .container .form-gp form .form-submit input[type="checkbox"],
+body .content-signup .container .form-gp form .form-submit input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-signup .container .form-gp form .form-submit .btn,
+body .content-signup .container .form-gp form .form-submit .btn {
+  width: 100%;
+  padding: 0 100px;
+  margin-top: 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .form-gp form .form-submit .btn,
+  body .content-signup .container .form-gp form .form-submit .btn {
+    padding: 0 45px;
+  }
+}
+
+html .content-signup .container .form-gp form .form-submit a,
+body .content-signup .container .form-gp form .form-submit a {
   margin-left: 3px;
 }
 
-html .content-signup .container .form .form-submit .form-check-label,
-body .content-signup .container .form .form-submit .form-check-label {
+html .content-signup .container .form-gp form .form-submit .form-check-label,
+body .content-signup .container .form-gp form .form-submit .form-check-label {
   line-height: 2.25rem;
   margin-left: 10px;
 }
