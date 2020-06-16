@@ -4488,6 +4488,7 @@ body .content-sign-up-success .container p {
 
 html .content-sign-up-success .container img,
 body .content-sign-up-success .container img {
+  width: 100px;
   margin-bottom: 25px;
 }
 
