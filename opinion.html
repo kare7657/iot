@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 
 </head>
 
@@ -29,7 +31,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
     <nav class="navbar">
         <div class="pc">
@@ -264,6 +265,14 @@
                     </div>
                 </div>
             </div>
+            <form class="filter">
+                <!-- <label for="from">日期</label> -->
+                <input type="text" id="from" name="from" placeholder="月/日/年">
+                <label for="to">~</label>
+                <input type="text" id="to" name="to" placeholder="月/日/年">
+                <input type="submit" value="查詢">
+                <input type="reset" value="清除日期">
+            </form>
             <div class="opinion-list">
                 <div class="list head">
                     <p class="c1">文章</p>
@@ -490,6 +499,30 @@
                 navbar_nav.classList.add("active-ul")
             }
         }
+    </script>
+
+    <!-- date-picker -->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#from").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 2,
+                onClose: function (selectedDate) {
+                    $("#to").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#to").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 2,
+                onClose: function (selectedDate) {
+                    $("#from").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+        });
     </script>
 
 </body>

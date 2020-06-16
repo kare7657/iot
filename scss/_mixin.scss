@@ -1248,10 +1248,28 @@
         display: flex;
         padding: $padding-XXS $padding-XS;
         padding-left: $padding-S;
+        @include pad() {
+            padding-left: $padding-XS;
+            .c1{
+                width: 80%;
+            }
+            .c2{
+                display: none;
+            }
+            .c3{
+                width: 20%;
+            }
+        }
         @include mobile-L() {
             flex-wrap: wrap;
             flex-direction: column;
-            padding: $padding-XXS $padding-XXS * 2;
+            padding: $padding-XXS $padding-XS*1.5;
+            .c1{
+                width: 100%;
+            }
+            .c3{
+                display: none;
+            }
         }
         a {
             color: $text;
@@ -1262,6 +1280,9 @@
     .head {
         background-color: $dark-blue;
         border-radius: 20px 20px 0 0;
+        @include mobile-L(){
+            border-radius: unset;
+        }
         p {
             color: $title-W;
             font-weight: bold;

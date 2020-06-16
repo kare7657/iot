@@ -815,22 +815,52 @@ body {
         @include papers();
         @include text-important();
         .container {
+            @include mobile-L() {
+                margin: 0;
+                width: 100%;
+                h1 {
+                    text-align: center;
+                }
+            }
             .notice {
                 border: solid 3px $light-sky;
                 border-radius: 20px;
                 padding: $padding-XS * 1.5 $padding-S;
                 margin-bottom: $margin-M;
+                @include mobile-L() {
+                    padding: $padding-XS $padding-XS * 1.5;
+                    border: unset;
+                    border-radius: unset;
+                    margin-bottom: $margin-XS;
+                }
                 .top {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    @include pad() {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
                     .left {
                         width: 20%;
                         display: flex;
                         justify-content: center;
+                        @include pad() {
+                            width: 100%;
+                            margin-bottom: $margin-S;
+                        }
+                        img {
+                            width: 100px;
+                            @include mobile-L() {
+                                width: 35%;
+                            }
+                        }
                     }
                     .right {
                         width: 80%;
+                        @include pad() {
+                            width: 100%;
+                        }
                     }
                 }
                 .bot {
@@ -839,14 +869,88 @@ body {
                     margin-top: $margin-S;
                     .btn {
                         width: 100%;
+                        padding: 0;
                         button {
                             width: 20%;
+                            @include pad() {
+                                width: 45%;
+                            }
+                            @include mobile-L() {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .filter {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                margin-bottom: $margin-S;
+                @include mobile-L() {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 0 $padding-XS * 1.5;
+                }
+                label {
+                    font-size: $size-h4;
+                    line-height: $size-h4 * 1.5;
+                    font-weight: bold;
+                    color: $dark-blue;
+                }
+                input {
+                    width: 12%;
+                    height: 30px;
+                    margin: 0 $margin-XS;
+                    background-color: unset;
+                    border: solid 1px $dark-blue;
+                    border-radius: 8px;
+                    font-size: $size-p;
+                    line-height: $size-p * 2;
+                    color: $text;
+                    padding-left: $padding-XXS;
+                    @include pad() {
+                        width: 20%;
+                        margin-bottom: $margin-XS * 1.5;
+                    }
+                    @include mobile-L() {
+                        width: 40%;
+                        margin: unset;
+                        margin-bottom: $margin-XS * 1.5;
+                    }
+                    &[type="submit"],
+                    &[type="reset"] {
+                        width: 9%;
+                        padding: 5px 0;
+                        background-color: unset;
+                        border: solid 1px $dark-blue;
+                        border-radius: 8px;
+                        font-size: $size-h4;
+                        line-height: $size-h4;
+                        color: $dark-blue;
+                        font-family: "微軟正黑體";
+                        font-weight: bold;
+                        @include pad() {
+                            width: 17%;
+                        }
+                        @include mobile-L() {
+                            width: 100%;
+                        }
+                        &:hover {
+                            background-color: $blue;
+                            transition-duration: 0.5s;
+                            color: $title-W;
                         }
                     }
                 }
             }
             .opinion-list {
                 @include opinion-list();
+            }
+            .pagination {
+                @include mobile-L() {
+                    padding: 0 $padding-XS * 1.5;
+                }
             }
         }
     }

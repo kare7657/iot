@@ -4829,12 +4829,34 @@ body .content-opinion span {
   font-weight: bold;
 }
 
+@media (max-width: 568px) {
+  html .content-opinion .container,
+  body .content-opinion .container {
+    margin: 0;
+    width: 100%;
+  }
+  html .content-opinion .container h1,
+  body .content-opinion .container h1 {
+    text-align: center;
+  }
+}
+
 html .content-opinion .container .notice,
 body .content-opinion .container .notice {
   border: solid 3px #a7e5ff;
   border-radius: 20px;
   padding: 45px 60px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .notice,
+  body .content-opinion .container .notice {
+    padding: 30px 45px;
+    border: unset;
+    border-radius: unset;
+    margin-bottom: 10px;
+  }
 }
 
 html .content-opinion .container .notice .top,
@@ -4848,6 +4870,18 @@ body .content-opinion .container .notice .top {
           justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  html .content-opinion .container .notice .top,
+  body .content-opinion .container .notice .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 html .content-opinion .container .notice .top .left,
 body .content-opinion .container .notice .top .left {
   width: 20%;
@@ -4859,9 +4893,36 @@ body .content-opinion .container .notice .top .left {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  html .content-opinion .container .notice .top .left,
+  body .content-opinion .container .notice .top .left {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-opinion .container .notice .top .left img,
+body .content-opinion .container .notice .top .left img {
+  width: 100px;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .notice .top .left img,
+  body .content-opinion .container .notice .top .left img {
+    width: 35%;
+  }
+}
+
 html .content-opinion .container .notice .top .right,
 body .content-opinion .container .notice .top .right {
   width: 80%;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion .container .notice .top .right,
+  body .content-opinion .container .notice .top .right {
+    width: 100%;
+  }
 }
 
 html .content-opinion .container .notice .bot,
@@ -4874,11 +4935,129 @@ body .content-opinion .container .notice .bot {
 html .content-opinion .container .notice .bot .btn,
 body .content-opinion .container .notice .bot .btn {
   width: 100%;
+  padding: 0;
 }
 
 html .content-opinion .container .notice .bot .btn button,
 body .content-opinion .container .notice .bot .btn button {
   width: 20%;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion .container .notice .bot .btn button,
+  body .content-opinion .container .notice .bot .btn button {
+    width: 45%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .notice .bot .btn button,
+  body .content-opinion .container .notice .bot .btn button {
+    width: 100%;
+  }
+}
+
+html .content-opinion .container .filter,
+body .content-opinion .container .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .filter,
+  body .content-opinion .container .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 45px;
+  }
+}
+
+html .content-opinion .container .filter label,
+body .content-opinion .container .filter label {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: bold;
+  color: #0d73ad;
+}
+
+html .content-opinion .container .filter input,
+body .content-opinion .container .filter input {
+  width: 12%;
+  height: 30px;
+  margin: 0 10px;
+  background-color: unset;
+  border: solid 1px #0d73ad;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion .container .filter input,
+  body .content-opinion .container .filter input {
+    width: 20%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .filter input,
+  body .content-opinion .container .filter input {
+    width: 40%;
+    margin: unset;
+    margin-bottom: 15px;
+  }
+}
+
+html .content-opinion .container .filter input[type="submit"], html .content-opinion .container .filter input[type="reset"],
+body .content-opinion .container .filter input[type="submit"],
+body .content-opinion .container .filter input[type="reset"] {
+  width: 9%;
+  padding: 5px 0;
+  background-color: unset;
+  border: solid 1px #0d73ad;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  color: #0d73ad;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion .container .filter input[type="submit"], html .content-opinion .container .filter input[type="reset"],
+  body .content-opinion .container .filter input[type="submit"],
+  body .content-opinion .container .filter input[type="reset"] {
+    width: 17%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .filter input[type="submit"], html .content-opinion .container .filter input[type="reset"],
+  body .content-opinion .container .filter input[type="submit"],
+  body .content-opinion .container .filter input[type="reset"] {
+    width: 100%;
+  }
+}
+
+html .content-opinion .container .filter input[type="submit"]:hover, html .content-opinion .container .filter input[type="reset"]:hover,
+body .content-opinion .container .filter input[type="submit"]:hover,
+body .content-opinion .container .filter input[type="reset"]:hover {
+  background-color: #2faae5;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: white;
 }
 
 html .content-opinion .container .opinion-list,
@@ -4895,6 +5074,25 @@ body .content-opinion .container .opinion-list .list {
   padding-left: 60px;
 }
 
+@media (max-width: 768px) {
+  html .content-opinion .container .opinion-list .list,
+  body .content-opinion .container .opinion-list .list {
+    padding-left: 30px;
+  }
+  html .content-opinion .container .opinion-list .list .c1,
+  body .content-opinion .container .opinion-list .list .c1 {
+    width: 80%;
+  }
+  html .content-opinion .container .opinion-list .list .c2,
+  body .content-opinion .container .opinion-list .list .c2 {
+    display: none;
+  }
+  html .content-opinion .container .opinion-list .list .c3,
+  body .content-opinion .container .opinion-list .list .c3 {
+    width: 20%;
+  }
+}
+
 @media (max-width: 568px) {
   html .content-opinion .container .opinion-list .list,
   body .content-opinion .container .opinion-list .list {
@@ -4904,7 +5102,15 @@ body .content-opinion .container .opinion-list .list {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 45px;
+  }
+  html .content-opinion .container .opinion-list .list .c1,
+  body .content-opinion .container .opinion-list .list .c1 {
+    width: 100%;
+  }
+  html .content-opinion .container .opinion-list .list .c3,
+  body .content-opinion .container .opinion-list .list .c3 {
+    display: none;
   }
 }
 
@@ -4919,6 +5125,13 @@ html .content-opinion .container .opinion-list .head,
 body .content-opinion .container .opinion-list .head {
   background-color: #0d73ad;
   border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .opinion-list .head,
+  body .content-opinion .container .opinion-list .head {
+    border-radius: unset;
+  }
 }
 
 html .content-opinion .container .opinion-list .head p,
@@ -4955,5 +5168,12 @@ body .content-opinion .container .opinion-list .white {
 html .content-opinion .container .opinion-list h4,
 body .content-opinion .container .opinion-list h4 {
   text-align: right;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion .container .pagination,
+  body .content-opinion .container .pagination {
+    padding: 0 45px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
