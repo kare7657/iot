@@ -132,6 +132,14 @@
   background-color: #2faae5;
 }
 
+* input[disabled] {
+  background-color: #a7e5ff;
+}
+
+* input[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;
@@ -147,6 +155,14 @@
   background-color: #2faae5;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+* button[disabled] {
+  background-color: #a7e5ff;
+}
+
+* button[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 * .button-outline {
@@ -166,6 +182,14 @@
   color: white;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+* .button-outline[disabled] {
+  background-color: #a7e5ff;
+}
+
+* .button-outline[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 @media (max-width: 568px) {
@@ -3095,6 +3119,20 @@ body .content-login .container .form form .form-gp select[type="button"]:hover {
   border: solid 1px #2faae5;
 }
 
+html .content-login .container .form form .form-gp input[disabled],
+html .content-login .container .form form .form-gp select[disabled],
+body .content-login .container .form form .form-gp input[disabled],
+body .content-login .container .form form .form-gp select[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-login .container .form form .form-gp input[disabled]:hover,
+html .content-login .container .form form .form-gp select[disabled]:hover,
+body .content-login .container .form form .form-gp input[disabled]:hover,
+body .content-login .container .form form .form-gp select[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
 html .content-login .container .form form .form-gp textarea,
 body .content-login .container .form form .form-gp textarea {
   width: 100%;
@@ -3482,6 +3520,20 @@ body .content-signup .container .form-gp form .form-gp select[type="button"]:hov
   background-color: #2faae5;
   color: white;
   border: solid 1px #2faae5;
+}
+
+html .content-signup .container .form-gp form .form-gp input[disabled],
+html .content-signup .container .form-gp form .form-gp select[disabled],
+body .content-signup .container .form-gp form .form-gp input[disabled],
+body .content-signup .container .form-gp form .form-gp select[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-signup .container .form-gp form .form-gp input[disabled]:hover,
+html .content-signup .container .form-gp form .form-gp select[disabled]:hover,
+body .content-signup .container .form-gp form .form-gp input[disabled]:hover,
+body .content-signup .container .form-gp form .form-gp select[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 html .content-signup .container .form-gp form .form-gp textarea,
@@ -4072,6 +4124,16 @@ body .content-signup .container .account-list-gp #team .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
 }
 
+html .content-signup .container .account-list-gp #team .bot .btn button[disabled],
+body .content-signup .container .account-list-gp #team .bot .btn button[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-signup .container .account-list-gp #team .bot .btn button[disabled]:hover,
+body .content-signup .container .account-list-gp #team .bot .btn button[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
 html .content-signup .container .account-list-gp #team .bot .social,
 body .content-signup .container .account-list-gp #team .bot .social {
   margin-bottom: 10px;
@@ -4207,6 +4269,16 @@ body .content-signup .container .account-list-gp #egov .bot .btn button {
 html .content-signup .container .account-list-gp #egov .bot .btn button:hover,
 body .content-signup .container .account-list-gp #egov .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
+}
+
+html .content-signup .container .account-list-gp #egov .bot .btn button[disabled],
+body .content-signup .container .account-list-gp #egov .bot .btn button[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-signup .container .account-list-gp #egov .bot .btn button[disabled]:hover,
+body .content-signup .container .account-list-gp #egov .bot .btn button[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 html .content-signup .container .account-list-gp #egov .bot .social,
@@ -4346,6 +4418,16 @@ body .content-signup .container .account-list-gp #wrisp .bot .btn button:hover {
   background-color: rgba(47, 170, 229, 0.7);
 }
 
+html .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled],
+body .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled]:hover,
+body .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
 html .content-signup .container .account-list-gp #wrisp .bot .social,
 body .content-signup .container .account-list-gp #wrisp .bot .social {
   margin-bottom: 10px;
@@ -4367,6 +4449,51 @@ body .content-signup .container .account-list-gp #wrisp .bot .social img {
   body .content-signup .container .notice h3 {
     margin-top: unset;
   }
+}
+
+html .content-sign-up-success .container,
+body .content-sign-up-success .container {
+  padding: 100px;
+  padding-top: 220px;
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html .content-sign-up-success .container,
+  body .content-sign-up-success .container {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-sign-up-success .container,
+  body .content-sign-up-success .container {
+    padding: 100px 0;
+    padding-top: 150px;
+  }
+}
+
+html .content-sign-up-success .container p,
+body .content-sign-up-success .container p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html .content-sign-up-success .container p,
+  body .content-sign-up-success .container p {
+    margin-top: 10px;
+  }
+}
+
+html .content-sign-up-success .container img,
+body .content-sign-up-success .container img {
+  margin-bottom: 25px;
+}
+
+html .content-sign-up-success .container .btn,
+body .content-sign-up-success .container .btn {
+  margin: 25px 0;
 }
 
 html .content-member-data,
@@ -4604,6 +4731,20 @@ body .content-member-data .container .member-data .form form .form-gp select[typ
   background-color: #2faae5;
   color: white;
   border: solid 1px #2faae5;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[disabled],
+html .content-member-data .container .member-data .form form .form-gp select[disabled],
+body .content-member-data .container .member-data .form form .form-gp input[disabled],
+body .content-member-data .container .member-data .form form .form-gp select[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-member-data .container .member-data .form form .form-gp input[disabled]:hover,
+html .content-member-data .container .member-data .form form .form-gp select[disabled]:hover,
+body .content-member-data .container .member-data .form form .form-gp input[disabled]:hover,
+body .content-member-data .container .member-data .form form .form-gp select[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 html .content-member-data .container .member-data .form form .form-gp textarea,

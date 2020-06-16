@@ -737,6 +737,34 @@ body {
             }
         }
     }
+    //註冊成功
+    .content-sign-up-success {
+        .container {
+            padding: $padding-M;
+            padding-top: 220px;
+            height: 100%;
+            text-align: center;
+            @include pad() {
+                padding-top: 150px;
+            }
+            @include mobile-L(){
+                padding: $padding-M 0;
+                padding-top: 150px;
+            }
+            p {
+                text-align: center;
+                @include pad() {
+                    margin-top: $margin-XS;
+                }
+            }
+            img{
+                margin-bottom: $margin-S;
+            }
+            .btn{
+                margin: $margin-S 0;
+            }
+        }
+    }
     //會員資料修改
     .content-member-data {
         @include papers();

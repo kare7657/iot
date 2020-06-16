@@ -138,6 +138,12 @@
                 background-color: $blue;
             }
         }
+        &[disabled]{
+            background-color: $light-sky;
+            &:hover{
+                background-color: $light-sky;
+            }
+        }
     }
     //按鈕
     button {
@@ -153,6 +159,12 @@
             background-color: $blue;
             transition-duration: 0.5s;
         }
+        &[disabled]{
+            background-color: $light-sky;
+            &:hover{
+                background-color: $light-sky;
+            }
+        }
     }
     .button-outline {
         padding: 5px $padding-XS;
@@ -167,6 +179,12 @@
             background-color: $blue;
             color: $title-W;
             transition-duration: 0.5s;
+        }
+        &[disabled]{
+            background-color: $light-sky;
+            &:hover{
+                background-color: $light-sky;
+            }
         }
     }
     //swiper
@@ -1062,6 +1080,12 @@
                         border: solid 1px $blue;
                     }
                 }
+                &[disabled]{
+                    background-color: $light-sky;
+                    &:hover{
+                        background-color: $light-sky;
+                    }
+                }
             }
             textarea {
                 width: 100%;
@@ -1227,6 +1251,12 @@
                 }
                 &:hover {
                     background-color: rgba($color: $blue, $alpha: 0.7);
+                }
+                &[disabled]{
+                    background-color: $light-sky;
+                    &:hover{
+                        background-color: $light-sky;
+                    }
                 }
             }
         }
