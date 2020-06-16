@@ -506,6 +506,23 @@ body {
                 @include mobile-L() {
                     width: 100%;
                 }
+                .g-recaptcha {
+                    width: 100%;
+                    padding-left: $padding-S;
+                    margin-bottom: $margin-XS;
+                    @include web-S() {
+                        padding-left: unset;
+                    }
+                    @include pad() {
+                        padding-left: $padding-S * 1.5;
+                    }
+                    @include mobile-L() {
+                        padding-left: $padding-XS * 1.5;
+                    }
+                    @include mobile-XS() {
+                        padding-left: 8px;
+                    }
+                }
             }
         }
     }
@@ -589,7 +606,7 @@ body {
                         width: 60%;
                         background-color: unset;
                         text-align: center;
-                        margin: $margin-M 0;
+                        margin-top: $margin-M;
                         @include web-S() {
                             margin: $margin-S 0;
                         }
@@ -608,7 +625,7 @@ body {
                             margin: $margin-XS 0;
                             padding: 0 $padding-M;
                             @include mobile-L() {
-                                padding: 0 $padding-XS*1.5;
+                                padding: 0 $padding-XS * 1.5;
                                 margin: $margin-S 0;
                             }
                             label {

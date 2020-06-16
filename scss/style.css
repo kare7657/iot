@@ -3251,6 +3251,41 @@ body .content-login .container .form form span {
   }
 }
 
+html .content-login .container .form .g-recaptcha,
+body .content-login .container .form .g-recaptcha {
+  width: 100%;
+  padding-left: 60px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  html .content-login .container .form .g-recaptcha,
+  body .content-login .container .form .g-recaptcha {
+    padding-left: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-login .container .form .g-recaptcha,
+  body .content-login .container .form .g-recaptcha {
+    padding-left: 90px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-login .container .form .g-recaptcha,
+  body .content-login .container .form .g-recaptcha {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .content-login .container .form .g-recaptcha,
+  body .content-login .container .form .g-recaptcha {
+    padding-left: 8px;
+  }
+}
+
 html .content-signup,
 body .content-signup {
   padding-top: 120px;
@@ -3701,7 +3736,7 @@ body .content-signup .container .form-gp form .form-submit {
   width: 60%;
   background-color: unset;
   text-align: center;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
