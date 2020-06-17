@@ -1084,8 +1084,9 @@ body {
                             word-wrap: break-word;
                             .list {
                                 padding: $padding-XXS $padding-XS;
-                                border: solid 1px $light-sky;
-                                // border-radius: 10px;
+                                border: solid 2px $light-sky;
+                                border-radius: 10px;
+                                margin-bottom: $margin-XS;
                                 @include pad() {
                                     padding: $padding-XXS $padding-XXS * 2;
                                 }

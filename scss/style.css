@@ -5720,7 +5720,9 @@ body .content-example-code .container .example-body .right .text-gp .list-gp h4 
 html .content-example-code .container .example-body .right .text-gp .list-gp .list,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list {
   padding: 10px 30px;
-  border: solid 1px #a7e5ff;
+  border: solid 2px #a7e5ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
