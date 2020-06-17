@@ -26,7 +26,7 @@
 }
 // 通用
 @mixin all() {
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體" !important;
     box-sizing: border-box !important;
     .container {
         width: 1140px;
@@ -138,9 +138,9 @@
                 background-color: $blue;
             }
         }
-        &[disabled]{
+        &[disabled] {
             background-color: $light-sky;
-            &:hover{
+            &:hover {
                 background-color: $light-sky;
             }
         }
@@ -159,15 +159,15 @@
             background-color: $blue;
             transition-duration: 0.5s;
         }
-        &[disabled]{
+        &[disabled] {
             background-color: $light-sky;
-            &:hover{
+            &:hover {
                 background-color: $light-sky;
             }
         }
     }
     .button-outline {
-        padding: 5px $padding-XS;
+        padding: 8px $padding-XS;
         background-color: $title-W;
         box-shadow: $dark-blue 0 0 0 1px;
         border: none;
@@ -180,11 +180,14 @@
             color: $title-W;
             transition-duration: 0.5s;
         }
-        &[disabled]{
+        &[disabled] {
             background-color: $light-sky;
-            &:hover{
+            &:hover {
                 background-color: $light-sky;
             }
+        }
+        .fas{
+            margin-right: $margin-XS;
         }
     }
     //swiper
@@ -1080,9 +1083,9 @@
                         border: solid 1px $blue;
                     }
                 }
-                &[disabled]{
+                &[disabled] {
                     background-color: $light-sky;
-                    &:hover{
+                    &:hover {
                         background-color: $light-sky;
                     }
                 }
@@ -1252,9 +1255,9 @@
                 &:hover {
                     background-color: rgba($color: $blue, $alpha: 0.7);
                 }
-                &[disabled]{
+                &[disabled] {
                     background-color: $light-sky;
-                    &:hover{
+                    &:hover {
                         background-color: $light-sky;
                     }
                 }
@@ -1280,24 +1283,24 @@
         padding-left: $padding-S;
         @include pad() {
             padding-left: $padding-XS;
-            .c1{
+            .c1 {
                 width: 80%;
             }
-            .c2{
+            .c2 {
                 display: none;
             }
-            .c3{
+            .c3 {
                 width: 20%;
             }
         }
         @include mobile-L() {
             flex-wrap: wrap;
             flex-direction: column;
-            padding: $padding-XXS $padding-XS*1.5;
-            .c1{
+            padding: $padding-XXS $padding-XS * 1.5;
+            .c1 {
                 width: 100%;
             }
-            .c3{
+            .c3 {
                 display: none;
             }
         }
@@ -1310,7 +1313,7 @@
     .head {
         background-color: $dark-blue;
         border-radius: 20px 20px 0 0;
-        @include mobile-L(){
+        @include mobile-L() {
             border-radius: unset;
         }
         p {
@@ -1335,5 +1338,75 @@
     }
     h4 {
         text-align: right;
+    }
+}
+
+@mixin collapse($bg-color, $text-color) {
+    @include pad() {
+        padding: 0;
+    }
+    .collapsible {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: $padding-XXS $padding-XS;
+        margin-bottom: $margin-XS;
+        border: none;
+        background-color: $bg-color;
+        text-align: left;
+        outline: none;
+        font-size: $size-h4;
+        color: $text-color;
+        font-weight: bold;
+        @include mobile-XS() {
+            font-size: $size-p;
+        }
+    }
+    .collapsible:after {
+        content: "\002B";
+        color: $text-color;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    .active:after {
+        content: "\2212";
+    }
+    .content {
+        padding: 0 $padding-XS;
+        margin-bottom: $margin-S;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        @include mobile-XS() {
+            margin-bottom: $margin-XS;
+        }
+        p {
+            text-align: left;
+            font-size: $size-p;
+            color: $text;
+            line-height: $size-p * 2;
+            @include mobile-XS() {
+                font-size: $size-p;
+                line-height: $size-p * 2;
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        ul,
+        li {
+            text-align: left;
+            list-style: none;
+            font-size: $size-p;
+            line-height: $size-p * 2.5;
+            @include mobile-XS() {
+                font-size: $size-p;
+            }
+        }
+        a {
+            color: $text;
+        }
     }
 }
