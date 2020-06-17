@@ -5328,16 +5328,23 @@ body .content-example-code .container {
   padding-top: 220px;
 }
 
+html .content-example-code .container h1,
+body .content-example-code .container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 568px) {
   html .content-example-code .container,
   body .content-example-code .container {
     padding-top: 130px;
+    width: 100%;
   }
-}
-
-html .content-example-code .container h1,
-body .content-example-code .container h1 {
-  text-align: center;
+  html .content-example-code .container h1,
+  body .content-example-code .container h1 {
+    margin-bottom: 25px;
+    padding: 0 45px;
+  }
 }
 
 html .content-example-code .container .example-body,
@@ -5387,6 +5394,14 @@ body .content-example-code .container .example-body .left .collapsible {
   font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+  html .content-example-code .container .example-body .left .collapsible,
+  body .content-example-code .container .example-body .left .collapsible {
+    margin-bottom: unset;
+    padding: 10px 20px;
+  }
+}
+
 @media (max-width: 320px) {
   html .content-example-code .container .example-body .left .collapsible,
   body .content-example-code .container .example-body .left .collapsible {
@@ -5416,6 +5431,14 @@ body .content-example-code .container .example-body .left .content {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1024px) {
+  html .content-example-code .container .example-body .left .content,
+  body .content-example-code .container .example-body .left .content {
+    margin-bottom: unset;
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -5471,10 +5494,20 @@ body .content-example-code .container .example-body .left .content a {
   color: #595757;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   html .content-example-code .container .example-body .left,
   body .content-example-code .container .example-body .left {
     width: 100%;
+    margin-right: unset;
+    margin-bottom: 10px;
+    padding: unset;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .left,
+  body .content-example-code .container .example-body .left {
+    padding: 0 45px;
   }
 }
 
@@ -5545,16 +5578,28 @@ body .content-example-code .container .example-body .left .searchbar input[type=
   width: 230px;
 }
 
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .left .searchbar input[type="search"],
+  body .content-example-code .container .example-body .left .searchbar input[type="search"] {
+    width: 90%;
+  }
+  html .content-example-code .container .example-body .left .searchbar input[type="search"]:focus,
+  body .content-example-code .container .example-body .left .searchbar input[type="search"]:focus {
+    width: 100%;
+  }
+}
+
 html .content-example-code .container .example-body .right,
 body .content-example-code .container .example-body .right {
   width: 70%;
   margin-top: 55px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   html .content-example-code .container .example-body .right,
   body .content-example-code .container .example-body .right {
     width: 100%;
+    margin-top: unset;
   }
 }
 
@@ -5563,9 +5608,20 @@ body .content-example-code .container .example-body .right .text-gp {
   margin-bottom: 25px;
 }
 
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .right .text-gp,
+  body .content-example-code .container .example-body .right .text-gp {
+    padding: 0 45px;
+  }
+  html .content-example-code .container .example-body .right .text-gp #pad-pd,
+  body .content-example-code .container .example-body .right .text-gp #pad-pd {
+    padding: 0 45px;
+  }
+}
+
 html .content-example-code .container .example-body .right .text-gp h3,
 body .content-example-code .container .example-body .right .text-gp h3 {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 html .content-example-code .container .example-body .right .text-gp p,
@@ -5576,13 +5632,23 @@ body .content-example-code .container .example-body .right .text-gp p {
 html .content-example-code .container .example-body .right .text-gp pre,
 body .content-example-code .container .example-body .right .text-gp pre {
   padding: 30px;
-  border: solid 3px #a7e5ff;
-  border-radius: 15px;
+  border: solid 2px #a7e5ff;
+  border-radius: 10px;
   color: #595757;
   font-size: 1rem;
   line-height: 2rem;
   text-align: left;
   margin-top: 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .right .text-gp pre,
+  body .content-example-code .container .example-body .right .text-gp pre {
+    padding: 30px;
+    border: unset;
+    border-radius: unset;
+    background-color: #e5f1f9;
+  }
 }
 
 html .content-example-code .container .example-body .right .text-gp .list-gp,
@@ -5654,17 +5720,51 @@ body .content-example-code .container .example-body .right .text-gp .list-gp h4 
 html .content-example-code .container .example-body .right .text-gp .list-gp .list,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list {
   padding: 10px 30px;
-  border-radius: 10px;
+  border: solid 1px #a7e5ff;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list {
+    padding: 10px 20px;
+  }
 }
 
 html .content-example-code .container .example-body .right .text-gp .list-gp .list span,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list span {
   text-align: left;
   margin-right: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list span,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list span {
+    width: 100%;
+  }
+}
+
+html .content-example-code .container .example-body .right .text-gp .list-gp .list p,
+body .content-example-code .container .example-body .right .text-gp .list-gp .list p {
+  width: 100%;
+  text-align: justify;
 }
 
 html .content-example-code .container .example-body .right .text-gp .btn,
 body .content-example-code .container .example-body .right .text-gp .btn {
   padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .example-body .right .text-gp .btn,
+  body .content-example-code .container .example-body .right .text-gp .btn {
+    padding: 0;
+  }
+}
+
+html .content-example-code .container .example-body .right .pd0,
+body .content-example-code .container .example-body .right .pd0 {
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -186,7 +186,7 @@
                 background-color: $light-sky;
             }
         }
-        .fas{
+        .fas {
             margin-right: $margin-XS;
         }
     }
@@ -1358,6 +1358,10 @@
         font-size: $size-h4;
         color: $text-color;
         font-weight: bold;
+        @include web-S() {
+            margin-bottom: unset;
+            padding: $padding-XXS $padding-XXS * 2;
+        }
         @include mobile-XS() {
             font-size: $size-p;
         }
@@ -1378,6 +1382,10 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        @include web-S() {
+            margin-bottom: unset;
+            padding: $padding-XXS $padding-XXS * 2;
+        }
         @include mobile-XS() {
             margin-bottom: $margin-XS;
         }
