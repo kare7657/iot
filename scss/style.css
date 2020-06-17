@@ -5499,7 +5499,7 @@ body .content-example-code .container .example-body .left .content a {
   body .content-example-code .container .example-body .left {
     width: 100%;
     margin-right: unset;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: unset;
   }
 }
@@ -5523,6 +5523,7 @@ body .content-example-code .container .example-body .left .searchbar {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 37.5px;
 }
 
 @media (max-width: 568px) {
@@ -5592,7 +5593,6 @@ body .content-example-code .container .example-body .left .searchbar input[type=
 html .content-example-code .container .example-body .right,
 body .content-example-code .container .example-body .right {
   width: 70%;
-  margin-top: 55px;
 }
 
 @media (max-width: 768px) {

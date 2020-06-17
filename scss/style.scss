@@ -1015,15 +1015,16 @@ body {
                     @include pad() {
                         width: 100%;
                         margin-right: unset;
-                        margin-bottom: $margin-XS;
+                        margin-bottom: $margin-XS * 2;
                         padding: unset;
                     }
-                    @include mobile-L(){
+                    @include mobile-L() {
                         padding: 0 $padding-XS * 1.5;
                     }
                     .searchbar {
                         @include searchbar();
                         justify-content: flex-start;
+                        margin-bottom: $margin-S * 1.5;
                         input[type="search"] {
                             width: 200px;
                             &:focus {
@@ -1043,7 +1044,7 @@ body {
                 // 右欄內容
                 .right {
                     width: 70%;
-                    margin-top: 55px;
+                    // margin-top: 55px;
                     @include pad() {
                         width: 100%;
                         margin-top: unset;
@@ -1052,7 +1053,7 @@ body {
                         margin-bottom: $margin-S;
                         @include mobile-L() {
                             padding: 0 $padding-XS * 1.5;
-                            #pad-pd{
+                            #pad-pd {
                                 padding: 0 $padding-XS * 1.5;
                             }
                         }
