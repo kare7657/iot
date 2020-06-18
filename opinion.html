@@ -274,11 +274,14 @@
                 <input type="submit" value="查詢">
                 <input type="reset" value="清除日期"> -->
 
-                <label for="from">日期</label>
-                <input type="text" id="from" name="from" placeholder="月/日/年" class="datepicker-here" data-language='zh'>
+                <!-- <input type="text" id="from" name="from" placeholder="月/日/年" class="datepicker-here" data-language='zh'>
                 <label for="to">~</label>
                 <input type="text" id="to" name="to" placeholder="月/日/年" class="datepicker-here" data-language='zh'>
                 <input type="submit" value="查詢">
+                <input type="reset" value="清除日期"> -->
+                <input type="text" data-range="true" data-multiple-dates-separator=" - " data-language="zh"
+                    class="datepicker-here" placeholder="月/日/年 - 月/日/年">
+                    <input type="submit" value="查詢">
                 <input type="reset" value="清除日期">
             </form>
             <div class="opinion-list">
@@ -520,7 +523,8 @@
         // Access instance of plugin
         $('#my-element').data('datepicker')
     </script>
-    <script>
+
+    <!-- <script>
         $(function () {
             $("#from").datepicker({
                 defaultDate: "+1w",

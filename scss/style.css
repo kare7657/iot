@@ -5137,7 +5137,7 @@ body .content-opinion .container .filter label {
 
 html .content-opinion .container .filter input,
 body .content-opinion .container .filter input {
-  width: 12%;
+  width: 25%;
   height: 30px;
   margin: 0 10px;
   background-color: unset;
@@ -5147,6 +5147,7 @@ body .content-opinion .container .filter input {
   line-height: 2rem;
   color: #595757;
   padding-left: 10px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -5160,7 +5161,7 @@ body .content-opinion .container .filter input {
 @media (max-width: 568px) {
   html .content-opinion .container .filter input,
   body .content-opinion .container .filter input {
-    width: 40%;
+    width: 100%;
     margin: unset;
     margin-bottom: 15px;
   }
