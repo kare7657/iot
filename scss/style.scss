@@ -938,7 +938,6 @@ body {
                     font-size: $size-p;
                     line-height: $size-p * 2;
                     color: $text;
-                    padding-left: $padding-XXS;
                     text-align: center;
                     @include pad() {
                         width: 20%;
