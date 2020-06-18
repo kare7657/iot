@@ -932,8 +932,8 @@ body {
                     color: $dark-blue;
                 }
                 input {
-                    // width: 12%;
-                    width: 25%;
+                    width: 12%;
+                    // width: 25%;
                     height: 30px;
                     margin: 0 $margin-XS;
                     background-color: unset;
@@ -949,8 +949,8 @@ body {
                         margin-bottom: $margin-XS * 1.5;
                     }
                     @include mobile-L() {
-                        // width: 40%;
-                        width: 100%;
+                        width: 40%;
+                        // width: 100%;
                         margin: unset;
                         margin-bottom: $margin-XS * 1.5;
                     }
