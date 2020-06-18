@@ -220,6 +220,16 @@
   align-items: center;
 }
 
+* div.datedropper.iot {
+  --dd-color1: #2faae5;
+  --dd-color2: #FFF;
+  --dd-color3: #595757;
+  --dd-color4: #FFF;
+  --dd-radius: 10px;
+  --dd-width: 180px;
+  --dd-shadow: 0 0 29px 0px rgba(0, 0, 0, 0.1);
+}
+
 * .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
