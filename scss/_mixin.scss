@@ -187,6 +187,9 @@
         color: $dark-blue;
         font-family: "微軟正黑體";
         font-weight: bold;
+        @include mobile-L(){
+            padding: 8px $padding-XS/2;
+        }
         &:hover {
             background-color: $blue;
             color: $title-W;
@@ -747,6 +750,19 @@
     h3 {
         margin-top: $margin-S;
         margin-bottom: $margin-XS;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        font-size: $size-p;
+        line-height: $size-p * 2;
+        color: $text;
+    }
+    .btn{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: $margin-M 0;
     }
 }
 @mixin text-important() {

@@ -190,6 +190,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 568px) {
+  * .button-outline {
+    padding: 8px 15px;
+  }
+}
+
 * .button-outline:hover {
   background-color: #2faae5;
   color: white;
@@ -1071,6 +1077,23 @@ body .content-information h3 {
   margin-bottom: 10px;
 }
 
+html .content-information ul,
+body .content-information ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-information .btn,
+body .content-information .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
 html .content-information span,
 body .content-information span {
   color: #0d73ad;
@@ -1511,6 +1534,23 @@ body .content-news h3 {
   margin-bottom: 10px;
 }
 
+html .content-news ul,
+body .content-news ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-news .btn,
+body .content-news .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
 html .content-news .container .searchbar,
 body .content-news .container .searchbar {
   display: -webkit-box;
@@ -1660,6 +1700,23 @@ html .content-news-info h3,
 body .content-news-info h3 {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+html .content-news-info ul,
+body .content-news-info ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-news-info .btn,
+body .content-news-info .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
 }
 
 html .content-news-info .container .info-top,
@@ -2727,6 +2784,23 @@ body .content-data h3 {
   margin-bottom: 10px;
 }
 
+html .content-data ul,
+body .content-data ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-data .btn,
+body .content-data .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
 @media (max-width: 568px) {
   html .content-data h1,
   body .content-data h1 {
@@ -2776,6 +2850,23 @@ html .content-example h3,
 body .content-example h3 {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+html .content-example ul,
+body .content-example ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-example .btn,
+body .content-example .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
 }
 
 html .content-example .container .example-head,
@@ -2982,6 +3073,23 @@ html .content-login h3,
 body .content-login h3 {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+html .content-login ul,
+body .content-login ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-login .btn,
+body .content-login .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
 }
 
 @media (max-width: 568px) {
@@ -3381,6 +3489,23 @@ html .content-signup h3,
 body .content-signup h3 {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+html .content-signup ul,
+body .content-signup ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-signup .btn,
+body .content-signup .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
 }
 
 html .content-signup span,
@@ -4005,6 +4130,23 @@ body .content-signup h3 {
   margin-bottom: 10px;
 }
 
+html .content-signup ul,
+body .content-signup ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-signup .btn,
+body .content-signup .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
 html .content-signup span,
 body .content-signup span {
   color: #0d73ad;
@@ -4556,6 +4698,23 @@ body .content-member-data h3 {
   margin-bottom: 10px;
 }
 
+html .content-member-data ul,
+body .content-member-data ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-member-data .btn,
+body .content-member-data .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
 @media (max-width: 568px) {
   html .content-member-data .container,
   body .content-member-data .container {
@@ -4990,6 +5149,23 @@ html .content-opinion h3,
 body .content-opinion h3 {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+html .content-opinion ul,
+body .content-opinion ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-opinion .btn,
+body .content-opinion .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
 }
 
 html .content-opinion span,
