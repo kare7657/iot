@@ -90,6 +90,15 @@
             color: $blue !important;
         }
     }
+    //font-awesome
+    .fa,
+    .fas,
+    .far,
+    .fal,
+    .fad,
+    .fab {
+        font-family: "Font Awesome 5 Free" !important;
+    }
     //無障礙框線
     :focus {
         outline: $blue dotted 3px !important;
@@ -222,15 +231,14 @@
     //date-picker datedropper
     div.datedropper.iot {
         --dd-color1: #2faae5;
-        --dd-color2: #FFF;
+        --dd-color2: #fff;
         --dd-color3: #595757;
-        --dd-color4: #FFF;
+        --dd-color4: #fff;
 
         --dd-radius: 10px;
         --dd-width: 180px;
         --dd-shadow: 0 0 29px 0px rgba(0, 0, 0, 0.1);
-
-      }
+    }
     //頁碼
     .pagination {
         display: flex;

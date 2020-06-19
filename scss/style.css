@@ -78,6 +78,15 @@
   color: #2faae5 !important;
 }
 
+* .fa,
+* .fas,
+* .far,
+* .fal,
+* .fad,
+* .fab {
+  font-family: "Font Awesome 5 Free" !important;
+}
+
 * :focus {
   outline: #2faae5 dotted 3px !important;
 }
@@ -222,9 +231,9 @@
 
 * div.datedropper.iot {
   --dd-color1: #2faae5;
-  --dd-color2: #FFF;
+  --dd-color2: #fff;
   --dd-color3: #595757;
-  --dd-color4: #FFF;
+  --dd-color4: #fff;
   --dd-radius: 10px;
   --dd-width: 180px;
   --dd-shadow: 0 0 29px 0px rgba(0, 0, 0, 0.1);
