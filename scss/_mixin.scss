@@ -187,7 +187,7 @@
         color: $dark-blue;
         font-family: "微軟正黑體";
         font-weight: bold;
-        @include mobile-L(){
+        @include mobile-L() {
             padding: 8px $padding-XS/2;
         }
         &:hover {
@@ -244,6 +244,150 @@
         --dd-radius: 10px;
         --dd-width: 180px;
         --dd-shadow: 0 0 29px 0px rgba(0, 0, 0, 0.1);
+    }
+    //modal-iot
+    .modal-iot {
+        padding: 0;
+        .modal-dialog {
+            max-width: 650px;
+            transition: unset;
+            .modal-content {
+                border-radius: 15px;
+                .modal-header {
+                    width: 100%;
+                    border-bottom: unset;
+                    padding: 0 $padding-S;
+                    margin-top: $margin-M;
+                    @include mobile-XS() {
+                        margin-top: $margin-S;
+                    }
+                    .modal-title {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .close {
+                        position: absolute;
+                        right: 2.5%;
+                        margin: -1rem -1rem -1rem 0;
+                    }
+                }
+                .modal-body {
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: $margin-XS;
+                    padding: 0;
+                    padding: 0 $padding-S;
+                    padding-top: $padding-XS;
+                    @include mobile-L() {
+                        padding: 0 $padding-XS * 1.5;
+                        padding-top: $padding-XS;
+                        margin-bottom: $margin-S;
+                    }
+                    @include mobile-XS() {
+                        padding: 0 $padding-XS;
+                        padding-top: $padding-XXS;
+                    }
+                    .form-gp {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: $margin-S;
+                        @include mobile-L() {
+                            flex-wrap: wrap;
+                            margin-bottom: $margin-XS;
+                        }
+                        label {
+                            width: 40%;
+                            font-size: $size-h4;
+                            line-height: $size-h4 * 1.5;
+                            font-weight: bold;
+                            color: $text;
+                            margin: $margin-XS 0;
+                            @include mobile-L() {
+                                width: 100%;
+                            }
+                        }
+                        input,
+                        select {
+                            width: 60%;
+                            height: 40px;
+                            border-radius: 5px;
+                            border: 1px solid $light-sky;
+                            padding: 0 $padding-XXS;
+                            color: $text;
+                            font-size: $size-h4;
+                            line-height: $size-h4;
+                            @include mobile-L() {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    span {
+                        color: $red;
+                        margin-left: 3px;
+                    }
+                }
+                .modal-footer {
+                    border-top: unset;
+                    margin-bottom: $margin-M;
+                    padding: 0;
+                    padding: 0 $padding-S;
+                    @include mobile-L() {
+                        padding: 0 $padding-XS * 1.5;
+                    }
+                    @include mobile-XS() {
+                        padding: 0 $padding-XS;
+                        margin-bottom: $margin-S;
+                    }
+                }
+                .btn-iot {
+                    margin: 0;
+                    margin-left: $margin-S;
+                    @include mobile-L() {
+                        width: 100%;
+                        margin: unset;
+                        margin-bottom: $margin-S;
+                    }
+                    &[type="submit"],
+                    &[type="reset"] {
+                        height: 40px;
+                        background-color: $dark-blue;
+                        color: $title-W;
+                        font-size: $size-h4;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 8px;
+                        padding: 5px $padding-XS;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: $blue;
+                        }
+                    }
+                    &[type="button"] {
+                        height: 40px;
+                        background-color: unset;
+                        border: solid 1px $dark-blue;
+                        border-radius: 8px;
+                        color: $dark-blue;
+                        font-size: $size-h4;
+                        font-weight: bold;
+                        padding: 5px $padding-XS;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: $blue;
+                            color: $title-W;
+                            border: solid 1px $blue;
+                        }
+                    }
+                    &[disabled] {
+                        background-color: $light-sky;
+                        &:hover {
+                            background-color: $light-sky;
+                        }
+                    }
+                }
+            }
+        }
     }
     //頁碼
     .pagination {
@@ -758,7 +902,7 @@
         line-height: $size-p * 2;
         color: $text;
     }
-    .btn{
+    .btn {
         width: 100%;
         padding: 0;
         text-align: center;

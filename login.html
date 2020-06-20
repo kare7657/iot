@@ -267,16 +267,50 @@
 
                         <input name="JSessId" type="hidden" value="25C42F78A3D3E67621485F7594B29385">
                     </div>
-
                     <div class="form-gp">
                         <input type="submit" value="送出">
-                        <input type="button" value="忘記密碼？">
-                        <a href="">補發會員認證信</a>
+                        <input type="button" value="忘記密碼？" data-toggle="modal" data-target="#modalChangPWD">
+                        <a href="#">補發會員認證信</a>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- modal-iot -->
+    <div class="modal fade modal-iot" id="modalChangPWD" tabindex="-1" role="dialog" aria-labelledby="modalPrivateLabel"
+        style=" padding-top: 0;">
+        <form name="fm_ChangPWD" id="fm_ChangPWD" method="post" action="ChangPWD.jsp" target="frm_ChangPWD">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                        <h2 class="modal-title" id="modalPrivateLabel">變更密碼</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-gp">
+                            <label for="Password">舊密碼<span>*</span></label>
+                            <input type="password" name="Password" id="Password" value="">
+                        </div>
+                        <div class="form-gp">
+                            <label for="NewPassword">新密碼<span>*</span></label>
+                            <input type="password" name="NewPassword" id="NewPassword" value="">
+                        </div>
+                        <div class="form-gp">
+                            <label for="DB_NewPassword">新密碼確認<span>*</span></label>
+                            <input type="password" name="DB_NewPassword" id="DB_NewPassword" value="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="go" id="go" class="btn-iot">確認更改</button>
+                        <button type="button" name="cancel" id="cancel" class="btn-iot"
+                            data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <!-- footer -->
     <footer class="footer">
