@@ -319,6 +319,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
@@ -364,7 +366,24 @@
   }
 }
 
-* .modal-iot .modal-dialog .modal-content .modal-body span {
+* .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1rem;
+}
+
+* .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text p,
+* .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text span {
+  color: #E8291C;
+  text-align: right;
+}
+
+* .modal-iot .modal-dialog .modal-content .modal-body p, * .modal-iot .modal-dialog .modal-content .modal-body span {
   color: #E8291C;
   margin-left: 3px;
 }

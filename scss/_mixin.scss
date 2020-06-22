@@ -180,9 +180,10 @@
     }
     .button-outline {
         padding: 8px $padding-XS;
-        background-color: $title-W;
+        background-color: transparent;
         box-shadow: $dark-blue 0 0 0 1px;
-        border: none;
+        // border: solid 1px $dark-blue;
+        // border-radius: 10px;
         font-size: $size-h4;
         color: $dark-blue;
         font-family: "微軟正黑體";
@@ -250,12 +251,11 @@
         padding: 0;
         .modal-dialog {
             max-width: 650px;
-            transition: unset;
             .modal-content {
                 border-radius: 15px;
                 .modal-header {
                     width: 100%;
-                    border-bottom: unset;
+                    border-bottom: none;
                     padding: 0 $padding-S;
                     margin-top: $margin-M;
                     @include mobile-XS() {
@@ -291,6 +291,7 @@
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
+                        flex-wrap: wrap;
                         margin-bottom: $margin-S;
                         @include mobile-L() {
                             flex-wrap: wrap;
@@ -321,14 +322,25 @@
                                 width: 100%;
                             }
                         }
+                        .text {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                            font-size: $size-p;
+                            p,
+                            span {
+                                color: $red;
+                                text-align: right;
+                            }
+                        }
                     }
-                    span {
+                    p,span {
                         color: $red;
                         margin-left: 3px;
                     }
                 }
                 .modal-footer {
-                    border-top: unset;
+                    border-top: none;
                     margin-bottom: $margin-M;
                     padding: 0;
                     padding: 0 $padding-S;
@@ -365,7 +377,7 @@
                     }
                     &[type="button"] {
                         height: 40px;
-                        background-color: unset;
+                        background-color: transparent;
                         border: solid 1px $dark-blue;
                         border-radius: 8px;
                         color: $dark-blue;
