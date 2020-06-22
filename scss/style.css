@@ -180,10 +180,9 @@
 
 * .button-outline {
   padding: 8px 30px;
-  background-color: white;
+  background-color: transparent;
   -webkit-box-shadow: #0d73ad 0 0 0 1px;
           box-shadow: #0d73ad 0 0 0 1px;
-  border: none;
   font-size: 1.125rem;
   color: #0d73ad;
   font-family: "微軟正黑體";
@@ -255,8 +254,6 @@
 
 * .modal-iot .modal-dialog {
   max-width: 650px;
-  -webkit-transition: unset;
-  transition: unset;
 }
 
 * .modal-iot .modal-dialog .modal-content {
@@ -265,7 +262,7 @@
 
 * .modal-iot .modal-dialog .modal-content .modal-header {
   width: 100%;
-  border-bottom: unset;
+  border-bottom: none;
   padding: 0 60px;
   margin-top: 50px;
 }
@@ -389,7 +386,7 @@
 }
 
 * .modal-iot .modal-dialog .modal-content .modal-footer {
-  border-top: unset;
+  border-top: none;
   margin-bottom: 50px;
   padding: 0;
   padding: 0 60px;
@@ -439,7 +436,7 @@
 
 * .modal-iot .modal-dialog .modal-content .btn-iot[type="button"] {
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   color: #0d73ad;
@@ -5495,6 +5492,7 @@ html .content-opinion .container .notice .bot .btn,
 body .content-opinion .container .notice .bot .btn {
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 html .content-opinion .container .notice .bot .btn button,
