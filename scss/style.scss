@@ -509,20 +509,7 @@ body {
                 }
                 .g-recaptcha {
                     width: 100%;
-                    padding-left: $padding-S;
                     margin-bottom: $margin-XS;
-                    @include web-S() {
-                        padding-left: unset;
-                    }
-                    @include pad() {
-                        padding-left: $padding-S * 1.5;
-                    }
-                    @include mobile-L() {
-                        padding-left: $padding-XS * 1.5;
-                    }
-                    @include mobile-XS() {
-                        padding-left: 8px;
-                    }
                 }
             }
         }
@@ -981,6 +968,41 @@ body {
             .pagination {
                 @include mobile-L() {
                     padding: 0 $padding-XS * 1.5;
+                }
+            }
+        }
+    }
+    //新增意見
+    .content-opinion-add {
+        @include papers();
+        .container {
+            @include mobile-L() {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 0;
+                h1 {
+                    text-align: center;
+                }
+            }
+            .form {
+                @include form();
+                margin: auto;
+                width: 60%;
+                padding: $padding-S;
+
+                @include web-S() {
+                    width: 60%;
+                }
+                @include pad() {
+                    width: 100%;
+                    padding: $padding-S 0;
+                }
+                @include mobile-L() {
+                    padding: $padding-XS 0;
+                }
+                .g-recaptcha {
+                    width: 100%;
+                    margin-bottom: $margin-XS*2;
                 }
             }
         }

@@ -380,7 +380,8 @@
   text-align: right;
 }
 
-* .modal-iot .modal-dialog .modal-content .modal-body p, * .modal-iot .modal-dialog .modal-content .modal-body span {
+* .modal-iot .modal-dialog .modal-content .modal-body p,
+* .modal-iot .modal-dialog .modal-content .modal-body span {
   color: #E8291C;
   margin-left: 3px;
 }
@@ -3350,6 +3351,15 @@ body .content-login .container .form form .form-gp {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 25px;
+  text-align: justify;
+}
+
+html .content-login .container .form form .form-gp p,
+body .content-login .container .form form .form-gp p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -3487,7 +3497,7 @@ body .content-login .container .form form .form-gp textarea {
   padding: 0 10px;
   color: #595757;
   font-size: 1.125rem;
-  line-height: 1.125rem;
+  line-height: 1.6875rem;
 }
 
 html .content-login .container .form form .form-gp a,
@@ -3638,36 +3648,7 @@ body .content-login .container .form form span {
 html .content-login .container .form .g-recaptcha,
 body .content-login .container .form .g-recaptcha {
   width: 100%;
-  padding-left: 60px;
   margin-bottom: 10px;
-}
-
-@media (max-width: 1024px) {
-  html .content-login .container .form .g-recaptcha,
-  body .content-login .container .form .g-recaptcha {
-    padding-left: unset;
-  }
-}
-
-@media (max-width: 768px) {
-  html .content-login .container .form .g-recaptcha,
-  body .content-login .container .form .g-recaptcha {
-    padding-left: 90px;
-  }
-}
-
-@media (max-width: 568px) {
-  html .content-login .container .form .g-recaptcha,
-  body .content-login .container .form .g-recaptcha {
-    padding-left: 45px;
-  }
-}
-
-@media (max-width: 320px) {
-  html .content-login .container .form .g-recaptcha,
-  body .content-login .container .form .g-recaptcha {
-    padding-left: 8px;
-  }
 }
 
 html .content-signup,
@@ -3770,6 +3751,15 @@ body .content-signup .container .form-gp form .form-gp {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 25px;
+  text-align: justify;
+}
+
+html .content-signup .container .form-gp form .form-gp p,
+body .content-signup .container .form-gp form .form-gp p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -3907,7 +3897,7 @@ body .content-signup .container .form-gp form .form-gp textarea {
   padding: 0 10px;
   color: #595757;
   font-size: 1.125rem;
-  line-height: 1.125rem;
+  line-height: 1.6875rem;
 }
 
 html .content-signup .container .form-gp form .form-gp a,
@@ -5016,6 +5006,15 @@ body .content-member-data .container .member-data .form form .form-gp {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 25px;
+  text-align: justify;
+}
+
+html .content-member-data .container .member-data .form form .form-gp p,
+body .content-member-data .container .member-data .form form .form-gp p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -5153,7 +5152,7 @@ body .content-member-data .container .member-data .form form .form-gp textarea {
   padding: 0 10px;
   color: #595757;
   font-size: 1.125rem;
-  line-height: 1.125rem;
+  line-height: 1.6875rem;
 }
 
 html .content-member-data .container .member-data .form form .form-gp a,
@@ -5732,6 +5731,402 @@ body .content-opinion .container .opinion-list h4 {
   body .content-opinion .container .pagination {
     padding: 0 45px;
   }
+}
+
+html .content-opinion-add,
+body .content-opinion-add {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-add,
+  body .content-opinion-add {
+    padding-top: 80px;
+  }
+}
+
+html .content-opinion-add h1,
+body .content-opinion-add h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add h1,
+  body .content-opinion-add h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-opinion-add h3,
+body .content-opinion-add h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-opinion-add ul,
+body .content-opinion-add ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-opinion-add .btn,
+body .content-opinion-add .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add .container,
+  body .content-opinion-add .container {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  html .content-opinion-add .container h1,
+  body .content-opinion-add .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-opinion-add .container .form,
+body .content-opinion-add .container .form {
+  background-color: #e5f1f9;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  padding: 60px;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add .container .form,
+  body .content-opinion-add .container .form {
+    border-radius: unset;
+  }
+}
+
+html .content-opinion-add .container .form form .form-gp,
+body .content-opinion-add .container .form form .form-gp {
+  padding: 0 60px;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+html .content-opinion-add .container .form form .form-gp p,
+body .content-opinion-add .container .form form .form-gp p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  html .content-opinion-add .container .form form .form-gp,
+  body .content-opinion-add .container .form form .form-gp {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-add .container .form form .form-gp,
+  body .content-opinion-add .container .form form .form-gp {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add .container .form form .form-gp,
+  body .content-opinion-add .container .form form .form-gp {
+    padding: 0 45px;
+  }
+}
+
+html .content-opinion-add .container .form form .form-gp .form-control,
+body .content-opinion-add .container .form form .form-gp .form-control {
+  background-color: rgba(13, 115, 173, 0.2);
+}
+
+html .content-opinion-add .container .form form .form-gp label,
+body .content-opinion-add .container .form form .form-gp label {
+  width: 100%;
+  padding: 0;
+  margin-right: 50px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+html .content-opinion-add .container .form form .form-gp input,
+html .content-opinion-add .container .form form .form-gp select,
+body .content-opinion-add .container .form form .form-gp input,
+body .content-opinion-add .container .form form .form-gp select {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-opinion-add .container .form form .form-gp input[type="submit"], html .content-opinion-add .container .form form .form-gp input[type="reset"],
+html .content-opinion-add .container .form form .form-gp select[type="submit"],
+html .content-opinion-add .container .form form .form-gp select[type="reset"],
+body .content-opinion-add .container .form form .form-gp input[type="submit"],
+body .content-opinion-add .container .form form .form-gp input[type="reset"],
+body .content-opinion-add .container .form form .form-gp select[type="submit"],
+body .content-opinion-add .container .form form .form-gp select[type="reset"] {
+  width: 100%;
+  height: 40px;
+  background-color: #0d73ad;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+html .content-opinion-add .container .form form .form-gp input[type="submit"]:hover, html .content-opinion-add .container .form form .form-gp input[type="reset"]:hover,
+html .content-opinion-add .container .form form .form-gp select[type="submit"]:hover,
+html .content-opinion-add .container .form form .form-gp select[type="reset"]:hover,
+body .content-opinion-add .container .form form .form-gp input[type="submit"]:hover,
+body .content-opinion-add .container .form form .form-gp input[type="reset"]:hover,
+body .content-opinion-add .container .form form .form-gp select[type="submit"]:hover,
+body .content-opinion-add .container .form form .form-gp select[type="reset"]:hover {
+  background-color: #2faae5;
+}
+
+html .content-opinion-add .container .form form .form-gp input[type="button"],
+html .content-opinion-add .container .form form .form-gp select[type="button"],
+body .content-opinion-add .container .form form .form-gp input[type="button"],
+body .content-opinion-add .container .form form .form-gp select[type="button"] {
+  width: 100%;
+  height: 40px;
+  background-color: unset;
+  border: solid 1px #0d73ad;
+  border-radius: 8px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+html .content-opinion-add .container .form form .form-gp input[type="button"]:hover,
+html .content-opinion-add .container .form form .form-gp select[type="button"]:hover,
+body .content-opinion-add .container .form form .form-gp input[type="button"]:hover,
+body .content-opinion-add .container .form form .form-gp select[type="button"]:hover {
+  background-color: #2faae5;
+  color: white;
+  border: solid 1px #2faae5;
+}
+
+html .content-opinion-add .container .form form .form-gp input[disabled],
+html .content-opinion-add .container .form form .form-gp select[disabled],
+body .content-opinion-add .container .form form .form-gp input[disabled],
+body .content-opinion-add .container .form form .form-gp select[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-opinion-add .container .form form .form-gp input[disabled]:hover,
+html .content-opinion-add .container .form form .form-gp select[disabled]:hover,
+body .content-opinion-add .container .form form .form-gp input[disabled]:hover,
+body .content-opinion-add .container .form form .form-gp select[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
+html .content-opinion-add .container .form form .form-gp textarea,
+body .content-opinion-add .container .form form .form-gp textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+html .content-opinion-add .container .form form .form-gp a,
+body .content-opinion-add .container .form form .form-gp a {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin-top: 20px;
+  color: #0d73ad;
+  font-weight: bold;
+  text-align: center;
+}
+
+html .content-opinion-add .container .form form .form-check,
+body .content-opinion-add .container .form form .form-check {
+  width: 100%;
+  padding: 0 60px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  html .content-opinion-add .container .form form .form-check,
+  body .content-opinion-add .container .form form .form-check {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-add .container .form form .form-check,
+  body .content-opinion-add .container .form form .form-check {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add .container .form form .form-check,
+  body .content-opinion-add .container .form form .form-check {
+    padding: 0 45px;
+  }
+}
+
+html .content-opinion-add .container .form form .form-check input,
+html .content-opinion-add .container .form form .form-check select,
+body .content-opinion-add .container .form form .form-check input,
+body .content-opinion-add .container .form form .form-check select {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+html .content-opinion-add .container .form form .form-check input[type="checkbox"],
+html .content-opinion-add .container .form form .form-check select[type="checkbox"],
+body .content-opinion-add .container .form form .form-check input[type="checkbox"],
+body .content-opinion-add .container .form form .form-check select[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-opinion-add .container .form form .form-check select,
+body .content-opinion-add .container .form form .form-check select {
+  width: 100%;
+  height: 40px;
+}
+
+html .content-opinion-add .container .form form .form-check label,
+body .content-opinion-add .container .form form .form-check label {
+  padding: 0;
+  margin: 0 25px;
+  color: #595757;
+  font-size: 1rem;
+}
+
+html .content-opinion-add .container .form form .form-check .form-check-label,
+body .content-opinion-add .container .form form .form-check .form-check-label {
+  line-height: 2.25rem;
+  margin: 0 20px 10px 25px;
+}
+
+html .content-opinion-add .container .form form .form-check .form-check-input,
+body .content-opinion-add .container .form form .form-check .form-check-input {
+  margin-left: unset;
+}
+
+html .content-opinion-add .container .form form .form-check .check-input,
+body .content-opinion-add .container .form form .form-check .check-input {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin: 10px 0;
+}
+
+html .content-opinion-add .container .form form .form-check .h4,
+body .content-opinion-add .container .form form .form-check .h4 {
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+html .content-opinion-add .container .form form span,
+body .content-opinion-add .container .form form span {
+  color: #E8291C;
+  margin-left: 3px;
+}
+
+@media (max-width: 1024px) {
+  html .content-opinion-add .container .form,
+  body .content-opinion-add .container .form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-add .container .form,
+  body .content-opinion-add .container .form {
+    width: 100%;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-add .container .form,
+  body .content-opinion-add .container .form {
+    padding: 30px 0;
+  }
+}
+
+html .content-opinion-add .container .form .g-recaptcha,
+body .content-opinion-add .container .form .g-recaptcha {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 html .content-example-code .container,
