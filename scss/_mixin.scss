@@ -871,6 +871,9 @@
     .list {
         display: flex;
         padding: $padding-XXS 0;
+        @include pad() {
+            padding: $padding-XXS $padding-XS;
+        }
         @include mobile-L() {
             flex-wrap: wrap;
             flex-direction: column;
@@ -882,6 +885,12 @@
             color: $dark-blue;
             font-size: $size-p;
             line-height: $size-p * 2;
+            @include pad(){
+                margin-right: $margin-S;
+            }
+            @include mobile-L(){
+                margin-right: unset;
+            }
         }
         a:hover p {
             color: $blue;

@@ -1119,6 +1119,13 @@ body .content-preview .container .new .list {
   padding: 10px 0;
 }
 
+@media (max-width: 768px) {
+  html .content-preview .container .new .list,
+  body .content-preview .container .new .list {
+    padding: 10px 30px;
+  }
+}
+
 @media (max-width: 568px) {
   html .content-preview .container .new .list,
   body .content-preview .container .new .list {
@@ -1139,6 +1146,20 @@ body .content-preview .container .new .list span {
   color: #0d73ad;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  html .content-preview .container .new .list span,
+  body .content-preview .container .new .list span {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-preview .container .new .list span,
+  body .content-preview .container .new .list span {
+    margin-right: unset;
+  }
 }
 
 html .content-preview .container .new .list a:hover p,
@@ -1338,6 +1359,13 @@ body .content-information .container .list-gp .list {
   padding: 10px 0;
 }
 
+@media (max-width: 768px) {
+  html .content-information .container .list-gp .list,
+  body .content-information .container .list-gp .list {
+    padding: 10px 30px;
+  }
+}
+
 @media (max-width: 568px) {
   html .content-information .container .list-gp .list,
   body .content-information .container .list-gp .list {
@@ -1358,6 +1386,20 @@ body .content-information .container .list-gp .list span {
   color: #0d73ad;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  html .content-information .container .list-gp .list span,
+  body .content-information .container .list-gp .list span {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .list-gp .list span,
+  body .content-information .container .list-gp .list span {
+    margin-right: unset;
+  }
 }
 
 html .content-information .container .list-gp .list a:hover p,
@@ -1908,6 +1950,13 @@ body .content-news .container .list-gp .list {
   padding: 10px 0;
 }
 
+@media (max-width: 768px) {
+  html .content-news .container .list-gp .list,
+  body .content-news .container .list-gp .list {
+    padding: 10px 30px;
+  }
+}
+
 @media (max-width: 568px) {
   html .content-news .container .list-gp .list,
   body .content-news .container .list-gp .list {
@@ -1928,6 +1977,20 @@ body .content-news .container .list-gp .list span {
   color: #0d73ad;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  html .content-news .container .list-gp .list span,
+  body .content-news .container .list-gp .list span {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-news .container .list-gp .list span,
+  body .content-news .container .list-gp .list span {
+    margin-right: unset;
+  }
 }
 
 html .content-news .container .list-gp .list a:hover p,
@@ -6549,6 +6612,13 @@ body .content-example-code .container .example-body .right .text-gp .list-gp .li
   padding: 10px 0;
 }
 
+@media (max-width: 768px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list {
+    padding: 10px 30px;
+  }
+}
+
 @media (max-width: 568px) {
   html .content-example-code .container .example-body .right .text-gp .list-gp .list,
   body .content-example-code .container .example-body .right .text-gp .list-gp .list {
@@ -6569,6 +6639,20 @@ body .content-example-code .container .example-body .right .text-gp .list-gp .li
   color: #0d73ad;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list span,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list span {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list span,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list span {
+    margin-right: unset;
+  }
 }
 
 html .content-example-code .container .example-body .right .text-gp .list-gp .list a:hover p,
