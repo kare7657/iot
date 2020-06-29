@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>參考典範指引</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="minibar">
+        <div class="container">
+            <a href="#U" id="AU" title="右上方功能區塊" accesskey="U" tabindex="2">:::</a>
+            <a href="line.html"><img src="img/line.png" alt="line"></a>
+            <a href="webmap.html"><img src="img/webmap.png" alt="webmap"></a>
+            <div class="btn">
+                <ul>
+                    <li><a href="login.html">登入</a></li>
+                    <li>|</li>
+                    <li><a href="sign-up.html">註冊</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar">
+        <div class="pc">
+            <div class="navbar-L">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="navbar-R">
+                <a href="information-display.html">
+                    <h4>資料展示</h4>
+                </a>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>開發指引</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="theme.html">
+                            <h4>資料主題</h4>
+                        </a><br>
+                        <a href="api-explain.html">
+                            <h4>線上API說明</h4>
+                        </a><br>
+                        <a href="example-code.html">
+                            <h4>範例程式碼</h4>
+                        </a><br>
+                        <a href="data-explain.html">
+                            <h4>資料使用說明</h4>
+                        </a><br>
+                        <a href="data-statistics.html">
+                            <h4>資料使用統計</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>示範應用</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="example-all.html">
+                            <h4>所有類型</h4>
+                        </a><br>
+                        <a href="example-web.html">
+                            <h4>網站</h4>
+                        </a><br>
+                        <a href="example-app.html">
+                            <h4>APP</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>作業規範</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="rules.html">
+                            <h4>作業規範</h4>
+                        </a><br>
+                        <a href="rules-example.html">
+                            <h4>參考典範指引</h4>
+                        </a><br>
+                        <a href="rules-data.html">
+                            <h4>資料交換標準</h4>
+                        </a><br>
+                        <a href="rules-domain.html">
+                            <h4>領域資料標準</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>支援服務</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="opinion.html">
+                            <h4>意見反映</h4>
+                        </a><br>
+                        <a href="operation.html">
+                            <h4>操作導覽</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4 style="margin-right: 0px;">會員專區</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="member-data.html">
+                            <h4>會員資料修改</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="menu">
+                <div class="fas fa-bars">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="information-display.html">資料展示</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            開發指引
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="theme.html">
+                                <h4>資料主題</h4>
+                            </a>
+                            <a class="dropdown-item" href="api-explain.html">
+                                <h4>線上API說明</h4>
+                            </a>
+                            <a class="dropdown-item" href="example-code.html">
+                                <h4>範例程式碼</h4>
+                            </a>
+                            <a class="dropdown-item" href="data-explain.html">
+                                <h4>資料使用說明</h4>
+                            </a>
+                            <a class="dropdown-item" href="data-statistics.html">
+                                <h4>資料使用統計</h4>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            示範應用
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="example-all.html">
+                                <h4>所有類型</h4>
+                            </a>
+                            <a class="dropdown-item" href="example-web.html">
+                                <h4>網站</h4>
+                            </a>
+                            <a class="dropdown-item" href="example-app.html">
+                                <h4>APP</h4>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            作業規範
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="rules.html">
+                                <h4>作業規範</h4>
+                            </a>
+                            <a class="dropdown-item" href="rules-example.html">
+                                <h4>參考典範指引</h4>
+                            </a>
+                            <a class="dropdown-item" href="rules-data.html">
+                                <h4>資料交換標準</h4>
+                            </a>
+                            <a class="dropdown-item" href="rules-domain.html">
+                                <h4>領域資料標準</h4>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            支援服務
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="opinion.html">
+                                <h4>意見反映</h4>
+                            </a>
+                            <a class="dropdown-item" href="operation.html">
+                                <h4>操作導覽</h4>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            會員專區
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="member-data.html">
+                                <h4>會員資料修改</h4>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="webmap.html">網站導覽</a></li>
+                    <li><a href="line.html">交談機器人</a></li>
+                    <li><a href="login.html">登入</a></li>
+                    <li><a href="sign-up.html">註冊</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li>></li>
+                <li><a href="#">作業規範</a></li>
+                <li>></li>
+                <li><span>參考典範指引</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 參考典範指引 -->
+    <section class="content-information">
+        <div class="container">
+            <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
+            <h1>參考典範指引</h1>
+            <h3>目的</h3>
+            <p>本指引文件係針對作業規範中，辦理智慧水管理計畫之相關機關（構）應負責事項，制訂各項細部作業方法。</p>
+            <h3>適用範圍</h3>
+            <p>本指引文件包含作業規範第三、四、五、六、七條之作業流程、相關規定、資訊及通訊系統功能規格等作業方法。各項條文及本文件章節對應關係如下：<br>
+                ● 整體作業流程暨計畫管理作業指引（第三條及第四條第一款）參照第4章說明。<br>
+                ● 雲端作業指引（第六條第一款）參照第5章說明。<br>
+                ● 資料上傳作業指引（含四條第二款及第五條）參照第6章及第7章說明。<br>
+                ● 遠端控制作業指引（第六條第三款）參照第7章說明。<br>
+                ● 資訊化作業指引（第六條第二款及第七條）參照第8章及第9章說明。<br>
+                ● 資料呈現指引（第六條第四款）參照第10章說明。<br>
+                資料交換作業相關內容（作業規範第八條）請參照〝水資源物聯網資料交換標準參考典範指引〞。</p>
+            <h3>引用標準</h3>
+            <p>
+                下列法規、標準或文件因本標準所引用，成為本標準一部分。所有引用法規、標準或文件皆適用最新版（包括補充增修）。<br>
+                ● 水資源物聯網資料交換標準參考典範指引（經濟部水利署）<br>
+                ● 水資源資料交換標準（經濟部水利署）<br>
+                ● 資料集詮釋資料標準規範（國家發展委員會）<br>
+                ● 政府網站規範及Web 2.0作業指引（國家發展委員會）<br>
+                ● 政府網站版型與內容管理規範（國家發展委員會）<br>
+                ● 行政院及所屬各機關行動化服務發展作業原則（國家發展委員會）<br>
+                ● 資通安全管理法<br>
+                ● 民生公共物聯網計畫資訊安全要求<br>
+                ● 資通安全事件通報及應變辦法（行政院國家資通安全會報）<br>
+                ● 政府機關（構）資通安全責任等級分級作業（行政院國家資通安全會報）<br>
+                ● 影像監控系統資安標準—網路攝影機（財團法人台灣資通產業標準協會）<br>
+                ● CNS 11643：中文標準交換碼<br>
+                ● IETF RFC 1035: Domain Implementation and Specification<br>
+                ● IETF RFC 1738: Uniform Resource Locators<br>
+                ● IETF RFC 3629: UTF-8, a transformation format of ISO 10646<br>
+                ● IETF RFC 3986: Uniform Resource Identifier (URI) Generic Syntax<br>
+                ● IETF RFC 4122: A universally unique identifier (UUID) URN Namespace<br>
+                ● IETF RFC 5246: The Transport Layer Security (TLS) Protocol, version 1.2<br>
+                ● IETF RFC 7946: GeoJSON<br>
+                ● ISO 8601-2004: Data elements and interchange formats<br>
+                ● ISO/IEC 10646-2014: Universal Coded Character Set<br>
+                ● ISO/IEC 20922-2016: Message Queuing Telemetry Transport, version 3.1.1<br>
+                ● ISO/IEC 27001-2005: Information security management<br>
+                ● IOGP: EPSG-3825 & EPSG-3826
+            </p>
+            <div class="btn">
+                <button class="button-outline" type="button"
+                    onclick="window.open('https://drive.google.com/open?id=1AH3EEl8EqqDNdghJMymN9kWwtJXMrBOQ')">
+                    <i class="fas fa-arrow-down"></i>水資源物聯網參考典範指引v1.1.pdf</button>
+            </div>
+
+        </div>
+        <hr>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#Z" id="AZ" title="下方功能區塊" accesskey="Z">:::</a>
+            <ul class="text-gp">
+                <li>
+                    <a href="information.html"><i class="fas fa-file-alt"></i>政府網站資料開放宣告</a>
+                </li>
+                <li>
+                    <a href="private.html"><i class="fas fa-file-alt"></i>隱私權保護政策</a>
+                </li>
+                <li>
+                    <a href="security.html"><i class="fas fa-file-alt"></i>網站安全政策</a>
+                </li>
+            </ul>
+            <div class="contact">
+                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=14">
+                    <i class="fas fa-map-marker-alt"></i>臺中辦公區
+                </a>
+                <p>電話：(04)2250-1250．(04)2250-1499．傳真：(04)2250-1628．40873臺中市南屯區黎明路2段501號
+                </p>
+                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=4">
+                    <i class="fas fa-map-marker-alt"></i>臺北辦公區
+                </a>
+                <p>電話：(02)3707-3000．(0800)212-239．傳真：(02)3707-3134．10651臺北市大安區信義路3段41-3號9-12樓
+                </p>
+                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=15">
+                    <i class="fas fa-map-marker-alt"></i>新店辦公室
+                </a>
+                <p>電話：(02)8941-5026．23159新北市新店區安和路三段76號</p>
+            </div>
+            <div class="notice">
+                <div class="text-gp">
+                    <p>上班時間 彈性上班時間：08:00~09:00, 17:00~18:00﹔核心上班時間：09:00~12:30, 13:30~17:00</p>
+                    <p>請使用IE第10版以上、Chrome、FireFox、Edge、Safari瀏覽器瀏覽．最後更新：2020/09/09</p>
+                </div>
+                <div class="pic">
+                    <a href="https://www.handicap-free.nat.gov.tw/Applications/Detail?category=20191015080446"><img
+                            src="img/aa2.png" alt="通過AA檢測等級無障礙網頁檢測"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top">
+        <div class="back-top">▲</div>
+    </a>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- mobile-menu -->
+    <script>
+        var fas = document.querySelector(".fas.fa-bars")
+        var navbar_nav = document.querySelector(".nav.navbar-nav")
+        var nav_item = document.querySelector(".nav-item.dropdown")
+        fas.onclick = function () {
+            if (navbar_nav.classList.contains("active-ul")) {
+                navbar_nav.classList.remove("active-ul")
+            } else {
+                navbar_nav.classList.add("active-ul")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
