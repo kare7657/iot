@@ -927,7 +927,7 @@ body .content-banner img {
      object-position: center 0%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   html .content-banner img,
   body .content-banner img {
     height: 40vh;

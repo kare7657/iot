@@ -38,7 +38,7 @@ body {
             height: 500px;
             object-fit: cover;
             object-position: center 0%;
-            @include pad() {
+            @include web-L() {
                 height: 40vh;
             }
             @include mobile-L() {
