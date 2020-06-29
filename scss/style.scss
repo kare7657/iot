@@ -149,6 +149,12 @@ body {
     .content-information {
         @include papers();
         @include text-important();
+        .container {
+            .list-gp {
+                @include news-list(100%, 15%);
+                margin: $margin-S * 1.5 0;
+            }
+        }
     }
     // 頁尾
     footer {

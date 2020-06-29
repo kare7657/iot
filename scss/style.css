@@ -1314,6 +1314,72 @@ body .content-information span {
   font-weight: bold;
 }
 
+html .content-information .container .list-gp,
+body .content-information .container .list-gp {
+  width: 100%;
+  margin-right: 50px;
+  margin: 37.5px 0;
+}
+
+@media (max-width: 768px) {
+  html .content-information .container .list-gp,
+  body .content-information .container .list-gp {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-information .container .list-gp .list,
+body .content-information .container .list-gp .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .list-gp .list,
+  body .content-information .container .list-gp .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 20px;
+  }
+}
+
+html .content-information .container .list-gp .list span,
+body .content-information .container .list-gp .list span {
+  width: 15%;
+  text-align: center;
+  color: #0d73ad;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+html .content-information .container .list-gp .list a:hover p,
+body .content-information .container .list-gp .list a:hover p {
+  color: #2faae5;
+}
+
+html .content-information .container .list-gp .blue,
+body .content-information .container .list-gp .blue {
+  background-color: #e5f1f9;
+}
+
+html .content-information .container .list-gp .white,
+body .content-information .container .list-gp .white {
+  background-color: white;
+}
+
+html .content-information .container .list-gp h4,
+body .content-information .container .list-gp h4 {
+  text-align: right;
+}
+
 html footer,
 body footer {
   background-color: #0d73ad;
