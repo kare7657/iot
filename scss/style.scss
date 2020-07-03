@@ -945,6 +945,7 @@ body {
                         }
                         img {
                             width: 100px;
+                            height: 100px;
                             @include mobile-L() {
                                 width: 35%;
                             }

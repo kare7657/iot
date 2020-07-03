@@ -5762,6 +5762,7 @@ body .content-opinion .container .notice .top .left {
 html .content-opinion .container .notice .top .left img,
 body .content-opinion .container .notice .top .left img {
   width: 100px;
+  height: 100px;
 }
 
 @media (max-width: 568px) {
