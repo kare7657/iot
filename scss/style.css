@@ -3757,7 +3757,7 @@ body .content-login .container .form form .form-gp input[type="button"],
 body .content-login .container .form form .form-gp select[type="button"] {
   width: 100%;
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   color: #0d73ad;
@@ -4026,7 +4026,7 @@ html .content-signup .container .form-gp,
 body .content-signup .container .form-gp {
   background-color: #e5f1f9;
   border-radius: 20px;
-  background-color: unset;
+  background-color: transparent;
 }
 
 @media (max-width: 568px) {
@@ -4157,7 +4157,7 @@ body .content-signup .container .form-gp form .form-gp input[type="button"],
 body .content-signup .container .form-gp form .form-gp select[type="button"] {
   width: 100%;
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   color: #0d73ad;
@@ -4442,7 +4442,7 @@ body .content-signup .container .form-gp form .form-right {
 html .content-signup .container .form-gp form .form-submit,
 body .content-signup .container .form-gp form .form-submit {
   width: 60%;
-  background-color: unset;
+  background-color: transparent;
   text-align: center;
   margin-top: 50px;
 }
@@ -5412,7 +5412,7 @@ body .content-member-data .container .member-data .form form .form-gp input[type
 body .content-member-data .container .member-data .form form .form-gp select[type="button"] {
   width: 100%;
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   color: #0d73ad;
@@ -5860,7 +5860,7 @@ body .content-opinion .container .filter input {
   width: 15%;
   height: 30px;
   margin: 0 10px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   font-size: 1rem;
@@ -5895,7 +5895,7 @@ body .content-opinion .container .filter input[type="submit"],
 body .content-opinion .container .filter input[type="reset"] {
   width: 9%;
   padding: 5px 0;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   font-size: 1.125rem;
@@ -6246,7 +6246,7 @@ body .content-opinion-add .container .form form .form-gp input[type="button"],
 body .content-opinion-add .container .form form .form-gp select[type="button"] {
   width: 100%;
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   border: solid 1px #0d73ad;
   border-radius: 8px;
   color: #0d73ad;

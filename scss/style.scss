@@ -606,7 +606,7 @@ body {
             }
             .form-gp {
                 @include form();
-                background-color: unset;
+                background-color: transparent;
                 form {
                     width: 100%;
                     padding: $padding-S;
@@ -669,7 +669,7 @@ body {
                     }
                     .form-submit {
                         width: 60%;
-                        background-color: unset;
+                        background-color: transparent;
                         text-align: center;
                         margin-top: $margin-M;
                         @include web-S() {
@@ -1000,7 +1000,7 @@ body {
                     width: 15%;
                     height: 30px;
                     margin: 0 $margin-XS;
-                    background-color: unset;
+                    background-color: transparent;
                     border: solid 1px $dark-blue;
                     border-radius: 8px;
                     font-size: $size-p;
@@ -1022,7 +1022,7 @@ body {
                     &[type="reset"] {
                         width: 9%;
                         padding: 5px 0;
-                        background-color: unset;
+                        background-color: transparent;
                         border: solid 1px $dark-blue;
                         border-radius: 8px;
                         font-size: $size-h4;
