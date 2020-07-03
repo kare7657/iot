@@ -412,9 +412,11 @@
         display: flex;
         justify-content: flex-end;
         margin-top: $margin-S;
+        white-space: nowrap;
         @include mobile-L() {
             justify-content: center;
             text-align: left;
+            white-space: unset;
         }
         ul {
             margin: 0;
