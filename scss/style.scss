@@ -1105,31 +1105,30 @@ body {
             .preview {
                 border-radius: 20px;
                 padding: $padding-XS * 1.5 $padding-S;
-                margin: $margin-M 0;
-                margin-bottom: $margin-S;
+                margin-top: $margin-S;
                 @include pad() {
-                    margin-top: $margin-S;
-                    padding: 0 $padding-XS;
+                    padding: $padding-XS;
+                    margin-top: 0;
                 }
                 @include mobile-L() {
                     padding: $padding-XS $padding-XS * 1.5;
                     border: unset;
                     border-radius: unset;
-                    margin: 0;
                     background-color: transparent;
+                    margin-bottom: $margin-XS;
                 }
                 h1 {
                     margin: 0;
-                    margin-bottom: $margin-XS;
+                    margin-bottom: $margin-XS * 1.5;
                     text-align: left;
                 }
                 .bot {
                     p {
                         text-align: right;
                         color: rgba($color: $text, $alpha: 0.5);
+                        margin-top: $margin-S;
                         @include mobile-L() {
                             text-align: left;
-                            margin-top: $margin-XS;
                         }
                     }
                 }
@@ -1167,7 +1166,7 @@ body {
                             background-color: $light-sky;
                         }
                     }
-                    &[type="date"]{
+                    &[type="date"] {
                         color: $dark-blue;
                     }
                 }
@@ -1191,7 +1190,7 @@ body {
                     @include mobile-L() {
                         flex-wrap: wrap;
                         flex-direction: column;
-                        padding: $padding-XXS*1.5 $padding-XS * 1.5;
+                        padding: $padding-XXS * 1.5 $padding-XS * 1.5;
                         .c1 {
                             width: 100%;
                             padding: 0;
@@ -1260,7 +1259,7 @@ body {
                     }
                     @include pad() {
                         width: 100%;
-                        padding: $padding-XS*1.5 0;
+                        padding: $padding-XS * 1.5 0;
                         .form-gp {
                             padding: 0 $padding-XS * 1.5;
                         }
@@ -1313,7 +1312,7 @@ body {
                             width: 30%;
                             color: $title-W;
                             border: none;
-                            @include mobile-L(){
+                            @include mobile-L() {
                                 width: 100%;
                             }
                         }

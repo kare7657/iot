@@ -6527,15 +6527,14 @@ html .content-opinion-preview .container .preview,
 body .content-opinion-preview .container .preview {
   border-radius: 20px;
   padding: 45px 60px;
-  margin: 50px 0;
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 @media (max-width: 768px) {
   html .content-opinion-preview .container .preview,
   body .content-opinion-preview .container .preview {
-    margin-top: 25px;
-    padding: 0 30px;
+    padding: 30px;
+    margin-top: 0;
   }
 }
 
@@ -6545,15 +6544,15 @@ body .content-opinion-preview .container .preview {
     padding: 30px 45px;
     border: unset;
     border-radius: unset;
-    margin: 0;
     background-color: transparent;
+    margin-bottom: 10px;
   }
 }
 
 html .content-opinion-preview .container .preview h1,
 body .content-opinion-preview .container .preview h1 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -6561,13 +6560,13 @@ html .content-opinion-preview .container .preview .bot p,
 body .content-opinion-preview .container .preview .bot p {
   text-align: right;
   color: rgba(89, 87, 87, 0.5);
+  margin-top: 25px;
 }
 
 @media (max-width: 568px) {
   html .content-opinion-preview .container .preview .bot p,
   body .content-opinion-preview .container .preview .bot p {
     text-align: left;
-    margin-top: 10px;
   }
 }
 
