@@ -1167,15 +1167,8 @@ body {
                         }
                     }
                     &[type="date"] {
-                        &::-webkit-datetime-edit-month-field {
-                            color: $dark-blue;
-                        }
-                        &::-webkit-datetime-edit-day-field {
-                            color: $dark-blue;
-                        }
-                        &::-webkit-datetime-edit-year-field {
-                            color: $dark-blue;
-                        }
+                        text-align: center;
+                        color: $dark-blue;
                     }
                 }
             }
