@@ -169,7 +169,6 @@
         border: none;
         font-size: $size-h4;
         color: $title-W;
-        font-family: "微軟正黑體";
         font-weight: bold;
         &:hover {
             background-color: $blue;
@@ -193,7 +192,6 @@
         // border-radius: 10px;
         font-size: $size-h4;
         color: $dark-blue;
-        font-family: "微軟正黑體";
         font-weight: bold;
         @include mobile-L() {
             padding: 8px $padding-XS/2;
