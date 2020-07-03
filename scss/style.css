@@ -6598,7 +6598,6 @@ body .content-opinion-preview .container .btn input {
   -webkit-box-shadow: #0d73ad 0 0 0 1px;
           box-shadow: #0d73ad 0 0 0 1px;
   font-size: 1.125rem;
-  color: #0d73ad;
   font-weight: bold;
   margin: 25px 0;
 }
@@ -6629,18 +6628,18 @@ body .content-opinion-preview .container .btn input[disabled]:hover {
   background-color: #a7e5ff;
 }
 
-html .content-opinion-preview .container .btn input::-webkit-datetime-edit-month-field,
-body .content-opinion-preview .container .btn input::-webkit-datetime-edit-month-field {
+html .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-month-field,
+body .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-month-field {
   color: #0d73ad;
 }
 
-html .content-opinion-preview .container .btn input::-webkit-datetime-edit-day-field,
-body .content-opinion-preview .container .btn input::-webkit-datetime-edit-day-field {
+html .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-day-field,
+body .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-day-field {
   color: #0d73ad;
 }
 
-html .content-opinion-preview .container .btn input::-webkit-datetime-edit-year-field,
-body .content-opinion-preview .container .btn input::-webkit-datetime-edit-year-field {
+html .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-year-field,
+body .content-opinion-preview .container .btn input[type="date"]::-webkit-datetime-edit-year-field {
   color: #0d73ad;
 }
 

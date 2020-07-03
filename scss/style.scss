@@ -1148,7 +1148,7 @@ body {
                     border: none;
                     box-shadow: $dark-blue 0 0 0 1px;
                     font-size: $size-h4;
-                    color: $dark-blue;
+                    // color: $dark-blue;
                     font-weight: bold;
                     margin: $margin-S 0;
                     @include mobile-L() {
@@ -1166,15 +1166,17 @@ body {
                             background-color: $light-sky;
                         }
                     }
-                    &::-webkit-datetime-edit-month-field {
-                        color: $dark-blue;
-                      }
-                      &::-webkit-datetime-edit-day-field {
-                        color: $dark-blue;
-                      }
-                      &::-webkit-datetime-edit-year-field {
-                        color: $dark-blue;
-                      }
+                    &[type="date"] {
+                        &::-webkit-datetime-edit-month-field {
+                            color: $dark-blue;
+                        }
+                        &::-webkit-datetime-edit-day-field {
+                            color: $dark-blue;
+                        }
+                        &::-webkit-datetime-edit-year-field {
+                            color: $dark-blue;
+                        }
+                    }
                 }
             }
             .preview-list {
