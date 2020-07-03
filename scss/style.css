@@ -151,6 +151,10 @@
   background-color: #a7e5ff;
 }
 
+* .form-control {
+  background-color: rgba(13, 115, 173, 0.2) !important;
+}
+
 * button {
   padding: 5px 30px;
   background-color: #0d73ad;
@@ -404,6 +408,34 @@
     padding: 0 30px;
     margin-bottom: 25px;
   }
+}
+
+* .modal-iot .modal-dialog .modal-content .modal-footer .btn {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+@media (max-width: 568px) {
+  * .modal-iot .modal-dialog .modal-content .modal-footer .btn {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  * .modal-iot .modal-dialog .modal-content .modal-footer .btn button {
+    margin: 0;
+    margin-top: 25px;
+  }
+}
+
+* .modal-iot .modal-dialog .modal-content .modal-footer .g-recaptcha {
+  width: 100%;
+  margin-top: 10px;
 }
 
 * .modal-iot .modal-dialog .modal-content .btn-iot {
@@ -3690,11 +3722,6 @@ body .content-login .container .form form .form-gp p {
   }
 }
 
-html .content-login .container .form form .form-gp .form-control,
-body .content-login .container .form form .form-gp .form-control {
-  background-color: rgba(13, 115, 173, 0.2);
-}
-
 html .content-login .container .form form .form-gp label,
 body .content-login .container .form form .form-gp label {
   width: 100%;
@@ -4088,11 +4115,6 @@ body .content-signup .container .form-gp form .form-gp p {
   body .content-signup .container .form-gp form .form-gp {
     padding: 0 45px;
   }
-}
-
-html .content-signup .container .form-gp form .form-gp .form-control,
-body .content-signup .container .form-gp form .form-gp .form-control {
-  background-color: rgba(13, 115, 173, 0.2);
 }
 
 html .content-signup .container .form-gp form .form-gp label,
@@ -5345,11 +5367,6 @@ body .content-member-data .container .member-data .form form .form-gp p {
   }
 }
 
-html .content-member-data .container .member-data .form form .form-gp .form-control,
-body .content-member-data .container .member-data .form form .form-gp .form-control {
-  background-color: rgba(13, 115, 173, 0.2);
-}
-
 html .content-member-data .container .member-data .form form .form-gp label,
 body .content-member-data .container .member-data .form form .form-gp label {
   width: 100%;
@@ -6180,11 +6197,6 @@ body .content-opinion-add .container .form form .form-gp p {
   }
 }
 
-html .content-opinion-add .container .form form .form-gp .form-control,
-body .content-opinion-add .container .form form .form-gp .form-control {
-  background-color: rgba(13, 115, 173, 0.2);
-}
-
 html .content-opinion-add .container .form form .form-gp label,
 body .content-opinion-add .container .form form .form-gp label {
   width: 100%;
@@ -6513,10 +6525,18 @@ body .content-opinion-preview span {
 
 html .content-opinion-preview .container .preview,
 body .content-opinion-preview .container .preview {
-  background-color: rgba(13, 115, 173, 0.1);
   border-radius: 20px;
   padding: 45px 60px;
   margin: 50px 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-preview .container .preview,
+  body .content-opinion-preview .container .preview {
+    margin-top: 25px;
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -6525,7 +6545,8 @@ body .content-opinion-preview .container .preview {
     padding: 30px 45px;
     border: unset;
     border-radius: unset;
-    margin-bottom: 10px;
+    margin: 0;
+    background-color: transparent;
   }
 }
 
@@ -6539,6 +6560,74 @@ body .content-opinion-preview .container .preview h1 {
 html .content-opinion-preview .container .preview .bot p,
 body .content-opinion-preview .container .preview .bot p {
   text-align: right;
+  color: rgba(89, 87, 87, 0.5);
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .preview .bot p,
+  body .content-opinion-preview .container .preview .bot p {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+html .content-opinion-preview .container .btn,
+body .content-opinion-preview .container .btn {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .btn,
+  body .content-opinion-preview .container .btn {
+    padding: 0 45px;
+    margin-bottom: 37.5px;
+  }
+}
+
+html .content-opinion-preview .container .btn input,
+body .content-opinion-preview .container .btn input {
+  padding: 5px 30px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: #0d73ad 0 0 0 1px;
+          box-shadow: #0d73ad 0 0 0 1px;
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .btn input,
+  body .content-opinion-preview .container .btn input {
+    padding: 8px 30px;
+    margin: 0;
+  }
+}
+
+html .content-opinion-preview .container .btn input:hover,
+body .content-opinion-preview .container .btn input:hover {
+  background-color: #2faae5;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+html .content-opinion-preview .container .btn input[disabled],
+body .content-opinion-preview .container .btn input[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-opinion-preview .container .btn input[disabled]:hover,
+body .content-opinion-preview .container .btn input[disabled]:hover {
+  background-color: #a7e5ff;
 }
 
 html .content-opinion-preview .container .preview-list,
@@ -6651,6 +6740,76 @@ body .content-opinion-preview .container .preview-list h4 {
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  html .content-opinion-preview .container .preview-list .list,
+  body .content-opinion-preview .container .preview-list .list {
+    padding-left: 30px;
+  }
+  html .content-opinion-preview .container .preview-list .list .c1,
+  body .content-opinion-preview .container .preview-list .list .c1 {
+    width: 20%;
+  }
+  html .content-opinion-preview .container .preview-list .list .c2,
+  body .content-opinion-preview .container .preview-list .list .c2 {
+    display: unset;
+    width: 65%;
+  }
+  html .content-opinion-preview .container .preview-list .list .c3,
+  body .content-opinion-preview .container .preview-list .list .c3 {
+    width: 15%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .preview-list .list,
+  body .content-opinion-preview .container .preview-list .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 45px;
+  }
+  html .content-opinion-preview .container .preview-list .list .c1,
+  body .content-opinion-preview .container .preview-list .list .c1 {
+    width: 100%;
+    padding: 0;
+  }
+  html .content-opinion-preview .container .preview-list .list .c2,
+  body .content-opinion-preview .container .preview-list .list .c2 {
+    width: 100%;
+    padding: 0;
+  }
+  html .content-opinion-preview .container .preview-list .list .c3,
+  body .content-opinion-preview .container .preview-list .list .c3 {
+    display: unset;
+    width: 100%;
+  }
+}
+
+html .content-opinion-preview .container .preview-list .head,
+body .content-opinion-preview .container .preview-list .head {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .preview-list .head .c2,
+  body .content-opinion-preview .container .preview-list .head .c2 {
+    width: 100%;
+  }
+  html .content-opinion-preview .container .preview-list .head .c1,
+  html .content-opinion-preview .container .preview-list .head .c3,
+  body .content-opinion-preview .container .preview-list .head .c1,
+  body .content-opinion-preview .container .preview-list .head .c3 {
+    display: none;
+  }
+}
+
 html .content-opinion-preview .container .preview-list .c1,
 body .content-opinion-preview .container .preview-list .c1 {
   width: 20%;
@@ -6673,11 +6832,144 @@ body .content-opinion-preview .container .preview-list .c3 {
   width: 15%;
 }
 
+html .content-opinion-preview .container .preview-list .c3 p,
+body .content-opinion-preview .container .preview-list .c3 p {
+  color: rgba(89, 87, 87, 0.5);
+}
+
 @media (max-width: 568px) {
   html .content-opinion-preview .container .pagination,
   body .content-opinion-preview .container .pagination {
     padding: 0 45px;
   }
+}
+
+html .content-opinion-preview .container .reply,
+body .content-opinion-preview .container .reply {
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .reply,
+  body .content-opinion-preview .container .reply {
+    margin: 0;
+  }
+}
+
+html .content-opinion-preview .container .reply form,
+body .content-opinion-preview .container .reply form {
+  border: solid 3px #a7e5ff;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  padding: 60px;
+  padding-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  html .content-opinion-preview .container .reply form,
+  body .content-opinion-preview .container .reply form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-opinion-preview .container .reply form,
+  body .content-opinion-preview .container .reply form {
+    width: 100%;
+    padding: 45px 0;
+  }
+  html .content-opinion-preview .container .reply form .form-gp,
+  body .content-opinion-preview .container .reply form .form-gp {
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .reply form,
+  body .content-opinion-preview .container .reply form {
+    border: none;
+    border-radius: none;
+  }
+}
+
+html .content-opinion-preview .container .reply form label,
+body .content-opinion-preview .container .reply form label {
+  width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: bold;
+  color: #595757;
+  margin: 10px 0;
+  text-align: left;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .reply form label,
+  body .content-opinion-preview .container .reply form label {
+    width: 100%;
+  }
+}
+
+html .content-opinion-preview .container .reply form input,
+html .content-opinion-preview .container .reply form select,
+body .content-opinion-preview .container .reply form input,
+body .content-opinion-preview .container .reply form select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .reply form input,
+  html .content-opinion-preview .container .reply form select,
+  body .content-opinion-preview .container .reply form input,
+  body .content-opinion-preview .container .reply form select {
+    width: 100%;
+  }
+}
+
+html .content-opinion-preview .container .reply form textarea,
+body .content-opinion-preview .container .reply form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+html .content-opinion-preview .container .reply form .g-recaptcha,
+body .content-opinion-preview .container .reply form .g-recaptcha {
+  width: 100%;
+  margin: 20px 0;
+}
+
+html .content-opinion-preview .container .reply form input[type="submit"],
+body .content-opinion-preview .container .reply form input[type="submit"] {
+  width: 30%;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 568px) {
+  html .content-opinion-preview .container .reply form input[type="submit"],
+  body .content-opinion-preview .container .reply form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+html .content-opinion-preview .container .reply form h3,
+body .content-opinion-preview .container .reply form h3 {
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 html .content-example-code .container,

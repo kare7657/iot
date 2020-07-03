@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>意見反映</title>
+    <title>意見瀏覽</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
@@ -235,177 +235,115 @@
                 <li>></li>
                 <li><a href="#">支援服務</a></li>
                 <li>></li>
-                <li><span>意見反映</span></li>
+                <li><a href="opinion.html">意見反映</a></li>
+                <li>></li>
+                <li><span>意見瀏覽</span></li>
             </ul>
         </div>
     </div>
 
-    <!-- 意見反映 -->
-    <section class="content-opinion">
+    <!-- 意見瀏覽 -->
+    <section class="content-opinion-preview">
         <div class="container">
             <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
-            <h1>意見反映</h1>
-            <div class="notice">
-                <div class="top">
-                    <div class="left">
-                        <img src="img/icon-notice.svg" alt="notice">
-                    </div>
-                    <div class="right">
-                        <p>歡迎對<span>「API資料介接」</span>、<span>「網站操作」</span>等相關之問題自由發表意見及討論，使用時應遵守下列規定： <br>
-                            一、本區為自由討論園地，提供各界人士交換意見。 <br>
-                            二、發表意見應尊重他人之權益及隱私，不得發表毀損他人名譽、妨害風化、無理謾罵或與本區成立宗旨不符之言論，所有文章需經過管理員的審核後方能顯示，違反者有權不予顯示，發表人不得異議。
-                        </p>
-                    </div>
-                </div>
+            <div class="preview">
+                <h1>請問是否有河川淹水站歷史資料</h1>
+                <p>
+                    我是內容我是內容我是內容我是內容我是內容我是內容<br>
+                    我是內容我是內容我是內容我是內容<br>
+                    我是內容我是內容我是內容<br>
+                </p>
                 <div class="bot">
-                    <div class="btn">
-                        <button type="button" onclick="javascript:location.href='opinion-add.html'">新增意見</button>
-                    </div>
+                    <p>2020/07/31 16:30&nbsp;&nbsp;account_001</p>
                 </div>
             </div>
-            <form class="filter">
-                <input type="date" id="from" name="from">
-                <label for="to" class="to">~</label>
-                <input type="date" id="to" name="to">
-                <input type="submit" value="查詢">
-                <input type="reset" value="清除日期">
+            <div class="btn">
+                <input type="button" value="新增回應" data-toggle="modal" data-target="#modalreply">
+            </div>
 
-            </form>
-            <div class="opinion-list">
+            <div class="preview-list">
                 <div class="list head">
-                    <p class="c1">文章</p>
-                    <p class="c2">最新回應</p>
-                    <p class="c3">統計</p>
+                    <p class="c1">回應人</p>
+                    <p class="c2">回應內容</p>
+                    <p class="c3">日期</p>
                 </div>
                 <div class="list-gp">
                     <div class="list blue">
                         <div class="c1">
-                            <a href="opinion-preview.html">
-                                請問是否有河川淹水站歷史資料
-                            </a>
+                            <p>
+                                account_001
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：6</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                     <div class="list white">
                         <div class="c1">
-                            <a href="">
-                                無法註冊
-                            </a>
+                            <p>
+                                系統管理員
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：1</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                     <div class="list blue">
                         <div class="c1">
-                            <a href="">
-                                都市淹水站行政區問題
-                            </a>
+                            <p>
+                                account_002
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：4</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                     <div class="list white">
                         <div class="c1">
-                            <a href="">
-                                App ID key失去功能
-                            </a>
+                            <p>
+                                account_003
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：2</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                     <div class="list blue">
                         <div class="c1">
-                            <a href="">
-                                河川水位流域
-                            </a>
+                            <p>
+                                系統管理員
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：3</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                     <div class="list white">
                         <div class="c1">
-                            <a href="">
-                                請問是否有河川淹水站歷史資料
-                            </a>
+                            <p>
+                                account_003
+                            </p>
                         </div>
                         <div class="c2">
-                            <p>系統管理員</p>
+                            <p>回應內容回應內容回應內容回應內容回應內容回應內容回應內容</p>
                         </div>
                         <div class="c3">
-                            <p>回應：2</p>
-                        </div>
-                    </div>
-                    <div class="list blue">
-                        <div class="c1">
-                            <a href="">
-                                <p>無法註冊</p>
-                            </a>
-                        </div>
-                        <div class="c2">
-                            <p>系統管理員</p>
-                        </div>
-                        <div class="c3">
-                            <p>回應：1</p>
-                        </div>
-                    </div>
-                    <div class="list white">
-                        <div class="c1">
-                            <a href="">
-                                都市淹水站行政區問題
-                            </a>
-                        </div>
-                        <div class="c2">
-                            <p>系統管理員</p>
-                        </div>
-                        <div class="c3">
-                            <p>回應：1</p>
-                        </div>
-                    </div>
-                    <div class="list blue">
-                        <div class="c1">
-                            <a href="">
-                                App ID key失去功能
-                            </a>
-                        </div>
-                        <div class="c2">
-                            <p>系統管理員</p>
-                        </div>
-                        <div class="c3">
-                            <p>回應：1</p>
-                        </div>
-                    </div>
-                    <div class="list white">
-                        <div class="c1">
-                            <a href="">
-                                河川水位流域
-                            </a>
-                        </div>
-                        <div class="c2">
-                            <p>系統管理員</p>
-                        </div>
-                        <div class="c3">
-                            <p>回應：3</p>
+                            <p>2020/07/31 17:00</p>
                         </div>
                     </div>
                 </div>
@@ -423,6 +361,67 @@
                     <li><a href=""><i class="fas fa-angle-double-right"></i></a></li>
                 </ul>
             </div>
+            <div class="reply">
+                <!-- modal-iot -->
+                <div class="modal fade modal-iot" id="modalreply" tabindex="-1" role="dialog"
+                    aria-labelledby="modalreplyLabel" data-backdrop="static" style=" padding-top: 0;">
+                    <form >
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                                    <h2 class="modal-title" id="modalreplyLabel">新增回應</h2>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="preview-gp">
+                                        <label for="account">發表人</label>
+                                        <input class="form-control" type="text" name="account" id="account"
+                                            placeholder="account_001" readonly>
+                                    </div>
+                                    <div class="preview-gp">
+                                        <label for="email">信箱</label>
+                                        <input class="form-control" type="text" name="email" id="email"
+                                            placeholder="iotWebScanTest1@com.tw" readonly>
+                                    </div>
+                                    <div class="preview-gp">
+                                        <label for="title">標題</label>
+                                        <input type="text" name="title" id="title">
+                                    </div>
+                                    <div class="preview-gp">
+                                        <label for="content">內容</label>
+                                        <textarea name="content" id="content" rows="4"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="g-recaptcha" data-sitekey="6LcEuLAUAAAAAOK774BX-VqhAYq-gBoCLIoPXWQj">
+                                        <div style="width: 304px; height: 78px;margin: auto;">
+                                            <div><iframe
+                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcEuLAUAAAAAOK774BX-VqhAYq-gBoCLIoPXWQj&amp;co=aHR0cHM6Ly9pb3Qud3JhLmdvdi50dzo0NDM.&amp;hl=zh-TW&amp;v=2diXFiiA9NsPIBTU15LG6xPf&amp;size=normal&amp;cb=w9t57zywk9t1"
+                                                    width="304" height="78" role="presentation" name="a-bhf3r1m2u1sq"
+                                                    frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                            </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                class="g-recaptcha-response"
+                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div><iframe style="display: none;"></iframe>
+
+                                        <input name="JSessId" type="hidden" value="25C42F78A3D3E67621485F7594B29385">
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit" name="go" id="go" class="btn-iot">送出</button>
+                                    <button type="button" name="cancel" id="cancel" class="btn-iot"
+                                        data-dismiss="modal">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -498,6 +497,13 @@
             }
         }
     </script>
+
+    <!-- date-picker datedropper -->
+    <script src="https://cdn.datedropper.com/get/f1a6xwxr0858p4u12v0ivylruukblpm1"></script>
+    <script src="js/datedropper.pro.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
 </body>
 
