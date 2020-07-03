@@ -1167,6 +1167,9 @@ body {
                             background-color: $light-sky;
                         }
                     }
+                    &[type="date"]{
+                        color: $dark-blue;
+                    }
                 }
             }
             .preview-list {

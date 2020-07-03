@@ -6630,6 +6630,11 @@ body .content-opinion-preview .container .btn input[disabled]:hover {
   background-color: #a7e5ff;
 }
 
+html .content-opinion-preview .container .btn input[type="date"],
+body .content-opinion-preview .container .btn input[type="date"] {
+  color: #0d73ad;
+}
+
 html .content-opinion-preview .container .preview-list,
 body .content-opinion-preview .container .preview-list {
   margin-bottom: 37.5px;
