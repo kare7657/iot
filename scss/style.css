@@ -426,6 +426,10 @@
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   * .modal-iot .modal-dialog .modal-content .modal-footer .btn button {
     margin: 0;
@@ -461,6 +465,7 @@
   border-radius: 8px;
   padding: 5px 30px;
   text-decoration: none;
+  text-align: center;
 }
 
 * .modal-iot .modal-dialog .modal-content .btn-iot[type="submit"]:hover, * .modal-iot .modal-dialog .modal-content .btn-iot[type="reset"]:hover {
@@ -477,6 +482,7 @@
   font-weight: bold;
   padding: 5px 30px;
   text-decoration: none;
+  text-align: center;
 }
 
 * .modal-iot .modal-dialog .modal-content .btn-iot[type="button"]:hover {
@@ -2265,17 +2271,23 @@ body .content-information-display .container .map-gp .btn-gp {
 
 html .content-information-display .container .map-gp .btn-gp .display-btn,
 body .content-information-display .container .map-gp .btn-gp .display-btn {
+  opacity: 40%;
   margin: 0 20px;
 }
 
-html .content-information-display .container .map-gp .btn-gp .display-btn img,
-body .content-information-display .container .map-gp .btn-gp .display-btn img {
+html .content-information-display .container .map-gp .btn-gp .display-btn .display-link img,
+body .content-information-display .container .map-gp .btn-gp .display-btn .display-link img {
   width: 100px;
 }
 
-html .content-information-display .container .map-gp .btn-gp .display-btn h3,
-body .content-information-display .container .map-gp .btn-gp .display-btn h3 {
+html .content-information-display .container .map-gp .btn-gp .display-btn .display-link h3,
+body .content-information-display .container .map-gp .btn-gp .display-btn .display-link h3 {
   color: black;
+}
+
+html .content-information-display .container .map-gp .btn-gp .active,
+body .content-information-display .container .map-gp .btn-gp .active {
+  opacity: 100%;
 }
 
 html .content-information-display .container .map-gp .btn-gp input[type="button"],

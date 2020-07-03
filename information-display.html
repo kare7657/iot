@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <!-- jquery -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" async=""
+    <!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async=""
         src="https://www.gstatic.com/recaptcha/releases/NMoy4HgGiLr5NAQaEQa2ho8X/recaptcha__zh_tw.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="jQuery/jquery-3.5.1.min.js"></script>
 
 
 
@@ -253,20 +254,20 @@
             <h1>資料展示</h1>
             <div class="map-gp">
                 <div class="btn-gp">
-                    <div class="display-btn display-btn1">
-                        <a href="">
+                    <div class="display-btn display-btn1 active">
+                        <a href="" class="display-link display-link1">
                             <img src="img/icon-flood.svg" alt="flood">
                             <h3>淹水</h3>
                         </a>
                     </div>
                     <div class="display-btn display-btn2">
-                        <a href="">
+                        <a href="" class="display-link display-link2">
                             <img src="img/icon-water-level.svg" alt="flood">
                             <h3>水位</h3>
                         </a>
                     </div>
                     <div class="display-btn display-btn3">
-                        <a href="">
+                        <a href="" class="display-link display-link3">
                             <img src="img/icon-water-pump.svg" alt="flood">
                             <h3>抽水量</h3>
                         </a>
@@ -357,7 +358,7 @@
     </script>
 
 
-    <script type="text/javascript">
+    <!-- <script>
         var successmsg = "";
         $(document).ready(function () {
             if (successmsg.length != 0) {
@@ -370,6 +371,20 @@
         function NewWindow() {
             var OK = window.open("StationMap_New.jsp", "_blank", "width=1024,height=800");
         }
+    </script> -->
+
+    <!-- 類型btn -->
+    <script>
+        $(".display-btn").click({
+            function() {
+                // if ($(this).class("active")) {
+                //     $(".display-btn").removeClass("active");
+                // } else {
+                //     $(this).addClass("active");
+                // }
+                $(this).addClass("active");
+            }
+        });
     </script>
 
 </body>

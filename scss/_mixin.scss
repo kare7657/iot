@@ -366,6 +366,7 @@
                         @include mobile-L() {
                             width: 100%;
                             flex-wrap: wrap;
+                            flex-direction: column;
                             button {
                                 margin: 0;
                                 margin-top: $margin-S;
@@ -396,6 +397,7 @@
                         border-radius: 8px;
                         padding: 5px $padding-XS;
                         text-decoration: none;
+                        text-align: center;
                         &:hover {
                             background-color: $blue;
                         }
@@ -410,6 +412,7 @@
                         font-weight: bold;
                         padding: 5px $padding-XS;
                         text-decoration: none;
+                        text-align: center;
                         &:hover {
                             background-color: $blue;
                             color: $title-W;

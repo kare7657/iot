@@ -371,14 +371,19 @@ body {
                     justify-content: center;
                     margin-bottom: $margin-S;
                     .display-btn {
+                        opacity: 40%;
                         margin: 0 $margin-XS * 2;
-
-                        img {
-                            width: 100px;
+                        .display-link {
+                            img {
+                                width: 100px;
+                            }
+                            h3 {
+                                color: $title-BK;
+                            }
                         }
-                        h3 {
-                            color: $title-BK;
-                        }
+                    }
+                    .active {
+                        opacity: 100%;
                     }
                     input {
                         &[type="button"] {
