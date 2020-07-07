@@ -360,56 +360,43 @@ body {
                 text-align: center;
                 margin-top: $margin-XS;
             }
-            .map-gp {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                .btn-gp {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    margin-bottom: $margin-S;
-                    .display-btn {
-                        opacity: 40%;
-                        margin: 0 $margin-XS * 2;
-                        .display-link {
-                            img {
-                                width: 100px;
-                            }
-                            h3 {
-                                color: $title-BK;
-                            }
-                        }
+            .map {
+                position: relative;
+                .map-info,.map-info-initial {
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    h2 {
+                        color: $light-sky;
+                        line-height: $size-h2;
                     }
-                    .active {
-                        opacity: 100%;
+                    .city-cn {
+                        font-size: 3.125rem;
+                        line-height: 3.125rem * 1.5;
                     }
-                    input {
-                        &[type="button"] {
-                            padding: 8px $padding-XS;
-                            background-color: transparent;
-                            border: solid 1px $dark-blue;
-                            border-radius: 10px;
-                            font-size: $size-h4;
-                            color: $dark-blue;
-                            font-weight: bold;
-                            margin: $margin-S 0;
-                            @include mobile-L() {
-                                padding: 8px $padding-XS/2;
-                            }
-                            &:hover {
-                                background-color: $blue;
-                                color: $title-W;
-                                transition-duration: 0.5s;
-                            }
-                            &[disabled] {
-                                background-color: $light-sky;
-                                &:hover {
-                                    background-color: $light-sky;
-                                }
-                            }
-                        }
+                    .city-tw {
+                        font-size: 2.5rem;
+                        line-height: 2.5rem * 1.5;
+                    }
+                    h3 {
+                        color: $yellow;
+                        text-align: left;
+                        line-height: $size-h3 * 2;
+                    }
+                    .city-cn,
+                    .city-tw {
+                        color: $title-W;
+                        text-align: left;
+                        font-weight: bold;
+                    }
+                }
+                .hide{
+                    display: none;
+                }
+                polygon,
+                path {
+                    &:hover {
+                        fill: $yellow;
                     }
                 }
             }

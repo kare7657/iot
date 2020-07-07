@@ -2244,87 +2244,70 @@ body .content-information-display .container h3 {
   margin-top: 10px;
 }
 
-html .content-information-display .container .map-gp,
-body .content-information-display .container .map-gp {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+html .content-information-display .container .map,
+body .content-information-display .container .map {
+  position: relative;
 }
 
-html .content-information-display .container .map-gp .btn-gp,
-body .content-information-display .container .map-gp .btn-gp {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 25px;
+html .content-information-display .container .map .map-info, html .content-information-display .container .map .map-info-initial,
+body .content-information-display .container .map .map-info,
+body .content-information-display .container .map .map-info-initial {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
-html .content-information-display .container .map-gp .btn-gp .display-btn,
-body .content-information-display .container .map-gp .btn-gp .display-btn {
-  opacity: 40%;
-  margin: 0 20px;
+html .content-information-display .container .map .map-info h2, html .content-information-display .container .map .map-info-initial h2,
+body .content-information-display .container .map .map-info h2,
+body .content-information-display .container .map .map-info-initial h2 {
+  color: #a7e5ff;
+  line-height: 1.5rem;
 }
 
-html .content-information-display .container .map-gp .btn-gp .display-btn .display-link img,
-body .content-information-display .container .map-gp .btn-gp .display-btn .display-link img {
-  width: 100px;
+html .content-information-display .container .map .map-info .city-cn, html .content-information-display .container .map .map-info-initial .city-cn,
+body .content-information-display .container .map .map-info .city-cn,
+body .content-information-display .container .map .map-info-initial .city-cn {
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
 }
 
-html .content-information-display .container .map-gp .btn-gp .display-btn .display-link h3,
-body .content-information-display .container .map-gp .btn-gp .display-btn .display-link h3 {
-  color: black;
+html .content-information-display .container .map .map-info .city-tw, html .content-information-display .container .map .map-info-initial .city-tw,
+body .content-information-display .container .map .map-info .city-tw,
+body .content-information-display .container .map .map-info-initial .city-tw {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
 }
 
-html .content-information-display .container .map-gp .btn-gp .active,
-body .content-information-display .container .map-gp .btn-gp .active {
-  opacity: 100%;
+html .content-information-display .container .map .map-info h3, html .content-information-display .container .map .map-info-initial h3,
+body .content-information-display .container .map .map-info h3,
+body .content-information-display .container .map .map-info-initial h3 {
+  color: #FCFC82;
+  text-align: left;
+  line-height: 2.75rem;
 }
 
-html .content-information-display .container .map-gp .btn-gp input[type="button"],
-body .content-information-display .container .map-gp .btn-gp input[type="button"] {
-  padding: 8px 30px;
-  background-color: transparent;
-  border: solid 1px #0d73ad;
-  border-radius: 10px;
-  font-size: 1.125rem;
-  color: #0d73ad;
-  font-weight: bold;
-  margin: 25px 0;
-}
-
-@media (max-width: 568px) {
-  html .content-information-display .container .map-gp .btn-gp input[type="button"],
-  body .content-information-display .container .map-gp .btn-gp input[type="button"] {
-    padding: 8px 15px;
-  }
-}
-
-html .content-information-display .container .map-gp .btn-gp input[type="button"]:hover,
-body .content-information-display .container .map-gp .btn-gp input[type="button"]:hover {
-  background-color: #2faae5;
+html .content-information-display .container .map .map-info .city-cn,
+html .content-information-display .container .map .map-info .city-tw, html .content-information-display .container .map .map-info-initial .city-cn,
+html .content-information-display .container .map .map-info-initial .city-tw,
+body .content-information-display .container .map .map-info .city-cn,
+body .content-information-display .container .map .map-info .city-tw,
+body .content-information-display .container .map .map-info-initial .city-cn,
+body .content-information-display .container .map .map-info-initial .city-tw {
   color: white;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  text-align: left;
+  font-weight: bold;
 }
 
-html .content-information-display .container .map-gp .btn-gp input[type="button"][disabled],
-body .content-information-display .container .map-gp .btn-gp input[type="button"][disabled] {
-  background-color: #a7e5ff;
+html .content-information-display .container .map .hide,
+body .content-information-display .container .map .hide {
+  display: none;
 }
 
-html .content-information-display .container .map-gp .btn-gp input[type="button"][disabled]:hover,
-body .content-information-display .container .map-gp .btn-gp input[type="button"][disabled]:hover {
-  background-color: #a7e5ff;
+html .content-information-display .container .map polygon:hover,
+html .content-information-display .container .map path:hover,
+body .content-information-display .container .map polygon:hover,
+body .content-information-display .container .map path:hover {
+  fill: #FCFC82;
 }
 
 html .content-theme .container,
