@@ -531,26 +531,11 @@ body {
                             line-height: 3.125rem * 1.5;
                             font-weight: bold;
                             color: $blue;
-                            margin-bottom: $margin-S*1.5;
+                            margin-bottom: $margin-S * 1.5;
                         }
                         span {
                             font-size: $size-p;
                             font-weight: bold;
-                        }
-                    }
-                }
-                .warn {
-                    background-color: rgba($color: $red, $alpha: 0.1);
-                    .title {
-                        background-color: $red;
-                    }
-                    .station-info {
-                        .station-name {
-                            color: $red;
-                        }
-                        img,
-                        .number {
-                            display: none;
                         }
                     }
                 }
@@ -646,6 +631,33 @@ body {
                         span {
                             font-size: $size-p;
                             font-weight: bold;
+                        }
+                    }
+                }
+                //警告
+                .warn {
+                    background-color: rgba($color: $red, $alpha: 0.1);
+                    .title {
+                        background-color: $red;
+                    }
+                    form{
+                        .form-gp{
+                            label{
+                                color: $text;
+                            }
+                            select {
+                                border: solid 1px rgba($color: $text, $alpha: 0.3);
+                            }
+                        }
+                    }
+                    .station-info,
+                    .river-info {
+                        .station-name {
+                            color: $red;
+                        }
+                        img,
+                        .number {
+                            display: none;
                         }
                     }
                 }

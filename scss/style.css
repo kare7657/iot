@@ -2596,38 +2596,6 @@ body .content-information-display .container .river-gp .cityflood-info .station-
   font-weight: bold;
 }
 
-html .content-information-display .container .cityflood-gp .warn,
-html .content-information-display .container .river-gp .warn,
-body .content-information-display .container .cityflood-gp .warn,
-body .content-information-display .container .river-gp .warn {
-  background-color: rgba(232, 41, 28, 0.1);
-}
-
-html .content-information-display .container .cityflood-gp .warn .title,
-html .content-information-display .container .river-gp .warn .title,
-body .content-information-display .container .cityflood-gp .warn .title,
-body .content-information-display .container .river-gp .warn .title {
-  background-color: #E8291C;
-}
-
-html .content-information-display .container .cityflood-gp .warn .station-info .station-name,
-html .content-information-display .container .river-gp .warn .station-info .station-name,
-body .content-information-display .container .cityflood-gp .warn .station-info .station-name,
-body .content-information-display .container .river-gp .warn .station-info .station-name {
-  color: #E8291C;
-}
-
-html .content-information-display .container .cityflood-gp .warn .station-info img,
-html .content-information-display .container .cityflood-gp .warn .station-info .number,
-html .content-information-display .container .river-gp .warn .station-info img,
-html .content-information-display .container .river-gp .warn .station-info .number,
-body .content-information-display .container .cityflood-gp .warn .station-info img,
-body .content-information-display .container .cityflood-gp .warn .station-info .number,
-body .content-information-display .container .river-gp .warn .station-info img,
-body .content-information-display .container .river-gp .warn .station-info .number {
-  display: none;
-}
-
 html .content-information-display .container .cityflood-gp .river-map,
 html .content-information-display .container .river-gp .river-map,
 body .content-information-display .container .cityflood-gp .river-map,
@@ -2806,6 +2774,64 @@ body .content-information-display .container .cityflood-gp .river-info .station-
 body .content-information-display .container .river-gp .river-info .station-info span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+html .content-information-display .container .cityflood-gp .warn,
+html .content-information-display .container .river-gp .warn,
+body .content-information-display .container .cityflood-gp .warn,
+body .content-information-display .container .river-gp .warn {
+  background-color: rgba(232, 41, 28, 0.1);
+}
+
+html .content-information-display .container .cityflood-gp .warn .title,
+html .content-information-display .container .river-gp .warn .title,
+body .content-information-display .container .cityflood-gp .warn .title,
+body .content-information-display .container .river-gp .warn .title {
+  background-color: #E8291C;
+}
+
+html .content-information-display .container .cityflood-gp .warn form .form-gp label,
+html .content-information-display .container .river-gp .warn form .form-gp label,
+body .content-information-display .container .cityflood-gp .warn form .form-gp label,
+body .content-information-display .container .river-gp .warn form .form-gp label {
+  color: #595757;
+}
+
+html .content-information-display .container .cityflood-gp .warn form .form-gp select,
+html .content-information-display .container .river-gp .warn form .form-gp select,
+body .content-information-display .container .cityflood-gp .warn form .form-gp select,
+body .content-information-display .container .river-gp .warn form .form-gp select {
+  border: solid 1px rgba(89, 87, 87, 0.3);
+}
+
+html .content-information-display .container .cityflood-gp .warn .station-info .station-name,
+html .content-information-display .container .cityflood-gp .warn .river-info .station-name,
+html .content-information-display .container .river-gp .warn .station-info .station-name,
+html .content-information-display .container .river-gp .warn .river-info .station-name,
+body .content-information-display .container .cityflood-gp .warn .station-info .station-name,
+body .content-information-display .container .cityflood-gp .warn .river-info .station-name,
+body .content-information-display .container .river-gp .warn .station-info .station-name,
+body .content-information-display .container .river-gp .warn .river-info .station-name {
+  color: #E8291C;
+}
+
+html .content-information-display .container .cityflood-gp .warn .station-info img,
+html .content-information-display .container .cityflood-gp .warn .station-info .number,
+html .content-information-display .container .cityflood-gp .warn .river-info img,
+html .content-information-display .container .cityflood-gp .warn .river-info .number,
+html .content-information-display .container .river-gp .warn .station-info img,
+html .content-information-display .container .river-gp .warn .station-info .number,
+html .content-information-display .container .river-gp .warn .river-info img,
+html .content-information-display .container .river-gp .warn .river-info .number,
+body .content-information-display .container .cityflood-gp .warn .station-info img,
+body .content-information-display .container .cityflood-gp .warn .station-info .number,
+body .content-information-display .container .cityflood-gp .warn .river-info img,
+body .content-information-display .container .cityflood-gp .warn .river-info .number,
+body .content-information-display .container .river-gp .warn .station-info img,
+body .content-information-display .container .river-gp .warn .station-info .number,
+body .content-information-display .container .river-gp .warn .river-info img,
+body .content-information-display .container .river-gp .warn .river-info .number {
+  display: none;
 }
 
 html .content-theme .container,
