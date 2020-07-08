@@ -267,9 +267,9 @@
                     <h3>監測站數量：5</h3>
                 </div>
                 <svg version="1.1" id="taiwan_map" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1110px" height="800px"
-                    viewBox="0 0 1110 800" enable-background="new 0 0 1110 800" xml:space="preserve">
-                    <rect fill-rule="evenodd" clip-rule="evenodd" fill="#0D73AD" width="1110" height="800" rx="20"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1140px" height="800px"
+                    viewBox="0 0 1140 800" enable-background="new 0 0 1140 800" xml:space="preserve">
+                    <rect fill-rule="evenodd" clip-rule="evenodd" fill="#0D73AD" width="1140" height="800" rx="20"
                         ry="20" />
                     <polygon id="Yilan_County" fill-rule="evenodd" clip-rule="evenodd" fill="#99E1FF" stroke="#0D73AD"
                         stroke-linecap="round" stroke-linejoin="round" points="
@@ -425,7 +425,39 @@
                     </g>
                 </svg>
             </div>
-            
+            <div class="cityflood-gp" id="cityflood">
+                <div class="cityflood-map"></div>
+                <div class="cityflood-info">
+                    <div class="title">
+                        <h3>都市淹水感知器</h3>
+                    </div>
+                    <form>
+                        <div class="form-gp">
+                            <label for="city">挑選縣市</label>
+                            <select name="type" id="city">
+                                <option value="list1">台北市</option>
+                                <option value="list2">新北市</option>
+                                <option value="list3">基隆市</option>
+                            </select>
+                        </div>
+                        <div class="form-gp">
+                            <label for="station">監測站</label>
+                            <select name="type" id="station">
+                                <option value="list1">選單1</option>
+                                <option value="list2">選單2</option>
+                                <option value="list3">選單3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="station-info">
+                        <p class="date">2020/07/31  13:00</p>
+                        <p class="station-name">屏東縣-東港派出所</p>
+                        <img src="img/iocn-flooddepth.svg" alt="淹水深度">
+                        <p class="number">14.43<span>CM</span></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

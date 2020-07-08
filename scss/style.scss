@@ -361,8 +361,10 @@ body {
                 margin-top: $margin-XS;
             }
             .map {
+                width: 100%;
                 position: relative;
-                .map-info,.map-info-initial {
+                .map-info,
+                .map-info-initial {
                     position: absolute;
                     top: 10%;
                     left: 10%;
@@ -373,15 +375,27 @@ body {
                     .city-cn {
                         font-size: 3.125rem;
                         line-height: 3.125rem * 1.5;
+                        @include pad() {
+                            font-size: $size-h1;
+                            line-height: $size-h1 * 1.5;
+                        }
                     }
                     .city-tw {
                         font-size: 2.5rem;
                         line-height: 2.5rem * 1.5;
+                        @include pad() {
+                            font-size: $size-h2;
+                            line-height: $size-h2 * 1.5;
+                        }
                     }
                     h3 {
                         color: $yellow;
                         text-align: left;
                         line-height: $size-h3 * 2;
+                        @include pad() {
+                            font-size: $size-p;
+                            line-height: $size-p * 1.5;
+                        }
                     }
                     .city-cn,
                     .city-tw {
@@ -390,13 +404,106 @@ body {
                         font-weight: bold;
                     }
                 }
-                .hide{
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+                .hide {
                     display: none;
                 }
                 polygon,
                 path {
                     &:hover {
                         fill: $yellow;
+                    }
+                }
+            }
+            .cityflood-gp {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: $margin-L;
+                @include pad() {
+                    flex-direction: column;
+                    margin-top: $margin-M;
+                }
+                .cityflood-map {
+                    width: 70%;
+                    min-height: 750px;
+                    background-color: $light-sky;
+                    margin-right: $margin-S;
+                    border-radius: 20px;
+                    @include pad() {
+                        width: 100%;
+                        min-height: 450px;
+                        margin-bottom: $margin-M;
+                    }
+                }
+                .cityflood-info {
+                    width: 30%;
+                    background-color: $table-blue;
+                    border-radius: 20px;
+                    @include pad() {
+                        width: 100%;
+                    }
+                    .title {
+                        background-color: $blue;
+                        border-radius: 20px 20px 0 0;
+                        h3 {
+                            margin: 0;
+                            color: $title-W;
+                            padding: $padding-XXS/2 0;
+                        }
+                    }
+                    form {
+                        .form-gp {
+                            margin: $margin-S 0;
+                            padding: 0 $padding-XS;
+                            label {
+                                width: 100%;
+                                font-size: $size-h4;
+                                font-weight: bold;
+                                color: $dark-blue;
+                            }
+                            select {
+                                width: 100%;
+                                height: 40px;
+                                background-color: $title-W;
+                                border-radius: 5px;
+                                border: solid 1px $light-sky;
+                                padding: 0 $padding-XXS;
+                            }
+                        }
+                    }
+                    .station-info {
+                        text-align: center;
+                        padding: 0 $padding-XS;
+                        p {
+                            text-align: center;
+                        }
+                        .station-name {
+                            font-size: 1.625rem;
+                            color: $title-BK;
+                            font-weight: bold;
+                            line-height: $size-h1 * 2;
+                        }
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            margin-top: $margin-S;
+                            margin-bottom: $margin-XS;
+                        }
+                        .number {
+                            font-size: 3.125rem;
+                            line-height: 3.125rem * 1.5;
+                            font-weight: bold;
+                            color: $blue;
+                            margin-bottom: $margin-M;
+                        }
+                        span {
+                            font-size: $size-p;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
