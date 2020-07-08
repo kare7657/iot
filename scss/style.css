@@ -2253,128 +2253,145 @@ body .content-information-display .container h3 {
   margin-top: 10px;
 }
 
-html .content-information-display .container .map,
-body .content-information-display .container .map {
+html .content-information-display .container .top,
+body .content-information-display .container .top {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .content-information-display .container .top .weather,
+body .content-information-display .container .top .weather {
+  width: 30%;
+  background-color: #a7e5ff;
+  margin-right: 25px;
+}
+
+html .content-information-display .container .top .map,
+body .content-information-display .container .top .map {
+  width: 70%;
   position: relative;
 }
 
-html .content-information-display .container .map .map-info,
-html .content-information-display .container .map .map-info-initial,
-body .content-information-display .container .map .map-info,
-body .content-information-display .container .map .map-info-initial {
+html .content-information-display .container .top .map .map-info,
+html .content-information-display .container .top .map .map-info-initial,
+body .content-information-display .container .top .map .map-info,
+body .content-information-display .container .top .map .map-info-initial {
   position: absolute;
   top: 10%;
   left: 10%;
 }
 
 @media (max-width: 568px) {
-  html .content-information-display .container .map .map-info,
-  html .content-information-display .container .map .map-info-initial,
-  body .content-information-display .container .map .map-info,
-  body .content-information-display .container .map .map-info-initial {
+  html .content-information-display .container .top .map .map-info,
+  html .content-information-display .container .top .map .map-info-initial,
+  body .content-information-display .container .top .map .map-info,
+  body .content-information-display .container .top .map .map-info-initial {
     display: none;
   }
 }
 
-html .content-information-display .container .map .map-info h2,
-html .content-information-display .container .map .map-info-initial h2,
-body .content-information-display .container .map .map-info h2,
-body .content-information-display .container .map .map-info-initial h2 {
+html .content-information-display .container .top .map .map-info h2,
+html .content-information-display .container .top .map .map-info-initial h2,
+body .content-information-display .container .top .map .map-info h2,
+body .content-information-display .container .top .map .map-info-initial h2 {
   color: #a7e5ff;
   line-height: 1.5rem;
 }
 
-html .content-information-display .container .map .map-info .city-cn,
-html .content-information-display .container .map .map-info-initial .city-cn,
-body .content-information-display .container .map .map-info .city-cn,
-body .content-information-display .container .map .map-info-initial .city-cn {
+html .content-information-display .container .top .map .map-info .city-cn,
+html .content-information-display .container .top .map .map-info-initial .city-cn,
+body .content-information-display .container .top .map .map-info .city-cn,
+body .content-information-display .container .top .map .map-info-initial .city-cn {
   font-size: 3.125rem;
   line-height: 4.6875rem;
 }
 
 @media (max-width: 768px) {
-  html .content-information-display .container .map .map-info .city-cn,
-  html .content-information-display .container .map .map-info-initial .city-cn,
-  body .content-information-display .container .map .map-info .city-cn,
-  body .content-information-display .container .map .map-info-initial .city-cn {
+  html .content-information-display .container .top .map .map-info .city-cn,
+  html .content-information-display .container .top .map .map-info-initial .city-cn,
+  body .content-information-display .container .top .map .map-info .city-cn,
+  body .content-information-display .container .top .map .map-info-initial .city-cn {
     font-size: 1.625rem;
     line-height: 2.4375rem;
   }
 }
 
-html .content-information-display .container .map .map-info .city-tw,
-html .content-information-display .container .map .map-info-initial .city-tw,
-body .content-information-display .container .map .map-info .city-tw,
-body .content-information-display .container .map .map-info-initial .city-tw {
+html .content-information-display .container .top .map .map-info .city-tw,
+html .content-information-display .container .top .map .map-info-initial .city-tw,
+body .content-information-display .container .top .map .map-info .city-tw,
+body .content-information-display .container .top .map .map-info-initial .city-tw {
   font-size: 2.5rem;
   line-height: 3.75rem;
 }
 
 @media (max-width: 768px) {
-  html .content-information-display .container .map .map-info .city-tw,
-  html .content-information-display .container .map .map-info-initial .city-tw,
-  body .content-information-display .container .map .map-info .city-tw,
-  body .content-information-display .container .map .map-info-initial .city-tw {
+  html .content-information-display .container .top .map .map-info .city-tw,
+  html .content-information-display .container .top .map .map-info-initial .city-tw,
+  body .content-information-display .container .top .map .map-info .city-tw,
+  body .content-information-display .container .top .map .map-info-initial .city-tw {
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
 }
 
-html .content-information-display .container .map .map-info h3,
-html .content-information-display .container .map .map-info-initial h3,
-body .content-information-display .container .map .map-info h3,
-body .content-information-display .container .map .map-info-initial h3 {
+html .content-information-display .container .top .map .map-info h3,
+html .content-information-display .container .top .map .map-info-initial h3,
+body .content-information-display .container .top .map .map-info h3,
+body .content-information-display .container .top .map .map-info-initial h3 {
   color: #FCFC82;
   text-align: left;
   line-height: 2.75rem;
 }
 
 @media (max-width: 768px) {
-  html .content-information-display .container .map .map-info h3,
-  html .content-information-display .container .map .map-info-initial h3,
-  body .content-information-display .container .map .map-info h3,
-  body .content-information-display .container .map .map-info-initial h3 {
+  html .content-information-display .container .top .map .map-info h3,
+  html .content-information-display .container .top .map .map-info-initial h3,
+  body .content-information-display .container .top .map .map-info h3,
+  body .content-information-display .container .top .map .map-info-initial h3 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-html .content-information-display .container .map .map-info .city-cn,
-html .content-information-display .container .map .map-info .city-tw,
-html .content-information-display .container .map .map-info-initial .city-cn,
-html .content-information-display .container .map .map-info-initial .city-tw,
-body .content-information-display .container .map .map-info .city-cn,
-body .content-information-display .container .map .map-info .city-tw,
-body .content-information-display .container .map .map-info-initial .city-cn,
-body .content-information-display .container .map .map-info-initial .city-tw {
+html .content-information-display .container .top .map .map-info .city-cn,
+html .content-information-display .container .top .map .map-info .city-tw,
+html .content-information-display .container .top .map .map-info-initial .city-cn,
+html .content-information-display .container .top .map .map-info-initial .city-tw,
+body .content-information-display .container .top .map .map-info .city-cn,
+body .content-information-display .container .top .map .map-info .city-tw,
+body .content-information-display .container .top .map .map-info-initial .city-cn,
+body .content-information-display .container .top .map .map-info-initial .city-tw {
   color: white;
   text-align: left;
   font-weight: bold;
 }
 
-html .content-information-display .container .map svg,
-body .content-information-display .container .map svg {
-  width: 100%;
+html .content-information-display .container .top .map svg,
+body .content-information-display .container .top .map svg {
   height: 100%;
 }
 
 @media (max-width: 568px) {
-  html .content-information-display .container .map svg,
-  body .content-information-display .container .map svg {
+  html .content-information-display .container .top .map svg,
+  body .content-information-display .container .top .map svg {
     display: none;
   }
 }
 
-html .content-information-display .container .map .hide,
-body .content-information-display .container .map .hide {
+html .content-information-display .container .top .map .hide,
+body .content-information-display .container .top .map .hide {
   display: none;
 }
 
-html .content-information-display .container .map polygon:hover,
-html .content-information-display .container .map path:hover,
-body .content-information-display .container .map polygon:hover,
-body .content-information-display .container .map path:hover {
+html .content-information-display .container .top .map polygon:hover,
+html .content-information-display .container .top .map path:hover,
+body .content-information-display .container .top .map polygon:hover,
+body .content-information-display .container .top .map path:hover {
   fill: #FCFC82;
 }
 

@@ -365,67 +365,76 @@ body {
                 text-align: center;
                 margin-top: $margin-XS;
             }
-            .map {
+            .top{
                 width: 100%;
-                position: relative;
-                .map-info,
-                .map-info-initial {
-                    position: absolute;
-                    top: 10%;
-                    left: 10%;
-                    @include mobile-L() {
+                display: flex;
+                justify-content: space-between;
+                .weather{
+                    width: 30%;
+                    background-color: $light-sky;
+                    margin-right: $margin-S;
+                }
+                .map {
+                    width: 70%;
+                    position: relative;
+                    .map-info,
+                    .map-info-initial {
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                        @include mobile-L() {
+                            display: none;
+                        }
+                        h2 {
+                            color: $light-sky;
+                            line-height: $size-h2;
+                        }
+                        .city-cn {
+                            font-size: 3.125rem;
+                            line-height: 3.125rem * 1.5;
+                            @include pad() {
+                                font-size: $size-h1;
+                                line-height: $size-h1 * 1.5;
+                            }
+                        }
+                        .city-tw {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem * 1.5;
+                            @include pad() {
+                                font-size: $size-h2;
+                                line-height: $size-h2 * 1.5;
+                            }
+                        }
+                        h3 {
+                            color: $yellow;
+                            text-align: left;
+                            line-height: $size-h3 * 2;
+                            @include pad() {
+                                font-size: $size-p;
+                                line-height: $size-p * 1.5;
+                            }
+                        }
+                        .city-cn,
+                        .city-tw {
+                            color: $title-W;
+                            text-align: left;
+                            font-weight: bold;
+                        }
+                    }
+                    svg {
+                        height: 100%;
+                        @include mobile-L() {
+                            display: none;
+                        }
+                    }
+                    .hide {
                         display: none;
                     }
-                    h2 {
-                        color: $light-sky;
-                        line-height: $size-h2;
-                    }
-                    .city-cn {
-                        font-size: 3.125rem;
-                        line-height: 3.125rem * 1.5;
-                        @include pad() {
-                            font-size: $size-h1;
-                            line-height: $size-h1 * 1.5;
+                    polygon,
+                    path {
+                        &:hover {
+                            fill: $yellow;
                         }
-                    }
-                    .city-tw {
-                        font-size: 2.5rem;
-                        line-height: 2.5rem * 1.5;
-                        @include pad() {
-                            font-size: $size-h2;
-                            line-height: $size-h2 * 1.5;
-                        }
-                    }
-                    h3 {
-                        color: $yellow;
-                        text-align: left;
-                        line-height: $size-h3 * 2;
-                        @include pad() {
-                            font-size: $size-p;
-                            line-height: $size-p * 1.5;
-                        }
-                    }
-                    .city-cn,
-                    .city-tw {
-                        color: $title-W;
-                        text-align: left;
-                        font-weight: bold;
-                    }
-                }
-                svg {
-                    width: 100%;
-                    height: 100%;
-                    @include mobile-L() {
-                        display: none;
-                    }
-                }
-                .hide {
-                    display: none;
-                }
-                polygon,
-                path {
-                    &:hover {
-                        fill: $yellow;
                     }
                 }
             }
