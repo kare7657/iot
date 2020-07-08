@@ -39,9 +39,19 @@
                 </a>
             </div>
             <div class="navbar-R">
-                <a href="information-display.html">
-                    <h4>資料展示</h4>
-                </a>
+                <div class="nav-function">
+                    <a href="#">
+                        <h4>資料展示</h4>
+                    </a>
+                    <div class="nav-list">
+                        <a href="display-flood.html">
+                            <h4>都市淹水感知器</h4>
+                        </a><br>
+                        <a href="display-river.html">
+                            <h4>河川水位站</h4>
+                        </a>
+                    </div>
+                </div>
                 <div class="nav-function">
                     <a href="#">
                         <h4>開發指引</h4>
@@ -129,7 +139,20 @@
                 <div class="fas fa-bars">
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="information-display.html">資料展示</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            資料展示
+                        </a>
+                        <div class="dropdown-menu shadow-lg">
+                            <a class="dropdown-item" href="display-flood.html">
+                                <h4>都市淹水感知器</h4>
+                            </a>
+                            <a class="dropdown-item" href="display-river.html">
+                                <h4>河川水位站</h4>
+                            </a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
