@@ -2307,7 +2307,7 @@ body .content-information-display .container .top .weather .title {
 html .content-information-display .container .top .weather img,
 body .content-information-display .container .top .weather img {
   width: 100%;
-  height: 100%;
+  height: 230px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -2438,11 +2438,6 @@ body .content-information-display .container .top .map .map-info-initial .city-t
   font-weight: bold;
 }
 
-html .content-information-display .container .top .map svg,
-body .content-information-display .container .top .map svg {
-  width: 100%;
-}
-
 @media (max-width: 768px) {
   html .content-information-display .container .top .map svg,
   body .content-information-display .container .top .map svg {
@@ -2460,6 +2455,13 @@ body .content-information-display .container .top .map svg {
 html .content-information-display .container .top .map .hide,
 body .content-information-display .container .top .map .hide {
   display: none;
+}
+
+html .content-information-display .container .top .map polygon:hover,
+html .content-information-display .container .top .map path:hover,
+body .content-information-display .container .top .map polygon:hover,
+body .content-information-display .container .top .map path:hover {
+  fill: #FCFC82;
 }
 
 html .content-information-display .container .cityflood-gp,

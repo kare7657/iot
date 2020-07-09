@@ -730,22 +730,15 @@
                 }
             }
         });
-        $("path,polygon,g").click(function (e) {
+        $("path,polygon,g").mouseenter(function (e) {
             var tagname = $(this).attr("id");
             vm.filter = tagname;
             $(".map-info-initial").addClass("hide");
-            //yellow
-            $(this).attr("fill", "#FCFC82");
-            if ($("path,polygon,g" && this).attr("fill") == "#FCFC82") {
-                $("path,polygon,g").attr("fill", "#99E1FF");
-                $(this).attr("fill", "#FCFC82");
-            } else {
-                $(this).attr("fill", "#FCFC82");
-            }
+        });
+        $("path,polygon,g").click(function () {
             $('html, body').scrollTop(1000);
-            return false;
         });
     </script>
-</body>
 
+</body>
 </html>

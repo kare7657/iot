@@ -392,7 +392,7 @@ body {
                     }
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: 230px;
                         object-fit: contain;
                         object-position: center;
                         margin-bottom: $margin-XS * 2;
@@ -459,24 +459,23 @@ body {
                         }
                     }
                     svg {
-                        width: 100%;
-                        // height: 100%;
                         @include pad() {
                             width: 615px;
                         }
                         @include mobile-L() {
                             display: none;
                         }
+
                     }
                     .hide {
                         display: none;
                     }
-                    // polygon,
-                    // path {
-                    //     &:hover {
-                    //         fill: $yellow;
-                    //     }
-                    // }
+                    polygon,
+                    path {
+                        &:hover {
+                            fill: $yellow;
+                        }
+                    }
                 }
             }
             .cityflood-gp,
