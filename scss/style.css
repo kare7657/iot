@@ -2452,16 +2452,16 @@ body .content-information-display .container .top .map .map-info-initial .city-t
   }
 }
 
+html .content-information-display .container .top .map svg polygon:hover,
+html .content-information-display .container .top .map svg path:hover,
+body .content-information-display .container .top .map svg polygon:hover,
+body .content-information-display .container .top .map svg path:hover {
+  fill: #FCFC82;
+}
+
 html .content-information-display .container .top .map .hide,
 body .content-information-display .container .top .map .hide {
   display: none;
-}
-
-html .content-information-display .container .top .map polygon:hover,
-html .content-information-display .container .top .map path:hover,
-body .content-information-display .container .top .map polygon:hover,
-body .content-information-display .container .top .map path:hover {
-  fill: #FCFC82;
 }
 
 html .content-information-display .container .cityflood-gp,

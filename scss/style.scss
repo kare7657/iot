@@ -465,16 +465,15 @@ body {
                         @include mobile-L() {
                             display: none;
                         }
-
+                        polygon,
+                        path {
+                            &:hover {
+                                fill: $yellow;
+                            }
+                        }
                     }
                     .hide {
                         display: none;
-                    }
-                    polygon,
-                    path {
-                        &:hover {
-                            fill: $yellow;
-                        }
                     }
                 }
             }
