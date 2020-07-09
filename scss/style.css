@@ -2266,15 +2266,80 @@ body .content-information-display .container .top {
 
 html .content-information-display .container .top .weather,
 body .content-information-display .container .top .weather {
-  width: 30%;
-  background-color: #a7e5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 28%;
   margin-right: 25px;
+}
+
+@media (max-width: 1024px) {
+  html .content-information-display .container .top .weather,
+  body .content-information-display .container .top .weather {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-information-display .container .top .weather,
+  body .content-information-display .container .top .weather {
+    display: none;
+  }
+}
+
+html .content-information-display .container .top .weather .title,
+body .content-information-display .container .top .weather .title {
+  background-color: #0d73ad;
+  border-radius: 10px;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+html .content-information-display .container .top .weather img,
+body .content-information-display .container .top .weather img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin-bottom: 20px;
+}
+
+html .content-information-display .container .top .weather .swiper-container,
+body .content-information-display .container .top .weather .swiper-container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+html .content-information-display .container .top .weather .swiper-container img,
+body .content-information-display .container .top .weather .swiper-container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 html .content-information-display .container .top .map,
 body .content-information-display .container .top .map {
-  width: 70%;
+  width: 72%;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  html .content-information-display .container .top .map,
+  body .content-information-display .container .top .map {
+    width: 75%;
+  }
 }
 
 html .content-information-display .container .top .map .map-info,
@@ -2282,8 +2347,8 @@ html .content-information-display .container .top .map .map-info-initial,
 body .content-information-display .container .top .map .map-info,
 body .content-information-display .container .top .map .map-info-initial {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 8%;
 }
 
 @media (max-width: 568px) {
@@ -2307,8 +2372,8 @@ html .content-information-display .container .top .map .map-info .city-cn,
 html .content-information-display .container .top .map .map-info-initial .city-cn,
 body .content-information-display .container .top .map .map-info .city-cn,
 body .content-information-display .container .top .map .map-info-initial .city-cn {
-  font-size: 3.125rem;
-  line-height: 4.6875rem;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
 }
 
 @media (max-width: 768px) {
@@ -2325,8 +2390,8 @@ html .content-information-display .container .top .map .map-info .city-tw,
 html .content-information-display .container .top .map .map-info-initial .city-tw,
 body .content-information-display .container .top .map .map-info .city-tw,
 body .content-information-display .container .top .map .map-info-initial .city-tw {
-  font-size: 2.5rem;
-  line-height: 3.75rem;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
 }
 
 @media (max-width: 768px) {
@@ -2345,7 +2410,7 @@ body .content-information-display .container .top .map .map-info h3,
 body .content-information-display .container .top .map .map-info-initial h3 {
   color: #FCFC82;
   text-align: left;
-  line-height: 2.75rem;
+  line-height: 2.0625rem;
 }
 
 @media (max-width: 768px) {
@@ -2373,7 +2438,15 @@ body .content-information-display .container .top .map .map-info-initial .city-t
 
 html .content-information-display .container .top .map svg,
 body .content-information-display .container .top .map svg {
+  width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  html .content-information-display .container .top .map svg,
+  body .content-information-display .container .top .map svg {
+    width: 615px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -2386,13 +2459,6 @@ body .content-information-display .container .top .map svg {
 html .content-information-display .container .top .map .hide,
 body .content-information-display .container .top .map .hide {
   display: none;
-}
-
-html .content-information-display .container .top .map polygon:hover,
-html .content-information-display .container .top .map path:hover,
-body .content-information-display .container .top .map polygon:hover,
-body .content-information-display .container .top .map path:hover {
-  fill: #FCFC82;
 }
 
 html .content-information-display .container .cityflood-gp,
@@ -2428,8 +2494,7 @@ body .content-information-display .container .river-gp {
   html .content-information-display .container .river-gp,
   body .content-information-display .container .cityflood-gp,
   body .content-information-display .container .river-gp {
-    margin-top: 25px;
-    margin-bottom: unset;
+    margin: unset;
   }
 }
 

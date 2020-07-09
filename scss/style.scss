@@ -365,23 +365,58 @@ body {
                 text-align: center;
                 margin-top: $margin-XS;
             }
-            .top{
+            .top {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                .weather{
-                    width: 30%;
-                    background-color: $light-sky;
+                .weather {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 28%;
                     margin-right: $margin-S;
+                    @include web-S() {
+                        width: 25%;
+                    }
+                    @include pad() {
+                        display: none;
+                    }
+                    .title {
+                        background-color: $dark-blue;
+                        border-radius: 10px;
+                        color: $title-W;
+                        margin: 0;
+                        margin-bottom: $margin-XS * 2;
+                        padding: $padding-XXS;
+                        text-align: center;
+                    }
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                        margin-bottom: $margin-XS * 2;
+                    }
+                    .swiper-container {
+                        width: 100%;
+                        padding-bottom: $padding-XXS * 2;
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
                 }
                 .map {
-                    width: 70%;
+                    width: 72%;
                     position: relative;
+                    @include web-S() {
+                        width: 75%;
+                    }
                     .map-info,
                     .map-info-initial {
                         position: absolute;
-                        top: 10%;
-                        left: 10%;
+                        top: 8%;
+                        left: 8%;
                         @include mobile-L() {
                             display: none;
                         }
@@ -390,16 +425,16 @@ body {
                             line-height: $size-h2;
                         }
                         .city-cn {
-                            font-size: 3.125rem;
-                            line-height: 3.125rem * 1.5;
+                            font-size: 2.5rem;
+                            line-height: 2.5rem * 1.5;
                             @include pad() {
                                 font-size: $size-h1;
                                 line-height: $size-h1 * 1.5;
                             }
                         }
                         .city-tw {
-                            font-size: 2.5rem;
-                            line-height: 2.5rem * 1.5;
+                            font-size: 1.875rem;
+                            line-height: 1.875rem * 1.5;
                             @include pad() {
                                 font-size: $size-h2;
                                 line-height: $size-h2 * 1.5;
@@ -408,7 +443,7 @@ body {
                         h3 {
                             color: $yellow;
                             text-align: left;
-                            line-height: $size-h3 * 2;
+                            line-height: $size-h3 * 1.5;
                             @include pad() {
                                 font-size: $size-p;
                                 line-height: $size-p * 1.5;
@@ -422,7 +457,11 @@ body {
                         }
                     }
                     svg {
+                        width: 100%;
                         height: 100%;
+                        @include pad() {
+                            width: 615px;
+                        }
                         @include mobile-L() {
                             display: none;
                         }
@@ -430,12 +469,12 @@ body {
                     .hide {
                         display: none;
                     }
-                    polygon,
-                    path {
-                        &:hover {
-                            fill: $yellow;
-                        }
-                    }
+                    // polygon,
+                    // path {
+                    //     &:hover {
+                    //         fill: $yellow;
+                    //     }
+                    // }
                 }
             }
             .cityflood-gp,
@@ -450,8 +489,7 @@ body {
                     margin-top: $margin-M;
                 }
                 @include mobile-L() {
-                    margin-top: $margin-S;
-                    margin-bottom: unset;
+                    margin: unset;
                 }
                 //都市淹水感知器
                 .cityflood-map {
@@ -649,9 +687,9 @@ body {
                     .title {
                         background-color: $red;
                     }
-                    form{
-                        .form-gp{
-                            label{
+                    form {
+                        .form-gp {
+                            label {
                                 color: $text;
                             }
                             select {
