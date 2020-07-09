@@ -9,13 +9,15 @@ body.modal-open {
     padding-right: 0px !important;
     overflow-y: auto;
 }
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
     font-size: 16px;
     width: 100%;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     padding-right: 0 !important;
     @include mobile-XS() {
         font-size: 14px;
