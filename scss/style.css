@@ -4514,7 +4514,7 @@ body .content-login .container .form form .form-check .form-check-label {
 
 html .content-login .container .form form .form-check .form-check-input,
 body .content-login .container .form form .form-check .form-check-input {
-  margin-left: unset;
+  margin-left: 0px;
 }
 
 html .content-login .container .form form .form-check .check-input,
@@ -4887,7 +4887,7 @@ body .content-signup .container .form-gp form .form-check .form-check-label {
 
 html .content-signup .container .form-gp form .form-check .form-check-input,
 body .content-signup .container .form-gp form .form-check .form-check-input {
-  margin-left: unset;
+  margin-left: 0px;
 }
 
 html .content-signup .container .form-gp form .form-check .check-input,
@@ -6115,7 +6115,7 @@ body .content-member-data .container .member-data .form form .form-check .form-c
 
 html .content-member-data .container .member-data .form form .form-check .form-check-input,
 body .content-member-data .container .member-data .form form .form-check .form-check-input {
-  margin-left: unset;
+  margin-left: 0px;
 }
 
 html .content-member-data .container .member-data .form form .form-check .check-input,
@@ -6922,7 +6922,7 @@ body .content-opinion-add .container .form form .form-check .form-check-label {
 
 html .content-opinion-add .container .form form .form-check .form-check-input,
 body .content-opinion-add .container .form form .form-check .form-check-input {
-  margin-left: unset;
+  margin-left: 0px;
 }
 
 html .content-opinion-add .container .form form .form-check .check-input,
