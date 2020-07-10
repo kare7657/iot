@@ -116,12 +116,25 @@
   margin: auto;
 }
 
-* input[type="button"] {
+* input[type="button"],
+* select {
   -webkit-appearance: none;
   /* Safari & Chrome */
   -moz-appearance: none;
   /* FireFox */
   appearance: none;
+}
+
+* input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px #a7e5ff;
+  background-color: white;
+  color: white;
+  padding: 0 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 * input[type="submit"], * input[type="reset"] {
@@ -149,6 +162,26 @@
 
 * input[disabled]:hover {
   background-color: #a7e5ff;
+}
+
+* select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px #a7e5ff;
+  background: url("../img/chevron-down-solid.svg") no-repeat scroll transparent;
+  background-position: 97% center;
+  background-color: white;
+  color: #595757;
+  padding: 0 10px;
+}
+
+* select::-ms-expand {
+  display: none;
+}
+
+* select option {
+  color: #595757;
 }
 
 * .form-control {
@@ -351,13 +384,6 @@
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp input,
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp select {
   width: 60%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
 }
 
 @media (max-width: 568px) {
@@ -2625,18 +2651,6 @@ body .content-information-display .container .river-gp .cityflood-info form .for
   color: #0d73ad;
 }
 
-html .content-information-display .container .cityflood-gp .cityflood-info form .form-gp select,
-html .content-information-display .container .river-gp .cityflood-info form .form-gp select,
-body .content-information-display .container .cityflood-gp .cityflood-info form .form-gp select,
-body .content-information-display .container .river-gp .cityflood-info form .form-gp select {
-  width: 100%;
-  height: 40px;
-  background-color: white;
-  border-radius: 5px;
-  border: solid 1px #a7e5ff;
-  padding: 0 10px;
-}
-
 html .content-information-display .container .cityflood-gp .cityflood-info .station-info,
 html .content-information-display .container .river-gp .cityflood-info .station-info,
 body .content-information-display .container .cityflood-gp .cityflood-info .station-info,
@@ -2803,18 +2817,6 @@ body .content-information-display .container .river-gp .river-info form .form-gp
   font-size: 1.125rem;
   font-weight: bold;
   color: #22b573;
-}
-
-html .content-information-display .container .cityflood-gp .river-info form .form-gp select,
-html .content-information-display .container .river-gp .river-info form .form-gp select,
-body .content-information-display .container .cityflood-gp .river-info form .form-gp select,
-body .content-information-display .container .river-gp .river-info form .form-gp select {
-  width: 100%;
-  height: 40px;
-  background-color: white;
-  border-radius: 5px;
-  border: solid 1px rgba(34, 181, 115, 0.5);
-  padding: 0 10px;
 }
 
 html .content-information-display .container .cityflood-gp .river-info .station-info,
@@ -4346,21 +4348,6 @@ body .content-login .container .form form .form-gp label {
   font-weight: bold;
 }
 
-html .content-login .container .form form .form-gp input,
-html .content-login .container .form form .form-gp select,
-body .content-login .container .form form .form-gp input,
-body .content-login .container .form form .form-gp select {
-  background-color: #fff;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-}
-
 html .content-login .container .form form .form-gp input[type="submit"], html .content-login .container .form form .form-gp input[type="reset"],
 html .content-login .container .form form .form-gp select[type="submit"],
 html .content-login .container .form form .form-gp select[type="reset"],
@@ -4491,14 +4478,7 @@ html .content-login .container .form form .form-check input,
 html .content-login .container .form form .form-check select,
 body .content-login .container .form form .form-check input,
 body .content-login .container .form form .form-check select {
-  background-color: #fff;
-  border-radius: 5px;
   text-align: left;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
 }
 
 html .content-login .container .form form .form-check input[type="checkbox"],
@@ -4741,21 +4721,6 @@ body .content-signup .container .form-gp form .form-gp label {
   font-weight: bold;
 }
 
-html .content-signup .container .form-gp form .form-gp input,
-html .content-signup .container .form-gp form .form-gp select,
-body .content-signup .container .form-gp form .form-gp input,
-body .content-signup .container .form-gp form .form-gp select {
-  background-color: #fff;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-}
-
 html .content-signup .container .form-gp form .form-gp input[type="submit"], html .content-signup .container .form-gp form .form-gp input[type="reset"],
 html .content-signup .container .form-gp form .form-gp select[type="submit"],
 html .content-signup .container .form-gp form .form-gp select[type="reset"],
@@ -4886,14 +4851,7 @@ html .content-signup .container .form-gp form .form-check input,
 html .content-signup .container .form-gp form .form-check select,
 body .content-signup .container .form-gp form .form-check input,
 body .content-signup .container .form-gp form .form-check select {
-  background-color: #fff;
-  border-radius: 5px;
   text-align: left;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
 }
 
 html .content-signup .container .form-gp form .form-check input[type="checkbox"],
@@ -5991,21 +5949,6 @@ body .content-member-data .container .member-data .form form .form-gp label {
   font-weight: bold;
 }
 
-html .content-member-data .container .member-data .form form .form-gp input,
-html .content-member-data .container .member-data .form form .form-gp select,
-body .content-member-data .container .member-data .form form .form-gp input,
-body .content-member-data .container .member-data .form form .form-gp select {
-  background-color: #fff;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-}
-
 html .content-member-data .container .member-data .form form .form-gp input[type="submit"], html .content-member-data .container .member-data .form form .form-gp input[type="reset"],
 html .content-member-data .container .member-data .form form .form-gp select[type="submit"],
 html .content-member-data .container .member-data .form form .form-gp select[type="reset"],
@@ -6136,14 +6079,7 @@ html .content-member-data .container .member-data .form form .form-check input,
 html .content-member-data .container .member-data .form form .form-check select,
 body .content-member-data .container .member-data .form form .form-check input,
 body .content-member-data .container .member-data .form form .form-check select {
-  background-color: #fff;
-  border-radius: 5px;
   text-align: left;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
 }
 
 html .content-member-data .container .member-data .form form .form-check input[type="checkbox"],
@@ -6496,7 +6432,6 @@ body .content-opinion .container .filter input {
   border: solid 1px #0d73ad;
   border-radius: 8px;
   font-size: 1rem;
-  color: #595757;
   text-align: center;
 }
 
@@ -6821,21 +6756,6 @@ body .content-opinion-add .container .form form .form-gp label {
   font-weight: bold;
 }
 
-html .content-opinion-add .container .form form .form-gp input,
-html .content-opinion-add .container .form form .form-gp select,
-body .content-opinion-add .container .form form .form-gp input,
-body .content-opinion-add .container .form form .form-gp select {
-  background-color: #fff;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-}
-
 html .content-opinion-add .container .form form .form-gp input[type="submit"], html .content-opinion-add .container .form form .form-gp input[type="reset"],
 html .content-opinion-add .container .form form .form-gp select[type="submit"],
 html .content-opinion-add .container .form form .form-gp select[type="reset"],
@@ -6966,14 +6886,7 @@ html .content-opinion-add .container .form form .form-check input,
 html .content-opinion-add .container .form form .form-check select,
 body .content-opinion-add .container .form form .form-check input,
 body .content-opinion-add .container .form form .form-check select {
-  background-color: #fff;
-  border-radius: 5px;
   text-align: left;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
 }
 
 html .content-opinion-add .container .form form .form-check input[type="checkbox"],
@@ -7526,29 +7439,6 @@ body .content-opinion-preview .container .reply form label {
 @media (max-width: 568px) {
   html .content-opinion-preview .container .reply form label,
   body .content-opinion-preview .container .reply form label {
-    width: 100%;
-  }
-}
-
-html .content-opinion-preview .container .reply form input,
-html .content-opinion-preview .container .reply form select,
-body .content-opinion-preview .container .reply form input,
-body .content-opinion-preview .container .reply form select {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #a7e5ff;
-  padding: 0 10px;
-  color: #595757;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-}
-
-@media (max-width: 568px) {
-  html .content-opinion-preview .container .reply form input,
-  html .content-opinion-preview .container .reply form select,
-  body .content-opinion-preview .container .reply form input,
-  body .content-opinion-preview .container .reply form select {
     width: 100%;
   }
 }
