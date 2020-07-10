@@ -639,6 +639,9 @@ body {
                                 font-weight: bold;
                                 color: $green;
                             }
+                            select{
+                                border: solid 1px rgba($color: $green, $alpha: 0.5);
+                            }
                         }
                     }
                     .station-info {
