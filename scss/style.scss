@@ -9,7 +9,7 @@ body.modal-open {
     padding-right: 0px !important;
     overflow-y: auto;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
 html,
@@ -469,6 +469,7 @@ body {
                         }
                         polygon,
                         path {
+                            cursor: pointer;
                             &:hover {
                                 fill: $yellow;
                             }

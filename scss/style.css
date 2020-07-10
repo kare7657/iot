@@ -2455,6 +2455,13 @@ body .content-information-display .container .top .map .map-info-initial .city-t
   }
 }
 
+html .content-information-display .container .top .map svg polygon,
+html .content-information-display .container .top .map svg path,
+body .content-information-display .container .top .map svg polygon,
+body .content-information-display .container .top .map svg path {
+  cursor: pointer;
+}
+
 html .content-information-display .container .top .map svg polygon:hover,
 html .content-information-display .container .top .map svg path:hover,
 body .content-information-display .container .top .map svg polygon:hover,
