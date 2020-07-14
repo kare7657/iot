@@ -406,13 +406,13 @@
 
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text p,
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text span {
-  color: #E8291C;
+  color: #e8291c;
   text-align: right;
 }
 
 * .modal-iot .modal-dialog .modal-content .modal-body p,
 * .modal-iot .modal-dialog .modal-content .modal-body span {
-  color: #E8291C;
+  color: #e8291c;
   margin-left: 3px;
 }
 
@@ -2439,7 +2439,7 @@ html .content-information-display .container .top .map .map-info h3,
 html .content-information-display .container .top .map .map-info-initial h3,
 body .content-information-display .container .top .map .map-info h3,
 body .content-information-display .container .top .map .map-info-initial h3 {
-  color: #FCFC82;
+  color: #fcfc82;
   text-align: left;
   line-height: 2.0625rem;
 }
@@ -2500,7 +2500,7 @@ html .content-information-display .container .top .map svg polygon:hover,
 html .content-information-display .container .top .map svg path:hover,
 body .content-information-display .container .top .map svg polygon:hover,
 body .content-information-display .container .top .map svg path:hover {
-  fill: #FCFC82;
+  fill: #fcfc82;
 }
 
 html .content-information-display .container .top .map .hide,
@@ -2983,7 +2983,7 @@ html .content-information-display .container .cityflood-gp .warn .title,
 html .content-information-display .container .river-gp .warn .title,
 body .content-information-display .container .cityflood-gp .warn .title,
 body .content-information-display .container .river-gp .warn .title {
-  background-color: #E8291C;
+  background-color: #e8291c;
 }
 
 html .content-information-display .container .cityflood-gp .warn form .form-gp label,
@@ -3008,7 +3008,7 @@ body .content-information-display .container .cityflood-gp .warn .station-info .
 body .content-information-display .container .cityflood-gp .warn .river-info .station-name,
 body .content-information-display .container .river-gp .warn .station-info .station-name,
 body .content-information-display .container .river-gp .warn .river-info .station-name {
-  color: #E8291C;
+  color: #e8291c;
 }
 
 html .content-information-display .container .cityflood-gp .warn .station-info img,
@@ -3041,6 +3041,148 @@ body .content-information-display .container .btn {
   body .content-information-display .container .btn {
     display: none;
   }
+}
+
+html .content-fullmap,
+body .content-fullmap {
+  width: 100%;
+  height: 100vh;
+  background-color: #a7e5ff;
+  position: relative;
+  overflow: hidden;
+}
+
+html .content-fullmap .fullmap-navbar,
+body .content-fullmap .fullmap-navbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 0 30px;
+}
+
+html .content-fullmap .fullmap-navbar i,
+html .content-fullmap .fullmap-navbar h4,
+body .content-fullmap .fullmap-navbar i,
+body .content-fullmap .fullmap-navbar h4 {
+  font-size: 1.125rem;
+  line-height: 50px;
+  font-weight: bold;
+  color: #0d73ad;
+  margin: 0 10px;
+}
+
+html .content-fullmap .menu,
+body .content-fullmap .menu {
+  position: absolute;
+  z-index: 99;
+  width: 350px;
+  height: 100vh;
+  background-color: #22b573;
+}
+
+html .content-fullmap .menu .left,
+body .content-fullmap .menu .left {
+  width: 100%;
+  height: 100%;
+}
+
+html .content-fullmap .menu .left .items,
+body .content-fullmap .menu .left .items {
+  width: 100%;
+  height: 23.75%;
+  border-bottom: solid 1px white;
+}
+
+html .content-fullmap .menu .left .items .title,
+body .content-fullmap .menu .left .items .title {
+  width: 70px;
+  height: 100%;
+  border-right: solid 1px white;
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .content-fullmap .menu .left .items .title img,
+body .content-fullmap .menu .left .items .title img {
+  margin: 10px 0;
+}
+
+html .content-fullmap .menu .left .items .title h2,
+body .content-fullmap .menu .left .items .title h2 {
+  color: white;
+  line-height: 70px;
+  letter-spacing: 5px;
+}
+
+html .content-fullmap .menu .left .items .content,
+body .content-fullmap .menu .left .items .content {
+  height: 100%;
+}
+
+html .content-fullmap .menu .left .bot,
+body .content-fullmap .menu .left .bot {
+  height: 5%;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+html .content-fullmap .menu .left .bot h4,
+body .content-fullmap .menu .left .bot h4 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 2.8125rem;
+  text-align: right;
+}
+
+html .content-fullmap .menu .left .water,
+body .content-fullmap .menu .left .water {
+  background-color: #2faae5;
+}
+
+html .content-fullmap .menu .left .disaster,
+body .content-fullmap .menu .left .disaster {
+  background-color: #c95555;
+}
+
+html .content-fullmap .menu .left .groundwater,
+body .content-fullmap .menu .left .groundwater {
+  background-color: #22b573;
+}
+
+html .content-fullmap .menu .left .tides,
+body .content-fullmap .menu .left .tides {
+  background-color: #9069d4;
+}
+
+html .content-fullmap .menu .right,
+body .content-fullmap .menu .right {
+  width: 30px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  left: 350px;
+  top: calc(50% - 50px);
 }
 
 html .content-theme .container,
@@ -4655,7 +4797,7 @@ body .content-login .container .form form .form-check .h4 {
 
 html .content-login .container .form form span,
 body .content-login .container .form form span {
-  color: #E8291C;
+  color: #e8291c;
   margin-left: 3px;
 }
 
@@ -5028,7 +5170,7 @@ body .content-signup .container .form-gp form .form-check .h4 {
 
 html .content-signup .container .form-gp form span,
 body .content-signup .container .form-gp form span {
-  color: #E8291C;
+  color: #e8291c;
   margin-left: 3px;
 }
 
@@ -6256,7 +6398,7 @@ body .content-member-data .container .member-data .form form .form-check .h4 {
 
 html .content-member-data .container .member-data .form form span,
 body .content-member-data .container .member-data .form form span {
-  color: #E8291C;
+  color: #e8291c;
   margin-left: 3px;
 }
 
@@ -7063,7 +7205,7 @@ body .content-opinion-add .container .form form .form-check .h4 {
 
 html .content-opinion-add .container .form form span,
 body .content-opinion-add .container .form form span {
-  color: #E8291C;
+  color: #e8291c;
   margin-left: 3px;
 }
 
