@@ -164,6 +164,48 @@
   background-color: #a7e5ff;
 }
 
+* input[type="range"] {
+  -webkit-appearance: none;
+  overflow: hidden;
+  /* 限定範圍 */
+  width: 200px;
+  height: 20px;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+* input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+* input[type="range"]::-webkit-slider-thumb:before, * input[type="range"]::-webkit-slider-thumb:after {
+  position: absolute;
+  top: 3px;
+  width: 200px;
+  height: 4px;
+  content: "";
+  pointer-events: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+* input::-webkit-slider-runnable-track {
+  border-radius: 10px;
+  background: #fff;
+  background: transparent;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#fff));
+  background: linear-gradient(to left, transparent, #fff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 * select {
   width: 100%;
   height: 40px;
@@ -3043,15 +3085,6 @@ body .content-information-display .container .btn {
   }
 }
 
-html .content-fullmap,
-body .content-fullmap {
-  width: 100%;
-  height: 100vh;
-  background-color: #a7e5ff;
-  position: relative;
-  overflow: hidden;
-}
-
 html .content-fullmap .fullmap-navbar,
 body .content-fullmap .fullmap-navbar {
   width: 100%;
@@ -3069,6 +3102,7 @@ body .content-fullmap .fullmap-navbar {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   padding: 0 30px;
+  z-index: 50;
 }
 
 html .content-fullmap .fullmap-navbar i,
@@ -3082,6 +3116,22 @@ body .content-fullmap .fullmap-navbar h4 {
   margin: 0 10px;
 }
 
+html .content-fullmap .fullmap-navbar i:hover,
+html .content-fullmap .fullmap-navbar h4:hover,
+body .content-fullmap .fullmap-navbar i:hover,
+body .content-fullmap .fullmap-navbar h4:hover {
+  color: #2faae5;
+}
+
+html .content-fullmap .fullmap-navbar h2,
+body .content-fullmap .fullmap-navbar h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 html .content-fullmap .menu,
 body .content-fullmap .menu {
   position: absolute;
@@ -3089,6 +3139,9 @@ body .content-fullmap .menu {
   width: 350px;
   height: 100vh;
   background-color: #22b573;
+  left: -350px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 html .content-fullmap .menu .left,
@@ -3102,11 +3155,19 @@ body .content-fullmap .menu .left .items {
   width: 100%;
   height: 23.75%;
   border-bottom: solid 1px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 html .content-fullmap .menu .left .items .title,
 body .content-fullmap .menu .left .items .title {
   width: 70px;
+  margin: 0;
   height: 100%;
   border-right: solid 1px white;
   text-align: center;
@@ -3116,8 +3177,8 @@ body .content-fullmap .menu .left .items .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3137,22 +3198,111 @@ body .content-fullmap .menu .left .items .title h2 {
 
 html .content-fullmap .menu .left .items .content,
 body .content-fullmap .menu .left .items .content {
+  width: calc(100% - 70px);
   height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+html .content-fullmap .menu .left .items .content .form-group,
+body .content-fullmap .menu .left .items .content .form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+html .content-fullmap .menu .left .items .content .form-group label,
+body .content-fullmap .menu .left .items .content .form-group label {
+  margin: 0;
+  color: white;
+  margin-right: 10px;
+}
+
+html .content-fullmap .menu .left .items .content .form-group input,
+body .content-fullmap .menu .left .items .content .form-group input {
+  width: 50%;
+  padding: 0;
+}
+
+html .content-fullmap .menu .left .items .content .form-group input,
+html .content-fullmap .menu .left .items .content .form-group select,
+body .content-fullmap .menu .left .items .content .form-group input,
+body .content-fullmap .menu .left .items .content .form-group select {
+  text-align: left;
+}
+
+html .content-fullmap .menu .left .items .content .form-check input,
+body .content-fullmap .menu .left .items .content .form-check input {
+  text-align: left;
+}
+
+html .content-fullmap .menu .left .items .content .form-check input[type="checkbox"],
+body .content-fullmap .menu .left .items .content .form-check input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+}
+
+html .content-fullmap .menu .left .items .content .form-check label,
+body .content-fullmap .menu .left .items .content .form-check label {
+  margin: 0;
+  padding: 0;
+  color: white;
+  margin-left: 5px;
+  line-height: 2rem;
+}
+
+html .content-fullmap .menu .left .items .content .half,
+body .content-fullmap .menu .left .items .content .half {
+  width: 50%;
 }
 
 html .content-fullmap .menu .left .bot,
 body .content-fullmap .menu .left .bot {
   height: 5%;
-  background-color: #fff;
+  background-color: white;
   padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-html .content-fullmap .menu .left .bot h4,
-body .content-fullmap .menu .left .bot h4 {
+html .content-fullmap .menu .left .bot input[type="reset"],
+body .content-fullmap .menu .left .bot input[type="reset"] {
+  width: unset;
+  height: unset;
+  background-color: transparent;
+  color: #0d73ad;
   margin: 0;
   font-size: 1.125rem;
   line-height: 2.8125rem;
-  text-align: right;
+}
+
+html .content-fullmap .menu .left .bot input[type="reset"]:hover,
+body .content-fullmap .menu .left .bot input[type="reset"]:hover {
+  color: #2faae5;
 }
 
 html .content-fullmap .menu .left .water,
@@ -3183,6 +3333,40 @@ body .content-fullmap .menu .right {
   position: absolute;
   left: 350px;
   top: calc(50% - 50px);
+  border-radius: 0 60px 60px 0;
+  cursor: pointer;
+}
+
+html .content-fullmap .menu .right h2,
+body .content-fullmap .menu .right h2 {
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate(10%, 25%);
+          transform: translate(10%, 25%);
+}
+
+html .content-fullmap .menu .right:hover,
+body .content-fullmap .menu .right:hover {
+  background-color: #2faae5;
+}
+
+html .content-fullmap .menu .right:hover h2,
+body .content-fullmap .menu .right:hover h2 {
+  color: white;
+}
+
+html .content-fullmap .active,
+body .content-fullmap .active {
+  left: 0px;
+}
+
+html .content-fullmap .fullmap,
+body .content-fullmap .fullmap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #a7e5ff;
 }
 
 html .content-theme .container,

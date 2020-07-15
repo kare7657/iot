@@ -19,56 +19,164 @@
     <!-- 導覽列 -->
     <div class="content-fullmap">
         <nav class="fullmap-navbar">
+            <h2>資料展示</h2>
             <a href="index.html"><i class="fas fa-home"></i></a>
             <a href="">
                 <h4>縣市界線</h4>
             </a>
         </nav>
         <div class="menu">
-                <div class="left">
-                    <div class="items water">
-                        <div class="title">
-                            <img src="img/icon-water.svg" alt="水情">
-                            <h2>水情</h2>
-                        </div>
-                        <div class="content">
-
-                        </div>
+            <form class="left">
+                <div class="items water">
+                    <div class="title">
+                        <img src="img/icon-water.svg" alt="水情">
+                        <h2>水情</h2>
                     </div>
-                    <div class="items disaster">
-                        <div class="title">
-                            <img src="img/icon-disaster.svg" alt="災情">
-                            <h2>災情</h2>
+                    <div class="content">
+                        <div class="form-group">
+                            <label for="opacity1">透明度</label>
+                            <input type="range" class="form-control-range" id="opacity1">
                         </div>
-                        <div class="content">
-
+                        <div class="check-left">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rainfall">
+                                <label class="form-check-label" for="rainfall">雨量
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="stage">
+                                <label class="form-check-label" for="stage">水位
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="river-basin">
+                                <label class="form-check-label" for="river-basin">河川流域
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="items groundwater">
-                        <div class="title">
-                            <img src="img/icon-groundwater.svg" alt="地下水">
-                            <h2>地下水</h2>
+                        <div class="check-right">
                         </div>
-                        <div class="content">
-
-                        </div>
-                    </div>
-                    <div class="items tides">
-                        <div class="title">
-                            <img src="img/icon-tides.svg" alt="地下水">
-                            <h2>地下水</h2>
-                        </div>
-                        <div class="content">
-
-                        </div>
-                    </div>
-                    <div class="bot">
-                        <a href=""><h4>重置選項</h4></a>
                     </div>
                 </div>
-                <div class="right">
-                    <h4></h4>
+                <div class="items disaster">
+                    <div class="title">
+                        <img src="img/icon-disaster.svg" alt="災情">
+                        <h2>災情</h2>
+                    </div>
+                    <div class="content">
+                        <div class="form-group">
+                            <label for="opacity2">透明度</label>
+                            <input type="range" class="form-control-range" id="opacity2">
+                        </div>
+                        <div class="check-left half">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="heavy-rain">
+                                <label class="form-check-label" for="heavy-rain">大雨
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="earthquake">
+                                <label class="form-check-label" for="earthquake">地震
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="typhoon">
+                                <label class="form-check-label" for="typhoon">颱風
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="landslides">
+                                <label class="form-check-label" for="landslides">土石流
+                                </label>
+                            </div>
+                        </div>
+                        <div class="check-right half">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="reservoir">
+                                <label class="form-check-label" for="reservoir">水庫放流
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="water-outage">
+                                <label class="form-check-label" for="water-outage">停水
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="items groundwater">
+                    <div class="title">
+                        <img src="img/icon-groundwater.svg" alt="地下水">
+                        <h2>地下水</h2>
+                    </div>
+                    <div class="content">
+                        <div class="form-group">
+                            <label for="opacity3">透明度</label>
+                            <input type="range" class="form-control-range" id="opacity3">
+                        </div>
+                        <div class="check-left">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groundwater-location">
+                                <label class="form-check-label" for="groundwater-location">測站位置
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groundwater-stage">
+                                <label class="form-check-label" for="groundwater-stage">即時水位
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pumping-station">
+                                <label class="form-check-label" for="pumping-station">抽水站位置
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pumping-stage">
+                                <label class="form-check-label" for="pumping-stage">抽水站即時水位
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="check-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="items tides">
+                    <div class="title">
+                        <img src="img/icon-tides.svg" alt="潮汐">
+                        <h2>潮汐</h2>
+                    </div>
+                    <div class="content">
+                        <div class="form-group">
+                            <label for="opacity4">透明度</label>
+                            <input type="range" class="form-control-range" id="opacity4">
+                        </div>
+                        <div class="check-left">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="tides-station">
+                                <label class="form-check-label" for="tides-station">潮位站位置
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="tides-stage">
+                                <label class="form-check-label" for="tides-stage">即時潮位
+                                </label>
+                            </div>
+                        </div>
+                        <div class="check-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <input type="reset" value="重置選項">
+                </div>
+            </form>
+            <div class="right">
+                <h2 id="symbol">&gt;</h2>
+            </div>
+        </div>
+        <div class="fullmap">
+
         </div>
     </div>
 
@@ -83,18 +191,24 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- mobile-menu -->
+    <!-- fullmap-menu -->
     <script>
-        var fas = document.querySelector(".fas.fa-bars")
-        var navbar_nav = document.querySelector(".nav.navbar-nav")
-        var nav_item = document.querySelector(".nav-item.dropdown")
-        fas.onclick = function () {
-            if (navbar_nav.classList.contains("active-ul")) {
-                navbar_nav.classList.remove("active-ul")
+        var right = document.querySelector(".right")
+        var menu = document.querySelector(".menu")
+        var left = document.querySelector(".left")
+        right.onclick = function () {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                document.getElementById("symbol").innerHTML = "&gt;";
             } else {
-                navbar_nav.classList.add("active-ul")
+                menu.classList.add("active");
+                document.getElementById("symbol").innerHTML = "&lt;";
             }
         }
+    </script>
+
+    <!-- 滑桿 -->
+    <script>
     </script>
 
 </body>

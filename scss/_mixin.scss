@@ -171,6 +171,44 @@
                 background-color: $light-sky;
             }
         }
+        &[type="range"] {
+            -webkit-appearance: none;
+            overflow: hidden; /* 限定範圍 */
+            width: 200px;
+            height: 20px;
+            outline: none;
+            background: none;
+            border: none;
+        }
+        &[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            position: relative;
+            width: 15px;
+            height: 15px;
+            background: rgba($color: $title-BK, $alpha: 0.3);
+            border-radius: 50%;
+        }
+        &[type="range"]::-webkit-slider-thumb:before,
+        &[type="range"]::-webkit-slider-thumb:after {
+            position: absolute;
+            top: 3px;
+            width: 200px;
+            height: 4px;
+            content: "";
+            pointer-events: none;
+            transition: 0.2s;
+        }
+        &::-webkit-slider-runnable-track {
+            border-radius: 10px;
+            background: #fff;
+            background: transparent; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, transparent, #fff); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(
+                to left,
+                transparent,
+                #fff
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
     }
     select {
         width: 100%;
@@ -626,7 +664,7 @@
                 width: 180px;
                 border-radius: 0 0 8px 8px;
                 padding: 0 20px 10px 20px;
-                background-color: rgba($color: #1480BE, $alpha: 1.0);
+                background-color: rgba($color: #1480be, $alpha: 1);
 
                 h4 {
                     margin: 0;
@@ -1664,4 +1702,3 @@
         }
     }
 }
-
