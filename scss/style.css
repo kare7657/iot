@@ -184,26 +184,66 @@
   border-radius: 50%;
 }
 
-* input[type="range"]::-webkit-slider-thumb:before, * input[type="range"]::-webkit-slider-thumb:after {
-  position: absolute;
-  top: 3px;
-  width: 200px;
-  height: 4px;
-  content: "";
-  pointer-events: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-* input::-webkit-slider-runnable-track {
+* input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 10px;
   background: #fff;
-  background: transparent;
-  /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#fff));
-  background: linear-gradient(to left, transparent, #fff);
+  background: -webkit-gradient(linear, right top, left top, from(#fff), to(transparent));
+  background: linear-gradient(to left, #fff, transparent);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* input[type="range"]::-moz-range-track {
+  height: 15px;
+  border-radius: 15px;
+  background: linear-gradient(to left, #fff, transparent);
+  border: none;
+}
+
+* input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+}
+
+* input[type="range"]::-moz-range-thumb:hover, * input[type="range"]:active::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+}
+
+* input[type="range"]::-moz-range-progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+* input[type="range"]::-moz-focus-outer {
+  border: none;
+}
+
+* input[type="range"]::-ms-track {
+  height: 15px;
+  border-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #fff;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+* input[type="range"]::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+* input[type="range"]::-ms-fill-lower {
+  background: transparent;
 }
 
 * select {
@@ -3170,15 +3210,16 @@ body .content-fullmap .menu .left .items .title {
   margin: 0;
   height: 100%;
   border-right: solid 1px white;
-  text-align: center;
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3187,10 +3228,17 @@ body .content-fullmap .menu .left .items .title {
 html .content-fullmap .menu .left .items .title img,
 body .content-fullmap .menu .left .items .title img {
   margin: 10px 0;
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 html .content-fullmap .menu .left .items .title h2,
 body .content-fullmap .menu .left .items .title h2 {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
   color: white;
   line-height: 70px;
   letter-spacing: 5px;
@@ -3298,6 +3346,7 @@ body .content-fullmap .menu .left .bot input[type="reset"] {
   margin: 0;
   font-size: 1.125rem;
   line-height: 2.8125rem;
+  text-align: right;
 }
 
 html .content-fullmap .menu .left .bot input[type="reset"]:hover,
