@@ -8810,4 +8810,430 @@ html .content-example-code .container .example-body .right .pd0,
 body .content-example-code .container .example-body .right .pd0 {
   padding: 0;
 }
+
+html .content-science-classroom .container,
+body .content-science-classroom .container {
+  padding-top: 220px;
+}
+
+html .content-science-classroom .container h1,
+body .content-science-classroom .container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container,
+  body .content-science-classroom .container {
+    padding-top: 130px;
+    width: 100%;
+  }
+  html .content-science-classroom .container h1,
+  body .content-science-classroom .container h1 {
+    margin-bottom: 25px;
+    padding: 0 45px;
+  }
+}
+
+html .content-science-classroom .container .example-body,
+body .content-science-classroom .container .example-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body,
+  body .content-science-classroom .container .example-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+html .content-science-classroom .container .example-body .left,
+body .content-science-classroom .container .example-body .left {
+  width: 20%;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body .left,
+  body .content-science-classroom .container .example-body .left {
+    padding: 0;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .collapsible,
+body .content-science-classroom .container .example-body .left .collapsible {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #0d73ad;
+  text-align: left;
+  outline: none;
+  font-size: 1.125rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  html .content-science-classroom .container .example-body .left .collapsible,
+  body .content-science-classroom .container .example-body .left .collapsible {
+    margin-bottom: unset;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .content-science-classroom .container .example-body .left .collapsible,
+  body .content-science-classroom .container .example-body .left .collapsible {
+    font-size: 1rem;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .collapsible:after,
+body .content-science-classroom .container .example-body .left .collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+html .content-science-classroom .container .example-body .left .active:after,
+body .content-science-classroom .container .example-body .left .active:after {
+  content: "\2212";
+}
+
+html .content-science-classroom .container .example-body .left .content,
+body .content-science-classroom .container .example-body .left .content {
+  padding: 0 30px;
+  margin-bottom: 25px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1024px) {
+  html .content-science-classroom .container .example-body .left .content,
+  body .content-science-classroom .container .example-body .left .content {
+    margin-bottom: unset;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .content-science-classroom .container .example-body .left .content,
+  body .content-science-classroom .container .example-body .left .content {
+    margin-bottom: 10px;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .content p,
+body .content-science-classroom .container .example-body .left .content p {
+  text-align: left;
+  font-size: 1rem;
+  color: #595757;
+  line-height: 2rem;
+}
+
+@media (max-width: 320px) {
+  html .content-science-classroom .container .example-body .left .content p,
+  body .content-science-classroom .container .example-body .left .content p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .content ul,
+body .content-science-classroom .container .example-body .left .content ul {
+  padding: 0;
+  margin: 0;
+}
+
+html .content-science-classroom .container .example-body .left .content ul,
+html .content-science-classroom .container .example-body .left .content li,
+body .content-science-classroom .container .example-body .left .content ul,
+body .content-science-classroom .container .example-body .left .content li {
+  text-align: left;
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+@media (max-width: 320px) {
+  html .content-science-classroom .container .example-body .left .content ul,
+  html .content-science-classroom .container .example-body .left .content li,
+  body .content-science-classroom .container .example-body .left .content ul,
+  body .content-science-classroom .container .example-body .left .content li {
+    font-size: 1rem;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .content a,
+body .content-science-classroom .container .example-body .left .content a {
+  color: #595757;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body .left,
+  body .content-science-classroom .container .example-body .left {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 20px;
+    padding: unset;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left,
+  body .content-science-classroom .container .example-body .left {
+    padding: 0 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .searchbar,
+body .content-science-classroom .container .example-body .left .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 37.5px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left .searchbar,
+  body .content-science-classroom .container .example-body .left .searchbar {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .searchbar input[type="search"],
+body .content-science-classroom .container .example-body .left .searchbar input[type="search"] {
+  width: 150px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: solid 1px #2faae5;
+  background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left .searchbar input[type="search"],
+  body .content-science-classroom .container .example-body .left .searchbar input[type="search"] {
+    width: 90%;
+    padding: 5px 8px;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus,
+body .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus {
+  width: 180px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  -webkit-box-shadow: #e5f1f9 0 0 0 5px;
+          box-shadow: #e5f1f9 0 0 0 5px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus,
+  body .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus {
+    width: 100%;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .searchbar input[type="search"],
+body .content-science-classroom .container .example-body .left .searchbar input[type="search"] {
+  width: 200px;
+}
+
+html .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus,
+body .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus {
+  width: 230px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left .searchbar input[type="search"],
+  body .content-science-classroom .container .example-body .left .searchbar input[type="search"] {
+    width: 90%;
+  }
+  html .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus,
+  body .content-science-classroom .container .example-body .left .searchbar input[type="search"]:focus {
+    width: 100%;
+  }
+}
+
+html .content-science-classroom .container .example-body .left button,
+body .content-science-classroom .container .example-body .left button {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+  border: solid 1px #0d73ad;
+  color: #0d73ad;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body .left button,
+  body .content-science-classroom .container .example-body .left button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .left button,
+  body .content-science-classroom .container .example-body .left button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+html .content-science-classroom .container .example-body .left .active-btn,
+body .content-science-classroom .container .example-body .left .active-btn {
+  background-color: #0d73ad;
+  color: white;
+}
+
+html .content-science-classroom .container .example-body .right,
+body .content-science-classroom .container .example-body .right {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body .right,
+  body .content-science-classroom .container .example-body .right {
+    width: 100%;
+  }
+}
+
+html .content-science-classroom .container .example-body .right .science-list,
+body .content-science-classroom .container .example-body .right .science-list {
+  display: none;
+  margin-bottom: 37.5px;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .list,
+body .content-science-classroom .container .example-body .right .science-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 30px;
+  padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+  html .content-science-classroom .container .example-body .right .science-list .list,
+  body .content-science-classroom .container .example-body .right .science-list .list {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .right .science-list .list,
+  body .content-science-classroom .container .example-body .right .science-list .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px 45px;
+  }
+  html .content-science-classroom .container .example-body .right .science-list .list .c1,
+  body .content-science-classroom .container .example-body .right .science-list .list .c1 {
+    width: 30%;
+    padding-right: 10px;
+  }
+  html .content-science-classroom .container .example-body .right .science-list .list .c2,
+  body .content-science-classroom .container .example-body .right .science-list .list .c2 {
+    width: 20%;
+    padding-right: 10px;
+  }
+  html .content-science-classroom .container .example-body .right .science-list .list .c3,
+  body .content-science-classroom .container .example-body .right .science-list .list .c3 {
+    width: 50%;
+  }
+}
+
+html .content-science-classroom .container .example-body .right .science-list .list a,
+body .content-science-classroom .container .example-body .right .science-list .list a {
+  color: #595757;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .head,
+body .content-science-classroom .container .example-body .right .science-list .head {
+  background-color: #0d73ad;
+  border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .example-body .right .science-list .head,
+  body .content-science-classroom .container .example-body .right .science-list .head {
+    border-radius: unset;
+  }
+}
+
+html .content-science-classroom .container .example-body .right .science-list .head p,
+body .content-science-classroom .container .example-body .right .science-list .head p {
+  color: white;
+  font-weight: bold;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .c1,
+body .content-science-classroom .container .example-body .right .science-list .c1 {
+  width: 20%;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .c2,
+body .content-science-classroom .container .example-body .right .science-list .c2 {
+  width: 20%;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .c3,
+body .content-science-classroom .container .example-body .right .science-list .c3 {
+  width: 60%;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .blue,
+body .content-science-classroom .container .example-body .right .science-list .blue {
+  background-color: #e5f1f9;
+}
+
+html .content-science-classroom .container .example-body .right .science-list .white,
+body .content-science-classroom .container .example-body .right .science-list .white {
+  background-color: white;
+}
+
+html .content-science-classroom .container .example-body .right .science-list h4,
+body .content-science-classroom .container .example-body .right .science-list h4 {
+  text-align: right;
+}
+
+html .content-science-classroom .container .example-body .right .active,
+body .content-science-classroom .container .example-body .right .active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

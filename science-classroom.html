@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>水資源物聯網入口網</title>
+    <title>科普小教室</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
@@ -267,97 +267,140 @@
             </div>
         </div>
     </nav>
-    <!-- Banner -->
-    <div class="content-banner">
-        <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/BN-index.jpg" alt="Banner-index" class="BN-right">
-                </div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li>></li>
+                <li><span>科普小教室</span></li>
+            </ul>
         </div>
     </div>
-
-    <!-- 關於平台 -->
-    <section class="content-about">
+    <!-- 科普小教室 -->
+    <section class="content-science-classroom">
         <div class="container">
-            <div class="about">
-                <h1>歡迎使用水資源物聯網資料服務！</h1>
-                <p>水利署積極發展「水資源物聯網感測基礎雲端作業服務平臺」(Internet of Water，IoW)， 與各水資源相關機關協作建立標準化、高效能、跨載具之水資源物聯網開放資料服務，以Web
-                    Services介面提供高品質、
-                    開放資料之水資源資料服務API，提供產官學及各界以機器對機器(M2M)資料交換機制介接應用。IoW平臺涵蓋全國水領域之相關動靜態資料，歡迎各界介接使用，並回饋寶貴意見。</p>
-            </div>
-            <div class="fast-link">
-                <div class="icon-gp">
-                    <a href="theme.html">
-                        <img src="img/icon-river.svg" alt="api-river"></a>
-                    <h2>河川</h2>
+            <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
+            <h1>科普小教室</h1>
+            <!-- 左欄清單 -->
+            <div class="example-body">
+                <div class="left">
+                    <button class="btn1 active-btn" type="button">水文</button>
+                    <button class="btn2" type="button">淹水深度</button>
+                    <button class="btn3" type="button">抽水量</button>
                 </div>
-                <div class="icon-gp">
-                    <a href="flood.html">
-                        <img src="img/icon-flood.svg" alt="api-flood"></a>
-                    <h2>淹水</h2>
+                <div class="right">
+                    <!-- 右欄內容 -->
+                    <div class="example-content">
+                        <!-- 水文 -->
+                        <div class="science-list list1 active">
+                            <div class="list head">
+                                <p class="c1">名稱</p>
+                                <p class="c2">單位</p>
+                                <p class="c3">說明</p>
+                            </div>
+                            <div class="list-gp">
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>水位</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>m</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>指自由水面相對某一基面的高程</p>
+                                    </div>
+                                </div>
+                                <div class="list white">
+                                    <div class="c1">
+                                        <p>地下水位</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>m</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>為地層中孔隙水壓等於大氣壓力之位置連線</p>
+                                    </div>
+                                </div>
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>10分鐘雨量</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>mm</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>以10分鐘為單位觀測降雨量的水文單位</p>
+                                    </div>
+                                </div>
+                                <div class="list white">
+                                    <div class="c1">
+                                        <p>表面流速</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>m/s</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>於地表上流體通過某一斷面的流動速度</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 淹水深度 -->
+                        <div class="science-list list2">
+                            <div class="list head">
+                                <p class="c1">名稱</p>
+                                <p class="c2">單位</p>
+                                <p class="c3">說明</p>
+                            </div>
+                            <div class="list-gp">
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>淹水深度</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>cm</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>受災地區受洪水淹沒之深度</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 抽水量 -->
+                        <div class="science-list list3">
+                            <div class="list head">
+                                <p class="c1">名稱</p>
+                                <p class="c2">單位</p>
+                                <p class="c3">說明</p>
+                            </div>
+                            <div class="list-gp">
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>瞬間流量</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>m³/s</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>表示固定單位時間長度內流體流過體積</p>
+                                    </div>
+                                </div>
+                                <div class="list white">
+                                    <div class="c1">
+                                        <p>累計流量</p>
+                                    </div>
+                                    <div class="c2">
+                                        <p>m³</p>
+                                    </div>
+                                    <div class="c3">
+                                        <p>表示從量測開始到結束累計的流體流量值</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="icon-gp">
-                    <a href="data-explain.html">
-                        <img src="img/icon-explain.svg" alt="api-explain"></a>
-                    <h2>使用說明</h2>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </section>
-
-    <!-- 最新消息&資料使用統計 -->
-    <section class="content-preview">
-        <div class="container">
-            <div class="new">
-                <h2>最新消息</h2>
-                <div class="list blue">
-                    <span>2020/3/26</span>
-                    <a href="">
-                        <p>各縣市告警線上查詢上架</p>
-                    </a>
-                </div>
-                <div class="list white">
-                    <span>2020/3/25</span>
-                    <a href="">
-                        <p>API使用資料統計及水情地圖查詢上線</p>
-                    </a>
-                </div>
-                <div class="list blue">
-                    <span>2020/3/24</span>
-                    <a href="">
-                        <p>進行本年度實際實地營運持續演練</p>
-                    </a>
-                </div>
-                <div class="list white">
-                    <span>2020/3/21</span>
-                    <a href="news-post1.html">
-                        <p>一圖看懂民生公共物聯網</p>
-                    </a>
-                </div>
-                <div class="list blue">
-                    <span>2020/3/15</span>
-                    <a href="">
-                        <p>高屏溪智慧河川建置計畫</p>
-                    </a>
-                </div>
-                <a href="news.html">
-                    <h4>>more</h4>
-                </a>
-            </div>
-            <div class="data-statistics">
-                <h2>資料使用統計</h2>
-                <a href="data-statistics.html">
-                    <img src="img/sample.jpg" alt="">
-                </a>
             </div>
         </div>
     </section>
@@ -435,29 +478,57 @@
         }
     </script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <!-- collapse -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            // loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-        });
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
     </script>
+
+    <!-- 科學小教室list -->
+    <script>
+        var btn1 = document.querySelector(".btn1")
+        var btn2 = document.querySelector(".btn2")
+        var btn3 = document.querySelector(".btn3")
+        var list1 = document.querySelector(".list1")
+        var list2 = document.querySelector(".list2")
+        var list3 = document.querySelector(".list3")
+        function clear_active() {
+            btn1.classList.remove("active-btn")
+            btn2.classList.remove("active-btn")
+            btn3.classList.remove("active-btn")
+            list1.classList.remove("active")
+            list2.classList.remove("active")
+            list3.classList.remove("active")
+        }
+        btn1.onclick = function () {
+            clear_active()
+            btn1.classList.add("active-btn")
+            list1.classList.add("active")
+        }
+        btn2.onclick = function () {
+            clear_active()
+            btn2.classList.add("active-btn")
+            list2.classList.add("active")
+        }
+        btn3.onclick = function () {
+            clear_active()
+            btn3.classList.add("active-btn")
+            list3.classList.add("active")
+        }
+    </script>
+
 </body>
 
 </html>
