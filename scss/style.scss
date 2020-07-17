@@ -1448,6 +1448,51 @@ body {
             }
         }
     }
+    //API認證資訊
+    .content-api-attestation {
+        @include papers();
+        .container {
+            @include mobile-L() {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 0;
+                h1 {
+                    text-align: center;
+                }
+            }
+            .form {
+                @include form();
+                margin: auto;
+                width: 60%;
+                padding: $padding-S;
+                @include web-S() {
+                    width: 70%;
+                }
+                @include pad() {
+                    width: 100%;
+                    padding: $padding-S 0;
+                }
+                form {
+                    .form-gp {
+                        h4 {
+                            width: 100%;
+                            text-align: left;
+                        }
+                        span {
+                            width: 100%;
+                            color: $red;
+                            text-align: left;
+                            padding-bottom: $padding-XXS/2;
+                            margin: 0;
+                        }
+                        p {
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
     //意見反映
     .content-opinion {
         @include papers();

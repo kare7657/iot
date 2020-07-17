@@ -6686,6 +6686,382 @@ body .content-member-data .container .member-data .form .btn input[type="submit"
   height: 44px;
 }
 
+html .content-api-attestation,
+body .content-api-attestation {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-api-attestation,
+  body .content-api-attestation {
+    padding-top: 80px;
+  }
+}
+
+html .content-api-attestation h1,
+body .content-api-attestation h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-api-attestation h1,
+  body .content-api-attestation h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-api-attestation h3,
+body .content-api-attestation h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-api-attestation ul,
+body .content-api-attestation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-api-attestation .btn,
+body .content-api-attestation .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-api-attestation .container,
+  body .content-api-attestation .container {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  html .content-api-attestation .container h1,
+  body .content-api-attestation .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-api-attestation .container .form,
+body .content-api-attestation .container .form {
+  background-color: #e5f1f9;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  padding: 60px;
+}
+
+@media (max-width: 568px) {
+  html .content-api-attestation .container .form,
+  body .content-api-attestation .container .form {
+    border-radius: unset;
+  }
+}
+
+html .content-api-attestation .container .form form .form-gp,
+body .content-api-attestation .container .form form .form-gp {
+  padding: 0 60px;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+html .content-api-attestation .container .form form .form-gp p,
+body .content-api-attestation .container .form form .form-gp p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  html .content-api-attestation .container .form form .form-gp,
+  body .content-api-attestation .container .form form .form-gp {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-api-attestation .container .form form .form-gp,
+  body .content-api-attestation .container .form form .form-gp {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-api-attestation .container .form form .form-gp,
+  body .content-api-attestation .container .form form .form-gp {
+    padding: 0 45px;
+  }
+}
+
+html .content-api-attestation .container .form form .form-gp label,
+body .content-api-attestation .container .form form .form-gp label {
+  width: 100%;
+  padding: 0;
+  margin-right: 50px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+html .content-api-attestation .container .form form .form-gp input[type="submit"], html .content-api-attestation .container .form form .form-gp input[type="reset"],
+html .content-api-attestation .container .form form .form-gp select[type="submit"],
+html .content-api-attestation .container .form form .form-gp select[type="reset"],
+body .content-api-attestation .container .form form .form-gp input[type="submit"],
+body .content-api-attestation .container .form form .form-gp input[type="reset"],
+body .content-api-attestation .container .form form .form-gp select[type="submit"],
+body .content-api-attestation .container .form form .form-gp select[type="reset"] {
+  width: 100%;
+  height: 40px;
+  background-color: #0d73ad;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+html .content-api-attestation .container .form form .form-gp input[type="submit"]:hover, html .content-api-attestation .container .form form .form-gp input[type="reset"]:hover,
+html .content-api-attestation .container .form form .form-gp select[type="submit"]:hover,
+html .content-api-attestation .container .form form .form-gp select[type="reset"]:hover,
+body .content-api-attestation .container .form form .form-gp input[type="submit"]:hover,
+body .content-api-attestation .container .form form .form-gp input[type="reset"]:hover,
+body .content-api-attestation .container .form form .form-gp select[type="submit"]:hover,
+body .content-api-attestation .container .form form .form-gp select[type="reset"]:hover {
+  background-color: #2faae5;
+}
+
+html .content-api-attestation .container .form form .form-gp input[type="button"],
+html .content-api-attestation .container .form form .form-gp select[type="button"],
+body .content-api-attestation .container .form form .form-gp input[type="button"],
+body .content-api-attestation .container .form form .form-gp select[type="button"] {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: solid 1px #0d73ad;
+  border-radius: 8px;
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+html .content-api-attestation .container .form form .form-gp input[type="button"]:hover,
+html .content-api-attestation .container .form form .form-gp select[type="button"]:hover,
+body .content-api-attestation .container .form form .form-gp input[type="button"]:hover,
+body .content-api-attestation .container .form form .form-gp select[type="button"]:hover {
+  background-color: #2faae5;
+  color: white;
+  border: solid 1px #2faae5;
+}
+
+html .content-api-attestation .container .form form .form-gp input[disabled],
+html .content-api-attestation .container .form form .form-gp select[disabled],
+body .content-api-attestation .container .form form .form-gp input[disabled],
+body .content-api-attestation .container .form form .form-gp select[disabled] {
+  background-color: #a7e5ff;
+}
+
+html .content-api-attestation .container .form form .form-gp input[disabled]:hover,
+html .content-api-attestation .container .form form .form-gp select[disabled]:hover,
+body .content-api-attestation .container .form form .form-gp input[disabled]:hover,
+body .content-api-attestation .container .form form .form-gp select[disabled]:hover {
+  background-color: #a7e5ff;
+}
+
+html .content-api-attestation .container .form form .form-gp textarea,
+body .content-api-attestation .container .form form .form-gp textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+html .content-api-attestation .container .form form .form-gp a,
+body .content-api-attestation .container .form form .form-gp a {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin-top: 20px;
+  color: #0d73ad;
+  font-weight: bold;
+  text-align: center;
+}
+
+html .content-api-attestation .container .form form .form-check,
+body .content-api-attestation .container .form form .form-check {
+  width: 100%;
+  padding: 0 60px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  html .content-api-attestation .container .form form .form-check,
+  body .content-api-attestation .container .form form .form-check {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-api-attestation .container .form form .form-check,
+  body .content-api-attestation .container .form form .form-check {
+    padding: 0 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-api-attestation .container .form form .form-check,
+  body .content-api-attestation .container .form form .form-check {
+    padding: 0 45px;
+  }
+}
+
+html .content-api-attestation .container .form form .form-check input,
+html .content-api-attestation .container .form form .form-check select,
+body .content-api-attestation .container .form form .form-check input,
+body .content-api-attestation .container .form form .form-check select {
+  text-align: left;
+}
+
+html .content-api-attestation .container .form form .form-check input[type="checkbox"],
+html .content-api-attestation .container .form form .form-check select[type="checkbox"],
+body .content-api-attestation .container .form form .form-check input[type="checkbox"],
+body .content-api-attestation .container .form form .form-check select[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 2.25rem;
+  margin-top: 8px;
+  border: 1px solid #a7e5ff;
+}
+
+html .content-api-attestation .container .form form .form-check select,
+body .content-api-attestation .container .form form .form-check select {
+  width: 100%;
+  height: 40px;
+}
+
+html .content-api-attestation .container .form form .form-check label,
+body .content-api-attestation .container .form form .form-check label {
+  padding: 0;
+  margin: 0 25px;
+  color: #595757;
+  font-size: 1rem;
+}
+
+html .content-api-attestation .container .form form .form-check .form-check-label,
+body .content-api-attestation .container .form form .form-check .form-check-label {
+  line-height: 2.25rem;
+  margin: 0 20px 10px 25px;
+}
+
+html .content-api-attestation .container .form form .form-check .form-check-input,
+body .content-api-attestation .container .form form .form-check .form-check-input {
+  margin-left: 0px;
+}
+
+html .content-api-attestation .container .form form .form-check .check-input,
+body .content-api-attestation .container .form form .form-check .check-input {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a7e5ff;
+  padding: 0 10px;
+  color: #595757;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  margin: 10px 0;
+}
+
+html .content-api-attestation .container .form form .form-check .h4,
+body .content-api-attestation .container .form form .form-check .h4 {
+  color: #0d73ad;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+html .content-api-attestation .container .form form span,
+body .content-api-attestation .container .form form span {
+  color: #e8291c;
+  margin-left: 3px;
+}
+
+@media (max-width: 1024px) {
+  html .content-api-attestation .container .form,
+  body .content-api-attestation .container .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  html .content-api-attestation .container .form,
+  body .content-api-attestation .container .form {
+    width: 100%;
+    padding: 60px 0;
+  }
+}
+
+html .content-api-attestation .container .form form .form-gp h4,
+body .content-api-attestation .container .form form .form-gp h4 {
+  width: 100%;
+  text-align: left;
+}
+
+html .content-api-attestation .container .form form .form-gp span,
+body .content-api-attestation .container .form form .form-gp span {
+  width: 100%;
+  color: #e8291c;
+  text-align: left;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+html .content-api-attestation .container .form form .form-gp p,
+body .content-api-attestation .container .form form .form-gp p {
+  padding-top: 0;
+}
+
 html .content-opinion,
 body .content-opinion {
   padding-top: 120px;
