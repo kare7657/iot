@@ -632,15 +632,15 @@
     position: fixed;
     z-index: 999;
     background-color: white;
+    box-shadow: 5px 5px 10px rgba($color: $dark-blue, $alpha: 0.1);
     display: flex;
     justify-content: center;
     margin-top: 40px;
     @include pad() {
         display: unset;
         justify-content: unset;
-    }
-    @include pad() {
         margin-top: 0;
+        box-shadow:none;
     }
     .pc {
         width: 1140px;

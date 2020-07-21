@@ -114,7 +114,7 @@ body {
             }
         }
         hr {
-            width: 60%;
+            max-width: 1140px;
             @include pad() {
                 display: none;
             }
@@ -1914,6 +1914,76 @@ body {
                     margin-bottom: $margin-S;
                     padding: 0 $padding-XS * 1.5;
                 }
+            }
+            .notice {
+                // border: solid 3px $light-sky;
+                background-color: $light-gray;
+                border-radius: 20px;
+                padding: $padding-XS * 1.5 $padding-S;
+                margin-bottom: $margin-M;
+                transition: 0.5s;
+                @include mobile-L() {
+                    padding: $padding-XS $padding-XS * 1.5;
+                    border: unset;
+                    border-radius: unset;
+                    margin-bottom: $margin-S;
+                }
+                .top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    @include pad() {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+                    .left {
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        @include pad() {
+                            width: 100%;
+                            margin-bottom: $margin-S;
+                        }
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            @include mobile-L() {
+                                width: 35%;
+                            }
+                        }
+                    }
+                    .right {
+                        width: 80%;
+                        @include pad() {
+                            width: 100%;
+                        }
+                    }
+                }
+                .bot {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: $margin-S;
+                    .btn {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        button {
+                            background-color: transparent;
+                            border: solid 1px $dark-blue;
+                            color: $dark-blue;
+                            width: 20%;
+                            @include pad() {
+                                width: 45%;
+                            }
+                            @include mobile-L() {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .hide {
+                display: none;
             }
             .example-body {
                 display: flex;

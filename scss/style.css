@@ -777,6 +777,8 @@ body .navbar {
   position: fixed;
   z-index: 999;
   background-color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(13, 115, 173, 0.1);
+          box-shadow: 5px 5px 10px rgba(13, 115, 173, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,13 +795,9 @@ body .navbar {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
-  }
-}
-
-@media (max-width: 768px) {
-  html .navbar,
-  body .navbar {
     margin-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -1220,7 +1218,7 @@ body .content-about .container .fast-link .icon-gp img {
 
 html .content-about hr,
 body .content-about hr {
-  width: 60%;
+  max-width: 1140px;
 }
 
 @media (max-width: 768px) {
@@ -8365,6 +8363,134 @@ body .content-example-code .container h1 {
     margin-bottom: 25px;
     padding: 0 45px;
   }
+}
+
+html .content-example-code .container .notice,
+body .content-example-code .container .notice {
+  background-color: #eeefef;
+  border-radius: 20px;
+  padding: 45px 60px;
+  margin-bottom: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .notice,
+  body .content-example-code .container .notice {
+    padding: 30px 45px;
+    border: unset;
+    border-radius: unset;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-example-code .container .notice .top,
+body .content-example-code .container .notice .top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .notice .top,
+  body .content-example-code .container .notice .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+html .content-example-code .container .notice .top .left,
+body .content-example-code .container .notice .top .left {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .notice .top .left,
+  body .content-example-code .container .notice .top .left {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-example-code .container .notice .top .left img,
+body .content-example-code .container .notice .top .left img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .notice .top .left img,
+  body .content-example-code .container .notice .top .left img {
+    width: 35%;
+  }
+}
+
+html .content-example-code .container .notice .top .right,
+body .content-example-code .container .notice .top .right {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .notice .top .right,
+  body .content-example-code .container .notice .top .right {
+    width: 100%;
+  }
+}
+
+html .content-example-code .container .notice .bot,
+body .content-example-code .container .notice .bot {
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+html .content-example-code .container .notice .bot .btn,
+body .content-example-code .container .notice .bot .btn {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html .content-example-code .container .notice .bot .btn button,
+body .content-example-code .container .notice .bot .btn button {
+  background-color: transparent;
+  border: solid 1px #0d73ad;
+  color: #0d73ad;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  html .content-example-code .container .notice .bot .btn button,
+  body .content-example-code .container .notice .bot .btn button {
+    width: 45%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .notice .bot .btn button,
+  body .content-example-code .container .notice .bot .btn button {
+    width: 100%;
+  }
+}
+
+html .content-example-code .container .hide,
+body .content-example-code .container .hide {
+  display: none;
 }
 
 html .content-example-code .container .example-body,
