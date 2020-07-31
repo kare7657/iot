@@ -421,12 +421,16 @@ body {
                         position: absolute;
                         top: 8%;
                         left: 8%;
+                        z-index: 999;
                         @include mobile-L() {
                             display: none;
                         }
                         h2 {
                             color: $light-sky;
                             line-height: $size-h2;
+                        }
+                        .river-h2 {
+                            color: $light-green;
                         }
                         .city-cn {
                             font-size: 2.5rem;
@@ -476,6 +480,27 @@ body {
                             cursor: pointer;
                             &:hover {
                                 fill: $yellow;
+                            }
+                        }
+                    }
+                    #river_map {
+                        .all {
+                            transform: translate(43%, 6%);
+                            .basin,
+                            .taiwan {
+                                transform: scale(1.35, 1.2);
+                            }
+                            .basin {
+                                stroke: #22b573;
+                                fill: #ddf6eb;
+                                &:hover {
+                                    fill: $yellow;
+                                }
+                            }
+                            .taiwan {
+                                fill: $middle-green;
+                                stroke: $middle-green;
+                                cursor: default;
                             }
                         }
                     }

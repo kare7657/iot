@@ -2460,6 +2460,7 @@ body .content-information-display .container .top .map .map-info-initial {
   position: absolute;
   top: 8%;
   left: 8%;
+  z-index: 999;
 }
 
 @media (max-width: 568px) {
@@ -2477,6 +2478,13 @@ body .content-information-display .container .top .map .map-info h2,
 body .content-information-display .container .top .map .map-info-initial h2 {
   color: #a7e5ff;
   line-height: 1.5rem;
+}
+
+html .content-information-display .container .top .map .map-info .river-h2,
+html .content-information-display .container .top .map .map-info-initial .river-h2,
+body .content-information-display .container .top .map .map-info .river-h2,
+body .content-information-display .container .top .map .map-info-initial .river-h2 {
+  color: #ddf6eb;
 }
 
 html .content-information-display .container .top .map .map-info .city-cn,
@@ -2581,6 +2589,38 @@ html .content-information-display .container .top .map svg path:hover,
 body .content-information-display .container .top .map svg polygon:hover,
 body .content-information-display .container .top .map svg path:hover {
   fill: #fcfc82;
+}
+
+html .content-information-display .container .top .map #river_map .all,
+body .content-information-display .container .top .map #river_map .all {
+  -webkit-transform: translate(43%, 6%);
+          transform: translate(43%, 6%);
+}
+
+html .content-information-display .container .top .map #river_map .all .basin,
+html .content-information-display .container .top .map #river_map .all .taiwan,
+body .content-information-display .container .top .map #river_map .all .basin,
+body .content-information-display .container .top .map #river_map .all .taiwan {
+  -webkit-transform: scale(1.35, 1.2);
+          transform: scale(1.35, 1.2);
+}
+
+html .content-information-display .container .top .map #river_map .all .basin,
+body .content-information-display .container .top .map #river_map .all .basin {
+  stroke: #22b573;
+  fill: #ddf6eb;
+}
+
+html .content-information-display .container .top .map #river_map .all .basin:hover,
+body .content-information-display .container .top .map #river_map .all .basin:hover {
+  fill: #fcfc82;
+}
+
+html .content-information-display .container .top .map #river_map .all .taiwan,
+body .content-information-display .container .top .map #river_map .all .taiwan {
+  fill: #91DEBB;
+  stroke: #91DEBB;
+  cursor: default;
 }
 
 html .content-information-display .container .top .map .hide,
