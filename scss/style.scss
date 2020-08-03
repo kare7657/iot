@@ -2245,14 +2245,17 @@ body {
                             }
                             @include mobile-L() {
                                 flex-wrap: wrap;
-                                // flex-direction: column;
                                 padding: $padding-XXS $padding-XS * 1.5;
                                 .c1 {
                                     width: 70%;
                                     padding-right: $padding-XXS;
                                 }
                                 .c2 {
+                                    display: none;
+                                }
+                                .c3{
                                     width: 30%;
+                                    text-align: center;
                                 }
                             }
                             a {
@@ -2273,10 +2276,23 @@ body {
                             }
                         }
                         .c1 {
-                            width: 85%;
+                            width: 45%;
                         }
                         .c2 {
-                            width: 15%;
+                            width: 45%;
+                        }
+                        .c3 {
+                            width: 10%;
+                            .format-btn{
+                                background-color: $blue;
+                                color: $title-W;
+                                padding: 3px $padding-XS/2 ;
+                                border-radius: 8px;
+                                &:hover{
+                                    background-color: $dark-blue;
+                                    color: $title-W !important;
+                                }
+                            }
                         }
                         .blue {
                             background-color: $table-blue;

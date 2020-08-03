@@ -9498,7 +9498,12 @@ body .content-resources-share .container .example-body .right .share-list .list 
   }
   html .content-resources-share .container .example-body .right .share-list .list .c2,
   body .content-resources-share .container .example-body .right .share-list .list .c2 {
+    display: none;
+  }
+  html .content-resources-share .container .example-body .right .share-list .list .c3,
+  body .content-resources-share .container .example-body .right .share-list .list .c3 {
     width: 30%;
+    text-align: center;
   }
 }
 
@@ -9530,12 +9535,31 @@ body .content-resources-share .container .example-body .right .share-list .head 
 
 html .content-resources-share .container .example-body .right .share-list .c1,
 body .content-resources-share .container .example-body .right .share-list .c1 {
-  width: 85%;
+  width: 45%;
 }
 
 html .content-resources-share .container .example-body .right .share-list .c2,
 body .content-resources-share .container .example-body .right .share-list .c2 {
-  width: 15%;
+  width: 45%;
+}
+
+html .content-resources-share .container .example-body .right .share-list .c3,
+body .content-resources-share .container .example-body .right .share-list .c3 {
+  width: 10%;
+}
+
+html .content-resources-share .container .example-body .right .share-list .c3 .format-btn,
+body .content-resources-share .container .example-body .right .share-list .c3 .format-btn {
+  background-color: #2faae5;
+  color: white;
+  padding: 3px 15px;
+  border-radius: 8px;
+}
+
+html .content-resources-share .container .example-body .right .share-list .c3 .format-btn:hover,
+body .content-resources-share .container .example-body .right .share-list .c3 .format-btn:hover {
+  background-color: #0d73ad;
+  color: white !important;
 }
 
 html .content-resources-share .container .example-body .right .share-list .blue,
