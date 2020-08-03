@@ -421,7 +421,6 @@ body {
                         position: absolute;
                         top: 8%;
                         left: 8%;
-                        z-index: 999;
                         @include mobile-L() {
                             display: none;
                         }
@@ -1924,6 +1923,25 @@ body {
             }
         }
     }
+    //FAQ
+    .content-FAQ {
+        @include papers();
+        .container {
+            @include mobile-L() {
+                width: 100%;
+                margin: 0;
+                h1 {
+                    text-align: center;
+                }
+            }
+            .collapse-gp {
+                @include FAQ();
+            }
+            span {
+                color: $blue;
+            }
+        }
+    }
     //範例程式碼
     .content-example-code {
         .container {
@@ -2124,6 +2142,154 @@ body {
                     }
                     .pd0 {
                         padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    //資源分享
+    .content-resources-share {
+        .container {
+            padding-top: 220px;
+            h1 {
+                text-align: center;
+                margin-bottom: $margin-M;
+            }
+            @include mobile-L() {
+                padding-top: 130px;
+                width: 100%;
+                h1 {
+                    margin-bottom: $margin-S;
+                    padding: 0 $padding-XS * 1.5;
+                }
+            }
+            .searchbar {
+                @include searchbar();
+                justify-content: flex-start;
+                margin-bottom: $margin-S * 1.5;
+                input[type="search"] {
+                    width: 200px;
+                    &:focus {
+                        width: 230px;
+                    }
+                }
+                @include mobile-L() {
+                    input[type="search"] {
+                        width: 65%;
+                        margin: 0 $padding-XS*1.5;
+                        &:focus {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .example-body {
+                display: flex;
+                justify-content: space-between;
+                @include pad() {
+                    flex-wrap: wrap;
+                }
+
+                // 左欄清單
+                .left {
+                    @include collapse($dark-blue, $title-W);
+                    width: 20%;
+                    margin-right: $margin-M;
+                    @include pad() {
+                        width: 100%;
+                        margin-right: unset;
+                        margin-bottom: $margin-XS * 2;
+                        padding: unset;
+                        text-align: center;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    @include mobile-L() {
+                        padding: 0 $padding-XS * 1.5;
+                        flex-direction: column;
+                    }
+                    button {
+                        width: 100%;
+                        margin-bottom: $margin-XS * 2;
+                        background-color: $title-W;
+                        border: solid 1px $dark-blue;
+                        color: $dark-blue;
+                        @include pad() {
+                            width: 30%;
+                        }
+                        @include mobile-L() {
+                            width: 100%;
+                            margin-bottom: $margin-XS * 1.5;
+                        }
+                    }
+                    .active-btn {
+                        background-color: $dark-blue;
+                        color: $title-W;
+                    }
+                }
+                // 右欄內容
+                .right {
+                    width: 80%;
+                    @include pad() {
+                        width: 100%;
+                    }
+                    .share-list {
+                        display: none;
+                        margin-bottom: $margin-S * 1.5;
+                        .list {
+                            display: flex;
+                            padding: $padding-XXS $padding-XS;
+                            padding-left: $padding-S;
+                            @include pad() {
+                                padding-left: $padding-XS;
+                            }
+                            @include mobile-L() {
+                                flex-wrap: wrap;
+                                // flex-direction: column;
+                                padding: $padding-XXS $padding-XS * 1.5;
+                                .c1 {
+                                    width: 70%;
+                                    padding-right: $padding-XXS;
+                                }
+                                .c2 {
+                                    width: 30%;
+                                }
+                            }
+                            a {
+                                color: $dark-blue;
+                                font-size: $size-p;
+                                line-height: $size-p * 2;
+                            }
+                        }
+                        .head {
+                            background-color: $dark-blue;
+                            border-radius: 20px 20px 0 0;
+                            @include mobile-L() {
+                                border-radius: unset;
+                            }
+                            p {
+                                color: $title-W;
+                                font-weight: bold;
+                            }
+                        }
+                        .c1 {
+                            width: 85%;
+                        }
+                        .c2 {
+                            width: 15%;
+                        }
+                        .blue {
+                            background-color: $table-blue;
+                        }
+                        .white {
+                            background-color: $title-W;
+                        }
+                        h4 {
+                            text-align: right;
+                        }
+                    }
+                    .active {
+                        display: block;
                     }
                 }
             }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資源分享</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <script src="js/navbar.js"></script>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li>></li>
+                <li><a href="#">分享專區</a></li>
+                <li>></li>
+                <li><span>資源分享</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 資源分享 -->
+    <section class="content-resources-share">
+        <div class="container">
+            <a href="#C" title="中央內容區塊" id="AC" accesskey="C"></a>
+            <h1>資源分享</h1>
+            <!-- 左欄清單 -->
+            <form class="searchbar">
+                <input type="search" placeholder="搜尋關鍵字">
+            </form>
+            <div class="example-body">
+                <div class="left">
+                    <button class="btn1 active-btn" type="button">水資源物聯網相關</button>
+                    <button class="btn2" type="button" onclick="window.open('https://github.com/aga3134/RiverLog')">外部開源專案</button>
+                    <button class="btn3" type="button">水利演算模式</button>
+                </div>
+                <div class="right">
+                    <!-- 右欄內容 -->
+                    <div class="example-content">
+                        <!-- 水資源物聯網相關 -->
+                        <div class="share-list list1 active">
+                            <div class="list head">
+                                <p class="c1">URL</p>
+                                <p class="c2">檔案下載</p>
+                            </div>
+                            <div class="list-gp">
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>https://10.57.234.147/uswg/stations</p>
+                                    </div>
+                                    <div class="c2">
+                                        <a href="">userAPI</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 外部開源專案 -->
+                        <div class="share-list list2">
+                        </div>
+                        <!-- 水利演算模式 -->
+                        <div class="share-list list3">
+                            <div class="list head">
+                                <p class="c1">URL</p>
+                                <p class="c2">檔案下載</p>
+                            </div>
+                            <div class="list-gp">
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>https://10.57.234.147/uswg/stations</p>
+                                    </div>
+                                    <div class="c2">
+                                        <a href="">userAPI</a>
+                                    </div>
+                                </div>
+                                <div class="list white">
+                                    <div class="c1">
+                                        <p>https://10.57.234.147/uswg/stations</p>
+                                    </div>
+                                    <div class="c2">
+                                        <a href="">userAPI</a>
+                                    </div>
+                                </div>
+                                <div class="list blue">
+                                    <div class="c1">
+                                        <p>https://10.57.234.147/uswg/stations</p>
+                                    </div>
+                                    <div class="c2">
+                                        <a href="">userAPI</a>
+                                    </div>
+                                </div>
+                                <div class="list white">
+                                    <div class="c1">
+                                        <p>https://10.57.234.147/uswg/stations</p>
+                                    </div>
+                                    <div class="c2">
+                                        <a href="">userAPI</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <script src="js/footer.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- mobile-menu -->
+    <script>
+        var fas = document.querySelector(".fas.fa-bars")
+        var navbar_nav = document.querySelector(".nav.navbar-nav")
+        var nav_item = document.querySelector(".nav-item.dropdown")
+        fas.onclick = function () {
+            if (navbar_nav.classList.contains("active-ul")) {
+                navbar_nav.classList.remove("active-ul")
+            } else {
+                navbar_nav.classList.add("active-ul")
+            }
+        }
+    </script>
+
+    <!-- collapse -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <!-- 科學小教室list -->
+    <script>
+        var btn1 = document.querySelector(".btn1")
+        var btn3 = document.querySelector(".btn3")
+        var list1 = document.querySelector(".list1")
+        var list3 = document.querySelector(".list3")
+        function clear_active() {
+            btn1.classList.remove("active-btn")
+            btn3.classList.remove("active-btn")
+            list1.classList.remove("active")
+            list3.classList.remove("active")
+        }
+        btn1.onclick = function () {
+            clear_active()
+            btn1.classList.add("active-btn")
+            list1.classList.add("active")
+        }
+        btn3.onclick = function () {
+            clear_active()
+            btn3.classList.add("active-btn")
+            list3.classList.add("active")
+        }
+    </script>
+
+</body>
+
+</html>
