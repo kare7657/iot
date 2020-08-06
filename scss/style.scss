@@ -2176,7 +2176,7 @@ body {
                 @include mobile-L() {
                     input[type="search"] {
                         width: 65%;
-                        margin: 0 $padding-XS*1.5;
+                        margin: 0 $padding-XS * 1.5;
                         &:focus {
                             width: 100%;
                         }
@@ -2253,7 +2253,7 @@ body {
                                 .c2 {
                                     display: none;
                                 }
-                                .c3{
+                                .c3 {
                                     width: 30%;
                                     text-align: center;
                                 }
@@ -2276,19 +2276,21 @@ body {
                             }
                         }
                         .c1 {
-                            width: 45%;
+                            width: 35%;
+                            padding-right: $padding-XS;
                         }
                         .c2 {
-                            width: 45%;
+                            width: 55%;
+                            padding-right: $padding-XS;
                         }
                         .c3 {
                             width: 10%;
-                            .format-btn{
+                            .format-btn {
                                 background-color: $blue;
                                 color: $title-W;
-                                padding: 3px $padding-XS/2 ;
+                                padding: 3px $padding-XS/2;
                                 border-radius: 8px;
-                                &:hover{
+                                &:hover {
                                     background-color: $dark-blue;
                                     color: $title-W !important;
                                 }
@@ -2317,148 +2319,54 @@ body {
             padding-top: 220px;
             h1 {
                 text-align: center;
-                margin-bottom: $margin-M;
+                margin-bottom: $margin-S;
+            }
+            @include pad() {
+                padding-top: 150px;
             }
             @include mobile-L() {
                 padding-top: 130px;
-                width: 100%;
                 h1 {
                     margin-bottom: $margin-S;
                     padding: 0 $padding-XS * 1.5;
                 }
             }
-            .example-body {
+            .title {
+                h2 {
+                    color: $dark-blue;
+                    padding: $padding-XXS;
+                    margin: $margin-S 0;
+                    margin-bottom: $margin-XS;
+                    padding: 0;
+                    margin: 0;
+                    line-height: $size-h2*1.5;
+                }
+                hr{
+                    margin: $margin-XS 0;
+                }
+                p {
+                    margin-bottom: $margin-XS;
+                }
+            }
+            .box-gp {
                 display: flex;
                 justify-content: space-between;
-                @include pad() {
-                    flex-wrap: wrap;
-                }
-
-                // 左欄清單
-                .left {
-                    @include collapse($dark-blue, $title-W);
-                    width: 20%;
-                    margin-right: $margin-M;
+                flex-wrap: wrap;
+                margin-bottom: $margin-S * 1.5;
+                .box {
+                    background-color: $table-blue;
+                    margin: $margin-XS 0;
+                    width: 48%;
+                    padding: $padding-XS/1.5 $padding-XS;
+                    border-radius: 10px;
                     @include pad() {
-                        width: 100%;
-                        margin-right: unset;
-                        margin-bottom: $margin-XS * 2;
-                        padding: unset;
-                        text-align: center;
-                        display: flex;
-                        justify-content: space-between;
+                        padding: $padding-XXS $padding-XXS * 2;
                     }
                     @include mobile-L() {
-                        padding: 0 $padding-XS * 1.5;
-                        flex-direction: column;
-                    }
-                    .searchbar {
-                        @include searchbar();
-                        justify-content: flex-start;
-                        margin-bottom: $margin-S * 1.5;
-                        input[type="search"] {
-                            width: 200px;
-                            &:focus {
-                                width: 230px;
-                            }
-                        }
-                        @include mobile-L() {
-                            input[type="search"] {
-                                width: 90%;
-                                &:focus {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                    button {
-                        width: 100%;
-                        margin-bottom: $margin-XS * 2;
-                        background-color: $title-W;
-                        border: solid 1px $dark-blue;
-                        color: $dark-blue;
-                        @include pad() {
-                            width: 30%;
-                        }
-                        @include mobile-L() {
-                            width: 100%;
-                            margin-bottom: $margin-XS * 1.5;
-                        }
-                    }
-                    .active-btn {
-                        background-color: $dark-blue;
-                        color: $title-W;
-                    }
-                }
-                // 右欄內容
-                .right {
-                    width: 80%;
-                    @include pad() {
                         width: 100%;
                     }
-                    .science-list {
-                        display: none;
-                        margin-bottom: $margin-S * 1.5;
-                        .list {
-                            display: flex;
-                            padding: $padding-XXS $padding-XS;
-                            padding-left: $padding-S;
-                            @include pad() {
-                                padding-left: $padding-XS;
-                            }
-                            @include mobile-L() {
-                                flex-wrap: wrap;
-                                padding: $padding-XXS $padding-XS * 1.5;
-                                .c1 {
-                                    width: 30%;
-                                    padding-right: $padding-XXS;
-                                }
-                                .c2 {
-                                    width: 20%;
-                                    padding-right: $padding-XXS;
-                                }
-                                .c3 {
-                                    width: 50%;
-                                }
-                            }
-                            a {
-                                color: $text;
-                                font-size: $size-p;
-                                line-height: $size-p * 2;
-                            }
-                        }
-                        .head {
-                            background-color: $dark-blue;
-                            border-radius: 20px 20px 0 0;
-                            @include mobile-L() {
-                                border-radius: unset;
-                            }
-                            p {
-                                color: $title-W;
-                                font-weight: bold;
-                            }
-                        }
-                        .c1 {
-                            width: 20%;
-                        }
-                        .c2 {
-                            width: 20%;
-                        }
-                        .c3 {
-                            width: 60%;
-                        }
-                        .blue {
-                            background-color: $table-blue;
-                        }
-                        .white {
-                            background-color: $title-W;
-                        }
-                        h4 {
-                            text-align: right;
-                        }
-                    }
-                    .active {
-                        display: block;
+                    h3 {
+                        margin: 0;
                     }
                 }
             }
