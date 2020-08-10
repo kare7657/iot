@@ -2317,7 +2317,11 @@ body {
     .content-science-classroom {
         .container {
             padding-top: 220px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             h1 {
+                width: 100%;
                 text-align: center;
                 margin-bottom: $margin-S;
             }
@@ -2328,10 +2332,10 @@ body {
                 padding-top: 130px;
                 h1 {
                     margin-bottom: $margin-S;
-                    padding: 0 $padding-XS * 1.5;
                 }
             }
             .title {
+                width: 100%;
                 h2 {
                     color: $dark-blue;
                     padding: $padding-XXS;
@@ -2339,16 +2343,20 @@ body {
                     margin-bottom: $margin-XS;
                     padding: 0;
                     margin: 0;
-                    line-height: $size-h2*1.5;
+                    line-height: $size-h2 * 1.5;
                 }
-                hr{
+                hr {
                     margin: $margin-XS 0;
                 }
                 p {
-                    margin-bottom: $margin-XS;
+                    margin-bottom: $margin-S;
+                    @include mobile-L(){
+                        margin-bottom: $margin-XS;
+                    }
                 }
             }
             .box-gp {
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -2367,6 +2375,46 @@ body {
                     }
                     h3 {
                         margin: 0;
+                    }
+                }
+            }
+            .post-body {
+                width: 100%;
+                max-width: 700px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 0;
+                .text-gp {
+                    width: 100%;
+                    margin-bottom: $margin-S/2;
+                    img {
+                        width: 100%;
+                        max-width: 700px;
+                    }
+                    span {
+                        padding: 5px 10px;
+                        border-radius: 8px;
+                        background-color: $table-blue;
+                        color: $dark-blue;
+                    }
+                    p {
+                        padding: $padding-XXS 0;
+                    }
+                }
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    @include mobile-L(){
+                        flex-direction: column;
+                    }
+                    button {
+                        margin: $margin-S $margin-XS;
+                        @include mobile-L(){
+                            margin: 0;
+                            margin-bottom: $margin-S ;
+                        }
                     }
                 }
             }

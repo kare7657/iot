@@ -9587,10 +9587,19 @@ body .content-resources-share .container .example-body .right .active {
 html .content-science-classroom .container,
 body .content-science-classroom .container {
   padding-top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 html .content-science-classroom .container h1,
 body .content-science-classroom .container h1 {
+  width: 100%;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -9610,8 +9619,12 @@ body .content-science-classroom .container h1 {
   html .content-science-classroom .container h1,
   body .content-science-classroom .container h1 {
     margin-bottom: 25px;
-    padding: 0 45px;
   }
+}
+
+html .content-science-classroom .container .title,
+body .content-science-classroom .container .title {
+  width: 100%;
 }
 
 html .content-science-classroom .container .title h2,
@@ -9632,11 +9645,19 @@ body .content-science-classroom .container .title hr {
 
 html .content-science-classroom .container .title p,
 body .content-science-classroom .container .title p {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .title p,
+  body .content-science-classroom .container .title p {
+    margin-bottom: 10px;
+  }
 }
 
 html .content-science-classroom .container .box-gp,
 body .content-science-classroom .container .box-gp {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9674,5 +9695,80 @@ body .content-science-classroom .container .box-gp .box {
 html .content-science-classroom .container .box-gp .box h3,
 body .content-science-classroom .container .box-gp .box h3 {
   margin: 0;
+}
+
+html .content-science-classroom .container .post-body,
+body .content-science-classroom .container .post-body {
+  width: 100%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+html .content-science-classroom .container .post-body .text-gp,
+body .content-science-classroom .container .post-body .text-gp {
+  width: 100%;
+  margin-bottom: 12.5px;
+}
+
+html .content-science-classroom .container .post-body .text-gp img,
+body .content-science-classroom .container .post-body .text-gp img {
+  width: 100%;
+  max-width: 700px;
+}
+
+html .content-science-classroom .container .post-body .text-gp span,
+body .content-science-classroom .container .post-body .text-gp span {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #e5f1f9;
+  color: #0d73ad;
+}
+
+html .content-science-classroom .container .post-body .text-gp p,
+body .content-science-classroom .container .post-body .text-gp p {
+  padding: 10px 0;
+}
+
+html .content-science-classroom .container .post-body .btn,
+body .content-science-classroom .container .post-body .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .post-body .btn,
+  body .content-science-classroom .container .post-body .btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html .content-science-classroom .container .post-body .btn button,
+body .content-science-classroom .container .post-body .btn button {
+  margin: 25px 10px;
+}
+
+@media (max-width: 568px) {
+  html .content-science-classroom .container .post-body .btn button,
+  body .content-science-classroom .container .post-body .btn button {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
