@@ -9771,4 +9771,779 @@ body .content-science-classroom .container .post-body .btn button {
     margin-bottom: 25px;
   }
 }
+
+html .content-reservoir-info,
+body .content-reservoir-info {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-reservoir-info,
+  body .content-reservoir-info {
+    padding-top: 80px;
+  }
+}
+
+html .content-reservoir-info h1,
+body .content-reservoir-info h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-reservoir-info h1,
+  body .content-reservoir-info h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-reservoir-info h3,
+body .content-reservoir-info h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-reservoir-info ul,
+body .content-reservoir-info ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-reservoir-info .btn,
+body .content-reservoir-info .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-reservoir-info .container,
+  body .content-reservoir-info .container {
+    width: 100%;
+    margin: 0;
+  }
+  html .content-reservoir-info .container h1,
+  body .content-reservoir-info .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-reservoir-info .container .menu .menu-area,
+body .content-reservoir-info .container .menu .menu-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  html .content-reservoir-info .container .menu .menu-area,
+  body .content-reservoir-info .container .menu .menu-area {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 20px;
+    padding: unset;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-reservoir-info .container .menu .menu-area,
+  body .content-reservoir-info .container .menu .menu-area {
+    padding: 0 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html .content-reservoir-info .container .menu .menu-area button,
+body .content-reservoir-info .container .menu .menu-area button {
+  width: 32%;
+  margin-bottom: 5px;
+  background-color: white;
+  border: solid 1px #0d73ad;
+  color: #0d73ad;
+}
+
+@media (max-width: 768px) {
+  html .content-reservoir-info .container .menu .menu-area button,
+  body .content-reservoir-info .container .menu .menu-area button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-reservoir-info .container .menu .menu-area button,
+  body .content-reservoir-info .container .menu .menu-area button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+html .content-reservoir-info .container .menu .menu-area .active-btn,
+body .content-reservoir-info .container .menu .menu-area .active-btn {
+  background-color: #0d73ad;
+  color: white;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir,
+body .content-reservoir-info .container .menu .menu-reservoir {
+  width: 100%;
+  padding: 10px 0 5px 0;
+  margin-bottom: 37.5px;
+  border-bottom: solid 2px #a7e5ff;
+  list-style: none;
+  display: none;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir li,
+body .content-reservoir-info .container .menu .menu-reservoir li {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir li:after,
+body .content-reservoir-info .container .menu .menu-reservoir li:after {
+  content: "/";
+  color: #2faae5;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir li:last-child:after,
+body .content-reservoir-info .container .menu .menu-reservoir li:last-child:after {
+  content: "";
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir a,
+body .content-reservoir-info .container .menu .menu-reservoir a {
+  color: #0d73ad;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir a:active,
+body .content-reservoir-info .container .menu .menu-reservoir a:active {
+  color: black;
+}
+
+html .content-reservoir-info .container .menu .menu-reservoir .fas,
+body .content-reservoir-info .container .menu .menu-reservoir .fas {
+  margin-right: 5px;
+}
+
+html .content-reservoir-info .container .menu .active,
+body .content-reservoir-info .container .menu .active {
+  display: block;
+}
+
+html .content-reservoir-info .container .reservoir-body,
+body .content-reservoir-info .container .reservoir-body {
+  width: 100%;
+  display: none;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about,
+body .content-reservoir-info .container .reservoir-body .reservoir-about {
+  background-color: #e5f1f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about img,
+body .content-reservoir-info .container .reservoir-body .reservoir-about img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about table,
+body .content-reservoir-info .container .reservoir-body .reservoir-about table {
+  line-height: 2rem;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about table th,
+body .content-reservoir-info .container .reservoir-body .reservoir-about table th {
+  color: #0d73ad;
+  font-weight: bold;
+  width: 30%;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about table td,
+body .content-reservoir-info .container .reservoir-body .reservoir-about table td {
+  width: 70%;
+  color: #595757;
+  vertical-align: top;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about .left,
+body .content-reservoir-info .container .reservoir-body .reservoir-about .left {
+  width: 49%;
+  margin-right: 25px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-about .right,
+body .content-reservoir-info .container .reservoir-body .reservoir-about .right {
+  width: 49%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num,
+body .content-reservoir-info .container .reservoir-body .reservoir-num {
+  margin: 75px 0 25px 0;
+  position: relative;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num img,
+body .content-reservoir-info .container .reservoir-body .reservoir-num img {
+  width: 100%;
+  height: 330px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp {
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  width: 170px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date {
+  text-align: center;
+  padding: 0 10px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .fas,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .fas {
+  width: 25px;
+  height: 25px;
+  background-color: #e5f1f9;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 25px;
+  color: #2faae5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table {
+  line-height: 2rem;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table thead th,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table thead th {
+  color: white;
+  background-color: #2faae5;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.125rem;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table tbody th,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table tbody th {
+  color: #0d73ad;
+  font-weight: bold;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table tbody td,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table tbody td {
+  color: #595757;
+  vertical-align: top;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table tbody tr,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table tbody tr {
+  border-bottom: solid 1px #a7e5ff;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table tbody tr:last-child,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table tbody tr:last-child {
+  border: none;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num table tbody span,
+body .content-reservoir-info .container .reservoir-body .reservoir-num table tbody span {
+  color: black;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .left,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .left {
+  position: absolute;
+  top: 5%;
+  right: 28%;
+  width: 270px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .left th,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .left th {
+  width: 50%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .left td,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .left td {
+  width: 50%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .right,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .right {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 270px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .right th,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .right th {
+  width: 50%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .right td,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .right td {
+  width: 50%;
+}
+
+html .content-reservoir-info .container .active,
+body .content-reservoir-info .container .active {
+  display: block;
+}
+
+html .content-water-info,
+body .content-water-info {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  html .content-water-info,
+  body .content-water-info {
+    padding-top: 80px;
+  }
+}
+
+html .content-water-info h1,
+body .content-water-info h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-water-info h1,
+  body .content-water-info h1 {
+    margin: 25px 0;
+    text-align: left;
+  }
+}
+
+html .content-water-info h3,
+body .content-water-info h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+html .content-water-info ul,
+body .content-water-info ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #595757;
+}
+
+html .content-water-info .btn,
+body .content-water-info .btn {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 568px) {
+  html .content-water-info .container,
+  body .content-water-info .container {
+    width: 100%;
+    margin: 0;
+  }
+  html .content-water-info .container h1,
+  body .content-water-info .container h1 {
+    text-align: center;
+  }
+}
+
+html .content-water-info .container .menu .menu-area,
+body .content-water-info .container .menu .menu-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  html .content-water-info .container .menu .menu-area,
+  body .content-water-info .container .menu .menu-area {
+    width: 100%;
+    margin-right: unset;
+    margin-bottom: 20px;
+    padding: unset;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-water-info .container .menu .menu-area,
+  body .content-water-info .container .menu .menu-area {
+    padding: 0 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html .content-water-info .container .menu .menu-area button,
+body .content-water-info .container .menu .menu-area button {
+  width: 32%;
+  margin-bottom: 5px;
+  background-color: white;
+  border: solid 1px #0d73ad;
+  color: #0d73ad;
+}
+
+@media (max-width: 768px) {
+  html .content-water-info .container .menu .menu-area button,
+  body .content-water-info .container .menu .menu-area button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-water-info .container .menu .menu-area button,
+  body .content-water-info .container .menu .menu-area button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+html .content-water-info .container .menu .menu-area .active-btn,
+body .content-water-info .container .menu .menu-area .active-btn {
+  background-color: #0d73ad;
+  color: white;
+}
+
+html .content-water-info .container .menu .active,
+body .content-water-info .container .menu .active {
+  display: block;
+}
+
+html .content-water-info .container .water-body,
+body .content-water-info .container .water-body {
+  width: 100%;
+  display: none;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+html .content-water-info .container .water-body:last-child,
+body .content-water-info .container .water-body:last-child {
+  margin-bottom: 25px;
+}
+
+html .content-water-info .container .water-body h3,
+body .content-water-info .container .water-body h3 {
+  margin-bottom: 0;
+}
+
+html .content-water-info .container .water-body hr,
+body .content-water-info .container .water-body hr {
+  border-top: solid 2px #a7e5ff;
+}
+
+html .content-water-info .container .water-body .date-gp,
+body .content-water-info .container .water-body .date-gp {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 170px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+html .content-water-info .container .water-body .date-gp .date,
+body .content-water-info .container .water-body .date-gp .date {
+  text-align: center;
+  padding: 0 10px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+html .content-water-info .container .water-body .date-gp .fas,
+body .content-water-info .container .water-body .date-gp .fas {
+  width: 25px;
+  height: 25px;
+  background-color: #e5f1f9;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 25px;
+  color: #2faae5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .content-water-info .container .water-body .water-num,
+body .content-water-info .container .water-body .water-num {
+  margin: 10px 0 25px 0;
+  position: relative;
+}
+
+html .content-water-info .container .water-body .water-num img,
+body .content-water-info .container .water-body .water-num img {
+  width: 100%;
+  height: 650px;
+}
+
+html .content-water-info .container .water-body .water-num table,
+body .content-water-info .container .water-body .water-num table {
+  width: 200px;
+  line-height: 1.5rem;
+}
+
+html .content-water-info .container .water-body .water-num table th,
+body .content-water-info .container .water-body .water-num table th {
+  width: 70%;
+}
+
+html .content-water-info .container .water-body .water-num table td,
+body .content-water-info .container .water-body .water-num table td {
+  width: 30%;
+}
+
+html .content-water-info .container .water-body .water-num table thead td,
+body .content-water-info .container .water-body .water-num table thead td {
+  color: #e8291c;
+  text-align: center;
+}
+
+html .content-water-info .container .water-body .water-num table thead th,
+body .content-water-info .container .water-body .water-num table thead th {
+  color: white;
+  background-color: #2faae5;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+html .content-water-info .container .water-body .water-num table thead .green,
+body .content-water-info .container .water-body .water-num table thead .green {
+  background-color: #455621;
+}
+
+html .content-water-info .container .water-body .water-num table thead .brown,
+body .content-water-info .container .water-body .water-num table thead .brown {
+  background-color: #725116;
+}
+
+html .content-water-info .container .water-body .water-num table tbody th,
+body .content-water-info .container .water-body .water-num table tbody th {
+  color: #0d73ad;
+  font-weight: bold;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+html .content-water-info .container .water-body .water-num table tbody td,
+body .content-water-info .container .water-body .water-num table tbody td {
+  color: #595757;
+  vertical-align: top;
+}
+
+html .content-water-info .container .water-body .water-num table tbody tr,
+body .content-water-info .container .water-body .water-num table tbody tr {
+  border-bottom: solid 1px #a7e5ff;
+}
+
+html .content-water-info .container .water-body .water-num table tbody tr:last-child,
+body .content-water-info .container .water-body .water-num table tbody tr:last-child {
+  border: none;
+}
+
+html .content-water-info .container .water-body .water-num table tbody span,
+body .content-water-info .container .water-body .water-num table tbody span {
+  color: black;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-1,
+body .content-water-info .container .water-body .water-num .north1-1-1 {
+  position: absolute;
+  top: 15%;
+  right: 52%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-2,
+body .content-water-info .container .water-body .water-num .north1-1-2 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-3,
+body .content-water-info .container .water-body .water-num .north1-1-3 {
+  position: absolute;
+  top: 44%;
+  right: 31%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-4,
+body .content-water-info .container .water-body .water-num .north1-1-4 {
+  position: absolute;
+  top: 42%;
+  left: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-5,
+body .content-water-info .container .water-body .water-num .north1-1-5 {
+  position: absolute;
+  top: 46%;
+  left: 25%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-6,
+body .content-water-info .container .water-body .water-num .north1-1-6 {
+  position: absolute;
+  bottom: 3%;
+  left: 39%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-7,
+body .content-water-info .container .water-body .water-num .north1-1-7 {
+  position: absolute;
+  bottom: 3%;
+  left: 62%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-1-8,
+body .content-water-info .container .water-body .water-num .north1-1-8 {
+  position: absolute;
+  bottom: 3%;
+  left: 82%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-1,
+body .content-water-info .container .water-body .water-num .north1-2-1 {
+  position: absolute;
+  top: 15%;
+  right: 56%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-2,
+body .content-water-info .container .water-body .water-num .north1-2-2 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-3,
+body .content-water-info .container .water-body .water-num .north1-2-3 {
+  position: absolute;
+  top: 83%;
+  right: 31%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-4,
+body .content-water-info .container .water-body .water-num .north1-2-4 {
+  position: absolute;
+  top: 42%;
+  left: 0%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-5,
+body .content-water-info .container .water-body .water-num .north1-2-5 {
+  position: absolute;
+  top: 46%;
+  left: 26%;
+}
+
+html .content-water-info .container .water-body .water-num .north1-2-6,
+body .content-water-info .container .water-body .water-num .north1-2-6 {
+  position: absolute;
+  top: 42%;
+  right: 5%;
+}
+
+html .content-water-info .container .water-body .water-explain,
+body .content-water-info .container .water-body .water-explain {
+  background-color: #e5f1f9;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+
+html .content-water-info .container .water-body .water-explain p,
+body .content-water-info .container .water-body .water-explain p {
+  line-height: 1.5rem;
+}
+
+html .content-water-info .container .active,
+body .content-water-info .container .active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
