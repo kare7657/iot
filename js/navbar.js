@@ -31,6 +31,12 @@ document.write( '                            <h4>都市淹水感知器</h4>\n' )
 document.write( '                        </a><br>\n' );
 document.write( '                        <a href=\"display-river.html\">\n' );
 document.write( '                            <h4>河川水位站</h4>\n' );
+document.write( '                        </a><br>\n' );
+document.write( '                        <a href=\"reservoir-info.html\">\n' );
+document.write( '                            <h4>水庫情資</h4>\n' );
+document.write( '                        </a><br>\n' );
+document.write( '                        <a href=\"water-info.html\">\n' );
+document.write( '                            <h4>供水情資</h4>\n' );
 document.write( '                        </a>\n' );
 document.write( '                    </div>\n' );
 document.write( '                </div>\n' );
