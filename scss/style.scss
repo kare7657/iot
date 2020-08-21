@@ -2467,18 +2467,17 @@ body {
                         color: $title-W;
                     }
                 }
-                .menu-reservoir {
+                .menu-second {
                     width: 100%;
                     padding: $padding-XXS 0 $padding-XXS/2 0;
                     margin-bottom: $margin-S * 1.5;
-                    border-bottom: solid 2px $light-sky;
+                    border-bottom: solid 1px $light-sky;
                     list-style: none;
                     display: none;
                     li {
                         display: inline-block;
                         margin-right: $margin-XS;
-                        font-weight: bold;
-                        font-size: $size-h4;
+                        font-size: $size-p;
                         &:after {
                             content: "/";
                             color: $blue;
@@ -2591,20 +2590,20 @@ body {
                             }
                         }
                         tbody {
-                            th {
-                                color: $dark-blue;
-                                font-weight: bold;
-                                padding-right: $padding-XXS * 2;
-                                vertical-align: top;
-                            }
-                            td {
-                                color: $text;
-                                vertical-align: top;
-                            }
                             tr {
                                 border-bottom: solid 1px $light-sky;
                                 &:last-child {
                                     border: none;
+                                }
+                                th {
+                                    color: $dark-blue;
+                                    font-weight: bold;
+                                    padding-right: $padding-XXS * 2;
+                                    vertical-align: top;
+                                }
+                                td {
+                                    color: $text;
+                                    vertical-align: top;
                                 }
                             }
                             span {
@@ -2690,6 +2689,39 @@ body {
                         color: $title-W;
                     }
                 }
+                .menu-second {
+                    width: 100%;
+                    padding: $padding-XXS 0 $padding-XXS/2 0;
+                    margin-bottom: $margin-S * 1.5;
+                    border-bottom: solid 1px $light-sky;
+                    list-style: none;
+                    display: none;
+                    li {
+                        display: inline-block;
+                        margin-right: $margin-XS;
+                        font-size: $size-p;
+                        &:after {
+                            content: "/";
+                            color: $blue;
+                            font-weight: 200;
+                            margin-left: $margin-XS;
+                        }
+                        &:last-child {
+                            &:after {
+                                content: "";
+                            }
+                        }
+                    }
+                    a {
+                        color: $dark-blue;
+                        &:active {
+                            color: $title-BK;
+                        }
+                    }
+                    .fas {
+                        margin-right: $margin-XS/2;
+                    }
+                }
                 .active {
                     display: block;
                 }
@@ -2698,54 +2730,60 @@ body {
                 width: 100%;
                 display: none;
                 position: relative;
-                margin-bottom: $margin-M*1.5;
-                &:last-child{
-                    margin-bottom: $margin-S;
-                }
-                h3 {
-                    margin-bottom: 0;
-                }
-                hr {
-                    border-top: solid 2px $light-sky;
-                }
-                .date-gp {
-                    position: absolute;
-                    top: 0%;
-                    right: 0%;
-                    width: 170px;
-                    height: 25px;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-top: $margin-XS;
-                    .date {
-                        text-align: center;
-                        padding: 0 $padding-XXS;
-                        line-height: 23px;
-                        font-weight: bold;
+                margin-top: $margin-S*1.5;
+                border-bottom: solid 1px $light-sky;
+                &:last-child {
+                    border-bottom: none;
+                    .water-explain{
+                        margin-bottom: 0;
                     }
-                    .fas {
-                        width: 25px;
-                        height: 25px;
-                        background-color: $table-blue;
-                        border-radius: 3px;
-                        font-size: $size-p;
-                        line-height: 25px;
-                        color: $blue;
+                }
+                .title {
+                    display: flex;
+                    justify-content: start;
+                    h3 {
+                        margin: 0;
+                        margin-right: $margin-S;
+                    }
+                    .date-gp {
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-between;
+                        width: 170px;
+                        height: 25px;
+
+                        margin-top: $margin-XS;
+                        .date {
+                            text-align: center;
+                            padding: 0 $padding-XXS;
+                            line-height: 23px;
+                            font-weight: bold;
+                        }
+                        .fas {
+                            width: 25px;
+                            height: 25px;
+                            background-color: $table-blue;
+                            border-radius: 3px;
+                            font-size: $size-p;
+                            line-height: 25px;
+                            color: $blue;
+                            display: flex;
+                            justify-content: center;
+                        }
                     }
                 }
                 .water-num {
-                    margin: $margin-XS 0 $margin-S 0;
+                    margin: 0 0 $margin-M 0;
                     position: relative;
                     img {
                         width: 100%;
                         height: 650px;
+                        object-fit: contain;
+                        object-position: center center;
                     }
 
                     table {
                         width: 200px;
-                        line-height: $size-p * 1.5;
+                        line-height: $size-p * 1.6;
                         th {
                             width: 70%;
                         }
@@ -2753,18 +2791,21 @@ body {
                             width: 30%;
                         }
                         thead {
-                            td {
-                                color: $red;
-                                text-align: center;
+                            tr {
+                                td {
+                                    color: $red;
+                                    text-align: center;
+                                }
+                                th {
+                                    color: $title-W;
+                                    background-color: $blue;
+                                    text-align: center;
+                                    border-radius: 5px;
+                                    font-size: $size-h4;
+                                    line-height: $size-p * 2;
+                                }
                             }
-                            th {
-                                color: $title-W;
-                                background-color: $blue;
-                                text-align: center;
-                                border-radius: 5px;
-                                font-size: $size-h4;
-                                line-height: $size-p * 2;
-                            }
+
                             .green {
                                 background-color: #455621;
                             }
@@ -2773,20 +2814,24 @@ body {
                             }
                         }
                         tbody {
-                            th {
-                                color: $dark-blue;
-                                font-weight: bold;
-                                padding-right: $padding-XXS * 2;
-                                vertical-align: top;
-                            }
-                            td {
-                                color: $text;
-                                vertical-align: top;
-                            }
                             tr {
                                 border-bottom: solid 1px $light-sky;
                                 &:last-child {
                                     border: none;
+                                }
+                                &:first-child {
+                                    height: 35px;
+                                    transform: translateY(20%);
+                                }
+                                th {
+                                    color: $dark-blue;
+                                    font-weight: bold;
+                                    padding-right: $padding-XXS * 2;
+                                    vertical-align: top;
+                                }
+                                td {
+                                    color: $text;
+                                    vertical-align: top;
                                 }
                             }
                             span {
@@ -2822,17 +2867,17 @@ body {
                     }
                     .north1-1-6 {
                         position: absolute;
-                        bottom: 3%;
+                        bottom: -1%;
                         left: 39%;
                     }
                     .north1-1-7 {
                         position: absolute;
-                        bottom: 3%;
+                        bottom: -1%;
                         left: 62%;
                     }
                     .north1-1-8 {
                         position: absolute;
-                        bottom: 3%;
+                        bottom: -1%;
                         left: 82%;
                     }
                     // 新竹
@@ -2866,11 +2911,62 @@ body {
                         top: 42%;
                         right: 5%;
                     }
+                    //中區-苗栗
+                    .middle1-1-1 {
+                        position: absolute;
+                        top: 7%;
+                        left: 3%;
+                    }
+                    .middle1-1-2 {
+                        position: absolute;
+                        top: 33%;
+                        left: 3%;
+                    }
+                    .middle1-1-3 {
+                        position: absolute;
+                        top: 7%;
+                        right: 3%;
+                    }
+                    .middle1-1-4 {
+                        position: absolute;
+                        top: 33%;
+                        right: 3%;
+                    }
+                    .middle1-1-5 {
+                        position: absolute;
+                        bottom: 2%;
+                        left: 3%;
+                    }
+                    .middle1-1-6 {
+                        position: absolute;
+                        bottom: 2%;
+                        left: 30%;
+                    }
+                    .middle1-1-7 {
+                        position: absolute;
+                        bottom: 30%;
+                        left: 22%;
+                    }
+                    .middle1-1-8 {
+                        position: absolute;
+                        bottom: 2%;
+                        left: 50%;
+                    }
+                    .middle1-1-9 {
+                        position: absolute;
+                        bottom: 2%;
+                        right: 3%;
+                    }
+                }
+                hr {
+                    border-top: solid 1px $light-sky;
+                    margin-top: $margin-M;
                 }
                 .water-explain {
                     background-color: $table-blue;
                     border-radius: 10px;
                     padding: $padding-XS/1.5 $padding-S/1.5;
+                    margin-bottom: $margin-M;
                     p {
                         line-height: $size-p * 1.5;
                     }

@@ -35,22 +35,23 @@
             <h1>供水情資</h1>
             <div class="menu">
                 <div class="menu-area">
-                    <button class="btn1 active-btn" type="button"
+                    <button class="btn1" type="button"
                     onclick="javascript:location.href='water-info.html'">北區</button>
-                    <button class="btn2" type="button"
+                    <button class="btn2 active-btn" type="button"
                     onclick="javascript:location.href='water-info-middle.html'">中區</button>
                     <button class="btn3" type="button"
                     onclick="javascript:location.href='water-info-south.html'">南區</button>
                 </div>
                 <ul class="menu-second menu1 active">
-                    <li><a href="#north1-1">板新、桃園</a></li>
-                    <li><a href="#north1-2">新竹</a></li>
+                    <li><a href="#middle1-1">苗栗</a></li>
+                    <li><a href="#middle1-2">台中</a></li>
+                    <li><a href="#middle1-3">雲林</a></li>
                 </ul>
             </div>
 
-            <div class="water-body list1 active" id="north1-1">
+            <div class="water-body list1 active" id="middle1-1">
                 <div class="title" >
-                    <h3>板新、桃園</h3>
+                    <h3>苗栗</h3>
                     <div class="date-gp">
                         <a href=""><i class="fas fa-chevron-left"></i></a>
                         <p class="date">2020/12/12</p>
@@ -58,8 +59,8 @@
                     </div>
                 </div>
                 <div class="water-num">
-                    <img src="img/water1-1.jpg" alt="供水情資">
-                    <table class="north1-1-1">
+                    <img src="img/water2-1.jpg" alt="供水情資">
+                    <table class="middle1-1-1">
                         <thead>
                             <tr>
                                 <th colspan="2">入流量</th>
@@ -80,10 +81,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <table class="north1-1-2">
+                    <table class="middle1-1-2">
                         <thead>
                             <tr>
-                                <th colspan="2">石門水庫</th>
+                                <th colspan="2">明德水庫</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -99,23 +100,40 @@
                                 <th>前日蓄水量差</th>
                                 <td>12345</td>
                             </tr>
+                        </tbody>
+                    </table>
+                    <table class="middle1-1-3">
+                        <thead>
                             <tr>
-                                <th>水位</th>
+                                <th colspan="2">入流量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Q80</th>
                                 <td>12345</td>
                             </tr>
                             <tr>
-                                <th>前日水位差</th>
+                                <th>實際</th>
+                                <td>12345</td>
+                            </tr>
+                            <tr>
+                                <th>10日平均</th>
                                 <td>12345</td>
                             </tr>
                         </tbody>
                     </table>
-                    <table class="north1-1-3">
+                    <table class="middle1-1-4">
                         <thead>
                             <tr>
-                                <th colspan="2">中庄調整池</th>
+                                <th colspan="2">永和山水庫</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <th>蓄水百分比</th>
+                                <td>12345</td>
+                            </tr>
                             <tr>
                                 <th>有效蓄水量</th>
                                 <td>12345</td>
@@ -124,70 +142,12 @@
                                 <th>前日蓄水量差</th>
                                 <td>12345</td>
                             </tr>
-                            <tr>
-                                <th>入流量</th>
-                                <td>12345</td>
-                            </tr>
                         </tbody>
                     </table>
-                    <table class="north1-1-4">
+                    <table class="middle1-1-5">
                         <thead>
                             <tr>
-                                <td colspan="2">跨區調度</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">北水處</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預計支援量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際支援量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-1-5">
-                        <thead>
-                            <tr>
-                                <th colspan="2">三峽河</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預估入流量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際入流量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-1-6">
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="brown">桃園地區</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預計公共出水量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際公共出水量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-1-7">
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="green">桃園灌區</th>
+                                <th colspan="2" class="green">明德灌區</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -201,7 +161,49 @@
                             </tr>
                         </tbody>
                     </table>
-                    <table class="north1-1-8">
+                    <table class="middle1-1-6">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="brown">明德→苗栗地區</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>預計公共出水量</th>
+                                <td>12345</td>
+                            </tr>
+                            <tr>
+                                <th>實際公共出水量</th>
+                                <td>12345</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="middle1-1-7">
+                        <tbody>
+                            <tr>
+                                <th>合計供水量</th>
+                                <td>12345</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="middle1-1-8">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="brown">苗栗地區←永和山</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>預計公共出水量</th>
+                                <td>12345</td>
+                            </tr>
+                            <tr>
+                                <th>實際公共出水量</th>
+                                <td>12345</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="middle1-1-9">
                         <thead>
                             <tr>
                                 <td colspan="2">跨區調度</td>
@@ -230,142 +232,7 @@
                         fugit, quos magni quibusdam inventore.</p>
                 </div>
             </div>
-            <div class="water-body list2 active" id="north1-2">
-                <div class="title">
-                    <h3>新竹</h3>
-                    <div class="date-gp">
-                        <a href=""><i class="fas fa-chevron-left"></i></a>
-                        <p class="date">2020/12/12</p>
-                        <a href=""><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="water-num">
-                    <img src="img/water1-2.jpg" alt="供水情資">
-                    <table class="north1-2-1">
-                        <thead>
-                            <tr>
-                                <th colspan="2">入流量</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Q80</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>10日平均</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-2-2">
-                        <thead>
-                            <tr>
-                                <th colspan="2">寶山-寶山第2水庫</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>蓄水百分比</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>有效蓄水量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>前日蓄水量差</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-2-3">
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="brown">新竹地區</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預計公共出水量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際公共出水量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-2-4">
-                        <thead>
-                            <tr>
-                                <td colspan="2">跨區調度</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">石門水庫</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預計支援量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際支援量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-2-5">
-                        <thead>
-                            <tr>
-                                <th colspan="2">隆恩堰</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預估引水量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際引水量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="north1-2-6">
-                        <thead>
-                            <tr>
-                                <td colspan="2">跨區調度</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">永和山水庫</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>預計支援量</th>
-                                <td>12345</td>
-                            </tr>
-                            <tr>
-                                <th>實際支援量</th>
-                                <td>12345</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
 
-                <div class="water-explain">
-                    <h4>供水情況說明</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tenetur ad natus repellat
-                        fugiat voluptates provident, ex aliquid veritatis atque deleniti enim earum accusantium, soluta
-                        fugit, quos magni quibusdam inventore.</p>
-                </div>
-            </div>
 
         </div>
     </section>
