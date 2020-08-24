@@ -10026,6 +10026,157 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num img {
   height: 330px;
 }
 
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage {
+  position: absolute;
+  overflow: hidden;
+  height: 300px;
+  width: 250px;
+  bottom: 0%;
+  left: 0%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: -5;
+  width: 240px;
+  height: 100%;
+  max-height: 260px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #2faae5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#2faae5), to(#a7e5ff));
+  background: linear-gradient(to top, #2faae5, #a7e5ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave {
+  width: 200%;
+  position: absolute;
+  bottom: 100%;
+  z-index: -4;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave_front,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave_front {
+  left: 0%;
+  fill: #a7e5ff;
+  margin-bottom: -1px;
+  -webkit-animation: wave-front 0.8s infinite linear;
+  animation: wave-front 0.8s infinite linear;
+}
+
+@-webkit-keyframes wave-front {
+  100% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes wave-front {
+  100% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 240px;
+  height: 300px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num h4,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num h4 {
+  color: black;
+  font-weight: bold;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num span,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num span {
+  margin-left: 10px;
+  color: black;
+  font-weight: normal;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent {
+  font-size: 3.25rem;
+  margin: 0;
+  font-family: arial, serif !important;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-1,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-2,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-2 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 {
+  position: absolute;
+  top: 57%;
+  left: 15%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table {
+  width: 130px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table thead tr th,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table thead tr th {
+  width: 100%;
+  background-color: #0d73ad;
+  text-align: left;
+  padding-left: 10px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table td,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table td {
+  width: 100%;
+  padding-left: 10px;
+  color: #0d73ad;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-1,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-1 {
+  position: absolute;
+  top: -5%;
+  left: 27%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-2,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-2 {
+  position: absolute;
+  top: 19%;
+  left: 29%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-3,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info .stage1-3 {
+  position: absolute;
+  top: 44%;
+  left: 32%;
+}
+
 html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp {
   position: absolute;
