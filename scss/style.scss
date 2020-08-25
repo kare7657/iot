@@ -2903,7 +2903,7 @@ body {
                     img {
                         width: 100%;
                         height: 650px;
-                        object-fit: contain;
+                        object-fit: cover;
                         object-position: center center;
                     }
 
@@ -3006,7 +3006,7 @@ body {
                         bottom: -1%;
                         left: 82%;
                     }
-                    // 新竹
+                    // 北區-新竹
                     .north1-2-1 {
                         position: absolute;
                         top: 15%;
@@ -3082,6 +3082,48 @@ body {
                         position: absolute;
                         bottom: 2%;
                         right: 3%;
+                    }
+                    //中區-臺中、彰化
+                    .middle1-2-1 {
+                        position: absolute;
+                        top: 20%;
+                        right: 32%;
+                    }
+                    .middle1-2-2 {
+                        position: absolute;
+                        top: 20%;
+                        right: 10%;
+                    }
+                    .middle1-2-3 {
+                        position: absolute;
+                        top: 34%;
+                        left: 6%;
+                    }
+                    .middle1-2-4 {
+                        position: absolute;
+                        top: 48%;
+                        right: 32%;
+                    }
+                    //中區-雲林
+                    .middle1-3-1 {
+                        position: absolute;
+                        top: 20%;
+                        right: 27%;
+                    }
+                    .middle1-3-2 {
+                        position: absolute;
+                        top: 20%;
+                        right: 5%;
+                    }
+                    .middle1-3-3 {
+                        position: absolute;
+                        top: 34%;
+                        left: 6%;
+                    }
+                    .middle1-3-4 {
+                        position: absolute;
+                        top: 48%;
+                        right: 33%;
                     }
                 }
                 hr {
