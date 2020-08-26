@@ -9975,11 +9975,14 @@ body .content-reservoir-info .container .reservoir-body .reservoir-about {
 
 html .content-reservoir-info .container .reservoir-body .reservoir-about img,
 body .content-reservoir-info .container .reservoir-body .reservoir-about img {
-  width: 100%;
-  height: 100%;
-  max-width: 250px;
+  width: 250px;
+  height: 180px;
   margin-right: 25px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-about table,
@@ -10862,6 +10865,139 @@ body .content-water-info .container .water-body .water-num .middle1-3-4 {
   position: absolute;
   top: 48%;
   right: 33%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-1,
+body .content-water-info .container .water-body .water-num .south1-1-1 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-2,
+body .content-water-info .container .water-body .water-num .south1-1-2 {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-3,
+body .content-water-info .container .water-body .water-num .south1-1-3 {
+  position: absolute;
+  bottom: 2%;
+  left: 39%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-1,
+body .content-water-info .container .water-body .water-num .south1-1-1 {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-2,
+body .content-water-info .container .water-body .water-num .south1-1-2 {
+  position: absolute;
+  top: 10%;
+  right: 17%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-1-3,
+body .content-water-info .container .water-body .water-num .south1-1-3 {
+  position: absolute;
+  bottom: 2%;
+  left: 39%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-1,
+body .content-water-info .container .water-body .water-num .south1-2-1 {
+  position: absolute;
+  top: 7%;
+  left: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-2,
+body .content-water-info .container .water-body .water-num .south1-2-2 {
+  position: absolute;
+  top: 31%;
+  left: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-3,
+body .content-water-info .container .water-body .water-num .south1-2-3 {
+  position: absolute;
+  top: 7%;
+  right: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-4,
+body .content-water-info .container .water-body .water-num .south1-2-4 {
+  position: absolute;
+  top: 31%;
+  right: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-5,
+body .content-water-info .container .water-body .water-num .south1-2-5 {
+  position: absolute;
+  top: 3%;
+  right: 40%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-6,
+body .content-water-info .container .water-body .water-num .south1-2-6 {
+  position: absolute;
+  top: 27%;
+  right: 40%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-7,
+body .content-water-info .container .water-body .water-num .south1-2-7 {
+  position: absolute;
+  bottom: 40%;
+  left: 12%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-8,
+body .content-water-info .container .water-body .water-num .south1-2-8 {
+  position: absolute;
+  bottom: -4%;
+  left: 23%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-9,
+body .content-water-info .container .water-body .water-num .south1-2-9 {
+  position: absolute;
+  bottom: 0%;
+  left: 43%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-2-10,
+body .content-water-info .container .water-body .water-num .south1-2-10 {
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-3-1,
+body .content-water-info .container .water-body .water-num .south1-3-1 {
+  position: absolute;
+  top: 25%;
+  right: 6%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-3-2,
+body .content-water-info .container .water-body .water-num .south1-3-2 {
+  position: absolute;
+  top: 21%;
+  left: 4%;
+}
+
+html .content-water-info .container .water-body .water-num .south1-3-3,
+body .content-water-info .container .water-body .water-num .south1-3-3 {
+  position: absolute;
+  bottom: 5%;
+  right: 6%;
 }
 
 html .content-water-info .container .water-body hr,

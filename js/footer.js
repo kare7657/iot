@@ -39,4 +39,8 @@ document.write( '                            src=\"img/aa2.png\" alt=\"通過AA�
 document.write( '                </div>\n' );
 document.write( '            </div>\n' );
 document.write( '        </div>\n' );
-document.write( '    </footer>' );
+document.write( '    </footer>\n' );
+document.write( '\n' );
+document.write( '    <a href=\"#top\">\n' );
+document.write( '        <div class=\"back-top\">▲</div>\n' );
+document.write( '    </a>' );
