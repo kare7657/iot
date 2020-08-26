@@ -147,6 +147,13 @@
         padding: 0 $padding-XXS;
         font-size: $size-p;
         line-height: $size-p * 1.5;
+        //自動填入
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active{
+            transition: background-color 5000s ease-in-out 0s; /*透明*/
+        }
         &[type="submit"],
         &[type="reset"] {
             width: 100%;
