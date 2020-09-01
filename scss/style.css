@@ -9994,6 +9994,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-about img {
 html .content-reservoir-info .container .reservoir-body .reservoir-about table,
 body .content-reservoir-info .container .reservoir-body .reservoir-about table {
   line-height: 2rem;
+  word-wrap: break-word;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-about table th,
@@ -10119,7 +10120,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .w
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent {
-  font-size: 3.25rem;
+  font-size: 2.925rem;
   margin: 0;
   font-family: arial, serif !important;
 }
@@ -10141,8 +10142,16 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .w
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 {
   position: absolute;
-  top: 57%;
+  top: 53%;
   left: 15%;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table,

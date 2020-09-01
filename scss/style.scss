@@ -2525,6 +2525,7 @@ body {
                     }
                     table {
                         line-height: $size-p * 2;
+                        word-wrap: break-word;
                         th {
                             color: $dark-blue;
                             font-weight: bold;
@@ -2547,7 +2548,7 @@ body {
                     }
                 }
                 .reservoir-num {
-                    margin: $margin-M * 1.5 0 $margin-S 0;
+                    margin: $margin-M*1.5 0 $margin-S 0;
                     position: relative;
                     img {
                         width: 100%;
@@ -2622,7 +2623,7 @@ body {
                                     font-weight: normal;
                                 }
                                 .percent {
-                                    font-size: $size-h1 * 2;
+                                    font-size: $size-h1 * 1.8;
                                     margin: 0;
                                     font-family: arial, serif !important;
                                 }
@@ -2638,8 +2639,14 @@ body {
                                 }
                                 .num1-3 {
                                     position: absolute;
-                                    top: 57%;
+                                    top: 53%;
                                     left: 15%;
+                                }
+                                div{
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    color: rgba($color: $title-BK, $alpha: 0.7);
+                                    letter-spacing: 1px;
                                 }
                             }
                         }
