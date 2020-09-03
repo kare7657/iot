@@ -9993,6 +9993,8 @@ body .content-reservoir-info .container .reservoir-body .reservoir-about img {
 
 html .content-reservoir-info .container .reservoir-body .reservoir-about table,
 body .content-reservoir-info .container .reservoir-body .reservoir-about table {
+  width: 100%;
+  max-width: 400px;
   line-height: 2rem;
   word-wrap: break-word;
 }

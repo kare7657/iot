@@ -2524,6 +2524,8 @@ body {
                         object-position: center center;
                     }
                     table {
+                        width: 100%;
+                        max-width: 400px;
                         line-height: $size-p * 2;
                         word-wrap: break-word;
                         th {
@@ -2548,7 +2550,7 @@ body {
                     }
                 }
                 .reservoir-num {
-                    margin: $margin-M*1.5 0 $margin-S 0;
+                    margin: $margin-M * 1.5 0 $margin-S 0;
                     position: relative;
                     img {
                         width: 100%;
@@ -2642,7 +2644,7 @@ body {
                                     top: 53%;
                                     left: 15%;
                                 }
-                                div{
+                                div {
                                     font-size: 14px;
                                     font-weight: bold;
                                     color: rgba($color: $title-BK, $alpha: 0.7);
