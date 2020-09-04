@@ -145,6 +145,13 @@
                             </div>
                         </div>
                     </div>
+                    <form class="control-bar">
+                        <input type="range" id="when_change_range" min="0" max="23" step="1" value="7">
+                        <h4 class="title">時間：</h4>
+                        <input type="text" id="range_num" class="time">
+                        <h4 class="time">時</h4>
+                        <input type="reset" value="清除">
+                    </form>
                     <div class="stage-info">
                         <table class="stage1-1">
                             <thead>
@@ -701,6 +708,13 @@
             menu3.classList.add("active")
             list3.classList.add("active")
         }
+    </script>
+
+    <!-- 歷史水位 -->
+    <script>
+        $('#when_change_range').change(function () {
+            document.getElementById('range_num').value = $(this).val();
+        });
     </script>
 
 </body>

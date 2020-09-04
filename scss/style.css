@@ -174,7 +174,6 @@
   -webkit-appearance: none;
   overflow: hidden;
   /* 限定範圍 */
-  width: 200px;
   height: 20px;
   outline: none;
   background: none;
@@ -186,30 +185,27 @@
   position: relative;
   width: 15px;
   height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #2faae5;
   border-radius: 50%;
 }
 
 * input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 10px;
-  background: #fff;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#fff), to(transparent));
-  background: linear-gradient(to left, #fff, transparent);
+  background: #a7e5ff;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * input[type="range"]::-moz-range-track {
   height: 15px;
   border-radius: 15px;
-  background: linear-gradient(to left, #fff, transparent);
+  background: #a7e5ff;
   border: none;
 }
 
 * input[type="range"]::-moz-range-thumb {
   width: 15px;
   height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #2faae5;
   border: none;
   border-radius: 50%;
 }
@@ -235,8 +231,7 @@
   border: none;
   outline: none;
   border-radius: 10px;
-  background: #fff;
-  background: linear-gradient(to left, #fff, transparent);
+  background: #a7e5ff;
 }
 
 * input[type="range"]::-ms-thumb {
@@ -245,7 +240,7 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: #2faae5;
 }
 
 * input[type="range"]::-ms-fill-lower {
@@ -10028,7 +10023,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-about .right 
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num,
 body .content-reservoir-info .container .reservoir-body .reservoir-num {
-  margin: 75px 0 25px 0;
+  margin: 75px 0 50px 0;
   position: relative;
 }
 
@@ -10154,6 +10149,63 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .w
   font-weight: bold;
   color: rgba(0, 0, 0, 0.7);
   letter-spacing: 1px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar {
+  width: 100%;
+  position: absolute;
+  bottom: -15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar .title,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar .title {
+  line-height: 1.125rem;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="text"],
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="text"] {
+  border: none;
+  width: 4%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  color: #595757;
+  font-weight: bold;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="range"],
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="range"] {
+  width: 200px;
+  margin-right: 25px;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="reset"],
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar input[type="reset"] {
+  background-color: transparent;
+  width: 4%;
+  height: 28px;
+  color: #0d73ad;
+  margin: 0;
+  padding: 3px;
+  margin-left: 20px;
+  border: solid 1px #0d73ad;
+  line-height: 1.125rem;
+  font-size: 1rem;
+}
+
+html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar .time,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar .time {
+  color: #595757;
+  line-height: 1.125rem;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage-info table,

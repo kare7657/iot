@@ -2550,7 +2550,7 @@ body {
                     }
                 }
                 .reservoir-num {
-                    margin: $margin-M * 1.5 0 $margin-S 0;
+                    margin: $margin-M * 1.5 0 $margin-M 0;
                     position: relative;
                     img {
                         width: 100%;
@@ -2651,6 +2651,49 @@ body {
                                     letter-spacing: 1px;
                                 }
                             }
+                        }
+                    }
+                    .control-bar {
+                        width: 100%;
+                        position: absolute;
+                        bottom: -15%;
+                        display: flex;
+                        align-items: center;
+                        .title {
+                            line-height: $size-h4;
+                        }
+                        input {
+                            &[type="text"] {
+                                border: none;
+                                width: 4%;
+                                text-align: center;
+                                padding: 0;
+                                margin: 0;
+                                font-size: $size-h4;
+                                line-height: $size-h4;
+                                color: $text;
+                                font-weight: bold;
+                            }
+                            &[type="range"] {
+                                width: 200px;
+                                margin-right: $margin-S;
+                            }
+                            &[type="reset"] {
+                                background-color: transparent;
+                                width: 4%;
+                                height: 28px;
+                                color: $dark-blue;
+                                margin: 0;
+                                padding: 3px;
+                                margin-left: $margin-XS * 2;
+                                border: solid 1px $dark-blue;
+                                line-height: $size-h4;
+                                font-size: $size-p;
+                            }
+                        }
+                        .time {
+                            color: $text;
+                            line-height: $size-h4;
                         }
                     }
                     .stage-info {
@@ -3044,7 +3087,7 @@ body {
                     }
                     .north1-2-6 {
                         position: absolute;
-                        top:38%;
+                        top: 38%;
                         right: 5%;
                     }
                     //中區-苗栗
