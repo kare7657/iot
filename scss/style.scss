@@ -3018,6 +3018,7 @@ body {
                     table {
                         width: 200px;
                         line-height: $size-p * 1.6;
+                        background-color: $title-W;
                         th {
                             width: 70%;
                         }
@@ -3103,12 +3104,12 @@ body {
                     }
                     .north1-1-7 {
                         position: absolute;
-                        bottom: 14%;
+                        bottom: 16%;
                         left: 60%;
                     }
                     .north1-1-8 {
                         position: absolute;
-                        bottom: 14%;
+                        bottom: 16%;
                         left: 80%;
                     }
                     // 北區-新竹
@@ -3165,22 +3166,22 @@ body {
                     }
                     .middle1-1-5 {
                         position: absolute;
-                        bottom: 18%;
+                        bottom: 20%;
                         left: 4%;
                     }
                     .middle1-1-6 {
                         position: absolute;
-                        bottom: 18%;
+                        bottom: 20%;
                         left: 28%;
                     }
                     .middle1-1-8 {
                         position: absolute;
-                        bottom: 18%;
-                        right: 27%;
+                        bottom: 39%;
+                        right: 23%;
                     }
                     .middle1-1-9 {
                         position: absolute;
-                        bottom: 17%;
+                        bottom: 18%;
                         right: 2%;
                     }
                     //中區-臺中、彰化
@@ -3279,17 +3280,17 @@ body {
                     }
                     .south1-2-8 {
                         position: absolute;
-                        bottom: 18%;
+                        bottom: 19%;
                         left: 23%;
                     }
                     .south1-2-9 {
                         position: absolute;
-                        top: 44%;
-                        right: 20%;
+                        bottom: 19%;
+                        right: 28%;
                     }
                     .south1-2-10 {
                         position: absolute;
-                        bottom: 18%;
+                        bottom: 19%;
                         right: 3%;
                     }
                     // 南區-高雄
@@ -3305,7 +3306,7 @@ body {
                     }
                     .south1-3-3 {
                         position: absolute;
-                        bottom: 24%;
+                        bottom: 25%;
                         right: 6%;
                     }
                 }
