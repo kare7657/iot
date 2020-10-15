@@ -2391,6 +2391,7 @@ body {
                     img {
                         width: 100%;
                         max-width: 700px;
+                        margin-bottom: $margin-S;
                     }
                     span {
                         padding: 5px 10px;
@@ -2400,6 +2401,10 @@ body {
                     }
                     p {
                         padding: $padding-XXS 0;
+                    }
+                    h3{
+                        margin: 0;
+                        line-height: $size-h3*1.5;
                     }
                 }
                 .btn {

@@ -9724,6 +9724,7 @@ html .content-science-classroom .container .post-body .text-gp img,
 body .content-science-classroom .container .post-body .text-gp img {
   width: 100%;
   max-width: 700px;
+  margin-bottom: 25px;
 }
 
 html .content-science-classroom .container .post-body .text-gp span,
@@ -9737,6 +9738,12 @@ body .content-science-classroom .container .post-body .text-gp span {
 html .content-science-classroom .container .post-body .text-gp p,
 body .content-science-classroom .container .post-body .text-gp p {
   padding: 10px 0;
+}
+
+html .content-science-classroom .container .post-body .text-gp h3,
+body .content-science-classroom .container .post-body .text-gp h3 {
+  margin: 0;
+  line-height: 2.0625rem;
 }
 
 html .content-science-classroom .container .post-body .btn,
