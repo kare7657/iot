@@ -2623,6 +2623,12 @@ body .content-information-display .container .top .map #river_map .all .taiwan {
   cursor: default;
 }
 
+html .content-information-display .container .top .map #pumping_map .all,
+body .content-information-display .container .top .map #pumping_map .all {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
 html .content-information-display .container .top .map .hide,
 body .content-information-display .container .top .map .hide {
   display: none;
@@ -2865,6 +2871,14 @@ body .content-information-display .container .river-gp .cityflood-info .station-
   font-weight: bold;
   color: #2faae5;
   margin-bottom: 37.5px;
+}
+
+html .content-information-display .container .cityflood-gp .cityflood-info .station-info #pumping-number,
+html .content-information-display .container .river-gp .cityflood-info .station-info #pumping-number,
+body .content-information-display .container .cityflood-gp .cityflood-info .station-info #pumping-number,
+body .content-information-display .container .river-gp .cityflood-info .station-info #pumping-number {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
 }
 
 html .content-information-display .container .cityflood-gp .cityflood-info .station-info span,

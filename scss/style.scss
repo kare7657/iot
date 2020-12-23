@@ -503,6 +503,11 @@ body {
                             }
                         }
                     }
+                    #pumping_map{
+                        .all{
+                            transform: translateX(25%);
+                        }
+                    }
                     .hide {
                         display: none;
                     }
@@ -628,6 +633,11 @@ body {
                             font-weight: bold;
                             color: $blue;
                             margin-bottom: $margin-S * 1.5;
+                        }
+                        //抽水站數字
+                        #pumping-number{
+                            font-size: 2.5rem;
+                            line-height: 2.5rem * 1.5;
                         }
                         span {
                             font-size: $size-p;
