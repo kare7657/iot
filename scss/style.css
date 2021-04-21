@@ -1056,6 +1056,8 @@ body .navbar .mobile .logo img {
 html .content-banner,
 body .content-banner {
   padding-top: 120px;
+  display: block !important;
+  background-color: #fff !important;
 }
 
 @media (max-width: 768px) {
@@ -1289,7 +1291,7 @@ body .content-preview .container .new .list {
 
 html .content-preview .container .new .list span,
 body .content-preview .container .new .list span {
-  width: 25%;
+  width: 23%;
   text-align: center;
   color: #0d73ad;
   font-size: 1rem;
@@ -1310,9 +1312,30 @@ body .content-preview .container .new .list span {
   }
 }
 
+html .content-preview .container .new .list a,
+body .content-preview .container .new .list a {
+  width: 77%;
+  padding-right: 30px;
+}
+
+@media (max-width: 568px) {
+  html .content-preview .container .new .list a,
+  body .content-preview .container .new .list a {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 html .content-preview .container .new .list a:hover p,
 body .content-preview .container .new .list a:hover p {
   color: #2faae5;
+}
+
+html .content-preview .container .new .list a i,
+body .content-preview .container .new .list a i {
+  font-size: 1rem;
+  color: #2faae5;
+  margin-right: 6.66667px;
 }
 
 html .content-preview .container .new .blue,
@@ -1485,7 +1508,6 @@ body .content-information span {
 
 html .content-information .container .list-gp,
 body .content-information .container .list-gp {
-  width: 100%;
   margin-right: 50px;
   margin: 37.5px 0;
 }
@@ -1529,7 +1551,7 @@ body .content-information .container .list-gp .list {
 
 html .content-information .container .list-gp .list span,
 body .content-information .container .list-gp .list span {
-  width: 15%;
+  width: 100%;
   text-align: center;
   color: #0d73ad;
   font-size: 1rem;
@@ -1550,9 +1572,30 @@ body .content-information .container .list-gp .list span {
   }
 }
 
+html .content-information .container .list-gp .list a,
+body .content-information .container .list-gp .list a {
+  width: 15%;
+  padding-right: 30px;
+}
+
+@media (max-width: 568px) {
+  html .content-information .container .list-gp .list a,
+  body .content-information .container .list-gp .list a {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 html .content-information .container .list-gp .list a:hover p,
 body .content-information .container .list-gp .list a:hover p {
   color: #2faae5;
+}
+
+html .content-information .container .list-gp .list a i,
+body .content-information .container .list-gp .list a i {
+  font-size: 1rem;
+  color: #2faae5;
+  margin-right: 6.66667px;
 }
 
 html .content-information .container .list-gp .blue,
@@ -2120,7 +2163,7 @@ body .content-news .container .list-gp .list {
 
 html .content-news .container .list-gp .list span,
 body .content-news .container .list-gp .list span {
-  width: 15%;
+  width: 20%;
   text-align: center;
   color: #0d73ad;
   font-size: 1rem;
@@ -2141,9 +2184,30 @@ body .content-news .container .list-gp .list span {
   }
 }
 
+html .content-news .container .list-gp .list a,
+body .content-news .container .list-gp .list a {
+  width: 80%;
+  padding-right: 30px;
+}
+
+@media (max-width: 568px) {
+  html .content-news .container .list-gp .list a,
+  body .content-news .container .list-gp .list a {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 html .content-news .container .list-gp .list a:hover p,
 body .content-news .container .list-gp .list a:hover p {
   color: #2faae5;
+}
+
+html .content-news .container .list-gp .list a i,
+body .content-news .container .list-gp .list a i {
+  font-size: 1rem;
+  color: #2faae5;
+  margin-right: 6.66667px;
 }
 
 html .content-news .container .list-gp .blue,
@@ -9018,7 +9082,6 @@ body .content-example-code .container .example-body .right .text-gp pre {
 
 html .content-example-code .container .example-body .right .text-gp .list-gp,
 body .content-example-code .container .example-body .right .text-gp .list-gp {
-  width: 100%;
   margin-right: 50px;
   word-wrap: break-word;
 }
@@ -9062,7 +9125,7 @@ body .content-example-code .container .example-body .right .text-gp .list-gp .li
 
 html .content-example-code .container .example-body .right .text-gp .list-gp .list span,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list span {
-  width: 30%;
+  width: 100%;
   text-align: center;
   color: #0d73ad;
   font-size: 1rem;
@@ -9083,9 +9146,30 @@ body .content-example-code .container .example-body .right .text-gp .list-gp .li
   }
 }
 
+html .content-example-code .container .example-body .right .text-gp .list-gp .list a,
+body .content-example-code .container .example-body .right .text-gp .list-gp .list a {
+  width: 30%;
+  padding-right: 30px;
+}
+
+@media (max-width: 568px) {
+  html .content-example-code .container .example-body .right .text-gp .list-gp .list a,
+  body .content-example-code .container .example-body .right .text-gp .list-gp .list a {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 html .content-example-code .container .example-body .right .text-gp .list-gp .list a:hover p,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list a:hover p {
   color: #2faae5;
+}
+
+html .content-example-code .container .example-body .right .text-gp .list-gp .list a i,
+body .content-example-code .container .example-body .right .text-gp .list-gp .list a i {
+  font-size: 1rem;
+  color: #2faae5;
+  margin-right: 6.66667px;
 }
 
 html .content-example-code .container .example-body .right .text-gp .list-gp .blue,
@@ -10280,7 +10364,6 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   position: absolute;
   top: -10%;
   right: 0%;
-  width: 170px;
   height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10296,6 +10379,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   padding: 0 10px;
   line-height: 23px;
   font-weight: bold;
+  border-radius: 0px;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .fas,
@@ -10313,6 +10397,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 0px !important;
 }
 
 html .content-reservoir-info .container .reservoir-body .reservoir-num table,

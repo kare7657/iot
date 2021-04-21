@@ -32,6 +32,8 @@ body {
     // Banner
     .content-banner {
         padding-top: 120px;
+        display: block !important;
+        background-color: #fff !important;
         @include pad() {
             padding-top: 60px;
         }
@@ -128,7 +130,8 @@ body {
                 flex-wrap: wrap;
             }
             .new {
-                @include news-list(60%, 25%);
+                width: 60%;
+                @include news-list(23%, 77%);
             }
             .data-statistics {
                 width: 40%;
@@ -290,7 +293,8 @@ body {
                 @include searchbar();
             }
             .list-gp {
-                @include news-list(100%, 15%);
+                width: 100%;
+                @include news-list(20%, 80%);
             }
         }
     }
@@ -2753,7 +2757,6 @@ body {
                         position: absolute;
                         top: -10%;
                         right: 0%;
-                        width: 170px;
                         height: 25px;
                         display: flex;
                         justify-content: space-between;
@@ -2762,6 +2765,7 @@ body {
                             padding: 0 $padding-XXS;
                             line-height: 23px;
                             font-weight: bold;
+                            border-radius: 0px;
                         }
                         .fas {
                             width: 25px;
@@ -2773,6 +2777,7 @@ body {
                             color: $blue;
                             display: flex;
                             justify-content: center;
+                            border-radius: 0px !important;
                         }
                     }
                     table {
