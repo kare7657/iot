@@ -5799,6 +5799,93 @@ body .content-signup .container .notice ul li {
   }
 }
 
+html .content-signup .container .button-gp,
+body .content-signup .container .button-gp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .button-gp,
+  body .content-signup .container .button-gp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 25px;
+  }
+}
+
+html .content-signup .container .button-gp .icon-gp,
+body .content-signup .container .button-gp .icon-gp {
+  width: 30%;
+  border: solid 1px #0d73ad;
+  border-radius: 10px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .button-gp .icon-gp,
+  body .content-signup .container .button-gp .icon-gp {
+    width: 80%;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+  }
+}
+
+html .content-signup .container .button-gp .icon-gp img,
+body .content-signup .container .button-gp .icon-gp img {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .button-gp .icon-gp img,
+  body .content-signup .container .button-gp .icon-gp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 568px) {
+  html .content-signup .container .button-gp .icon-gp img,
+  body .content-signup .container .button-gp .icon-gp img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+
+html .content-signup .container .button-gp .icon-gp h3,
+body .content-signup .container .button-gp .icon-gp h3 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  html .content-signup .container .button-gp .icon-gp h3,
+  body .content-signup .container .button-gp .icon-gp h3 {
+    margin: 0;
+  }
+}
+
 html .content-signup,
 body .content-signup {
   padding-top: 120px;
@@ -10772,7 +10859,7 @@ body .content-water-info .container .water-body .water-num .green thead tr th {
 
 html .content-water-info .container .water-body .water-num .green tbody,
 body .content-water-info .container .water-body .water-num .green tbody {
-  border: solid 1px #67832C;
+  border: solid 1px #67832c;
 }
 
 html .content-water-info .container .water-body .water-num .brown thead tr th,

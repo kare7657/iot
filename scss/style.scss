@@ -507,8 +507,8 @@ body {
                             }
                         }
                     }
-                    #pumping_map{
-                        .all{
+                    #pumping_map {
+                        .all {
                             transform: translateX(25%);
                         }
                     }
@@ -639,7 +639,7 @@ body {
                             margin-bottom: $margin-S * 1.5;
                         }
                         //抽水站數字
-                        #pumping-number{
+                        #pumping-number {
                             font-size: 2.5rem;
                             line-height: 2.5rem * 1.5;
                         }
@@ -1348,6 +1348,50 @@ body {
                     @include mobile-L() {
                         padding: 0 $padding-XS * 1.5;
                         margin-bottom: $margin-M;
+                    }
+                }
+            }
+            .button-gp {
+                display: flex;
+                justify-content: space-between;
+                @include mobile-L {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: $margin-S;
+                }
+                .icon-gp {
+                    width: 30%;
+                    border: solid 1px $dark-blue;
+                    border-radius: 10px;
+                    padding: $padding-XS 0;
+                    text-align: center;
+                    @include mobile-L {
+                        width: 80%;
+                        margin-bottom: $margin-S;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: $padding-XXS * 2 0;
+                    }
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        @include pad {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        @include mobile-L {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: $margin-XS;
+                        }
+                    }
+                    h3 {
+                        margin: 0;
+                        margin-top: $margin-XS;
+                        @include pad{
+                            margin: 0;
+                        }
                     }
                 }
             }
@@ -2416,9 +2460,9 @@ body {
                     p {
                         padding: $padding-XXS 0;
                     }
-                    h3{
+                    h3 {
                         margin: 0;
-                        line-height: $size-h3*1.5;
+                        line-height: $size-h3 * 1.5;
                     }
                 }
                 .btn {
@@ -2982,17 +3026,17 @@ body {
                         object-fit: cover;
                         object-position: center center;
                     }
-                    .sky{
+                    .sky {
                         thead {
                             tr {
                                 th {
                                     border: solid 1px $light-sky;
                                     background-color: $light-sky;
-                                    color:$dark-blue;
+                                    color: $dark-blue;
                                 }
                             }
                         }
-                        tbody{
+                        tbody {
                             border: solid 1px $light-sky;
                         }
                     }
@@ -3005,8 +3049,8 @@ body {
                                 }
                             }
                         }
-                        tbody{
-                            border: solid 1px #67832C;
+                        tbody {
+                            border: solid 1px #67832c;
                         }
                     }
                     .brown {
@@ -3018,7 +3062,7 @@ body {
                                 }
                             }
                         }
-                        tbody{
+                        tbody {
                             border: solid 1px #725116;
                         }
                     }
@@ -3031,7 +3075,7 @@ body {
                                 }
                             }
                         }
-                        tbody{
+                        tbody {
                             border: solid 1px $dull-red;
                         }
                     }
@@ -3058,7 +3102,6 @@ body {
                                     border: solid 1px $blue;
                                     font-size: $size-h4;
                                     line-height: $size-p * 2;
-
                                 }
                             }
                         }
@@ -3077,13 +3120,13 @@ body {
                                 th {
                                     color: $dark-blue;
                                     font-weight: bold;
-                                    padding-left: $padding-XXS ;
+                                    padding-left: $padding-XXS;
                                     vertical-align: top;
                                 }
                                 td {
                                     color: $text;
                                     vertical-align: top;
-                                    padding-right: $padding-XXS ;
+                                    padding-right: $padding-XXS;
                                 }
                             }
                             span {
