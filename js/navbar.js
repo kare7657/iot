@@ -3,6 +3,7 @@ document.write( '        <div class=\"container\">\n' );
 document.write( '            <a href=\"#U\" id=\"AU\" title=\"右上方功能區塊\" accesskey=\"U\" tabindex=\"2\">:::</a>\n' );
 document.write( '            <a href=\"line.html\"><img src=\"img/line.png\" alt=\"line\"></a>\n' );
 document.write( '            <a href=\"webmap.html\"><img src=\"img/webmap.png\" alt=\"webmap\"></a>\n' );
+document.write( '            <a href=\"https://iotmanage.wra.gov.tw/\"><img src=\"img/backend.png\" alt=\"backend\"></a>\n' );
 document.write( '            <div class=\"btn\">\n' );
 document.write( '                <ul>\n' );
 document.write( '                    <li><a href=\"login.html\">登入</a></li>\n' );

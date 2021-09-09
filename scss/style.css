@@ -739,12 +739,17 @@ body .minibar .container #AU {
   font-size: 1.375rem;
   color: #a7e5ff;
   line-height: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+html .minibar .container a:nth-of-type(4),
+body .minibar .container a:nth-of-type(4) {
+  margin-right: 10px;
 }
 
 html .minibar .container img,
 body .minibar .container img {
-  margin-right: 20px;
+  margin: 0 10px;
   padding: 5px 0;
 }
 

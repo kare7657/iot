@@ -603,10 +603,13 @@
             font-size: $size-h3;
             color: $light-sky;
             line-height: 40px;
-            margin-right: 20px;
+            margin-right: 10px;
+        }
+        a:nth-of-type(4){
+            margin-right: 10px;
         }
         img {
-            margin-right: 20px;
+            margin: 0 10px;
             padding: 5px 0;
         }
         .btn {
