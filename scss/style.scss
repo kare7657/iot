@@ -60,13 +60,14 @@ body {
     .content-about {
         .container {
             display: flex;
+            flex-wrap: wrap;
             @include pad() {
-                flex-wrap: wrap;
                 padding-bottom: unset;
             }
             .about {
-                width: 60%;
+                width: 100%;
                 margin-right: $margin-M;
+                margin-bottom: $margin-S;
                 @include pad() {
                     width: 100%;
                     margin-right: unset;
@@ -76,41 +77,53 @@ body {
                 }
             }
             .fast-link {
-                width: 40%;
+                width: 100%;
                 text-align: center;
                 display: flex;
-                justify-content: space-between;
-                @include pad() {
-                    width: 100%;
-                    margin-top: $margin-M;
-                }
-                @include mobile-L() {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    flex-direction: column;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                @include pad{
+                    justify-content: space-between;
                 }
                 .icon-gp {
-                    width: 100%;
-                    margin: 0 $margin-XS;
+                    width: 14%;
+                    margin-right: $margin-S;
+                    margin-bottom: $margin-S;
+                    text-align: center;
+                    position: relative;
                     @include pad() {
-                        width: 33.3%;
-                        margin: 0;
-                        margin-bottom: $margin-S;
+                        width: 25%;
+                        margin-right: 0;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
                     }
                     @include mobile-L() {
-                        width: 100%;
+                        width: 45%;
                     }
-                    h2 {
+                    .num-notice {
+                        position: absolute;
+                        top: 0;
+                        right: 10px;
+                        background-color: $red;
+                        padding: 0 7px;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        color: $title-W;
+                        font-size: 0.875rem;
+                    }
+                    h4 {
                         color: $title-BK;
+                        margin-bottom: 0;
+                        @include mobile-L{
+                            font-size: $size-p;
+                        }
                     }
                     img {
-                        width: 100%;
-                        @include pad() {
-                            width: 80%;
-                        }
-                        @include mobile-L() {
-                            width: 60%;
-                        }
+                        width: 90px;
+                        height: 90px;
                     }
                 }
             }
@@ -1389,7 +1402,7 @@ body {
                     h3 {
                         margin: 0;
                         margin-top: $margin-XS;
-                        @include pad{
+                        @include pad {
                             margin: 0;
                         }
                     }

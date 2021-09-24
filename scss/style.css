@@ -489,13 +489,13 @@
 
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text p,
 * .modal-iot .modal-dialog .modal-content .modal-body .form-gp .text span {
-  color: #e8291c;
+  color: #F26E17;
   text-align: right;
 }
 
 * .modal-iot .modal-dialog .modal-content .modal-body p,
 * .modal-iot .modal-dialog .modal-content .modal-body span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -1113,21 +1113,22 @@ body .content-about .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   html .content-about .container,
   body .content-about .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     padding-bottom: unset;
   }
 }
 
 html .content-about .container .about,
 body .content-about .container .about {
-  width: 60%;
+  width: 100%;
   margin-right: 50px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
@@ -1145,83 +1146,93 @@ body .content-about .container .about h1 {
 
 html .content-about .container .fast-link,
 body .content-about .container .fast-link {
-  width: 40%;
+  width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   html .content-about .container .fast-link,
   body .content-about .container .fast-link {
-    width: 100%;
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 568px) {
-  html .content-about .container .fast-link,
-  body .content-about .container .fast-link {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 html .content-about .container .fast-link .icon-gp,
 body .content-about .container .fast-link .icon-gp {
-  width: 100%;
-  margin: 0 10px;
+  width: 14%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   html .content-about .container .fast-link .icon-gp,
   body .content-about .container .fast-link .icon-gp {
-    width: 33.3%;
-    margin: 0;
-    margin-bottom: 25px;
+    width: 25%;
+    margin-right: 0;
+  }
+  html .content-about .container .fast-link .icon-gp:last-child,
+  body .content-about .container .fast-link .icon-gp:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 568px) {
   html .content-about .container .fast-link .icon-gp,
   body .content-about .container .fast-link .icon-gp {
-    width: 100%;
+    width: 45%;
   }
 }
 
-html .content-about .container .fast-link .icon-gp h2,
-body .content-about .container .fast-link .icon-gp h2 {
+html .content-about .container .fast-link .icon-gp .num-notice,
+body .content-about .container .fast-link .icon-gp .num-notice {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #F26E17;
+  padding: 0 7px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: white;
+  font-size: 0.875rem;
+}
+
+html .content-about .container .fast-link .icon-gp h4,
+body .content-about .container .fast-link .icon-gp h4 {
   color: black;
+  margin-bottom: 0;
+}
+
+@media (max-width: 568px) {
+  html .content-about .container .fast-link .icon-gp h4,
+  body .content-about .container .fast-link .icon-gp h4 {
+    font-size: 1rem;
+  }
 }
 
 html .content-about .container .fast-link .icon-gp img,
 body .content-about .container .fast-link .icon-gp img {
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  html .content-about .container .fast-link .icon-gp img,
-  body .content-about .container .fast-link .icon-gp img {
-    width: 80%;
-  }
-}
-
-@media (max-width: 568px) {
-  html .content-about .container .fast-link .icon-gp img,
-  body .content-about .container .fast-link .icon-gp img {
-    width: 60%;
-  }
+  width: 90px;
+  height: 90px;
 }
 
 html .content-about hr,
@@ -3179,14 +3190,14 @@ html .content-information-display .container .cityflood-gp .warn,
 html .content-information-display .container .river-gp .warn,
 body .content-information-display .container .cityflood-gp .warn,
 body .content-information-display .container .river-gp .warn {
-  background-color: rgba(232, 41, 28, 0.1);
+  background-color: rgba(242, 110, 23, 0.1);
 }
 
 html .content-information-display .container .cityflood-gp .warn .title,
 html .content-information-display .container .river-gp .warn .title,
 body .content-information-display .container .cityflood-gp .warn .title,
 body .content-information-display .container .river-gp .warn .title {
-  background-color: #e8291c;
+  background-color: #F26E17;
 }
 
 html .content-information-display .container .cityflood-gp .warn form .form-gp label,
@@ -3211,7 +3222,7 @@ body .content-information-display .container .cityflood-gp .warn .station-info .
 body .content-information-display .container .cityflood-gp .warn .river-info .station-name,
 body .content-information-display .container .river-gp .warn .station-info .station-name,
 body .content-information-display .container .river-gp .warn .river-info .station-name {
-  color: #e8291c;
+  color: #F26E17;
 }
 
 html .content-information-display .container .cityflood-gp .warn .station-info img,
@@ -5151,7 +5162,7 @@ body .content-login .container .form form .form-check .h4 {
 
 html .content-login .container .form form span,
 body .content-login .container .form form span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -5524,7 +5535,7 @@ body .content-signup .container .form-gp form .form-check .h4 {
 
 html .content-signup .container .form-gp form span,
 body .content-signup .container .form-gp form span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -6839,7 +6850,7 @@ body .content-member-data .container .member-data .form form .form-check .h4 {
 
 html .content-member-data .container .member-data .form form span,
 body .content-member-data .container .member-data .form form span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -7231,7 +7242,7 @@ body .content-api-attestation .container .form form .form-check .h4 {
 
 html .content-api-attestation .container .form form span,
 body .content-api-attestation .container .form form span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -7259,7 +7270,7 @@ body .content-api-attestation .container .form form .form-gp h4 {
 html .content-api-attestation .container .form form .form-gp span,
 body .content-api-attestation .container .form form .form-gp span {
   width: 100%;
-  color: #e8291c;
+  color: #F26E17;
   text-align: left;
   padding-bottom: 5px;
   margin: 0;
@@ -8022,7 +8033,7 @@ body .content-opinion-add .container .form form .form-check .h4 {
 
 html .content-opinion-add .container .form form span,
 body .content-opinion-add .container .form form span {
-  color: #e8291c;
+  color: #F26E17;
   margin-left: 3px;
 }
 
@@ -10908,7 +10919,7 @@ body .content-water-info .container .water-body .water-num table td {
 
 html .content-water-info .container .water-body .water-num table thead tr td,
 body .content-water-info .container .water-body .water-num table thead tr td {
-  color: #e8291c;
+  color: #F26E17;
   text-align: center;
 }
 
