@@ -1216,6 +1216,12 @@ body .content-about .container .fast-link .icon-gp .num-notice {
   font-size: 0.875rem;
 }
 
+html .content-about .container .fast-link .icon-gp .date,
+body .content-about .container .fast-link .icon-gp .date {
+  font-size: 0.875rem;
+  color: #F26E17;
+}
+
 html .content-about .container .fast-link .icon-gp h4,
 body .content-about .container .fast-link .icon-gp h4 {
   color: black;
