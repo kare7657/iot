@@ -1241,6 +1241,17 @@ body .content-about .container .fast-link .icon-gp img {
   height: 90px;
 }
 
+html .content-about .container .fast-link .offline .num-notice,
+body .content-about .container .fast-link .offline .num-notice {
+  background-color: #9FA0A0;
+}
+
+html .content-about .container .fast-link .offline h4, html .content-about .container .fast-link .offline .date,
+body .content-about .container .fast-link .offline h4,
+body .content-about .container .fast-link .offline .date {
+  color: #9FA0A0;
+}
+
 html .content-about hr,
 body .content-about hr {
   max-width: 1140px;

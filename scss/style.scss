@@ -82,7 +82,7 @@ body {
                 display: flex;
                 justify-content: flex-start;
                 flex-wrap: wrap;
-                @include pad{
+                @include pad {
                     justify-content: space-between;
                 }
                 .icon-gp {
@@ -94,7 +94,7 @@ body {
                     @include pad() {
                         width: 25%;
                         margin-right: 0;
-                        &:last-child{
+                        &:last-child {
                             margin-bottom: 0;
                         }
                     }
@@ -114,20 +114,28 @@ body {
                         color: $title-W;
                         font-size: 0.875rem;
                     }
-                    .date{
+                    .date {
                         font-size: 0.875rem;
                         color: $red;
                     }
                     h4 {
                         color: $title-BK;
                         margin-bottom: 0;
-                        @include mobile-L{
+                        @include mobile-L {
                             font-size: $size-p;
                         }
                     }
                     img {
                         width: 90px;
                         height: 90px;
+                    }
+                }
+                .offline {
+                    .num-notice{
+                        background-color: #9FA0A0;
+                    }
+                    h4,.date{
+                        color: #9FA0A0;
                     }
                 }
             }
