@@ -1144,6 +1144,20 @@ body .content-about .container .about h1 {
   color: #0d73ad;
 }
 
+html .content-about .container .notice-text,
+body .content-about .container .notice-text {
+  color: #F26E17;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+html .content-about .container .notice-text i,
+body .content-about .container .notice-text i {
+  margin-right: 5px;
+  font-size: 0.875rem;
+}
+
 html .content-about .container .fast-link,
 body .content-about .container .fast-link {
   width: 100%;
@@ -1243,13 +1257,21 @@ body .content-about .container .fast-link .icon-gp img {
 
 html .content-about .container .fast-link .offline .num-notice,
 body .content-about .container .fast-link .offline .num-notice {
-  background-color: #9FA0A0;
+  background-color: #9fa0a0;
 }
 
-html .content-about .container .fast-link .offline h4, html .content-about .container .fast-link .offline .date,
+html .content-about .container .fast-link .offline h4,
+html .content-about .container .fast-link .offline .date,
 body .content-about .container .fast-link .offline h4,
 body .content-about .container .fast-link .offline .date {
-  color: #9FA0A0;
+  color: #9fa0a0;
+}
+
+html .content-about .container .other-apply,
+body .content-about .container .other-apply {
+  border: solid 1px #F26E17;
+  border-radius: 10px;
+  padding-top: 25px;
 }
 
 html .content-about hr,

@@ -76,6 +76,16 @@ body {
                     color: $title-D;
                 }
             }
+            .notice-text {
+                color: $red;
+                margin-bottom: $margin-XS;
+                font-weight: bold;
+                font-size: $size-p;
+                i{
+                    margin-right: 5px;
+                    font-size: 0.875rem ;
+                }
+            }
             .fast-link {
                 width: 100%;
                 text-align: center;
@@ -131,13 +141,19 @@ body {
                     }
                 }
                 .offline {
-                    .num-notice{
-                        background-color: #9FA0A0;
+                    .num-notice {
+                        background-color: #9fa0a0;
                     }
-                    h4,.date{
-                        color: #9FA0A0;
+                    h4,
+                    .date {
+                        color: #9fa0a0;
                     }
                 }
+            }
+            .other-apply{
+                border:solid 1px $red;
+                border-radius:10px;
+                padding-top: $margin-S;
             }
         }
         hr {
