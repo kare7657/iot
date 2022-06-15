@@ -81,9 +81,9 @@ body {
                 margin-bottom: $margin-XS;
                 font-weight: bold;
                 font-size: $size-p;
-                i{
+                i {
                     margin-right: 5px;
-                    font-size: 0.875rem ;
+                    font-size: 0.875rem;
                 }
             }
             .fast-link {
@@ -150,9 +150,9 @@ body {
                     }
                 }
             }
-            .other-apply{
-                border:solid 1px #DCDDDD;
-                border-radius:10px;
+            .other-apply {
+                border: solid 1px #dcdddd;
+                border-radius: 10px;
                 padding-top: $margin-S;
             }
         }
@@ -184,6 +184,7 @@ body {
                     width: 100%;
                 }
             }
+
         }
     }
     //breadcrumb
@@ -1141,6 +1142,39 @@ body {
         }
         img {
             width: 100%;
+        }
+        // chart
+        .chart-gp {
+            height: 100%;
+            h3 {
+                display: inline-block;
+                @include mobile-L {
+                    width: 100%;
+                }
+            }
+            button {
+                margin-left: $m-XS;
+                background-color: #007bff;
+                @include mobile-L {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: $m-XS;
+                }
+            }
+            .pie-chart {
+                margin: $m-S 0;
+                height: 600px;
+                @include mobile-L {
+                    height: 500px;
+                }
+            }
+            .line-chart {
+                margin: $m-S 0;
+                height: 600px;
+                @include mobile-L {
+                    height: 400px;
+                }
+            }
         }
     }
     //示範應用
