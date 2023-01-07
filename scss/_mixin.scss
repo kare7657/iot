@@ -1804,7 +1804,7 @@
             text-align: justify;
             font-size: $text;
             color: $text;
-            line-height: $text * 2;
+            line-height: 2;
             margin-top: $margin-XS/2;
             @include mobile-XS() {
                 font-size: $size-p;
