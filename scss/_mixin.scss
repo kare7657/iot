@@ -34,6 +34,7 @@
     font-family: "微軟正黑體" !important;
     box-sizing: border-box !important;
     .container {
+        position: relative;
         width: 1140px;
         margin: auto;
         padding: $padding-S 0;
@@ -109,6 +110,12 @@
     //無障礙框線
     :focus {
         outline: $blue dotted 3px !important;
+    }
+    #AC {
+        color: transparent;
+        &:focus {
+            color: $blue;
+        }
     }
     .clearfix {
         clear: both;
@@ -332,7 +339,7 @@
         .swiper-slide {
             position: relative;
             text-align: center;
-            font-size: 18px;
+            font-size: 1.125rem;
             background: #fff;
 
             /* Center slide text vertically */
@@ -736,7 +743,7 @@
             left: 0px;
             display: flex;
             .fas.fa-bars {
-                font-size: 30px;
+                font-size: 1.875rem;
                 line-height: 60px;
                 padding: 0 20px;
                 color: $dark-blue;

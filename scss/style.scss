@@ -14,13 +14,13 @@ html {
 }
 html,
 body {
-    font-size: 16px;
+    font-size: 1rem;
     width: 100%;
     margin: 0;
     padding: 0;
     padding-right: 0 !important;
     @include mobile-XS() {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     // 導覽列
     .minibar {
@@ -2878,7 +2878,7 @@ body {
                         height: 25px;
                         display: flex;
                         justify-content: space-between;
-                        .date {
+                        .date,input {
                             text-align: center;
                             padding: 0 $padding-XXS;
                             line-height: 23px;
