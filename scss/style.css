@@ -8670,8 +8670,9 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   display: flex;
   justify-content: space-between;
 }
-html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date,
-body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date {
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date, html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input {
   text-align: center;
   padding: 0 10px;
   line-height: 23px;
