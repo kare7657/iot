@@ -2,6 +2,7 @@
 * {
   font-family: "微軟正黑體" !important;
   box-sizing: border-box !important;
+  /* 跳到主要內容區塊 */
 }
 * .container {
   position: relative;
@@ -67,7 +68,7 @@
   list-style: none !important;
 }
 * a:hover {
-  color: #2faae5 !important;
+  color: #079adf !important;
 }
 * .fa,
 * .fas,
@@ -78,13 +79,37 @@
   font-family: "Font Awesome 5 Free" !important;
 }
 * :focus {
-  outline: #2faae5 dotted 3px !important;
+  outline: #079adf dotted 3px !important;
+}
+* .for_accessibility .go-main {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1200;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+}
+* .for_accessibility .go-main:focus {
+  width: auto;
+  height: auto;
+  padding: 6px;
+  background-color: #0d73ad;
+}
+* .for_accessibility div {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: transparent;
+  opacity: 0.1;
 }
 * #AC {
   color: transparent;
 }
 * #AC:focus {
-  color: #2faae5;
+  color: #079adf;
 }
 * .clearfix {
   clear: both;
@@ -141,7 +166,7 @@
   margin-top: 10px;
 }
 * input[type=submit]:hover, * input[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 * input[disabled] {
   background-color: #a7e5ff;
@@ -162,7 +187,7 @@
   position: relative;
   width: 15px;
   height: 15px;
-  background: #2faae5;
+  background: #079adf;
   border-radius: 50%;
 }
 * input[type=range]::-webkit-slider-runnable-track {
@@ -179,7 +204,7 @@
 * input[type=range]::-moz-range-thumb {
   width: 15px;
   height: 15px;
-  background: #2faae5;
+  background: #079adf;
   border: none;
   border-radius: 50%;
 }
@@ -209,7 +234,7 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  background: #2faae5;
+  background: #079adf;
 }
 * input[type=range]::-ms-fill-lower {
   background: transparent;
@@ -244,7 +269,7 @@
   font-weight: bold;
 }
 * button:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   transition-duration: 0.5s;
 }
 * button[disabled] {
@@ -270,7 +295,7 @@
   }
 }
 * .button-outline:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
   transition-duration: 0.5s;
 }
@@ -472,7 +497,7 @@
   text-align: center;
 }
 * .modal-iot .modal-dialog .modal-content .btn-iot[type=submit]:hover, * .modal-iot .modal-dialog .modal-content .btn-iot[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 * .modal-iot .modal-dialog .modal-content .btn-iot[type=button] {
   height: 40px;
@@ -487,9 +512,9 @@
   text-align: center;
 }
 * .modal-iot .modal-dialog .modal-content .btn-iot[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 * .modal-iot .modal-dialog .modal-content .btn-iot[disabled] {
   background-color: #a7e5ff;
@@ -551,7 +576,7 @@
 }
 * .pagination ul li .fas {
   font-size: 1rem;
-  color: #2faae5;
+  color: #079adf;
 }
 
 body.modal-open {
@@ -653,7 +678,6 @@ body .navbar {
     display: unset;
     justify-content: unset;
     margin-top: 0;
-    box-shadow: none;
   }
 }
 html .navbar .pc,
@@ -682,7 +706,7 @@ body .navbar .pc .navbar-L {
 }
 html .navbar .pc .navbar-L img,
 body .navbar .pc .navbar-L img {
-  width: 300px;
+  width: 100%;
 }
 html .navbar .pc .navbar-L h4,
 body .navbar .pc .navbar-L h4 {
@@ -716,6 +740,12 @@ body .navbar .pc .navbar-R h4 {
   margin-right: 20px;
   line-height: 80px;
   display: inline;
+}
+@media (max-width: 1024px) {
+  html .navbar .pc .navbar-R h4,
+  body .navbar .pc .navbar-R h4 {
+    font-size: 1rem;
+  }
 }
 html .navbar .pc .navbar-R .nav-function,
 body .navbar .pc .navbar-R .nav-function {
@@ -817,14 +847,14 @@ body .navbar .mobile .menu a {
 html .navbar .mobile .menu .active-ul,
 body .navbar .mobile .menu .active-ul {
   display: inline-block;
-  color: #2faae5;
+  color: #079adf;
   transition-duration: 0.7s;
   top: 60px;
   left: 0;
 }
 html .navbar .mobile .menu .active-ul li,
 body .navbar .mobile .menu .active-ul li {
-  color: #2faae5;
+  color: #079adf;
 }
 html .navbar .mobile .title,
 body .navbar .mobile .title {
@@ -1113,12 +1143,12 @@ body .content-preview .container .new .list a {
 }
 html .content-preview .container .new .list a:hover p,
 body .content-preview .container .new .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-preview .container .new .list a i,
 body .content-preview .container .new .list a i {
   font-size: 1rem;
-  color: #2faae5;
+  color: #079adf;
   margin-right: 6.6666666667px;
 }
 html .content-preview .container .new .blue,
@@ -1196,7 +1226,7 @@ body .breadcrumb .container ul a {
 html .breadcrumb .container ul a:hover .fas, html .breadcrumb .container ul a:hover p,
 body .breadcrumb .container ul a:hover .fas,
 body .breadcrumb .container ul a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .breadcrumb .container ul li,
 body .breadcrumb .container ul li {
@@ -1329,12 +1359,12 @@ body .content-information .container .list-gp .list a {
 }
 html .content-information .container .list-gp .list a:hover p,
 body .content-information .container .list-gp .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-information .container .list-gp .list a i,
 body .content-information .container .list-gp .list a i {
   font-size: 1rem;
-  color: #2faae5;
+  color: #079adf;
   margin-right: 6.6666666667px;
 }
 html .content-information .container .list-gp .blue,
@@ -1402,7 +1432,7 @@ body footer .container .text-gp a {
 }
 html footer .container .text-gp a:hover,
 body footer .container .text-gp a:hover {
-  color: #2faae5;
+  color: #079adf;
 }
 html footer .container .text-gp .fas,
 body footer .container .text-gp .fas {
@@ -1433,7 +1463,7 @@ body footer .container .contact a {
 }
 html footer .container .contact a:hover .fas,
 body footer .container .contact a:hover .fas {
-  color: #2faae5;
+  color: #079adf;
 }
 html footer .container .contact .fas,
 body footer .container .contact .fas {
@@ -1729,7 +1759,7 @@ body .content-news .container .searchbar input[type=search] {
   width: 150px;
   padding: 2px 8px;
   border-radius: 5px;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
 }
 @media (max-width: 568px) {
@@ -1818,12 +1848,12 @@ body .content-news .container .list-gp .list a {
 }
 html .content-news .container .list-gp .list a:hover p,
 body .content-news .container .list-gp .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-news .container .list-gp .list a i,
 body .content-news .container .list-gp .list a i {
   font-size: 1rem;
-  color: #2faae5;
+  color: #079adf;
   margin-right: 6.6666666667px;
 }
 html .content-news .container .list-gp .blue,
@@ -2323,7 +2353,7 @@ html .content-information-display .container .river-gp .cityflood-map .leaflet-p
 body .content-information-display .container .cityflood-gp .cityflood-map .leaflet-popup-content th,
 body .content-information-display .container .river-gp .cityflood-map .leaflet-popup-content th {
   width: 45%;
-  background-color: #2faae5;
+  background-color: #079adf;
   padding: 10px 15px;
   text-align: right;
   color: white;
@@ -2364,7 +2394,7 @@ html .content-information-display .container .cityflood-gp .cityflood-info .titl
 html .content-information-display .container .river-gp .cityflood-info .title,
 body .content-information-display .container .cityflood-gp .cityflood-info .title,
 body .content-information-display .container .river-gp .cityflood-info .title {
-  background-color: #2faae5;
+  background-color: #079adf;
   border-radius: 20px 20px 0 0;
 }
 @media (max-width: 568px) {
@@ -2438,7 +2468,7 @@ body .content-information-display .container .river-gp .cityflood-info .station-
   font-size: 3.125rem;
   line-height: 4.6875rem;
   font-weight: bold;
-  color: #2faae5;
+  color: #079adf;
   margin-bottom: 37.5px;
 }
 html .content-information-display .container .cityflood-gp .cityflood-info .station-info #pumping-number,
@@ -2461,7 +2491,7 @@ body .content-information-display .container .cityflood-gp .river-map,
 body .content-information-display .container .river-gp .river-map {
   width: 70%;
   min-height: 750px;
-  background-color: rgba(34, 181, 115, 0.5);
+  background-color: rgba(23, 166, 102, 0.5);
   margin-right: 25px;
   border-radius: 20px;
 }
@@ -2518,7 +2548,7 @@ html .content-information-display .container .river-gp .river-map .leaflet-popup
 body .content-information-display .container .cityflood-gp .river-map .leaflet-popup-content th,
 body .content-information-display .container .river-gp .river-map .leaflet-popup-content th {
   width: 45%;
-  background-color: #22b573;
+  background-color: #17a666;
   padding: 10px 15px;
   text-align: right;
   color: white;
@@ -2536,7 +2566,7 @@ html .content-information-display .container .river-gp .river-info,
 body .content-information-display .container .cityflood-gp .river-info,
 body .content-information-display .container .river-gp .river-info {
   width: 30%;
-  background-color: rgba(34, 181, 115, 0.1);
+  background-color: rgba(23, 166, 102, 0.1);
   border-radius: 20px;
 }
 @media (max-width: 768px) {
@@ -2559,7 +2589,7 @@ html .content-information-display .container .cityflood-gp .river-info .title,
 html .content-information-display .container .river-gp .river-info .title,
 body .content-information-display .container .cityflood-gp .river-info .title,
 body .content-information-display .container .river-gp .river-info .title {
-  background-color: #22b573;
+  background-color: #17a666;
   border-radius: 20px 20px 0 0;
 }
 @media (max-width: 568px) {
@@ -2593,13 +2623,13 @@ body .content-information-display .container .river-gp .river-info form .form-gp
   width: 100%;
   font-size: 1.125rem;
   font-weight: bold;
-  color: #22b573;
+  color: #17a666;
 }
 html .content-information-display .container .cityflood-gp .river-info form .form-gp select,
 html .content-information-display .container .river-gp .river-info form .form-gp select,
 body .content-information-display .container .cityflood-gp .river-info form .form-gp select,
 body .content-information-display .container .river-gp .river-info form .form-gp select {
-  border: solid 1px rgba(34, 181, 115, 0.5);
+  border: solid 1px rgba(23, 166, 102, 0.5);
 }
 html .content-information-display .container .cityflood-gp .river-info .station-info,
 html .content-information-display .container .river-gp .river-info .station-info,
@@ -2639,7 +2669,7 @@ body .content-information-display .container .river-gp .river-info .station-info
   font-size: 3.125rem;
   line-height: 4.6875rem;
   font-weight: bold;
-  color: #22b573;
+  color: #17a666;
   margin-bottom: 37.5px;
 }
 html .content-information-display .container .cityflood-gp .river-info .station-info span,
@@ -2738,7 +2768,7 @@ html .content-fullmap .fullmap-navbar i:hover,
 html .content-fullmap .fullmap-navbar h4:hover,
 body .content-fullmap .fullmap-navbar i:hover,
 body .content-fullmap .fullmap-navbar h4:hover {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-fullmap .fullmap-navbar h2,
 body .content-fullmap .fullmap-navbar h2 {
@@ -2753,7 +2783,7 @@ body .content-fullmap .menu {
   z-index: 99;
   width: 350px;
   height: 100vh;
-  background-color: #22b573;
+  background-color: #17a666;
   left: -350px;
   transition: 0.5s;
 }
@@ -2876,11 +2906,11 @@ body .content-fullmap .menu .left .bot input[type=reset] {
 }
 html .content-fullmap .menu .left .bot input[type=reset]:hover,
 body .content-fullmap .menu .left .bot input[type=reset]:hover {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-fullmap .menu .left .water,
 body .content-fullmap .menu .left .water {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-fullmap .menu .left .disaster,
 body .content-fullmap .menu .left .disaster {
@@ -2888,7 +2918,7 @@ body .content-fullmap .menu .left .disaster {
 }
 html .content-fullmap .menu .left .groundwater,
 body .content-fullmap .menu .left .groundwater {
-  background-color: #22b573;
+  background-color: #17a666;
 }
 html .content-fullmap .menu .left .tides,
 body .content-fullmap .menu .left .tides {
@@ -2913,7 +2943,7 @@ body .content-fullmap .menu .right h2 {
 }
 html .content-fullmap .menu .right:hover,
 body .content-fullmap .menu .right:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-fullmap .menu .right:hover h2,
 body .content-fullmap .menu .right:hover h2 {
@@ -3059,17 +3089,17 @@ body .content-theme .container .right .river .list span {
 }
 html .content-theme .container .right .river .list a:hover p,
 body .content-theme .container .right .river .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-theme .container .right .river .title,
 body .content-theme .container .right .river .title {
-  background-color: #22b573;
+  background-color: #17a666;
   margin-top: 25px;
   flex-direction: row;
 }
 html .content-theme .container .right .river .main,
 body .content-theme .container .right .river .main {
-  background-color: rgba(34, 181, 115, 0.1);
+  background-color: rgba(23, 166, 102, 0.1);
 }
 html .content-theme .container .right .river .white,
 body .content-theme .container .right .river .white {
@@ -3122,7 +3152,7 @@ body .content-theme .container .right .river .right-gp li {
 }
 html .content-theme .container .right .river .right-gp li,
 body .content-theme .container .right .river .right-gp li {
-  background-color: #2faae5;
+  background-color: #079adf;
   padding: 3px 10px;
   border-radius: 10px;
   color: white;
@@ -3171,17 +3201,17 @@ body .content-theme .container .right .river .right-gp li {
   }
   html .content-theme .container .right .river .list a:hover p,
   body .content-theme .container .right .river .list a:hover p {
-    color: #2faae5;
+    color: #079adf;
   }
   html .content-theme .container .right .river .title,
   body .content-theme .container .right .river .title {
-    background-color: #22b573;
+    background-color: #17a666;
     margin-top: 25px;
     flex-direction: row;
   }
   html .content-theme .container .right .river .main,
   body .content-theme .container .right .river .main {
-    background-color: rgba(34, 181, 115, 0.1);
+    background-color: rgba(23, 166, 102, 0.1);
   }
   html .content-theme .container .right .river .white,
   body .content-theme .container .right .river .white {
@@ -3240,7 +3270,7 @@ body .content-theme .container .right .river .right-gp li {
 @media (max-width: 568px) {
   html .content-theme .container .right .river .right-gp li,
   body .content-theme .container .right .river .right-gp li {
-    background-color: #2faae5;
+    background-color: #079adf;
     padding: 3px 10px;
     border-radius: 10px;
     color: white;
@@ -3286,17 +3316,17 @@ body .content-theme .container .right .flood .list span {
 }
 html .content-theme .container .right .flood .list a:hover p,
 body .content-theme .container .right .flood .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-theme .container .right .flood .title,
 body .content-theme .container .right .flood .title {
-  background-color: #2faae5;
+  background-color: #079adf;
   margin-top: 25px;
   flex-direction: row;
 }
 html .content-theme .container .right .flood .main,
 body .content-theme .container .right .flood .main {
-  background-color: rgba(47, 170, 229, 0.1);
+  background-color: rgba(7, 154, 223, 0.1);
 }
 html .content-theme .container .right .flood .white,
 body .content-theme .container .right .flood .white {
@@ -3349,7 +3379,7 @@ body .content-theme .container .right .flood .right-gp li {
 }
 html .content-theme .container .right .flood .right-gp li,
 body .content-theme .container .right .flood .right-gp li {
-  background-color: #2faae5;
+  background-color: #079adf;
   padding: 3px 10px;
   border-radius: 10px;
   color: white;
@@ -3398,17 +3428,17 @@ body .content-theme .container .right .flood .right-gp li {
   }
   html .content-theme .container .right .flood .list a:hover p,
   body .content-theme .container .right .flood .list a:hover p {
-    color: #2faae5;
+    color: #079adf;
   }
   html .content-theme .container .right .flood .title,
   body .content-theme .container .right .flood .title {
-    background-color: #2faae5;
+    background-color: #079adf;
     margin-top: 25px;
     flex-direction: row;
   }
   html .content-theme .container .right .flood .main,
   body .content-theme .container .right .flood .main {
-    background-color: rgba(47, 170, 229, 0.1);
+    background-color: rgba(7, 154, 223, 0.1);
   }
   html .content-theme .container .right .flood .white,
   body .content-theme .container .right .flood .white {
@@ -3467,7 +3497,7 @@ body .content-theme .container .right .flood .right-gp li {
 @media (max-width: 568px) {
   html .content-theme .container .right .flood .right-gp li,
   body .content-theme .container .right .flood .right-gp li {
-    background-color: #2faae5;
+    background-color: #079adf;
     padding: 3px 10px;
     border-radius: 10px;
     color: white;
@@ -3570,11 +3600,11 @@ body .theme-modal .river .modal-dialog .modal-content .modal-body .row .right-gp
 }
 html .theme-modal .river .modal-dialog .modal-content .modal-body .row .title,
 body .theme-modal .river .modal-dialog .modal-content .modal-body .row .title {
-  background-color: #22b573;
+  background-color: #17a666;
 }
 html .theme-modal .river .modal-dialog .modal-content .modal-body .row .main,
 body .theme-modal .river .modal-dialog .modal-content .modal-body .row .main {
-  background-color: rgba(34, 181, 115, 0.1);
+  background-color: rgba(23, 166, 102, 0.1);
 }
 html .theme-modal .river .modal-dialog .modal-content .modal-body .row .white,
 body .theme-modal .river .modal-dialog .modal-content .modal-body .row .white {
@@ -3685,11 +3715,11 @@ body .theme-modal .flood .modal-dialog .modal-content .modal-body .row .right-gp
 }
 html .theme-modal .flood .modal-dialog .modal-content .modal-body .row .title,
 body .theme-modal .flood .modal-dialog .modal-content .modal-body .row .title {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .theme-modal .flood .modal-dialog .modal-content .modal-body .row .main,
 body .theme-modal .flood .modal-dialog .modal-content .modal-body .row .main {
-  background-color: rgba(47, 170, 229, 0.1);
+  background-color: rgba(7, 154, 223, 0.1);
 }
 html .theme-modal .flood .modal-dialog .modal-content .modal-body .row .white,
 body .theme-modal .flood .modal-dialog .modal-content .modal-body .row .white {
@@ -3984,7 +4014,7 @@ body .content-example .container .example-body .app .app-icon img {
 }
 html .content-example .container .example-body .app .app-icon a:hover,
 body .content-example .container .example-body .app .app-icon a:hover {
-  color: #2faae5;
+  color: #079adf;
 }
 @media (max-width: 568px) {
   html .content-example .container .pagination,
@@ -4134,7 +4164,7 @@ body .content-login .container .form form .form-gp input[type=submit]:hover,
 body .content-login .container .form form .form-gp input[type=reset]:hover,
 body .content-login .container .form form .form-gp select[type=submit]:hover,
 body .content-login .container .form form .form-gp select[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-login .container .form form .form-gp input[type=button],
 html .content-login .container .form form .form-gp select[type=button],
@@ -4157,9 +4187,9 @@ html .content-login .container .form form .form-gp input[type=button]:hover,
 html .content-login .container .form form .form-gp select[type=button]:hover,
 body .content-login .container .form form .form-gp input[type=button]:hover,
 body .content-login .container .form form .form-gp select[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 html .content-login .container .form form .form-gp input[disabled],
 html .content-login .container .form form .form-gp select[disabled],
@@ -4451,7 +4481,7 @@ body .content-signup .container .form-gp form .form-gp input[type=submit]:hover,
 body .content-signup .container .form-gp form .form-gp input[type=reset]:hover,
 body .content-signup .container .form-gp form .form-gp select[type=submit]:hover,
 body .content-signup .container .form-gp form .form-gp select[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-signup .container .form-gp form .form-gp input[type=button],
 html .content-signup .container .form-gp form .form-gp select[type=button],
@@ -4474,9 +4504,9 @@ html .content-signup .container .form-gp form .form-gp input[type=button]:hover,
 html .content-signup .container .form-gp form .form-gp select[type=button]:hover,
 body .content-signup .container .form-gp form .form-gp input[type=button]:hover,
 body .content-signup .container .form-gp form .form-gp select[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 html .content-signup .container .form-gp form .form-gp input[disabled],
 html .content-signup .container .form-gp form .form-gp select[disabled],
@@ -5049,7 +5079,7 @@ body .content-signup .container .account-list-gp #team .bot .btn button {
 }
 html .content-signup .container .account-list-gp #team .bot .btn button:hover,
 body .content-signup .container .account-list-gp #team .bot .btn button:hover {
-  background-color: rgba(47, 170, 229, 0.7);
+  background-color: rgba(7, 154, 223, 0.7);
 }
 html .content-signup .container .account-list-gp #team .bot .btn button[disabled],
 body .content-signup .container .account-list-gp #team .bot .btn button[disabled] {
@@ -5076,7 +5106,7 @@ html .content-signup .container .account-list-gp #egov,
 body .content-signup .container .account-list-gp #egov {
   width: 30%;
   border-radius: 15px;
-  border: solid 1px #22b573;
+  border: solid 1px #17a666;
   margin-bottom: 50px;
 }
 html .content-signup .container .account-list-gp #egov:hover,
@@ -5101,7 +5131,7 @@ body .content-signup .container .account-list-gp #egov:hover {
 html .content-signup .container .account-list-gp #egov .top,
 body .content-signup .container .account-list-gp #egov .top {
   width: 100%;
-  background-color: #22b573;
+  background-color: #17a666;
   padding: 45px 0;
   text-align: center;
   border-radius: 10px 10px 0 0;
@@ -5138,7 +5168,7 @@ body .content-signup .container .account-list-gp #egov .body {
 }
 html .content-signup .container .account-list-gp #egov .body h4,
 body .content-signup .container .account-list-gp #egov .body h4 {
-  color: #22b573;
+  color: #17a666;
   text-align: left;
 }
 html .content-signup .container .account-list-gp #egov .bot,
@@ -5153,7 +5183,7 @@ body .content-signup .container .account-list-gp #egov .bot .btn {
 }
 html .content-signup .container .account-list-gp #egov .bot .btn button,
 body .content-signup .container .account-list-gp #egov .bot .btn button {
-  background-color: #22b573;
+  background-color: #17a666;
   width: 90%;
   margin-bottom: 25px;
 }
@@ -5172,7 +5202,7 @@ body .content-signup .container .account-list-gp #egov .bot .btn button {
 }
 html .content-signup .container .account-list-gp #egov .bot .btn button:hover,
 body .content-signup .container .account-list-gp #egov .bot .btn button:hover {
-  background-color: rgba(47, 170, 229, 0.7);
+  background-color: rgba(7, 154, 223, 0.7);
 }
 html .content-signup .container .account-list-gp #egov .bot .btn button[disabled],
 body .content-signup .container .account-list-gp #egov .bot .btn button[disabled] {
@@ -5199,7 +5229,7 @@ html .content-signup .container .account-list-gp #wrisp,
 body .content-signup .container .account-list-gp #wrisp {
   width: 30%;
   border-radius: 15px;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   margin-bottom: 50px;
 }
 html .content-signup .container .account-list-gp #wrisp:hover,
@@ -5224,7 +5254,7 @@ body .content-signup .container .account-list-gp #wrisp:hover {
 html .content-signup .container .account-list-gp #wrisp .top,
 body .content-signup .container .account-list-gp #wrisp .top {
   width: 100%;
-  background-color: #2faae5;
+  background-color: #079adf;
   padding: 45px 0;
   text-align: center;
   border-radius: 10px 10px 0 0;
@@ -5261,7 +5291,7 @@ body .content-signup .container .account-list-gp #wrisp .body {
 }
 html .content-signup .container .account-list-gp #wrisp .body h4,
 body .content-signup .container .account-list-gp #wrisp .body h4 {
-  color: #2faae5;
+  color: #079adf;
   text-align: left;
 }
 html .content-signup .container .account-list-gp #wrisp .bot,
@@ -5276,7 +5306,7 @@ body .content-signup .container .account-list-gp #wrisp .bot .btn {
 }
 html .content-signup .container .account-list-gp #wrisp .bot .btn button,
 body .content-signup .container .account-list-gp #wrisp .bot .btn button {
-  background-color: #2faae5;
+  background-color: #079adf;
   width: 90%;
   margin-bottom: 25px;
 }
@@ -5295,7 +5325,7 @@ body .content-signup .container .account-list-gp #wrisp .bot .btn button {
 }
 html .content-signup .container .account-list-gp #wrisp .bot .btn button:hover,
 body .content-signup .container .account-list-gp #wrisp .bot .btn button:hover {
-  background-color: rgba(47, 170, 229, 0.7);
+  background-color: rgba(7, 154, 223, 0.7);
 }
 html .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled],
 body .content-signup .container .account-list-gp #wrisp .bot .btn button[disabled] {
@@ -5537,7 +5567,7 @@ body .content-member-data .container .member-data .form form .form-gp input[type
 body .content-member-data .container .member-data .form form .form-gp input[type=reset]:hover,
 body .content-member-data .container .member-data .form form .form-gp select[type=submit]:hover,
 body .content-member-data .container .member-data .form form .form-gp select[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-member-data .container .member-data .form form .form-gp input[type=button],
 html .content-member-data .container .member-data .form form .form-gp select[type=button],
@@ -5560,9 +5590,9 @@ html .content-member-data .container .member-data .form form .form-gp input[type
 html .content-member-data .container .member-data .form form .form-gp select[type=button]:hover,
 body .content-member-data .container .member-data .form form .form-gp input[type=button]:hover,
 body .content-member-data .container .member-data .form form .form-gp select[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 html .content-member-data .container .member-data .form form .form-gp input[disabled],
 html .content-member-data .container .member-data .form form .form-gp select[disabled],
@@ -5871,7 +5901,7 @@ body .content-api-attestation .container .form form .form-gp input[type=submit]:
 body .content-api-attestation .container .form form .form-gp input[type=reset]:hover,
 body .content-api-attestation .container .form form .form-gp select[type=submit]:hover,
 body .content-api-attestation .container .form form .form-gp select[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-api-attestation .container .form form .form-gp input[type=button],
 html .content-api-attestation .container .form form .form-gp select[type=button],
@@ -5894,9 +5924,9 @@ html .content-api-attestation .container .form form .form-gp input[type=button]:
 html .content-api-attestation .container .form form .form-gp select[type=button]:hover,
 body .content-api-attestation .container .form form .form-gp input[type=button]:hover,
 body .content-api-attestation .container .form form .form-gp select[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 html .content-api-attestation .container .form form .form-gp input[disabled],
 html .content-api-attestation .container .form form .form-gp select[disabled],
@@ -6287,7 +6317,7 @@ body .content-opinion .container .filter input[type=reset] {
 html .content-opinion .container .filter input[type=submit]:hover, html .content-opinion .container .filter input[type=reset]:hover,
 body .content-opinion .container .filter input[type=submit]:hover,
 body .content-opinion .container .filter input[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   transition-duration: 0.5s;
   color: white;
 }
@@ -6529,7 +6559,7 @@ body .content-opinion-add .container .form form .form-gp input[type=submit]:hove
 body .content-opinion-add .container .form form .form-gp input[type=reset]:hover,
 body .content-opinion-add .container .form form .form-gp select[type=submit]:hover,
 body .content-opinion-add .container .form form .form-gp select[type=reset]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
 }
 html .content-opinion-add .container .form form .form-gp input[type=button],
 html .content-opinion-add .container .form form .form-gp select[type=button],
@@ -6552,9 +6582,9 @@ html .content-opinion-add .container .form form .form-gp input[type=button]:hove
 html .content-opinion-add .container .form form .form-gp select[type=button]:hover,
 body .content-opinion-add .container .form form .form-gp input[type=button]:hover,
 body .content-opinion-add .container .form form .form-gp select[type=button]:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
 }
 html .content-opinion-add .container .form form .form-gp input[disabled],
 html .content-opinion-add .container .form form .form-gp select[disabled],
@@ -6833,7 +6863,7 @@ body .content-opinion-preview .container .btn input {
 }
 html .content-opinion-preview .container .btn input:hover,
 body .content-opinion-preview .container .btn input:hover {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
   transition-duration: 0.5s;
 }
@@ -7260,7 +7290,7 @@ body .content-FAQ .container .collapse-gp .content li {
 }
 html .content-FAQ .container span,
 body .content-FAQ .container span {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-example-code .container,
 body .content-example-code .container {
@@ -7539,7 +7569,7 @@ body .content-example-code .container .example-body .left .searchbar input[type=
   width: 150px;
   padding: 2px 8px;
   border-radius: 5px;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
 }
 @media (max-width: 568px) {
@@ -7699,12 +7729,12 @@ body .content-example-code .container .example-body .right .text-gp .list-gp .li
 }
 html .content-example-code .container .example-body .right .text-gp .list-gp .list a:hover p,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list a:hover p {
-  color: #2faae5;
+  color: #079adf;
 }
 html .content-example-code .container .example-body .right .text-gp .list-gp .list a i,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list a i {
   font-size: 1rem;
-  color: #2faae5;
+  color: #079adf;
   margin-right: 6.6666666667px;
 }
 html .content-example-code .container .example-body .right .text-gp .list-gp .blue,
@@ -7804,7 +7834,7 @@ body .content-resources-share .container .searchbar input[type=search] {
   width: 150px;
   padding: 2px 8px;
   border-radius: 5px;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 95% center;
 }
 @media (max-width: 568px) {
@@ -8100,7 +8130,7 @@ body .content-resources-share .container .example-body .right .share-list .c3 {
 }
 html .content-resources-share .container .example-body .right .share-list .c3 .format-btn,
 body .content-resources-share .container .example-body .right .share-list .c3 .format-btn {
-  background-color: #2faae5;
+  background-color: #079adf;
   color: white;
   padding: 3px 15px;
   border-radius: 8px;
@@ -8395,7 +8425,7 @@ body .content-reservoir-info .container .menu .menu-second li {
 html .content-reservoir-info .container .menu .menu-second li:after,
 body .content-reservoir-info .container .menu .menu-second li:after {
   content: "/";
-  color: #2faae5;
+  color: #079adf;
   font-weight: 200;
   margin-left: 10px;
 }
@@ -8503,8 +8533,8 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .w
   height: 100%;
   max-height: 260px;
   transition: 0.3s;
-  background: #2faae5; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2faae5, #a7e5ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #079adf; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #079adf, #a7e5ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .water_wave {
@@ -8688,7 +8718,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   border-radius: 3px;
   font-size: 1rem;
   line-height: 25px;
-  color: #2faae5;
+  color: #079adf;
   display: flex;
   justify-content: center;
   border-radius: 0px !important;
@@ -8700,7 +8730,7 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num table {
 html .content-reservoir-info .container .reservoir-body .reservoir-num table thead th,
 body .content-reservoir-info .container .reservoir-body .reservoir-num table thead th {
   color: white;
-  background-color: #2faae5;
+  background-color: #079adf;
   text-align: center;
   border-radius: 5px;
   font-size: 1.125rem;
@@ -8884,7 +8914,7 @@ body .content-water-info .container .menu .menu-second li {
 html .content-water-info .container .menu .menu-second li:after,
 body .content-water-info .container .menu .menu-second li:after {
   content: "/";
-  color: #2faae5;
+  color: #079adf;
   font-weight: 200;
   margin-left: 10px;
 }
@@ -8958,7 +8988,7 @@ body .content-water-info .container .water-body .title .date-gp .fas {
   border-radius: 3px;
   font-size: 1rem;
   line-height: 25px;
-  color: #2faae5;
+  color: #079adf;
   display: flex;
   justify-content: center;
 }
@@ -9035,15 +9065,15 @@ body .content-water-info .container .water-body .water-num table thead tr td {
 html .content-water-info .container .water-body .water-num table thead tr th,
 body .content-water-info .container .water-body .water-num table thead tr th {
   color: white;
-  background-color: #2faae5;
+  background-color: #079adf;
   text-align: center;
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   font-size: 1.125rem;
   line-height: 2rem;
 }
 html .content-water-info .container .water-body .water-num table tbody,
 body .content-water-info .container .water-body .water-num table tbody {
-  border: solid 1px #2faae5;
+  border: solid 1px #079adf;
   padding: 0 30px;
 }
 html .content-water-info .container .water-body .water-num table tbody tr,

@@ -1,4 +1,10 @@
-document.write( '<div class=\"minibar\">\n' );
+document.write( ' <!-- 跳到主要內容區塊 -->\n' );
+document.write( '  <div class=\"for_accessibility\">\n' );
+document.write( '    <a href=\"#AC\" class=\"go-main\" title=\"跳到主要內容區塊\" tabindex=\"1\">跳到主要內容區塊</a>\n' );
+document.write( '  </div>\n' );
+document.write( '\n' );
+document.write( '    <!-- 導覽列 -->\n' );
+document.write( '    <div class=\"minibar\">\n' );
 document.write( '        <div class=\"container\">\n' );
 document.write( '            <a href=\"#U\" id=\"AU\" title=\"右上方功能區塊\" accesskey=\"U\" tabindex=\"2\">:::</a>\n' );
 document.write( '            <a href=\"line.html\"><img src=\"img/line.png\" alt=\"line\"></a>\n' );
@@ -22,6 +28,11 @@ document.write( '                    <img src=\"img/logo.jpg\" alt=\"logo\">\n' 
 document.write( '                </a>\n' );
 document.write( '            </div>\n' );
 document.write( '            <div class=\"navbar-R\">\n' );
+document.write( '                <div class=\"nav-function\">\n' );
+document.write( '                    <a href=\"\">\n' );
+document.write( '                        <h4>水資源競賽</h4>\n' );
+document.write( '                    </a>\n' );
+document.write( '                </div>\n' );
 document.write( '                <div class=\"nav-function\">\n' );
 document.write( '                    <a href=\"#\">\n' );
 document.write( '                        <h4>資料展示</h4>\n' );
