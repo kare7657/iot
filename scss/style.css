@@ -122,6 +122,13 @@
 * h6 {
   font-weight: bold;
 }
+* .acc-info {
+  margin-bottom: 25px;
+  color: black;
+}
+* .acc-info i {
+  margin-right: 6px;
+}
 * section {
   width: 100%;
 }
@@ -609,7 +616,7 @@ body .minibar {
   height: 40px;
   padding: 0;
   position: fixed;
-  z-index: 1000;
+  z-index: 1100;
   background-color: #fff;
 }
 @media (max-width: 768px) {
@@ -708,8 +715,8 @@ html .navbar .pc .navbar-L img,
 body .navbar .pc .navbar-L img {
   width: 100%;
 }
-html .navbar .pc .navbar-L h4,
-body .navbar .pc .navbar-L h4 {
+html .navbar .pc .navbar-L .title,
+body .navbar .pc .navbar-L .title {
   font-size: 1.125rem;
   color: white;
   margin: 0;
@@ -731,8 +738,8 @@ body .navbar .pc .navbar-R {
     margin-right: 25px;
   }
 }
-html .navbar .pc .navbar-R h4,
-body .navbar .pc .navbar-R h4 {
+html .navbar .pc .navbar-R .title,
+body .navbar .pc .navbar-R .title {
   font-size: 1.125rem;
   color: #0d73ad;
   margin: 0;
@@ -740,10 +747,11 @@ body .navbar .pc .navbar-R h4 {
   margin-right: 20px;
   line-height: 80px;
   display: inline;
+  font-weight: bold;
 }
 @media (max-width: 1024px) {
-  html .navbar .pc .navbar-R h4,
-  body .navbar .pc .navbar-R h4 {
+  html .navbar .pc .navbar-R .title,
+  body .navbar .pc .navbar-R .title {
     font-size: 1rem;
   }
 }
@@ -769,15 +777,16 @@ body .navbar .pc .navbar-R .nav-list {
   padding: 0 20px 10px 20px;
   background-color: #1480be;
 }
-html .navbar .pc .navbar-R .nav-list h4,
-body .navbar .pc .navbar-R .nav-list h4 {
+html .navbar .pc .navbar-R .nav-list .title,
+body .navbar .pc .navbar-R .nav-list .title {
   margin: 0;
   padding: 0;
   line-height: 2.8125rem;
   color: white;
+  font-weight: bold;
 }
-html .navbar .pc .navbar-R .nav-list h4:hover,
-body .navbar .pc .navbar-R .nav-list h4:hover {
+html .navbar .pc .navbar-R .nav-list .title:hover,
+body .navbar .pc .navbar-R .nav-list .title:hover {
   color: #a7e5ff;
 }
 html .navbar .mobile,
@@ -818,7 +827,7 @@ body .navbar .mobile .menu ul {
   top: 60px;
   left: -100vw;
   margin: 0;
-  padding: 40px 0 0 0;
+  padding: 0;
   text-align: center;
   transition-duration: 0.7s;
 }
@@ -827,22 +836,31 @@ body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu {
   background-color: #0d73ad;
   color: white;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item,
 body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item {
-  padding: 15px 0;
+  padding: 8px 0;
 }
-html .navbar .mobile .menu ul .nav-item.dropdown .nav-link.dropdown-toggle,
-body .navbar .mobile .menu ul .nav-item.dropdown .nav-link.dropdown-toggle {
-  padding: 5px 0;
+html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus,
+body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: white;
 }
-html .navbar .mobile .menu h4,
-body .navbar .mobile .menu h4 {
-  color: #a7e5ff;
+html .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus div,
+body .navbar .mobile .menu ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus div {
+  color: #0d73ad !important;
+}
+html .navbar .mobile .menu .title,
+body .navbar .mobile .menu .title {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 html .navbar .mobile .menu a,
 body .navbar .mobile .menu a {
   color: white;
+  display: block;
 }
 html .navbar .mobile .menu .active-ul,
 body .navbar .mobile .menu .active-ul {
@@ -860,9 +878,6 @@ html .navbar .mobile .title,
 body .navbar .mobile .title {
   display: flex;
   justify-content: center;
-}
-html .navbar .mobile .title h4,
-body .navbar .mobile .title h4 {
   font-size: 1.125rem;
   color: white;
   line-height: 60px;
@@ -926,6 +941,18 @@ html .content-banner .BN-right,
 body .content-banner .BN-right {
   -o-object-position: 70%;
      object-position: 70%;
+}
+html .modal,
+body .modal {
+  z-index: 1200;
+}
+html .modal .container,
+body .modal .container {
+  padding-top: 0;
+}
+html .modal-backdrop,
+body .modal-backdrop {
+  z-index: 1150;
 }
 html .content-about .container,
 body .content-about .container {
@@ -1025,14 +1052,17 @@ body .content-about .container .fast-link .icon-gp .date {
   font-size: 0.875rem;
   color: #F26E17;
 }
-html .content-about .container .fast-link .icon-gp h4,
-body .content-about .container .fast-link .icon-gp h4 {
+html .content-about .container .fast-link .icon-gp .title,
+body .content-about .container .fast-link .icon-gp .title {
   color: black;
   margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 @media (max-width: 568px) {
-  html .content-about .container .fast-link .icon-gp h4,
-  body .content-about .container .fast-link .icon-gp h4 {
+  html .content-about .container .fast-link .icon-gp .title,
+  body .content-about .container .fast-link .icon-gp .title {
     font-size: 1rem;
   }
 }
@@ -1159,9 +1189,16 @@ html .content-preview .container .new .white,
 body .content-preview .container .new .white {
   background-color: white;
 }
-html .content-preview .container .new h4,
-body .content-preview .container .new h4 {
+html .content-preview .container .new .w-100,
+body .content-preview .container .new .w-100 {
   text-align: right;
+}
+html .content-preview .container .new .w-100 a,
+body .content-preview .container .new .w-100 a {
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+  line-height: 2;
 }
 html .content-preview .container .data-statistics,
 body .content-preview .container .data-statistics {
@@ -1327,7 +1364,7 @@ body .content-information .container .list-gp .list {
 }
 html .content-information .container .list-gp .list span,
 body .content-information .container .list-gp .list span {
-  width: 100%;
+  width: 20%;
   text-align: center;
   color: #0d73ad;
   font-size: 1rem;
@@ -1347,7 +1384,7 @@ body .content-information .container .list-gp .list span {
 }
 html .content-information .container .list-gp .list a,
 body .content-information .container .list-gp .list a {
-  width: 15%;
+  width: 80%;
   padding-right: 30px;
 }
 @media (max-width: 568px) {
@@ -1375,9 +1412,16 @@ html .content-information .container .list-gp .white,
 body .content-information .container .list-gp .white {
   background-color: white;
 }
-html .content-information .container .list-gp h4,
-body .content-information .container .list-gp h4 {
+html .content-information .container .list-gp .w-100,
+body .content-information .container .list-gp .w-100 {
   text-align: right;
+}
+html .content-information .container .list-gp .w-100 a,
+body .content-information .container .list-gp .w-100 a {
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+  line-height: 2;
 }
 html footer,
 body footer {
@@ -1673,15 +1717,15 @@ body .content-webmap .container .list-gp .text-gp {
     width: 100%;
   }
 }
-html .content-webmap .container .list-gp .text-gp h3,
-body .content-webmap .container .list-gp .text-gp h3 {
+html .content-webmap .container .list-gp .text-gp h2,
+body .content-webmap .container .list-gp .text-gp h2 {
   background-color: #e5f1f9;
-  padding: 0 30px;
+  padding: 0 10px;
   margin: 0;
 }
 html .content-webmap .container .list-gp .text-gp ul,
 body .content-webmap .container .list-gp .text-gp ul {
-  padding: 30px;
+  padding: 10px;
   padding-top: 10px;
   list-style: none;
   font-size: 1rem;
@@ -1864,9 +1908,16 @@ html .content-news .container .list-gp .white,
 body .content-news .container .list-gp .white {
   background-color: white;
 }
-html .content-news .container .list-gp h4,
-body .content-news .container .list-gp h4 {
+html .content-news .container .list-gp .w-100,
+body .content-news .container .list-gp .w-100 {
   text-align: right;
+}
+html .content-news .container .list-gp .w-100 a,
+body .content-news .container .list-gp .w-100 a {
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+  line-height: 2;
 }
 html .content-news-info,
 body .content-news-info {
@@ -2033,8 +2084,8 @@ body .content-information-display .btn {
     text-align: center;
   }
 }
-html .content-information-display .container h3,
-body .content-information-display .container h3 {
+html .content-information-display .container h2,
+body .content-information-display .container h2 {
   text-align: center;
   margin-top: 10px;
 }
@@ -2073,6 +2124,8 @@ body .content-information-display .container .top .weather .title {
   margin-bottom: 20px;
   padding: 10px;
   text-align: center;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 html .content-information-display .container .top .weather img,
 body .content-information-display .container .top .weather img {
@@ -2245,8 +2298,9 @@ body .content-information-display .container .top .map #river_map .all .basin {
   stroke: #22b573;
   fill: #ddf6eb;
 }
-html .content-information-display .container .top .map #river_map .all .basin:hover,
-body .content-information-display .container .top .map #river_map .all .basin:hover {
+html .content-information-display .container .top .map #river_map .all .basin:hover, html .content-information-display .container .top .map #river_map .all .basin:focus,
+body .content-information-display .container .top .map #river_map .all .basin:hover,
+body .content-information-display .container .top .map #river_map .all .basin:focus {
   fill: #fcfc82;
 }
 html .content-information-display .container .top .map #river_map .all .taiwan,
@@ -2608,6 +2662,7 @@ body .content-information-display .container .river-gp .river-info .title h3 {
   margin: 0;
   color: white;
   padding: 5px 0;
+  text-align: center;
 }
 html .content-information-display .container .cityflood-gp .river-info form .form-gp,
 html .content-information-display .container .river-gp .river-info form .form-gp,
@@ -3973,6 +4028,12 @@ body .content-example .container .example-body .example-gp {
     padding: 30px;
   }
 }
+html .content-example .container .example-body .example-gp .agency,
+body .content-example .container .example-body .example-gp .agency {
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+}
 html .content-example .container .example-body .app img,
 body .content-example .container .example-body .app img {
   width: 250px;
@@ -4298,8 +4359,8 @@ body .content-login .container .form form .form-check .check-input {
   line-height: 1.125rem;
   margin: 10px 0;
 }
-html .content-login .container .form form .form-check .h4,
-body .content-login .container .form form .form-check .h4 {
+html .content-login .container .form form .form-check .title,
+body .content-login .container .form form .form-check .title {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -4394,6 +4455,11 @@ body .content-signup span {
   body .content-signup .container h1 {
     text-align: center;
   }
+}
+html .content-signup .container .button-gp .icon-gp h2,
+body .content-signup .container .button-gp .icon-gp h2 {
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 html .content-signup .container .form-gp,
 body .content-signup .container .form-gp {
@@ -4615,8 +4681,8 @@ body .content-signup .container .form-gp form .form-check .check-input {
   line-height: 1.125rem;
   margin: 10px 0;
 }
-html .content-signup .container .form-gp form .form-check .h4,
-body .content-signup .container .form-gp form .form-check .h4 {
+html .content-signup .container .form-gp form .form-check .title,
+body .content-signup .container .form-gp form .form-check .title {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -4643,6 +4709,11 @@ body .content-signup .container .form-gp form {
     padding: 0;
   }
 }
+html .content-signup .container .form-gp form .acc-info,
+body .content-signup .container .form-gp form .acc-info {
+  width: 100%;
+  text-align: center;
+}
 html .content-signup .container .form-gp form .icon-gp,
 body .content-signup .container .form-gp form .icon-gp {
   text-align: center;
@@ -4663,8 +4734,8 @@ body .content-signup .container .form-gp form .icon-gp img {
     width: 20%;
   }
 }
-html .content-signup .container .form-gp form .icon-gp h3,
-body .content-signup .container .form-gp form .icon-gp h3 {
+html .content-signup .container .form-gp form .icon-gp h2,
+body .content-signup .container .form-gp form .icon-gp h2 {
   margin: 0;
   margin-bottom: 25px;
 }
@@ -4833,10 +4904,6 @@ html .content-signup .container .form-gp form .form-submit .form-check-label,
 body .content-signup .container .form-gp form .form-submit .form-check-label {
   line-height: 2.25rem;
   margin-left: 10px;
-}
-html .content-signup .container .notice h3,
-body .content-signup .container .notice h3 {
-  text-align: center;
 }
 html .content-signup .container .notice ul,
 body .content-signup .container .notice ul {
@@ -5701,8 +5768,8 @@ body .content-member-data .container .member-data .form form .form-check .check-
   line-height: 1.125rem;
   margin: 10px 0;
 }
-html .content-member-data .container .member-data .form form .form-check .h4,
-body .content-member-data .container .member-data .form form .form-check .h4 {
+html .content-member-data .container .member-data .form form .form-check .title,
+body .content-member-data .container .member-data .form form .form-check .title {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -6035,8 +6102,8 @@ body .content-api-attestation .container .form form .form-check .check-input {
   line-height: 1.125rem;
   margin: 10px 0;
 }
-html .content-api-attestation .container .form form .form-check .h4,
-body .content-api-attestation .container .form form .form-check .h4 {
+html .content-api-attestation .container .form form .form-check .title,
+body .content-api-attestation .container .form form .form-check .title {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -6693,8 +6760,8 @@ body .content-opinion-add .container .form form .form-check .check-input {
   line-height: 1.125rem;
   margin: 10px 0;
 }
-html .content-opinion-add .container .form form .form-check .h4,
-body .content-opinion-add .container .form form .form-check .h4 {
+html .content-opinion-add .container .form form .form-check .title,
+body .content-opinion-add .container .form form .form-check .title {
   color: #0d73ad;
   font-size: 1.125rem;
   font-weight: bold;
@@ -7745,9 +7812,16 @@ html .content-example-code .container .example-body .right .text-gp .list-gp .wh
 body .content-example-code .container .example-body .right .text-gp .list-gp .white {
   background-color: white;
 }
-html .content-example-code .container .example-body .right .text-gp .list-gp h4,
-body .content-example-code .container .example-body .right .text-gp .list-gp h4 {
+html .content-example-code .container .example-body .right .text-gp .list-gp .w-100,
+body .content-example-code .container .example-body .right .text-gp .list-gp .w-100 {
   text-align: right;
+}
+html .content-example-code .container .example-body .right .text-gp .list-gp .w-100 a,
+body .content-example-code .container .example-body .right .text-gp .list-gp .w-100 a {
+  font-size: 1.125rem;
+  color: #0d73ad;
+  font-weight: bold;
+  line-height: 2;
 }
 html .content-example-code .container .example-body .right .text-gp .list-gp .list,
 body .content-example-code .container .example-body .right .text-gp .list-gp .list {
@@ -8241,6 +8315,10 @@ body .content-science-classroom .container .box-gp .box {
     width: 100%;
   }
 }
+html .content-science-classroom .container .box-gp .box a,
+body .content-science-classroom .container .box-gp .box a {
+  display: inline-block;
+}
 html .content-science-classroom .container .box-gp .box h3,
 body .content-science-classroom .container .box-gp .box h3 {
   margin: 0;
@@ -8563,47 +8641,55 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .w
   width: 240px;
   height: 300px;
 }
-html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num h4,
-body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num h4 {
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div {
   color: black;
   font-weight: bold;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num span,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num span {
   margin-left: 10px;
-  color: black;
   font-weight: normal;
-}
-html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent,
-body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .percent {
-  font-size: 2.925rem;
-  margin: 0;
-  font-family: arial, serif !important;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-1,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-1 {
   position: absolute;
   top: 20%;
   left: 15%;
+  font-size: 1.125rem;
+  margin: 10px 0;
+  line-height: 1.5;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-2,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-2 {
   position: absolute;
   top: 30%;
   left: 15%;
+  font-size: 1.125rem;
+  margin: 10px 0;
+  line-height: 1.5;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 {
   position: absolute;
   top: 53%;
   left: 15%;
+  font-size: 1.125rem;
+  margin: 10px 0;
+  line-height: 1.25;
 }
-html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div,
-body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num div {
-  font-size: 14px;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.7);
-  letter-spacing: 1px;
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 .percent,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 .percent {
+  font-size: 2.925rem;
+  margin: 0;
+  font-family: arial, serif !important;
+}
+html .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 div,
+body .content-reservoir-info .container .reservoir-body .reservoir-num .stage .water .stage-num .num1-3 div {
+  font-size: 1rem;
+  margin-left: 0;
+  color: black;
+  font-weight: normal;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .control-bar {
@@ -8700,7 +8786,8 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   display: flex;
   justify-content: space-between;
 }
-html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date, html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input,
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date,
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp .date,
 body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input {
   text-align: center;
@@ -8722,6 +8809,13 @@ body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp 
   display: flex;
   justify-content: center;
   border-radius: 0px !important;
+}
+html .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input[type=date],
+body .content-reservoir-info .container .reservoir-body .reservoir-num .date-gp input[type=date] {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 10;
 }
 html .content-reservoir-info .container .reservoir-body .reservoir-num table,
 body .content-reservoir-info .container .reservoir-body .reservoir-num table {
@@ -8900,7 +8994,7 @@ html .content-water-info .container .menu .menu-second,
 body .content-water-info .container .menu .menu-second {
   width: 100%;
   padding: 10px 0 5px 0;
-  margin-bottom: 37.5px;
+  margin-bottom: 10px;
   border-bottom: solid 1px #a7e5ff;
   list-style: none;
   display: none;
@@ -8943,8 +9037,8 @@ body .content-water-info .container .water-body {
   width: 100%;
   display: none;
   position: relative;
-  margin-top: 37.5px;
   border-bottom: solid 1px #a7e5ff;
+  margin-top: 25px;
 }
 html .content-water-info .container .water-body:last-child,
 body .content-water-info .container .water-body:last-child {
@@ -8958,9 +9052,11 @@ html .content-water-info .container .water-body .title,
 body .content-water-info .container .water-body .title {
   display: flex;
   justify-content: start;
+  align-items: center;
+  margin: 10px 0;
 }
-html .content-water-info .container .water-body .title h3,
-body .content-water-info .container .water-body .title h3 {
+html .content-water-info .container .water-body .title h2,
+body .content-water-info .container .water-body .title h2 {
   margin: 0;
   margin-right: 25px;
 }
@@ -8969,8 +9065,8 @@ body .content-water-info .container .water-body .title .date-gp {
   display: flex;
   justify-content: space-between;
   width: 170px;
-  height: 25px;
-  margin-top: 10px;
+  height: 100%;
+  max-height: 25px;
 }
 html .content-water-info .container .water-body .title .date-gp .date,
 body .content-water-info .container .water-body .title .date-gp .date {
@@ -9393,6 +9489,10 @@ body .content-water-info .container .water-body .water-explain {
   border-radius: 10px;
   padding: 20px 40px;
   margin-bottom: 50px;
+}
+html .content-water-info .container .water-body .water-explain h3,
+body .content-water-info .container .water-body .water-explain h3 {
+  margin: 0;
 }
 html .content-water-info .container .water-body .water-explain p,
 body .content-water-info .container .water-body .water-explain p {

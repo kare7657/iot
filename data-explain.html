@@ -7,9 +7,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資料使用統計</title>
-    <link rel="stylesheet" href="scss/bootstrap.min.css">
-    <link rel="stylesheet" href="scss/style.css">
-    <!-- <link rel="stylesheet" href="scss/all.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="scss/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 <body>
     <!-- 導覽列 -->
@@ -29,208 +30,9 @@
         </div>
     </div>
 
-    <!--選單區-->
-    <!-- Nav -->
-    <nav class="navbar">
-        <div class="pc">
-            <div class="navbar-L">
-                <a href="https://iot.wra.gov.tw/index.jsp">
-                    <img src="img/logo.jpg" alt="logo">
-                </a>
-            </div>
-            <div class="navbar-R">
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/IOTCompetition/index.jsp">
-                        <h4>水資料競賽專區</h4>
-                    </a>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#">
-                        <h4>資料瀏覽</h4>
-                    </a>
-                    <div class="nav-list">
-                        <a href="https://iot.wra.gov.tw/DisplayUswg.jsp">
-                            <h4>淹水感測器</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/DisplayRiver.jsp">
-                            <h4>河川水位站</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/ReservoirInfo.jsp">
-                            <h4>水庫情資</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/ReservoirSupply.jsp">
-                            <h4>供水情勢</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#">
-                        <h4>開發指引</h4>
-                    </a>
-                    <div class="nav-list">
-                        <a href="https://iot.wra.gov.tw/APIUseDoc.jsp">
-                            <h4>API 使用說明</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/swagger/index.html" target="_blank">
-                            <h4>API 線上測試</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/DataStatistics.jsp">
-                            <h4>資料使用統計</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#">
-                        <h4>分享專區</h4>
-                    </a>
-                    <div class="nav-list">
-                        <a href="https://iot.wra.gov.tw/ExampleAll.jsp">
-                            <h4>相關連結</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/ResourceShare.jsp">
-                            <h4>資源分享</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#">
-                        <h4>規範標準</h4>
-                    </a>
-                    <div class="nav-list">
-                        <a href="https://iot.wra.gov.tw/rules.jsp">
-                            <h4>作業原則</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/rules-data.jsp">
-                            <h4>資料交換標準</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/rules-domain.jsp">
-                            <h4>領域資料標準</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/ScienceClassRoom.jsp">
-                        <h4>科普小教室</h4>
-                    </a>
-                </div>
-                <div class="nav-function">
-                    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#">
-                        <h4>支援服務</h4>
-                    </a>
-                    <div class="nav-list">
-                        <a href="https://iot.wra.gov.tw/TopicList.jsp">
-                            <h4>意見反映</h4>
-                        </a><br>
-                        <a href="https://iot.wra.gov.tw/FAQ.jsp">
-                            <h4>常見問題</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobile">
-            <div class="menu">
-                <div class="fas fa-bars">
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a href="https://iot.wra.gov.tw/IOTCompetition/index.jsp">
-                            水資料競賽專區
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            資料瀏覽
-                        </a>
-                        <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/DisplayUswg.jsp">
-                                <h4>淹水感測器</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/DisplayRiver.jsp">
-                                <h4>河川水位站</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            開發指引
-                        </a>
-                        <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/APIUseDoc.jsp">
-                                <h4>API 使用說明</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/swagger/index.html" target="_blank">
-                                <h4>API 線上測試</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/DataStatistics.jsp">
-                                <h4>資料使用統計</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            分享專區
-                        </a>
-                        <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/ExampleAll.jsp">
-                                <h4>相關連結</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/ResourceShare.jsp">
-                                <h4>資源分享</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            規範標準
-                        </a>
-                        <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/rules.jsp">
-                                <h4>作業原則</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/rules-data.jsp">
-                                <h4>資料交換標準</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/rules-domain.jsp">
-                                <h4>領域資料標準</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="https://iot.wra.gov.tw/ScienceClassRoom.jsp">
-                            科普小教室
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            支援服務
-                        </a>
-                        <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/TopicList.jsp">
-                                <h4>意見反映</h4>
-                            </a>
-                            <a class="dropdown-item" href="https://iot.wra.gov.tw/FAQ.jsp">
-                                <h4>常見問題</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li><a href="https://iot.wra.gov.tw/WebMap.jsp" title="網站導覽">網站導覽</a></li>
-                    <li><a href="https://iot.wra.gov.tw/Login.jsp">登入</a></li>
-                    <li><a href="https://iot.wra.gov.tw/SignUp.jsp">註冊</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <a href="https://iot.wra.gov.tw/index.jsp">
-                    <img src="img/logo.jpg" alt="logo">
-                </a>
-            </div>
-        </div>
-    </nav>
+    <!--選單區-->  
+    <!-- navbar -->
+    <script src="js/navbar.js"></script>
 
     <!-- breadcrumb -->
     <div class="breadcrumb">
@@ -250,7 +52,7 @@
         <div class="container">
             <a href="https://iot.wra.gov.tw/DataStatistics.jsp#C" title="中央內容區塊" id="AC" accesskey="C">:::</a>
             <h1>資料使用統計</h1>
-            <h3>API 使用統計</h3>
+            <h2>API 使用統計</h2>
             <div id="div_Chart_TimeSeries">
                 <!-- 為ECharts準備一個具備大小寬高的DOM -->
                 <div id="main_TimeSeries"
@@ -279,7 +81,7 @@
                 </div>
                 <!-- ECharts单文件引入 -->
             </div>
-            <h3>API 使用次數排名(月)</h3>
+            <h2>API 使用次數排名(月)</h2>
             <div>
                 <select name="Q_Month" id="Q_Month" size="1" onchange="GetSummaryData(this.value);">
                     <option value="202205" selected="">202205</option>
@@ -324,57 +126,13 @@
                 <div id="lineChart_num" class="line-chart"></div>
             </div>
             <!--img src="img/api-ranking.jpg" alt="API呼叫排名">
-            <h3>API呼叫排名</h3-->
+            <h2>API呼叫排名</h2-->
         </div>
     </section>
+   
     <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <a href="https://iot.wra.gov.tw/DataStatistics.jsp#Z" id="AZ" title="下方功能區塊" accesskey="Z">:::</a>
-            <ul class="text-gp">
-                <li>
-                    <a href="https://iot.wra.gov.tw/information.jsp"><i class="fas fa-file-alt"></i>政府網站資料開放宣告</a>
-                </li>
-                <li>
-                    <a href="https://iot.wra.gov.tw/private.jsp"><i class="fas fa-file-alt"></i>隱私權保護政策</a>
-                </li>
-                <li>
-                    <a href="https://iot.wra.gov.tw/security.jsp"><i class="fas fa-file-alt"></i>網站安全政策</a>
-                </li>
-            </ul>
-            <div class="contact">
-                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=14">
-                    <i class="fas fa-map-marker-alt"></i>臺中辦公區
-                </a>
-                <p>電話：(04)2250-1250．(04)2250-1499．傳真：(04)2250-1628．40873臺中市南屯區黎明路2段501號
-                </p>
-                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=4">
-                    <i class="fas fa-map-marker-alt"></i>臺北辦公區
-                </a>
-                <p>電話：(02)3707-3000．(0800)212-239．傳真：(02)3707-3134．10651臺北市大安區信義路3段41-3號9-12樓
-                </p>
-                <a href="https://gic.wra.gov.tw/WRA_jsmap/API/mapPainterApi.aspx?id=15">
-                    <i class="fas fa-map-marker-alt"></i>新店辦公室
-                </a>
-                <p>電話：(02)8941-5026．23159新北市新店區安和路三段76號</p>
-            </div>
-            <div class="notice">
-                <div class="text-gp">
-                    <p>上班時間 彈性上班時間：08:00~09:00, 17:00~18:00﹔核心上班時間：09:00~12:30, 13:30~17:00</p>
-                    <p>聯絡方式：如有任何平台使用等問題，請與我們聯繫</p>
-                    <p>電話：(04)22501433，電子郵件：a21t100@wra.gov.tw，郭先生</p>
-                    <p>請使用IE第10版以上、Chrome、FireFox、Edge、Safari瀏覽器瀏覽．最後更新：2020/09/09</p>
-                </div>
-                <div class="pic">
-                    <a href="https://www.handicap-free.nat.gov.tw/Applications/Detail?category=20191015080446"><img
-                            src="img/aa2.png" alt="通過AA檢測等級無障礙網頁檢測"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <a href="https://iot.wra.gov.tw/DataStatistics.jsp#top">
-        <div class="back-top">▲</div>
-    </a>
+    <script src="js/footer.js"></script>
+
     <!-- bootstrap -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

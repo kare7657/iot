@@ -56,6 +56,15 @@ body {
             object-position: 70%;
         }
     }
+    .modal {
+        z-index: 1200;
+        .container {
+            padding-top: 0;
+        }
+    }
+    .modal-backdrop {
+        z-index: 1150;
+    }
     //關於平台
     .content-about {
         .container {
@@ -121,16 +130,19 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: start;
-                        color: $title-W;
+                        color: white;
                         font-size: 0.875rem;
                     }
                     .date {
                         font-size: 0.875rem;
                         color: $red;
                     }
-                    h4 {
-                        color: $title-BK;
+                    .title {
+                        color: black;
                         margin-bottom: 0;
+                        font-size: $size-h4;
+                        font-weight: bold;
+                        margin-top: $margin-XS;
                         @include mobile-L {
                             font-size: $size-p;
                         }
@@ -197,7 +209,7 @@ body {
         @include text-important();
         .container {
             .list-gp {
-                @include news-list(100%, 15%);
+                @include news-list(20%, 80%);
                 margin: $margin-S * 1.5 0;
             }
         }
@@ -301,13 +313,13 @@ body {
                     @include mobile-L() {
                         width: 100%;
                     }
-                    h3 {
+                    h2 {
                         background-color: $table-blue;
-                        padding: 0 $padding-XS;
+                        padding: 0 $padding-XXS;
                         margin: 0;
                     }
                     ul {
-                        padding: $padding-XS;
+                        padding: $padding-XXS;
                         padding-top: $padding-XXS;
                         list-style: none;
                         font-size: $size-p;
@@ -408,7 +420,7 @@ body {
                     text-align: center;
                 }
             }
-            h3 {
+            h2 {
                 text-align: center;
                 margin-top: $margin-XS;
             }
@@ -431,11 +443,13 @@ body {
                     .title {
                         background-color: $dark-blue;
                         border-radius: 10px;
-                        color: $title-W;
+                        color: white;
                         margin: 0;
                         margin-bottom: $margin-XS * 2;
                         padding: $padding-XXS;
                         text-align: center;
+                        font-size: $size-h4;
+                        font-weight: bold;
                     }
                     img {
                         width: 100%;
@@ -503,7 +517,7 @@ body {
                         }
                         .city-cn,
                         .city-tw {
-                            color: $title-W;
+                            color: white;
                             text-align: left;
                             font-weight: bold;
                         }
@@ -537,7 +551,8 @@ body {
                             .basin {
                                 stroke: #22b573;
                                 fill: #ddf6eb;
-                                &:hover {
+                                &:hover,
+                                &:focus {
                                     fill: $yellow;
                                 }
                             }
@@ -610,7 +625,7 @@ body {
                             background-color: $blue;
                             padding: 10px 15px;
                             text-align: right;
-                            color: $title-W;
+                            color: white;
                         }
                         td {
                             width: 55%;
@@ -638,7 +653,7 @@ body {
                         }
                         h3 {
                             margin: 0;
-                            color: $title-W;
+                            color: white;
                             padding: $padding-XXS/2 0;
                         }
                     }
@@ -662,7 +677,7 @@ body {
                         }
                         .station-name {
                             font-size: 1.625rem;
-                            color: $title-BK;
+                            color: black;
                             font-weight: bold;
                             line-height: $size-h1 * 2;
                         }
@@ -728,7 +743,7 @@ body {
                             background-color: $green;
                             padding: 10px 15px;
                             text-align: right;
-                            color: $title-W;
+                            color: white;
                         }
                         td {
                             width: 55%;
@@ -756,8 +771,9 @@ body {
                         }
                         h3 {
                             margin: 0;
-                            color: $title-W;
+                            color: white;
                             padding: $padding-XXS/2 0;
+                            text-align: center;
                         }
                     }
                     form {
@@ -783,7 +799,7 @@ body {
                         }
                         .station-name {
                             font-size: 1.625rem;
-                            color: $title-BK;
+                            color: black;
                             font-weight: bold;
                             line-height: $size-h1 * 2;
                         }
@@ -848,7 +864,7 @@ body {
         .fullmap-navbar {
             width: 100%;
             height: 50px;
-            background-color: $title-W;
+            background-color: white;
             position: fixed;
             display: flex;
             justify-content: flex-start;
@@ -887,14 +903,14 @@ body {
                 .items {
                     width: 100%;
                     height: 23.75%;
-                    border-bottom: solid 1px $title-W;
+                    border-bottom: solid 1px white;
                     display: flex;
                     flex-direction: row;
                     .title {
                         width: 70px;
                         margin: 0;
                         height: 100%;
-                        border-right: solid 1px $title-W;
+                        border-right: solid 1px white;
                         display: flex;
                         align-items: center;
                         flex-direction: column;
@@ -909,7 +925,7 @@ body {
                         h2 {
                             -webkit-writing-mode: vertical-lr;
                             writing-mode: vertical-lr;
-                            color: $title-W;
+                            color: white;
                             line-height: 70px;
                             letter-spacing: 5px;
                         }
@@ -931,7 +947,7 @@ body {
                             label {
                                 // width: 50%;
                                 margin: 0;
-                                color: $title-W;
+                                color: white;
                                 margin-right: $margin-XS;
                             }
                             input {
@@ -957,7 +973,7 @@ body {
                             label {
                                 margin: 0;
                                 padding: 0;
-                                color: $title-W;
+                                color: white;
                                 margin-left: $margin-XS/2;
                                 line-height: $size-p * 2;
                             }
@@ -969,7 +985,7 @@ body {
                 }
                 .bot {
                     height: 5%;
-                    background-color: $title-W;
+                    background-color: white;
                     padding: 0 $padding-XXS * 2;
                     display: flex;
                     justify-content: flex-end;
@@ -1017,7 +1033,7 @@ body {
                 &:hover {
                     background-color: $blue;
                     h2 {
-                        color: $title-W;
+                        color: white;
                     }
                 }
             }
@@ -1071,7 +1087,7 @@ body {
                         margin-bottom: $margin-S;
                     }
                     h3 {
-                        color: $title-BK;
+                        color: black;
                         margin: unset;
                     }
                     #flood-btn,
@@ -1260,6 +1276,14 @@ body {
                     text-align: center;
                 }
             }
+            .button-gp{
+                .icon-gp{
+                    h2{
+                        margin-bottom: 0;
+                        margin-top: $margin-XS;
+                    }
+                }
+            }
             .form-gp {
                 @include form();
                 background-color: transparent;
@@ -1272,6 +1296,10 @@ body {
                     @include pad() {
                         padding: 0;
                     }
+                    .acc-info {
+                        width: 100%;
+                        text-align: center;
+                    }
                     .icon-gp {
                         text-align: center;
                         img {
@@ -1283,7 +1311,7 @@ body {
                                 width: 20%;
                             }
                         }
-                        h3 {
+                        h2 {
                             margin: 0;
                             margin-bottom: $margin-S;
                         }
@@ -1292,7 +1320,7 @@ body {
                         width: 50%;
                         border-radius: 20px 0 0 20px;
                         background-color: $table-blue;
-                        border-right: solid 5px $title-W;
+                        border-right: solid 5px white;
                         padding: $padding-S 0;
                         @include pad {
                             border-radius: 20px 20px 0 0;
@@ -1306,7 +1334,7 @@ body {
                         padding: $padding-S 0;
                         @include pad {
                             border-radius: 0 0 20px 20px;
-                            border-top: solid 5px $title-W;
+                            border-top: solid 5px white;
                         }
                     }
                     .form-left,
@@ -1407,9 +1435,6 @@ body {
                 }
             }
             .notice {
-                h3 {
-                    text-align: center;
-                }
                 ul {
                     color: $text;
                     font-size: $size-p;
@@ -1784,7 +1809,7 @@ body {
                         &:hover {
                             background-color: $blue;
                             transition-duration: 0.5s;
-                            color: $title-W;
+                            color: white;
                         }
                     }
                 }
@@ -1900,7 +1925,7 @@ body {
                     }
                     &:hover {
                         background-color: $blue;
-                        color: $title-W;
+                        color: white;
                         transition-duration: 0.5s;
                     }
                     &[disabled] {
@@ -2040,7 +2065,7 @@ body {
                     input {
                         &[type="submit"] {
                             width: 30%;
-                            color: $title-W;
+                            color: white;
                             border: none;
                             @include mobile-L() {
                                 width: 100%;
@@ -2169,7 +2194,7 @@ body {
 
                 // 左欄清單
                 .left {
-                    @include collapse($dark-blue, $title-W);
+                    @include collapse($dark-blue, white);
                     width: 30%;
                     margin-right: $margin-M;
                     @include pad() {
@@ -2324,7 +2349,7 @@ body {
 
                 // 左欄清單
                 .left {
-                    @include collapse($dark-blue, $title-W);
+                    @include collapse($dark-blue, white);
                     width: 20%;
                     margin-right: $margin-M;
                     @include pad() {
@@ -2343,7 +2368,7 @@ body {
                     button {
                         width: 100%;
                         margin-bottom: $margin-XS * 2;
-                        background-color: $title-W;
+                        background-color: white;
                         border: solid 1px $dark-blue;
                         color: $dark-blue;
                         @include pad() {
@@ -2356,7 +2381,7 @@ body {
                     }
                     .active-btn {
                         background-color: $dark-blue;
-                        color: $title-W;
+                        color: white;
                     }
                 }
                 // 右欄內容
@@ -2403,7 +2428,7 @@ body {
                                 border-radius: unset;
                             }
                             p {
-                                color: $title-W;
+                                color: white;
                                 font-weight: bold;
                             }
                         }
@@ -2419,12 +2444,12 @@ body {
                             width: 10%;
                             .format-btn {
                                 background-color: $blue;
-                                color: $title-W;
+                                color: white;
                                 padding: 3px $padding-XS/2;
                                 border-radius: 8px;
                                 &:hover {
                                     background-color: $dark-blue;
-                                    color: $title-W !important;
+                                    color: white !important;
                                 }
                             }
                         }
@@ -2432,7 +2457,7 @@ body {
                             background-color: $table-blue;
                         }
                         .white {
-                            background-color: $title-W;
+                            background-color: white;
                         }
                         h4 {
                             text-align: right;
@@ -2504,6 +2529,9 @@ body {
                     }
                     @include mobile-L() {
                         width: 100%;
+                    }
+                    a {
+                        display: inline-block;
                     }
                     h3 {
                         margin: 0;
@@ -2588,7 +2616,7 @@ body {
                     button {
                         width: 32%;
                         margin-bottom: $margin-XS/2;
-                        background-color: $title-W;
+                        background-color: white;
                         border: solid 1px $dark-blue;
                         color: $dark-blue;
                         @include pad() {
@@ -2601,7 +2629,7 @@ body {
                     }
                     .active-btn {
                         background-color: $dark-blue;
-                        color: $title-W;
+                        color: white;
                     }
                 }
                 .menu-second {
@@ -2630,7 +2658,7 @@ body {
                     a {
                         color: $dark-blue;
                         &:active {
-                            color: $title-BK;
+                            color: black;
                         }
                     }
                     .fas {
@@ -2752,41 +2780,50 @@ body {
                                 left: 0%;
                                 width: 240px;
                                 height: 300px;
-                                h4 {
-                                    color: $title-BK;
+                                div {
+                                    color: black;
                                     font-weight: bold;
                                 }
-                                span {
+                                span{
                                     margin-left: $margin-XS;
-                                    color: $title-BK;
                                     font-weight: normal;
-                                }
-                                .percent {
-                                    font-size: $size-h1 * 1.8;
-                                    margin: 0;
-                                    font-family: arial, serif !important;
-                                }
+                                }                              
                                 .num1-1 {
                                     position: absolute;
                                     top: 20%;
                                     left: 15%;
+                                    font-size: $size-h4;
+                                    margin: $margin-XS 0;
+                                    line-height: 1.5;
                                 }
                                 .num1-2 {
                                     position: absolute;
                                     top: 30%;
                                     left: 15%;
+                                    font-size: $size-h4;
+                                    margin: $margin-XS 0;
+                                    line-height: 1.5;
                                 }
                                 .num1-3 {
                                     position: absolute;
                                     top: 53%;
                                     left: 15%;
+                                    font-size: $size-h4;
+                                    margin: $margin-XS 0;
+                                    line-height: 1.25;
+                                    .percent {
+                                        font-size: $size-h1 * 1.8;
+                                        margin: 0;
+                                        font-family: arial, serif !important;
+                                    }
+                                    div {
+                                        font-size: $size-p;
+                                        margin-left: 0;
+                                        color: black;
+                                        font-weight: normal;
+                                    }
                                 }
-                                div {
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    color: rgba($color: $title-BK, $alpha: 0.7);
-                                    letter-spacing: 1px;
-                                }
+                               
                             }
                         }
                     }
@@ -2878,7 +2915,8 @@ body {
                         height: 25px;
                         display: flex;
                         justify-content: space-between;
-                        .date,input {
+                        .date,
+                        input {
                             text-align: center;
                             padding: 0 $padding-XXS;
                             line-height: 23px;
@@ -2898,12 +2936,18 @@ body {
                             justify-content: center;
                             border-radius: 0px !important;
                         }
+                        input[type="date"] {
+                            opacity: 1;
+                            pointer-events: auto;
+                            cursor: pointer;
+                            z-index: 10;
+                        }
                     }
                     table {
                         line-height: $size-p * 2;
                         thead {
                             th {
-                                color: $title-W;
+                                color: white;
                                 background-color: $blue;
                                 text-align: center;
                                 border-radius: 5px;
@@ -2928,7 +2972,7 @@ body {
                                 }
                             }
                             span {
-                                color: $title-BK;
+                                color: black;
                             }
                         }
                     }
@@ -2994,7 +3038,7 @@ body {
                     button {
                         width: 32%;
                         margin-bottom: $margin-XS/2;
-                        background-color: $title-W;
+                        background-color: white;
                         border: solid 1px $dark-blue;
                         color: $dark-blue;
                         @include pad() {
@@ -3007,13 +3051,13 @@ body {
                     }
                     .active-btn {
                         background-color: $dark-blue;
-                        color: $title-W;
+                        color: white;
                     }
                 }
                 .menu-second {
                     width: 100%;
                     padding: $padding-XXS 0 $padding-XXS/2 0;
-                    margin-bottom: $margin-S * 1.5;
+                    margin-bottom: $margin-XS;
                     border-bottom: solid 1px $light-sky;
                     list-style: none;
                     display: none;
@@ -3036,7 +3080,7 @@ body {
                     a {
                         color: $dark-blue;
                         &:active {
-                            color: $title-BK;
+                            color: black;
                         }
                     }
                     .fas {
@@ -3051,8 +3095,8 @@ body {
                 width: 100%;
                 display: none;
                 position: relative;
-                margin-top: $margin-S * 1.5;
                 border-bottom: solid 1px $light-sky;
+                margin-top: $margin-S;
                 &:last-child {
                     border-bottom: none;
                     .water-explain {
@@ -3062,16 +3106,19 @@ body {
                 .title {
                     display: flex;
                     justify-content: start;
-                    h3 {
+                    align-items: center;
+                    margin: $margin-XS 0;
+                    h2 {
                         margin: 0;
                         margin-right: $margin-S;
+                        // line-height: initial;
                     }
                     .date-gp {
                         display: flex;
                         justify-content: space-between;
                         width: 170px;
-                        height: 25px;
-                        margin-top: $margin-XS;
+                        height: 100%;
+                        max-height: 25px;
 
                         .date {
                             text-align: center;
@@ -3158,7 +3205,7 @@ body {
                     table {
                         width: 200px;
                         line-height: $size-p * 1.6;
-                        background-color: $title-W;
+                        background-color: white;
                         th {
                             width: 70%;
                         }
@@ -3172,7 +3219,7 @@ body {
                                     text-align: center;
                                 }
                                 th {
-                                    color: $title-W;
+                                    color: white;
                                     background-color: $blue;
                                     text-align: center;
                                     border: solid 1px $blue;
@@ -3206,7 +3253,7 @@ body {
                                 }
                             }
                             span {
-                                color: $title-BK;
+                                color: black;
                             }
                         }
                     }
@@ -3458,6 +3505,9 @@ body {
                     border-radius: 10px;
                     padding: $padding-XS/1.5 $padding-S/1.5;
                     margin-bottom: $margin-M;
+                    h3{
+                        margin: 0;
+                    }
                     p {
                         line-height: $size-p * 1.5;
                     }

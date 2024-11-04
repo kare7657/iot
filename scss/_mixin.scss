@@ -51,7 +51,7 @@
     }
     h1 {
         font-size: $size-h1;
-        color: $title-BK;
+        color: black;
         padding: 0;
         margin: 0;
         margin-bottom: $margin-XS;
@@ -155,6 +155,13 @@
     h6 {
         font-weight: bold;
     }
+    .acc-info {
+        margin-bottom: $margin-S;
+        color: black;
+        i {
+            margin-right: 6px;
+        }
+    }
     section {
         width: 100%;
     }
@@ -176,7 +183,7 @@
         height: 40px;
         border-radius: 5px;
         border: solid 1px $light-sky;
-        background-color: $title-W;
+        background-color: white;
         color: $text;
         padding: 0 $padding-XXS;
         font-size: $size-p;
@@ -193,7 +200,7 @@
             width: 100%;
             height: 40px;
             background-color: $dark-blue;
-            color: $title-W;
+            color: white;
             font-size: $size-h4;
             font-weight: bold;
             line-height: 40px;
@@ -293,7 +300,7 @@
         border: solid 1px $light-sky;
         background: url("../img/chevron-down-solid.svg") no-repeat scroll transparent;
         background-position: 97% center;
-        background-color: $title-W;
+        background-color: white;
         color: $text;
         padding: 0 $padding-XXS;
 
@@ -314,7 +321,7 @@
         border-radius: 8px;
         border: none;
         font-size: $size-h4;
-        color: $title-W;
+        color: white;
         font-weight: bold;
         &:hover {
             background-color: $blue;
@@ -342,7 +349,7 @@
         }
         &:hover {
             background-color: $blue;
-            color: $title-W;
+            color: white;
             transition-duration: 0.5s;
         }
         &[disabled] {
@@ -526,7 +533,7 @@
                     &[type="reset"] {
                         height: 40px;
                         background-color: $dark-blue;
-                        color: $title-W;
+                        color: white;
                         font-size: $size-h4;
                         font-weight: bold;
                         border: none;
@@ -551,7 +558,7 @@
                         text-align: center;
                         &:hover {
                             background-color: $blue;
-                            color: $title-W;
+                            color: white;
                             border: solid 1px $blue;
                         }
                     }
@@ -606,7 +613,7 @@
                 }
                 .active {
                     background-color: $dark-blue;
-                    color: $title-W;
+                    color: white;
                     border: solid 1px $dark-blue;
                 }
                 .fas {
@@ -624,7 +631,7 @@
     height: 40px;
     padding: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 1100;
     background-color: #fff;
     @include pad() {
         display: none;
@@ -659,7 +666,7 @@
                 padding: 0 8px;
                 margin: 0;
                 display: inline;
-                color: $title-W;
+                color: white;
             }
         }
     }
@@ -696,9 +703,9 @@
             img {
                 width: 100%;
             }
-            h4 {
+            .title {
                 font-size: $size-h4;
-                color: $title-W;
+                color: white;
                 margin: 0;
                 padding: 0;
                 line-height: 80px;
@@ -707,14 +714,14 @@
         .navbar-R {
             width: 75%;
             height: 100%;
-            color: $title-W;
+            color: white;
             display: flex;
             justify-content: flex-end;
             position: relative;
             @include web-S() {
                 margin-right: $margin-S;
             }
-            h4 {
+            .title {
                 font-size: $size-h4;
                 color: $title-D;
                 margin: 0;
@@ -722,7 +729,8 @@
                 margin-right: 20px;
                 line-height: 80px;
                 display: inline;
-                @include web-S{
+                font-weight: bold;
+                @include web-S {
                     font-size: $size-p;
                 }
             }
@@ -747,11 +755,12 @@
                 padding: 0 20px 10px 20px;
                 background-color: rgba($color: #1480be, $alpha: 1);
 
-                h4 {
+                .title {
                     margin: 0;
                     padding: 0;
                     line-height: $size-h4 * 2.5;
-                    color: $title-W;
+                    color: white;
+                    font-weight: bold;
                     &:hover {
                         color: $light-sky;
                     }
@@ -788,28 +797,36 @@
                 top: 60px;
                 left: -100vw;
                 margin: 0;
-                padding: 40px 0 0 0;
+                padding: 0;
                 text-align: center;
                 transition-duration: 0.7s;
                 .nav-item.dropdown {
                     .dropdown-menu {
                         background-color: $dark-blue;
-                        color: $title-W;
+                        color: white;
                         text-align: center;
+                        padding: 0;
+                        margin: 0;
                         .dropdown-item {
-                            padding: 15px 0;
+                            padding: 8px 0;
+                            &:focus {
+                                background-color: white;
+                                div {
+                                    color: $title-D !important;
+                                }
+                            }
                         }
-                    }
-                    .nav-link.dropdown-toggle {
-                        padding: 5px 0;
                     }
                 }
             }
-            h4 {
-                color: $light-sky;
+            .title {
+                color: white;
+                font-size: $size-h4;
+                font-weight: bold;
             }
             a {
-                color: $title-W;
+                color: white;
+                display: block;
             }
             .active-ul {
                 display: inline-block;
@@ -827,12 +844,10 @@
         .title {
             display: flex;
             justify-content: center;
-            h4 {
-                font-size: $size-h4;
-                color: $title-W;
-                line-height: 60px;
-                margin: 0;
-            }
+            font-size: $size-h4;
+            color: white;
+            line-height: 60px;
+            margin: 0;
         }
         .logo {
             width: 100%;
@@ -894,7 +909,7 @@
                 color: $text;
             }
             span {
-                color: $title-BK;
+                color: black;
             }
         }
     }
@@ -946,7 +961,7 @@
         .contact {
             margin: $margin-S 0;
             p {
-                color: $title-W;
+                color: white;
                 margin-top: 3px;
                 margin-bottom: 10px;
                 @include mobile-L() {
@@ -999,7 +1014,7 @@
             }
             h4,
             p {
-                color: $title-W;
+                color: white;
             }
         }
     }
@@ -1076,10 +1091,16 @@
         background-color: $table-blue;
     }
     .white {
-        background-color: $title-W;
+        background-color: white;
     }
-    h4 {
+    .w-100 {
         text-align: right;
+        a {
+            font-size: $size-h4;
+            color: $title-D;
+            font-weight: bold;
+            line-height: 2;
+        }
     }
 }
 
@@ -1168,7 +1189,7 @@
         }
         span {
             text-align: center;
-            color: $title-W;
+            color: white;
             font-size: $size-p;
             font-weight: bold;
             line-height: $size-p * 2;
@@ -1187,7 +1208,7 @@
         background-color: rgba($color: $main-color, $alpha: 0.1);
     }
     .white {
-        background-color: $title-W;
+        background-color: white;
     }
     h4 {
         text-align: right;
@@ -1221,7 +1242,7 @@
             background-color: $blue;
             padding: 3px 10px;
             border-radius: 10px;
-            color: $title-W;
+            color: white;
             font-size: 0.875rem;
             line-height: 0.875rem * 2;
         }
@@ -1272,7 +1293,7 @@
                         text-align: center;
                         padding: $padding-XXS 0;
                         span {
-                            color: $title-W;
+                            color: white;
                             font-size: $size-p;
                             font-weight: bold;
                             line-height: $size-p * 1.5;
@@ -1298,7 +1319,7 @@
                         background-color: rgba($color: $main-color, $alpha: 0.1);
                     }
                     .white {
-                        background-color: $title-W;
+                        background-color: white;
                     }
                 }
             }
@@ -1350,6 +1371,11 @@
         }
         @include mobile-L() {
             padding: $padding-XS;
+        }
+        .agency{
+            font-size: $size-h4;
+            color: $title-D;
+            font-weight: bold;
         }
     }
     .app {
@@ -1435,7 +1461,7 @@
                     width: 100%;
                     height: 40px;
                     background-color: $dark-blue;
-                    color: $title-W;
+                    color: white;
                     font-size: $size-h4;
                     font-weight: bold;
                     line-height: 40px;
@@ -1463,7 +1489,7 @@
                     margin-top: $margin-XS * 2;
                     &:hover {
                         background-color: $blue;
-                        color: $title-W;
+                        color: white;
                         border: solid 1px $blue;
                     }
                 }
@@ -1548,7 +1574,7 @@
                 line-height: $size-h4;
                 margin: $margin-XS 0;
             }
-            .h4 {
+            .title {
                 color: $dark-blue;
                 font-size: $size-h4;
                 font-weight: bold;
@@ -1592,7 +1618,7 @@
         }
         h3 {
             margin: 0;
-            color: $title-W;
+            color: white;
         }
         img {
             @include mobile-L() {
@@ -1694,7 +1720,7 @@
             border-radius: unset;
         }
         p {
-            color: $title-W;
+            color: white;
             font-weight: bold;
         }
     }
@@ -1711,7 +1737,7 @@
         background-color: $table-blue;
     }
     .white {
-        background-color: $title-W;
+        background-color: white;
     }
     h4 {
         text-align: right;
