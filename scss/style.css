@@ -2467,6 +2467,7 @@ body .content-information-display .container .river-gp .cityflood-info .title h3
   margin: 0;
   color: white;
   padding: 5px 0;
+  text-align: center;
 }
 html .content-information-display .container .cityflood-gp .cityflood-info form .form-gp,
 html .content-information-display .container .river-gp .cityflood-info form .form-gp,
