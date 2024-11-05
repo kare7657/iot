@@ -43,6 +43,7 @@
             padding: $padding-S 0;
         }
         @include mobile-L() {
+            width: 90%;
             padding: $padding-XS 0;
         }
         @include mobile-XS() {
@@ -312,7 +313,8 @@
         }
     }
     .form-control {
-        background-color: rgba($color: $dark-blue, $alpha: 0.2) !important;
+        background-color: $light-gray !important;
+        cursor: not-allowed;
     }
     //按鈕
     button {
@@ -758,8 +760,8 @@
                 border-radius: 0 0 8px 8px;
                 padding: 0 20px 10px 20px;
                 background-color: $dark-blue;
-                // outline: solid 1px rgba($color: white, $alpha: 0.2);
-                // box-shadow: 5px 5px 10px rgba($color: white, $alpha: 0.1);
+                outline: solid 1px rgba($color: white, $alpha: 0.2);
+                box-shadow: 5px 5px 10px rgba($color: black, $alpha: 0.1);
                 .title {
                     margin: 0;
                     padding: 0;
@@ -832,6 +834,9 @@
             a {
                 color: white;
                 display: block;
+                &:hover {
+                    color: white !important;
+                }
             }
             .active-ul {
                 display: inline-block;
@@ -876,11 +881,8 @@
     position: absolute;
     top: 150px;
     @include pad() {
-        top: 80px;
-        background-color: $table-blue;
-    }
-    @include mobile-L() {
         top: 60px;
+        background-color: $table-blue;
     }
     .container {
         padding: 0;
@@ -1111,7 +1113,7 @@
 @mixin papers() {
     padding-top: 120px;
     @include pad() {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     h1 {
         margin: 30px 0;
