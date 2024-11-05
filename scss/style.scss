@@ -82,7 +82,7 @@ body {
                     margin-right: unset;
                 }
                 h1 {
-                    color: $title-D;
+                    color: $dark-blue;
                 }
             }
             .notice-text {
@@ -441,7 +441,7 @@ body {
                         display: none;
                     }
                     .title {
-                        background-color: $dark-blue;
+                        background-color: $blue;
                         border-radius: 10px;
                         color: white;
                         margin: 0;
@@ -484,11 +484,12 @@ body {
                             display: none;
                         }
                         h2 {
-                            color: $light-sky;
+                            color: white;
                             line-height: $size-h2;
+                            text-align: left;
                         }
                         .river-h2 {
-                            color: $light-green;
+                            color: white;
                         }
                         .city-cn {
                             font-size: 2.5rem;
@@ -507,7 +508,8 @@ body {
                             }
                         }
                         h3 {
-                            color: $yellow;
+                            color: white;
+                            // background-color: $yellow;
                             text-align: left;
                             line-height: $size-h3 * 1.5;
                             @include pad() {
@@ -541,7 +543,15 @@ body {
                             }
                         }
                     }
+                    #taiwan_map{
+                        rect{
+                            fill: $blue !important;
+                        }
+                    }
                     #river_map {
+                        rect {
+                            fill: $green !important;
+                        }
                         .all {
                             transform: translate(43%, 6%);
                             .basin,
@@ -586,7 +596,7 @@ body {
                 }
                 @include mobile-L() {
                     margin: unset;
-                }
+                }               
                 //都市淹水感知器
                 .cityflood-map {
                     width: 70%;
@@ -692,7 +702,7 @@ body {
                             font-size: 3.125rem;
                             line-height: 3.125rem * 1.5;
                             font-weight: bold;
-                            color: $blue;
+                            color: $dark-blue;
                             margin-bottom: $margin-S * 1.5;
                         }
                         //抽水站數字
@@ -710,7 +720,7 @@ body {
                 .river-map {
                     width: 70%;
                     min-height: 750px;
-                    background-color: rgba($color: $green, $alpha: 0.5);
+                    background-color: $light-gray;
                     margin-right: $margin-S;
                     border-radius: 20px;
                     @include pad() {
@@ -755,7 +765,7 @@ body {
                 }
                 .river-info {
                     width: 30%;
-                    background-color: rgba($color: $green, $alpha: 0.1);
+                    background-color: $table-green;
                     border-radius: 20px;
                     @include pad() {
                         width: 100%;
@@ -785,7 +795,7 @@ body {
                                 width: 100%;
                                 font-size: $size-h4;
                                 font-weight: bold;
-                                color: $green;
+                                color: $dark-green;
                             }
                             select {
                                 border: solid 1px rgba($color: $green, $alpha: 0.5);
@@ -814,7 +824,7 @@ body {
                             font-size: 3.125rem;
                             line-height: 3.125rem * 1.5;
                             font-weight: bold;
-                            color: $green;
+                            color: $dark-green;
                             margin-bottom: $margin-S * 1.5;
                         }
                         span {
@@ -825,14 +835,14 @@ body {
                 }
                 //警告
                 .warn {
-                    background-color: rgba($color: $red, $alpha: 0.1);
+                    background-color: $table-red;
                     .title {
                         background-color: $red;
                     }
                     form {
                         .form-gp {
                             label {
-                                color: $text;
+                                color: $red;
                             }
                             select {
                                 border: solid 1px rgba($color: $text, $alpha: 0.3);
@@ -1277,9 +1287,9 @@ body {
                     text-align: center;
                 }
             }
-            .button-gp{
-                .icon-gp{
-                    h2{
+            .button-gp {
+                .icon-gp {
+                    h2 {
                         margin-bottom: 0;
                         margin-top: $margin-XS;
                     }
@@ -1895,7 +1905,7 @@ body {
                 .bot {
                     p {
                         text-align: right;
-                        color: rgba($color: $text, $alpha: 0.5);
+                        color: $text;
                         margin-top: $margin-S;
                         @include mobile-L() {
                             text-align: left;
@@ -2002,7 +2012,7 @@ body {
                 .c3 {
                     width: 15%;
                     p {
-                        color: rgba($color: $text, $alpha: 0.5);
+                        color: $text;
                     }
                 }
             }
@@ -2432,6 +2442,11 @@ body {
                                 color: white;
                                 font-weight: bold;
                             }
+                            div {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                            }
                         }
                         .c1 {
                             width: 35%;
@@ -2785,10 +2800,10 @@ body {
                                     color: black;
                                     font-weight: bold;
                                 }
-                                span{
+                                span {
                                     margin-left: $margin-XS;
                                     font-weight: normal;
-                                }                              
+                                }
                                 .num1-1 {
                                     position: absolute;
                                     top: 20%;
@@ -2824,7 +2839,6 @@ body {
                                         font-weight: normal;
                                     }
                                 }
-                               
                             }
                         }
                     }
@@ -3506,7 +3520,7 @@ body {
                     border-radius: 10px;
                     padding: $padding-XS/1.5 $padding-S/1.5;
                     margin-bottom: $margin-M;
-                    h3{
+                    h3 {
                         margin: 0;
                     }
                     p {
