@@ -597,7 +597,8 @@ body {
                     margin-top: $margin-M;
                 }
                 @include mobile-L() {
-                    margin: unset;
+                    margin-top: $margin-XS;
+                    padding: 0;
                 }
                 //都市淹水感知器
                 .cityflood-map {
@@ -1116,6 +1117,12 @@ body {
                             }
                         }
                     }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        max-width: 100px;
+                        object-fit: contain;
+                    }
                 }
             }
             // 右欄
@@ -1220,11 +1227,13 @@ body {
                     @include mobile-L() {
                         flex-wrap: wrap;
                         flex-direction: column;
+                        margin: $margin-S 0;
                     }
                     button {
                         margin: 0 $margin-XS;
                         @include mobile-L() {
-                            margin-bottom: $margin-XS;
+                            margin: 0;
+                            margin-bottom: $margin-XS * 1.5;
                         }
                     }
                 }
@@ -1478,7 +1487,7 @@ body {
                     padding: $padding-XS 0;
                     text-align: center;
                     @include mobile-L {
-                        width: 80%;
+                        width: 100%;
                         margin-bottom: $margin-S;
                         display: flex;
                         justify-content: center;
@@ -1702,13 +1711,13 @@ body {
             .notice {
                 border: solid 3px $light-sky;
                 border-radius: 20px;
-                padding: $padding-XS * 1.5 $padding-S;
+                padding: $padding-XS $padding-S;
                 margin-bottom: $margin-M;
                 @include mobile-L() {
-                    padding: $padding-XS $padding-XS * 1.5;
+                    padding: 0;
                     border: unset;
                     border-radius: unset;
-                    margin-bottom: $margin-XS;
+                    margin-bottom: $margin-S;
                 }
                 .top {
                     width: 100%;
@@ -1769,7 +1778,7 @@ body {
                 @include mobile-L() {
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    padding: 0 $padding-XS * 1.5;
+                    padding: 0;
                 }
                 label {
                     font-size: $size-h4;
@@ -1832,7 +1841,7 @@ body {
             }
             .pagination {
                 @include mobile-L() {
-                    padding: 0 $padding-XS * 1.5;
+                    width: 100%;
                 }
             }
         }
@@ -2136,7 +2145,7 @@ body {
                 margin-bottom: $margin-M;
                 transition: 0.5s;
                 @include mobile-L() {
-                    padding: $padding-XS $padding-XS * 1.5;
+                    padding: $padding-XS $padding-XS;
                     border: unset;
                     border-radius: unset;
                     margin-bottom: $margin-S;
@@ -2217,7 +2226,7 @@ body {
                         padding: unset;
                     }
                     @include mobile-L() {
-                        padding: 0 $padding-XS * 1.5;
+                        padding: 0 ;
                     }
                     .searchbar {
                         @include searchbar();
@@ -2230,6 +2239,7 @@ body {
                             }
                         }
                         @include mobile-L() {
+                            margin-bottom: $margin-S ;
                             input[type="search"] {
                                 width: 90%;
                                 &:focus {
@@ -2247,71 +2257,76 @@ body {
                         width: 100%;
                         margin-top: unset;
                     }
-                    .text-gp {
-                        margin-bottom: $margin-S;
-                        @include mobile-L() {
-                            padding: 0 $padding-XS * 1.5;
-                            #pad-pd {
-                                padding: 0 $padding-XS * 1.5;
-                            }
-                        }
-                        h3 {
-                            margin-bottom: 5px;
-                        }
-                        p {
-                            text-align: left;
-                        }
-                        pre {
-                            padding: $padding-XS;
-                            border: solid 2px $light-sky;
-                            border-radius: 10px;
-                            color: $text;
-                            font-size: $size-p;
-                            line-height: $size-p * 2;
-                            text-align: left;
-                            margin-top: $margin-XS;
+                    .example-content {
+                        .text-gp {
+                            margin-bottom: $margin-S;
                             @include mobile-L() {
-                                padding: $padding-XS;
-                                border: unset;
-                                border-radius: unset;
-                                background-color: $table-blue;
+                                padding: 0 ;
+                                #pad-pd {
+                                    padding: 0;
+                                }
                             }
-                        }
-                        .list-gp {
-                            @include news-list(100%, 30%);
-                            word-wrap: break-word;
-                            .list {
-                                padding: $padding-XXS $padding-XS;
+                            h2 {
+                                margin-bottom: 5px;
+                            }
+                            p {
+                                text-align: left;
+                            }
+                            pre {
+                                padding: $padding-XS;
                                 border: solid 2px $light-sky;
                                 border-radius: 10px;
-                                margin-bottom: $margin-XS;
-                                @include pad() {
-                                    padding: $padding-XXS $padding-XXS * 2;
-                                }
-                                span {
-                                    text-align: left;
-                                    margin-right: $margin-S;
-                                    padding: 0;
-                                    margin: 0;
-                                    @include pad() {
-                                        width: 100%;
-                                    }
-                                }
-                                p {
-                                    width: 100%;
-                                    text-align: justify;
+                                color: $text;
+                                font-size: $size-p;
+                                line-height: $size-p * 2;
+                                text-align: left;
+                                margin-top: $margin-XS;
+                                @include mobile-L() {
+                                    padding: $padding-XS;
+                                    border: unset;
+                                    border-radius: unset;
+                                    background-color: $table-blue;
                                 }
                             }
-                        }
-                        .btn {
-                            padding-left: 0;
-                            @include pad() {
+                            .list-gp {
+                                @include news-list(100%, 30%);
+                                word-wrap: break-word;
+                                .list {
+                                    padding: $padding-XXS $padding-XS;
+                                    border: solid 2px $light-sky;
+                                    border-radius: 10px;
+                                    margin-bottom: $margin-XS;
+                                    @include pad() {
+                                        padding: $padding-XXS $padding-XXS * 2;
+                                    }
+                                    span {
+                                        text-align: left;
+                                        margin-right: $margin-S;
+                                        padding: 0;
+                                        margin: 0;
+                                        @include pad() {
+                                            width: 100%;
+                                        }
+                                    }
+                                    p {
+                                        width: 100%;
+                                        text-align: justify;
+                                    }
+                                }
+                            }
+                            .btn {
+                                padding-left: 0;
+                                @include pad() {
+                                    padding: 0;
+                                }
+                            }
+                            .text-gp {
                                 padding: 0;
                             }
                         }
-                    }
-                    .pd0 {
-                        padding: 0;
+                        .pd0 {
+                            padding: 0;
+                        }
                     }
                 }
             }
@@ -2346,7 +2361,7 @@ body {
                 @include mobile-L() {
                     input[type="search"] {
                         width: 65%;
-                        margin: 0 $padding-XS * 1.5;
+                        margin: 0 $margin-S;
                         &:focus {
                             width: 100%;
                         }
@@ -2375,7 +2390,7 @@ body {
                         justify-content: space-between;
                     }
                     @include mobile-L() {
-                        padding: 0 $padding-XS * 1.5;
+                        padding: 0 $margin-S;
                         flex-direction: column;
                     }
                     button {
@@ -2406,6 +2421,9 @@ body {
                     .share-list {
                         display: none;
                         margin-bottom: $margin-S * 1.5;
+                        @include mobile-L {
+                            margin: 0 $margin-S;
+                        }
                         .list {
                             display: flex;
                             padding: $padding-XXS $padding-XS;
@@ -2415,7 +2433,7 @@ body {
                             }
                             @include mobile-L() {
                                 flex-wrap: wrap;
-                                padding: $padding-XXS $padding-XS * 1.5;
+                                padding: $padding-XXS $padding-XS;
                                 .c1 {
                                     width: 70%;
                                     padding-right: $padding-XXS;
