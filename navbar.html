@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <noscript>
+        <p style='color:red;font-size: xx-large !important;'>您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態</p>
+    </noscript>
     <!-- 跳到主要內容區塊 -->
     <div class="for_accessibility">
         <a href="#AC" class="go-main" title="跳到主要內容區塊" tabindex="1">跳到主要內容區塊</a>
@@ -151,9 +154,10 @@
         </div>
         <div class="mobile">
             <div class="menu">
-                <div class="fas fa-bars">
+                <div class="fas fa-bars" role="button" tabindex="0" aria-label="開啟選單" aria-controls="main-menu"
+                    aria-expanded="false">
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="main-menu" aria-hidden="true">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -295,7 +299,46 @@
                 navbar_nav.classList.add("active-ul")
             }
         }
+        // 鍵盤可操作
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.fas.fa-bars');
+            const mainMenu = document.getElementById('main-menu');
+
+            const setMenuFocusable = (isFocusable) => {
+                const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
+                menuItems.forEach(item => {
+                    if (isFocusable) {
+                        item.removeAttribute('tabindex'); // 恢復原始聚焦能力
+                    } else {
+                        item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+                    }
+                });
+            };
+
+            // 初始設置，隱藏選單時不可聚焦
+            setMenuFocusable(false);
+
+            menuToggle.addEventListener('click', function () {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+                // 切換屬性值
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainMenu.setAttribute('aria-hidden', isExpanded);
+
+                // 控制選單項目是否可聚焦
+                setMenuFocusable(!isExpanded);
+            });
+
+            // 鍵盤支持（Enter 或空格鍵）
+            menuToggle.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // 防止滾動
+                    menuToggle.click(); // 觸發點擊事件
+                }
+            });
+        });
     </script>
+
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

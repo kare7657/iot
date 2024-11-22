@@ -41,15 +41,15 @@
             </form>
             <div class="example-body">
                 <div class="left">
-                    <button class="btn1 active-btn" type="button">水資源物聯網相關</button>
-                    <button class="btn2" type="button">外部開源專案</button>
-                    <button class="btn3" type="button">水利演算模式</button>
+                    <button class="btn1 active-btn" type="button" role="tab" aria-selected="true">水資源物聯網相關</button>
+                    <button class="btn2" type="button" role="tab">外部開源專案</button>
+                    <button class="btn3" type="button" role="tab">水利演算模式</button>
                 </div>
                 <div class="right">
                     <!-- 右欄內容 -->
                     <div class="example-content">
                         <!-- 水資源物聯網相關 -->
-                        <div class="share-list list1 active" id="list1" role="table">
+                        <!-- <div class="share-list list1 active" id="list1" role="table">
                             <div class="list head" role="rowgroup">
                                 <div role="row">
                                     <p class="c1" role="columnheader">類別</p>
@@ -70,7 +70,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <table class="table-default mb-separate active" id="list1">
+                            <thead class="list head">
+                                <tr>
+                                    <th class="c1" scope="col" style="width: 30%;">類別</th>
+                                    <th class="c2" scope="col" style="width: 45%;">說明</th>
+                                    <th class="c3" scope="col" style="width: 20%;">檔案下載</th>
+                                </tr>
+                            </thead>
+                            <tbody class="list-gp">
+                                <tr class="list blue">
+                                    <td class="c1" data-title="類別">
+                                        https://10.57.234.147/uswg/stations
+                                    </td>
+                                    <td class="c2" data-title="說明">
+                                        說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明
+                                    </td>
+                                    <td class="c3" data-title="檔案下載">
+                                        <a class="format-btn" href="">ZIP</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <!-- 外部開源專案 -->
                         <div class="share-list list2" id="list2" role="table">
                             <div class="list head" role="rowgroup">
@@ -182,6 +204,44 @@
                 navbar_nav.classList.add("active-ul")
             }
         }
+        // 鍵盤可操作
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.fas.fa-bars');
+            const mainMenu = document.getElementById('main-menu');
+
+            const setMenuFocusable = (isFocusable) => {
+                const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
+                menuItems.forEach(item => {
+                    if (isFocusable) {
+                        item.removeAttribute('tabindex'); // 恢復原始聚焦能力
+                    } else {
+                        item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+                    }
+                });
+            };
+
+            // 初始設置，隱藏選單時不可聚焦
+            setMenuFocusable(false);
+
+            menuToggle.addEventListener('click', function () {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+                // 切換屬性值
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainMenu.setAttribute('aria-hidden', isExpanded);
+
+                // 控制選單項目是否可聚焦
+                setMenuFocusable(!isExpanded);
+            });
+
+            // 鍵盤支持（Enter 或空格鍵）
+            menuToggle.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // 防止滾動
+                    menuToggle.click(); // 觸發點擊事件
+                }
+            });
+        });
     </script>
 
     <!-- collapse -->

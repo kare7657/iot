@@ -34,7 +34,8 @@
             <a href="#C" title="中央內容區塊" id="AC" accesskey="C">:::</a>
             <h1>FAQ</h1>
             <div class="collapse-gp">
-                <button class="collapsible" role="button" aria-expanded="false" aria-label="如何註冊會員 - 已收合">如何註冊會員</button>
+                <button class="collapsible" role="button" aria-expanded="false"
+                    aria-label="如何註冊會員 - 已收合">如何註冊會員</button>
                 <div class="content">
                     <p>點選<a href="sign-up.html">註冊</a>填寫會員資料後，系統會寄送一封註冊成功的信件至您填寫的信箱，點選信中的連結驗證成功後即可<a
                             href="login.html">登入</a>會員
@@ -110,10 +111,48 @@
                 navbar_nav.classList.add("active-ul")
             }
         }
+        // 鍵盤可操作
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.fas.fa-bars');
+            const mainMenu = document.getElementById('main-menu');
+
+            const setMenuFocusable = (isFocusable) => {
+                const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
+                menuItems.forEach(item => {
+                    if (isFocusable) {
+                        item.removeAttribute('tabindex'); // 恢復原始聚焦能力
+                    } else {
+                        item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+                    }
+                });
+            };
+
+            // 初始設置，隱藏選單時不可聚焦
+            setMenuFocusable(false);
+
+            menuToggle.addEventListener('click', function () {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+                // 切換屬性值
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainMenu.setAttribute('aria-hidden', isExpanded);
+
+                // 控制選單項目是否可聚焦
+                setMenuFocusable(!isExpanded);
+            });
+
+            // 鍵盤支持（Enter 或空格鍵）
+            menuToggle.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // 防止滾動
+                    menuToggle.click(); // 觸發點擊事件
+                }
+            });
+        });
     </script>
 
     <!-- collapse -->
-    <script>
+    <!-- <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
 
@@ -128,7 +167,58 @@
                 }
             });
         }
+    </script> -->
+
+    <!-- collapse 收合選單避免 focus -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+
+        // 初始化所有收合選單的狀態
+        window.onload = function () {
+            var content = document.querySelectorAll('.content');
+            content.forEach(function (item) {
+                item.style.maxHeight = null; // 確保所有內容初始為收合狀態
+                item.setAttribute("aria-hidden", "true");  // 設置 aria-hidden 屬性
+                item.querySelectorAll("a").forEach(function (link) {
+                    link.setAttribute("tabindex", "-1");  // 禁止收合狀態下的鏈接獲得焦點
+                });
+            });
+
+            // 設定按鈕的初始 aria-expanded 狀態
+            var buttons = document.querySelectorAll(".collapsible");
+            buttons.forEach(function (button) {
+                button.setAttribute("aria-expanded", "false");
+            });
+        };
+
+        // 處理所有可展開收合的按鈕
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");  // 切換 active 類別
+                var content = this.nextElementSibling;  // 獲取對應的內容區域
+                var isExpanded = this.getAttribute("aria-expanded") === "true";  // 確認是否已展開
+
+                if (isExpanded) {
+                    // 收合內容
+                    content.style.maxHeight = null;
+                    content.setAttribute("aria-hidden", "true");
+                    this.setAttribute("aria-expanded", "false");
+                    content.querySelectorAll("a").forEach(function (link) {
+                        link.setAttribute("tabindex", "-1");  // 禁用子項目焦點
+                    });
+                } else {
+                    // 展開內容
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.setAttribute("aria-hidden", "false");
+                    this.setAttribute("aria-expanded", "true");
+                    content.querySelectorAll("a").forEach(function (link) {
+                        link.setAttribute("tabindex", "0");  // 啟用子項目焦點
+                    });
+                }
+            });
+        }
     </script>
+
 </body>
 
 </html>

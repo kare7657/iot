@@ -94,19 +94,57 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- mobile-menu -->
-    <script>
-        var fas = document.querySelector(".fas.fa-bars")
-        var navbar_nav = document.querySelector(".nav.navbar-nav")
-        var nav_item = document.querySelector(".nav-item.dropdown")
-        fas.onclick = function () {
-            if (navbar_nav.classList.contains("active-ul")) {
-                navbar_nav.classList.remove("active-ul")
-            } else {
-                navbar_nav.classList.add("active-ul")
-            }
+   <!-- mobile-menu -->
+   <script>
+    var fas = document.querySelector(".fas.fa-bars")
+    var navbar_nav = document.querySelector(".nav.navbar-nav")
+    var nav_item = document.querySelector(".nav-item.dropdown")
+    fas.onclick = function () {
+        if (navbar_nav.classList.contains("active-ul")) {
+            navbar_nav.classList.remove("active-ul")
+        } else {
+            navbar_nav.classList.add("active-ul")
         }
-    </script>
+    }
+    // 鍵盤可操作
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.fas.fa-bars');
+        const mainMenu = document.getElementById('main-menu');
+
+        const setMenuFocusable = (isFocusable) => {
+            const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
+            menuItems.forEach(item => {
+                if (isFocusable) {
+                    item.removeAttribute('tabindex'); // 恢復原始聚焦能力
+                } else {
+                    item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+                }
+            });
+        };
+
+        // 初始設置，隱藏選單時不可聚焦
+        setMenuFocusable(false);
+
+        menuToggle.addEventListener('click', function () {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+            // 切換屬性值
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            mainMenu.setAttribute('aria-hidden', isExpanded);
+
+            // 控制選單項目是否可聚焦
+            setMenuFocusable(!isExpanded);
+        });
+
+        // 鍵盤支持（Enter 或空格鍵）
+        menuToggle.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault(); // 防止滾動
+                menuToggle.click(); // 觸發點擊事件
+            }
+        });
+    });
+</script>
 
     <!-- date-picker datedropper -->
     <script src="https://cdn.datedropper.com/get/f1a6xwxr0858p4u12v0ivylruukblpm1"></script>

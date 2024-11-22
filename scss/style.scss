@@ -29,6 +29,7 @@ body {
     .navbar {
         @include navbar();
     }
+    @include table;
     // Banner
     .content-banner {
         padding-top: 120px;
@@ -182,12 +183,47 @@ body {
             @include pad() {
                 flex-wrap: wrap;
             }
+            section {
+                width: 100%;
+                &.left {
+                    width: 70%;
+                    margin-right: $margin-S;
+                    @include mobile-L {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+                &.right {
+                    width: 30%;
+                    @include mobile-L {
+                        width: 100%;
+                    }
+                }
+                .table-default {
+                    th,
+                    td {
+                        padding: $padding-XXS $margin-S;
+                    }
+
+                    @include mobile-L {
+                        td {
+                            &:first-child {
+                                width: 35%;
+                            }
+                            &:last-child {
+                                width: 65%;
+                            }
+                        }
+                    }
+                }
+            }
             .new {
                 width: 60%;
                 @include news-list(23%, 77%);
+                margin-right: $margin-M;
             }
             .data-statistics {
-                width: 40%;
+                // width: 40%;
                 @include pad() {
                     width: 100%;
                     margin-bottom: $margin-S;
@@ -211,6 +247,18 @@ body {
             .list-gp {
                 @include news-list(20%, 80%);
                 margin: $margin-S * 1.5 0;
+            }
+            .table-default {
+                @include mobile-L {
+                    td {
+                        &:first-child {
+                            width: 35%;
+                        }
+                        &:last-child {
+                            width: 65%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -348,6 +396,18 @@ body {
             .list-gp {
                 width: 100%;
                 @include news-list(20%, 80%);
+            }
+            .table-default {
+                @include mobile-L {
+                    td {
+                        &:first-child {
+                            width: 35%;
+                        }
+                        &:last-child {
+                            width: 65%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1117,7 +1177,7 @@ body {
                             }
                         }
                     }
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
                         max-width: 100px;
@@ -1895,14 +1955,14 @@ body {
             }
             .preview {
                 border-radius: 20px;
-                padding: $padding-XS * 1.5 $padding-S;
+                padding: $padding-XS * 1.5 0;
                 margin-top: $margin-S;
                 @include pad() {
                     padding: $padding-XS;
                     margin-top: 0;
                 }
                 @include mobile-L() {
-                    padding: $padding-XS $padding-XS * 1.5;
+                    padding: $padding-XS 0;
                     border: unset;
                     border-radius: unset;
                     background-color: transparent;
@@ -2029,7 +2089,7 @@ body {
             }
             .pagination {
                 @include mobile-L() {
-                    padding: 0 $padding-XS * 1.5;
+                    margin-top: 0;
                 }
             }
             .reply {
@@ -2050,14 +2110,16 @@ body {
                     }
                     @include pad() {
                         width: 100%;
-                        padding: $padding-XS * 1.5 0;
+                        // padding: $padding-XS * 1.5 0;
                         .form-gp {
-                            padding: 0 $padding-XS * 1.5;
+                            padding: 0;
                         }
                     }
                     @include mobile-L() {
                         border: none;
                         border-radius: none;
+                        padding: 0;
+                        margin-top: $margin-S;
                     }
                     label {
                         width: 100%;
@@ -2097,6 +2159,9 @@ body {
                     h3 {
                         margin: 0;
                         margin-bottom: $margin-S;
+                        @include mobile-L() {
+                            margin-bottom: $margin-XS;
+                        }
                     }
                 }
             }
@@ -2226,7 +2291,7 @@ body {
                         padding: unset;
                     }
                     @include mobile-L() {
-                        padding: 0 ;
+                        padding: 0;
                     }
                     .searchbar {
                         @include searchbar();
@@ -2239,7 +2304,7 @@ body {
                             }
                         }
                         @include mobile-L() {
-                            margin-bottom: $margin-S ;
+                            margin-bottom: $margin-S;
                             input[type="search"] {
                                 width: 90%;
                                 &:focus {
@@ -2261,7 +2326,7 @@ body {
                         .text-gp {
                             margin-bottom: $margin-S;
                             @include mobile-L() {
-                                padding: 0 ;
+                                padding: 0;
                                 #pad-pd {
                                     padding: 0;
                                 }
@@ -2361,7 +2426,7 @@ body {
                 @include mobile-L() {
                     input[type="search"] {
                         width: 65%;
-                        margin: 0 $margin-S;
+                        margin: 0;
                         &:focus {
                             width: 100%;
                         }
@@ -2390,7 +2455,7 @@ body {
                         justify-content: space-between;
                     }
                     @include mobile-L() {
-                        padding: 0 $margin-S;
+                        padding: 0;
                         flex-direction: column;
                     }
                     button {

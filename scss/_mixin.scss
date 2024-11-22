@@ -165,7 +165,7 @@
     }
     section {
         width: 100%;
-        @include mobile-L(){
+        @include mobile-L() {
             padding-bottom: $padding-XS;
         }
     }
@@ -695,6 +695,7 @@
         justify-content: unset;
         margin-top: 0;
     }
+
     .pc {
         width: 1140px;
         height: 80px;
@@ -823,7 +824,8 @@
                         margin: 0;
                         .dropdown-item {
                             padding: 8px 0;
-                            &:focus {
+                            &:focus,
+                            &:hover {
                                 background-color: white;
                                 div {
                                     color: $dark-blue !important;
@@ -1053,7 +1055,8 @@
 }
 
 @mixin news-list($span-width, $a-width) {
-    margin-right: $margin-M;
+    // margin-right: $margin-M;
+    width: 100%;
     @include pad() {
         width: 100%;
         margin-right: unset;
@@ -1697,6 +1700,7 @@
     }
 }
 @mixin opinion-list() {
+    width: 100%;
     margin-bottom: $margin-S * 1.5;
     .list {
         display: flex;
@@ -1717,7 +1721,7 @@
         @include mobile-L() {
             flex-wrap: wrap;
             flex-direction: column;
-            margin: 0 ;
+            margin: 0;
             padding: $padding-XXS $padding-XS;
             .c1 {
                 width: 100%;
@@ -1739,8 +1743,16 @@
     .head {
         background-color: $dark-blue;
         border-radius: 20px 20px 0 0;
+        width: 100%;
         @include mobile-L() {
             border-radius: unset;
+        }
+        tr {
+            width: 100%;
+            display: flex;
+            th {
+                color: white;
+            }
         }
         p {
             color: white;
@@ -1855,9 +1867,10 @@
     @include pad() {
         padding: 0 $padding-XS;
     }
-    @include mobile-L(){
+    @include mobile-L() {
         padding: 0;
     }
+
     .collapsible {
         width: 100%;
         border-radius: 10px;
@@ -1910,6 +1923,177 @@
             color: $text;
             @include mobile-XS() {
                 font-size: $size-p;
+            }
+        }
+    }
+}
+@mixin table {
+    .table-default {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: auto;
+        &.ellipsis-table {
+            table-layout: fixed;
+        }
+        table,
+        th,
+        td {
+            padding: $padding-XS/2 $padding-XS;
+            padding-left: $padding-S;
+            @include web-S {
+                padding-left: $padding-XS !important;
+            }
+            @include mobile-L() {
+                border: 1px solid $blue;
+                padding: $margin-XS 16px !important;
+            }
+        }
+        thead{
+            th {
+                background-color: $dark-blue;
+                color: white;
+                text-align: left;
+                &:first-child {
+                    border-radius: 20px 0 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 20px 0 0;
+                }
+            }
+        }
+        tr {
+            &:nth-child(odd) {
+                background-color: $table-blue;
+                @include mobile-L {
+                    border: none ;
+                }
+            }
+            th {
+                text-align: left;
+                padding-left: $padding-S;
+                border: none ;               
+                &.ellipsis-th {
+                    @include mobile-L() {
+                        width: 100%;
+                    }
+                }
+            }
+            td {
+                color: $text;
+                vertical-align: center;
+                word-wrap: break-word;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: left;
+                align-items: center;
+                border: none ;
+                @include mobile-L {
+                    flex-wrap: wrap;
+                    text-align: left;
+                }
+                .ellipsis {
+                    @include mobile-L() {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; /*行數*/
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                    }
+                }
+                a {
+                    display: block;
+                    height: 100%;
+                    color: $text;
+                    // &:hover{
+                    //     color: black !important;
+                    //     p{}
+                    // }
+                }
+            }
+            .btn {
+                margin: 0 $margin-XS;
+                @include pad {
+                    margin: $margin-XS $margin-XS;
+                }
+                @include mobile-L {
+                    margin: $margin-XS $margin-XS $margin-XS 0 !important;
+                }
+            }
+            button {
+                background-color: $blue;
+            }
+            .format-btn {
+                background-color: $blue;
+                color: white;
+                padding: 3px 8px;
+                border-radius: 8px;
+                display: inline-block;
+                &:hover {
+                    background-color: $dark-blue;
+                    color: white !important;
+                }
+            }
+            i {
+                margin-right: $margin-XS;
+                font-size: $size-caption;
+            }
+            .cancel {
+                color: $red;
+            }
+            a {
+                color: $blue;
+            }
+        }
+    }
+    .mb-separate {
+        thead {
+            @include mobile-L {
+                display: none;
+            }
+        }
+        tr {
+            @include mobile-L {
+                border: solid 1px $blue !important;
+                display: block;
+                margin-bottom: $margin-S !important;
+            }
+            &:nth-child(even) {
+                @include mobile-L {
+                    background-color: white ;
+                }
+            }
+            th {
+                background-color: $dark-blue;
+                color: white;
+                text-align: left;
+                &:first-child {
+                    border-radius: 20px 0 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 20px 0 0;
+                }
+            }
+            td {
+                border: none;
+                @include mobile-L {
+                    display: block;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    &::before {
+                        width: 100%;
+                        display: block;
+                        content: attr(data-title);
+                        font-weight: bold;
+                        font-size: $size-p;
+                        text-align: left;
+                        color: blacK;
+                        margin-bottom: $margin-XS;
+                    }
+                    background-color: white;
+                    &:nth-child(odd) {
+                        background-color: $table-blue;
+                    }
+                }
             }
         }
     }
