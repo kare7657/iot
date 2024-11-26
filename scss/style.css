@@ -34,7 +34,6 @@
   color: #06669d;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
   line-height: 3rem;
 }
 * h3 {
@@ -1721,6 +1720,10 @@ body .content-information .container .list-gp .w-100 a {
   body .content-information .container .table-default td:last-child {
     width: 65%;
   }
+}
+html .content-information .container p,
+body .content-information .container p {
+  margin-bottom: 10px;
 }
 html footer,
 body footer {
@@ -8771,6 +8774,10 @@ body .content-resources-share .container .example-body .right .share-list .white
 html .content-resources-share .container .example-body .right .share-list h4,
 body .content-resources-share .container .example-body .right .share-list h4 {
   text-align: right;
+}
+html .content-resources-share .container .example-body .right .table-default,
+body .content-resources-share .container .example-body .right .table-default {
+  display: block;
 }
 html .content-resources-share .container .example-body .right .active,
 body .content-resources-share .container .example-body .right .active {

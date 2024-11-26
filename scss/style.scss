@@ -260,6 +260,9 @@ body {
                     }
                 }
             }
+            p {
+                margin-bottom: $margin-XS;
+            }
         }
     }
     // 頁尾
@@ -2563,6 +2566,16 @@ body {
                         h4 {
                             text-align: right;
                         }
+                    }
+                    .table-default {
+                        display: block;
+                        // td {
+                        //     min-width: 200px;
+                        //     @include mobile-L {
+                        //         min-width: initial;
+                        //         width: 100%;
+                        //     }
+                        // }
                     }
                     .active {
                         display: block;

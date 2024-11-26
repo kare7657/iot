@@ -57,31 +57,36 @@
             <div class="list-gp">
                 <div class="list blue">
                     <span>2019/6/28</span>
-                    <a href="https://drive.google.com/open?id=10tRfsRonvHolez3_euy6wa4Et01uY92c" target="_blank">
+                    <a href="https://drive.google.com/open?id=10tRfsRonvHolez3_euy6wa4Et01uY92c" target="_blank"
+                        title=" [另開視窗]水資源物聯網資料交換標準參考典範指引">
                         <p>水資源物聯網資料交換標準參考典範指引</p>
                     </a>
                 </div>
                 <div class="list white">
                     <span>2019/6/28</span>
-                    <a href="https://drive.google.com/open?id=1ty7pxjXp-lpQ22FNWsyPkcAytlMma4yO" target="_blank">
+                    <a href="https://drive.google.com/open?id=1ty7pxjXp-lpQ22FNWsyPkcAytlMma4yO" target="_blank"
+                        title=" [另開視窗]OData說明文件及實作範例">
                         <p>OData說明文件及實作範例</p>
                     </a>
                 </div>
                 <div class="list blue">
                     <span>2019/6/28</span>
-                    <a href="https://drive.google.com/open?id=1-2wxlsSsxn3XRYaKgxA234lhk4O3-HJI" target="_blank">
+                    <a href="https://drive.google.com/open?id=1-2wxlsSsxn3XRYaKgxA234lhk4O3-HJI" target="_blank"
+                        title=" [另開視窗]OGC SensorThings API說明文件及實作範例">
                         <p>OGC SensorThings API說明文件及實作範例</p>
                     </a>
                 </div>
                 <div class="list white">
                     <span>2019/6/28</span>
-                    <a href="https://drive.google.com/open?id=1uUHeI19W3VR9gDh55ukAknYnHUtrCc3M" target="_blank">
+                    <a href="https://drive.google.com/open?id=1uUHeI19W3VR9gDh55ukAknYnHUtrCc3M" target="_blank"
+                        title=" [另開視窗]S3說明文件及實作範例">
                         <p>S3說明文件及實作範例</p>
                     </a>
                 </div>
                 <div class="list blue">
                     <span>2019/6/28</span>
-                    <a href="https://drive.google.com/open?id=1F-q6WuM8LTlCUNiziRosDqv4JJVTNiwb" target="_blank">
+                    <a href="https://drive.google.com/open?id=1F-q6WuM8LTlCUNiziRosDqv4JJVTNiwb" target="_blank"
+                        title=" [另開視窗]WMS說明文件及實作範例">
                         <p>WMS說明文件及實作範例</p>
                     </a>
                 </div>
@@ -104,57 +109,57 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-   <!-- mobile-menu -->
-   <script>
-    var fas = document.querySelector(".fas.fa-bars")
-    var navbar_nav = document.querySelector(".nav.navbar-nav")
-    var nav_item = document.querySelector(".nav-item.dropdown")
-    fas.onclick = function () {
-        if (navbar_nav.classList.contains("active-ul")) {
-            navbar_nav.classList.remove("active-ul")
-        } else {
-            navbar_nav.classList.add("active-ul")
+    <!-- mobile-menu -->
+    <script>
+        var fas = document.querySelector(".fas.fa-bars")
+        var navbar_nav = document.querySelector(".nav.navbar-nav")
+        var nav_item = document.querySelector(".nav-item.dropdown")
+        fas.onclick = function () {
+            if (navbar_nav.classList.contains("active-ul")) {
+                navbar_nav.classList.remove("active-ul")
+            } else {
+                navbar_nav.classList.add("active-ul")
+            }
         }
-    }
-    // 鍵盤可操作
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.querySelector('.fas.fa-bars');
-        const mainMenu = document.getElementById('main-menu');
+        // 鍵盤可操作
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.fas.fa-bars');
+            const mainMenu = document.getElementById('main-menu');
 
-        const setMenuFocusable = (isFocusable) => {
-            const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
-            menuItems.forEach(item => {
-                if (isFocusable) {
-                    item.removeAttribute('tabindex'); // 恢復原始聚焦能力
-                } else {
-                    item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+            const setMenuFocusable = (isFocusable) => {
+                const menuItems = mainMenu.querySelectorAll('a, button, [tabindex]');
+                menuItems.forEach(item => {
+                    if (isFocusable) {
+                        item.removeAttribute('tabindex'); // 恢復原始聚焦能力
+                    } else {
+                        item.setAttribute('tabindex', '-1'); // 移除聚焦能力
+                    }
+                });
+            };
+
+            // 初始設置，隱藏選單時不可聚焦
+            setMenuFocusable(false);
+
+            menuToggle.addEventListener('click', function () {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+                // 切換屬性值
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainMenu.setAttribute('aria-hidden', isExpanded);
+
+                // 控制選單項目是否可聚焦
+                setMenuFocusable(!isExpanded);
+            });
+
+            // 鍵盤支持（Enter 或空格鍵）
+            menuToggle.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // 防止滾動
+                    menuToggle.click(); // 觸發點擊事件
                 }
             });
-        };
-
-        // 初始設置，隱藏選單時不可聚焦
-        setMenuFocusable(false);
-
-        menuToggle.addEventListener('click', function () {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-
-            // 切換屬性值
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-            mainMenu.setAttribute('aria-hidden', isExpanded);
-
-            // 控制選單項目是否可聚焦
-            setMenuFocusable(!isExpanded);
         });
-
-        // 鍵盤支持（Enter 或空格鍵）
-        menuToggle.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault(); // 防止滾動
-                menuToggle.click(); // 觸發點擊事件
-            }
-        });
-    });
-</script>
+    </script>
 
 </body>
 
