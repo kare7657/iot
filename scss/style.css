@@ -1197,6 +1197,18 @@ html .modal-backdrop,
 body .modal-backdrop {
   z-index: 1150;
 }
+html .visually-hidden,
+body .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* 避免被換行 */
+  border: 0;
+}
 html .content-about .container,
 body .content-about .container {
   display: flex;
@@ -5376,14 +5388,17 @@ body .content-signup .container .button-gp .icon-gp img {
     margin-right: 10px;
   }
 }
-html .content-signup .container .button-gp .icon-gp h3,
-body .content-signup .container .button-gp .icon-gp h3 {
+html .content-signup .container .button-gp .icon-gp .title,
+body .content-signup .container .button-gp .icon-gp .title {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 14px;
+  font-size: 1.375rem;
+  color: #06669d;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
-  html .content-signup .container .button-gp .icon-gp h3,
-  body .content-signup .container .button-gp .icon-gp h3 {
+  html .content-signup .container .button-gp .icon-gp .title,
+  body .content-signup .container .button-gp .icon-gp .title {
     margin: 0;
   }
 }

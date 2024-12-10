@@ -66,6 +66,17 @@ body {
     .modal-backdrop {
         z-index: 1150;
     }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap; /* 避免被換行 */
+        border: 0;
+    }
     //關於平台
     .content-about {
         .container {
@@ -1570,9 +1581,12 @@ body {
                             margin-right: $margin-XS;
                         }
                     }
-                    h3 {
+                    .title {
                         margin: 0;
-                        margin-top: $margin-XS;
+                        margin-top: 14px;
+                        font-size: $size-h3;
+                        color: $dark-blue;
+                        font-weight: bold;
                         @include pad {
                             margin: 0;
                         }

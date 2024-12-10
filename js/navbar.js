@@ -138,6 +138,7 @@ document.write( '            </div>\n' );
 document.write( '        </div>\n' );
 document.write( '        <div class=\"mobile\">\n' );
 document.write( '            <div class=\"menu\">\n' );
+document.write( '                <a href=\"#U\" id=\"AU\" title=\"上方功能區塊\" accesskey=\"U\" tabindex=\"-1\" class=\"visually-hidden\">:::</a>\n' );
 document.write( '                <div class=\"fas fa-bars\" role=\"button\" tabindex=\"0\" aria-label=\"開啟選單\" aria-controls=\"main-menu\"\n' );
 document.write( '                    aria-expanded=\"false\">\n' );
 document.write( '                </div>\n' );

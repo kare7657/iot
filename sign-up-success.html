@@ -95,6 +95,20 @@
                 }
             });
         });
+          //AU 可聚焦
+          document.addEventListener('keydown', function (e) {
+            // 多種快捷鍵組合
+            if ((e.altKey && e.key === 'u') ||
+                (e.altKey && e.keyCode === 85) ||
+                (e.ctrlKey && e.altKey && e.key === 'u')) {
+
+                const auElement = document.getElementById('AU');
+                if (auElement) {
+                    e.preventDefault();
+                    auElement.focus();
+                }
+            }
+        });
     </script>
 </body>
 

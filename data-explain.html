@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資料使用統計</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="scss/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 <body>
     <!-- 導覽列 -->
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <!--選單區-->  
+    <!--選單區-->
     <!-- navbar -->
     <script src="js/navbar.js"></script>
 
@@ -38,7 +38,8 @@
     <div class="breadcrumb">
         <div class="container">
             <ul>
-                <li><a href="https://iot.wra.gov.tw/index.jsp" title="首頁" aria-label="首頁"><i class="fas fa-home"></i></a></li>
+                <li><a href="https://iot.wra.gov.tw/index.jsp" title="首頁" aria-label="首頁"><i
+                            class="fas fa-home"></i></a></li>
                 <li>&gt;</li>
                 <li><a href="https://iot.wra.gov.tw/DataStatistics.jsp#">開發指引</a></li>
                 <li>&gt;</li>
@@ -129,7 +130,7 @@
             <h2>API呼叫排名</h2-->
         </div>
     </section>
-   
+
     <!-- footer -->
     <script src="js/footer.js"></script>
 
@@ -187,6 +188,20 @@
                     menuToggle.click(); // 觸發點擊事件
                 }
             });
+        });
+        //AU 可聚焦
+        document.addEventListener('keydown', function (e) {
+            // 多種快捷鍵組合
+            if ((e.altKey && e.key === 'u') ||
+                (e.altKey && e.keyCode === 85) ||
+                (e.ctrlKey && e.altKey && e.key === 'u')) {
+
+                const auElement = document.getElementById('AU');
+                if (auElement) {
+                    e.preventDefault();
+                    auElement.focus();
+                }
+            }
         });
     </script>
 

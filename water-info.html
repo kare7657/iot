@@ -36,11 +36,11 @@
             <div class="menu">
                 <div class="menu-area">
                     <button class="btn1 active-btn" type="button"
-                    onclick="javascript:location.href='water-info.html'">北區</button>
+                        onclick="javascript:location.href='water-info.html'">北區</button>
                     <button class="btn2" type="button"
-                    onclick="javascript:location.href='water-info-middle.html'">中區</button>
+                        onclick="javascript:location.href='water-info-middle.html'">中區</button>
                     <button class="btn3" type="button"
-                    onclick="javascript:location.href='water-info-south.html'">南區</button>
+                        onclick="javascript:location.href='water-info-south.html'">南區</button>
                 </div>
                 <ul class="menu-second menu1 active">
                     <li><a href="#north1-1">板新、桃園</a></li>
@@ -49,12 +49,12 @@
             </div>
 
             <div class="water-body list1 active" id="north1-1">
-                <div class="title" >
+                <div class="title">
                     <h2>板新、桃園</h2>
                     <div class="date-gp">
-                        <a href=""  title="前一天" aria-label="前一天"><i class="fas fa-chevron-left"></i></a>
+                        <a href="" title="前一天" aria-label="前一天"><i class="fas fa-chevron-left"></i></a>
                         <p class="date">2020/12/12</p>
-                        <a href=""  title="後一天" aria-label="後一天"><i class="fas fa-chevron-right"></i></a>
+                        <a href="" title="後一天" aria-label="後一天"><i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="water-num">
@@ -415,6 +415,20 @@
                     menuToggle.click(); // 觸發點擊事件
                 }
             });
+        });
+        //AU 可聚焦
+        document.addEventListener('keydown', function (e) {
+            // 多種快捷鍵組合
+            if ((e.altKey && e.key === 'u') ||
+                (e.altKey && e.keyCode === 85) ||
+                (e.ctrlKey && e.altKey && e.key === 'u')) {
+
+                const auElement = document.getElementById('AU');
+                if (auElement) {
+                    e.preventDefault();
+                    auElement.focus();
+                }
+            }
         });
     </script>
 
