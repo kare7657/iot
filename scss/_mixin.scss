@@ -1948,7 +1948,7 @@
                 padding: $margin-XS 16px !important;
             }
         }
-        thead{
+        thead {
             th {
                 background-color: $dark-blue;
                 color: white;
@@ -1965,13 +1965,13 @@
             &:nth-child(odd) {
                 background-color: $table-blue;
                 @include mobile-L {
-                    border: none ;
+                    border: none;
                 }
             }
             th {
                 text-align: left;
                 padding-left: $padding-S;
-                border: none ;               
+                border: none;
                 &.ellipsis-th {
                     @include mobile-L() {
                         width: 100%;
@@ -1987,7 +1987,7 @@
                 overflow: hidden;
                 text-align: left;
                 align-items: center;
-                border: none ;
+                border: none;
                 @include mobile-L {
                     flex-wrap: wrap;
                     text-align: left;
@@ -2059,7 +2059,7 @@
             }
             &:nth-child(even) {
                 @include mobile-L {
-                    background-color: white ;
+                    background-color: white;
                 }
             }
             th {
